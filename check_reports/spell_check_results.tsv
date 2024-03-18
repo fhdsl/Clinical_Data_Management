@@ -1,0 +1,14 @@
+word	file	lines
+automagic	README.md	14
+bookdown	README.md	36
+Bookdown	README.md	11,32
+Coursera	README.md	12,32
+DaSL	README.md	3
+faq	code_of_conduct.md	123
+Github	README.md	13
+https	code_of_conduct.md	117,123,124
+Leanpub	README.md	10,36
+RMarkdown	README.md	9
+sexualized	code_of_conduct.md	30
+socio	code_of_conduct.md	6
+UE	index-itcr.Rmd	23
