@@ -2,7 +2,7 @@
 title: "Chapter of course"
 ---
 
-*If you haven't yet read the getting started Wiki pages; [start there](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Getting-started)
+*If you haven't yet read the getting started documentation pages; [start there](https://www.ottrproject.org/getting_started.html#starting-a-new-ottr-course)
 
 Every chapter needs to start out with this chunk of code:
 
@@ -87,22 +87,6 @@ knitr::include_url("https://www.youtube.com/embed/VOCYL-FNbr0")
 OR this works:
 
 <iframe src="https://www.youtube.com/embed/VOCYL-FNbr0" width="672" height="400px"></iframe>
-
-### Links to files
-
-This works:
-
-```{r, fig.align="center", echo=FALSE}
-knitr::include_url("https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf", height = "800px")
-```
-
-Or this:
-
-[This works](https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf).
-
-Or this:
-
-<iframe src="https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf" width="672" height="800px"></iframe>
 
 ### Links to websites
 
