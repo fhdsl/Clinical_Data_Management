@@ -1,0 +1,21 @@
+# Data analysis of Clinical Measures Data
+
+## Learning Objectives
+
+## Overview of clinical data analysis, measures specific
+
+## Data cleaning/handling
+
+## Longitudinal and repeated event data analysis
+
+## Statistical Methods
+
+## Tools for both structured and unstructured data
+
+## Showcase of ITCR analysis tools
+
+## Patient-facing informatics
+
+## Common data models & national research initiatives
+
+## Conclusion
