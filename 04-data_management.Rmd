@@ -1,3 +1,11 @@
+---
+title: Clinical Data Management
+---
+
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
+
 # Clinical Data Management
 
 ## Learning Objectives

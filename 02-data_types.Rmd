@@ -1,3 +1,12 @@
+---
+title: Clinical Data Types
+---
+
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
+
+
 # Clinical Data Types
 
 ## Learning Objectives

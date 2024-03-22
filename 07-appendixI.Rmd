@@ -1,3 +1,11 @@
+---
+title: Appendix I
+---
+
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
+
 # Appendix I: Ontologies, Vocabularies, Taxonomies, and Standards
 
 ## SNOMED

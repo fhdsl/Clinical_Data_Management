@@ -1,4 +1,12 @@
-# Data analysis of Clinical Measures Data
+---
+title: Data Analysis of Clinical Measures Data
+---
+
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
+
+# Data Analysis of Clinical Measures Data
 
 ## Learning Objectives
 

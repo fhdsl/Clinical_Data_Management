@@ -1,3 +1,11 @@
+---
+title: Data Analysis of Clinical Language Data
+---
+
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
+
 # Data Analysis of Clinical Language Data
 
 ## Learning Objectives
