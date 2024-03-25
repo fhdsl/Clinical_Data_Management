@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Clinical Data Analysis for Cancer Informatics</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Clinical Data Analysis for Cancer Informatics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Clinical Data Analysis for Cancer Informatics" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+
+<link rel="next" href="introduction.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#motivation"><i class="fa fa-check"></i><b>1.1</b> Motivation</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#target-audience"><i class="fa fa-check"></i><b>1.2</b> Target Audience</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#curriculum"><i class="fa fa-check"></i><b>1.3</b> Curriculum</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#objectives"><i class="fa fa-check"></i><b>1.4</b> Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introduction-1.html"><a href="introduction-1.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introduction-1.html"><a href="introduction-1.html#how-clinical-data-differs-from-other-data-types"><i class="fa fa-check"></i><b>2.1</b> How clinical data differs from other data types</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction-1.html"><a href="introduction-1.html#major-clinical-data-types"><i class="fa fa-check"></i><b>2.2</b> Major clinical data types</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction-1.html"><a href="introduction-1.html#specific-types-of-clinical-data"><i class="fa fa-check"></i><b>2.3</b> Specific types of clinical data</a></li>
+<li class="chapter" data-level="2.4" data-path="introduction-1.html"><a href="introduction-1.html#how-to-acquire-clinical-data"><i class="fa fa-check"></i><b>2.4</b> How to acquire clinical data</a></li>
+<li class="chapter" data-level="2.5" data-path="introduction-1.html"><a href="introduction-1.html#description-of-data"><i class="fa fa-check"></i><b>2.5</b> Description of data</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="introduction-1.html"><a href="introduction-1.html#file-types"><i class="fa fa-check"></i><b>2.5.1</b> File types</a></li>
+<li class="chapter" data-level="2.5.2" data-path="introduction-1.html"><a href="introduction-1.html#metadata"><i class="fa fa-check"></i><b>2.5.2</b> Metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="introduction-1.html"><a href="introduction-1.html#what-questions-can-be-asked-with-clinical-data"><i class="fa fa-check"></i><b>2.6</b> What questions can be asked with clinical data?</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="clinical-data-types.html"><a href="clinical-data-types.html"><i class="fa fa-check"></i><b>3</b> Clinical Data Types</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="clinical-data-types.html"><a href="clinical-data-types.html#learning-objectives"><i class="fa fa-check"></i><b>3.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="3.2" data-path="clinical-data-types.html"><a href="clinical-data-types.html#patient-records-electronic-health-records"><i class="fa fa-check"></i><b>3.2</b> Patient Records: Electronic Health Records</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="clinical-data-types.html"><a href="clinical-data-types.html#structured-data"><i class="fa fa-check"></i><b>3.2.1</b> Structured Data</a></li>
+<li class="chapter" data-level="3.2.2" data-path="clinical-data-types.html"><a href="clinical-data-types.html#unstructured-data-clinical-notes"><i class="fa fa-check"></i><b>3.2.2</b> Unstructured Data / Clinical Notes</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="clinical-data-types.html"><a href="clinical-data-types.html#physiological"><i class="fa fa-check"></i><b>3.3</b> Physiological</a></li>
+<li class="chapter" data-level="3.4" data-path="clinical-data-types.html"><a href="clinical-data-types.html#radiology"><i class="fa fa-check"></i><b>3.4</b> Radiology</a></li>
+<li class="chapter" data-level="3.5" data-path="clinical-data-types.html"><a href="clinical-data-types.html#pathology"><i class="fa fa-check"></i><b>3.5</b> Pathology</a></li>
+<li class="chapter" data-level="3.6" data-path="clinical-data-types.html"><a href="clinical-data-types.html#secondary-sources"><i class="fa fa-check"></i><b>3.6</b> Secondary Sources</a></li>
+<li class="chapter" data-level="3.7" data-path="clinical-data-types.html"><a href="clinical-data-types.html#discussion"><i class="fa fa-check"></i><b>3.7</b> Discussion</a></li>
+<li class="chapter" data-level="3.8" data-path="clinical-data-types.html"><a href="clinical-data-types.html#conclusion"><i class="fa fa-check"></i><b>3.8</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html"><i class="fa fa-check"></i><b>4</b> Clinical Data Uses</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#learning-objectives-1"><i class="fa fa-check"></i><b>4.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="4.2" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#general-uses-of-clinical-data"><i class="fa fa-check"></i><b>4.2</b> General uses of clinical data</a></li>
+<li class="chapter" data-level="4.3" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#types-of-questions-that-can-be-asked-with-clinical-data"><i class="fa fa-check"></i><b>4.3</b> Types of questions that can be asked with clinical data</a></li>
+<li class="chapter" data-level="4.4" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#research-design-considerations"><i class="fa fa-check"></i><b>4.4</b> Research Design Considerations</a></li>
+<li class="chapter" data-level="4.5" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#conclusion-1"><i class="fa fa-check"></i><b>4.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="clinical-data-management.html"><a href="clinical-data-management.html"><i class="fa fa-check"></i><b>5</b> Clinical Data Management</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="clinical-data-management.html"><a href="clinical-data-management.html#learning-objectives-2"><i class="fa fa-check"></i><b>5.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="5.2" data-path="clinical-data-management.html"><a href="clinical-data-management.html#clinical-data-handling-tools"><i class="fa fa-check"></i><b>5.2</b> Clinical data handling tools</a></li>
+<li class="chapter" data-level="5.3" data-path="clinical-data-management.html"><a href="clinical-data-management.html#importance-of-keeping-clinical-data-safe"><i class="fa fa-check"></i><b>5.3</b> Importance of keeping clinical data safe</a></li>
+<li class="chapter" data-level="5.4" data-path="clinical-data-management.html"><a href="clinical-data-management.html#government-regulators"><i class="fa fa-check"></i><b>5.4</b> Government regulators</a></li>
+<li class="chapter" data-level="5.5" data-path="clinical-data-management.html"><a href="clinical-data-management.html#documentation"><i class="fa fa-check"></i><b>5.5</b> Documentation</a></li>
+<li class="chapter" data-level="5.6" data-path="clinical-data-management.html"><a href="clinical-data-management.html#conclusion-2"><i class="fa fa-check"></i><b>5.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-analysis-of-clinical-language-data.html"><a href="data-analysis-of-clinical-language-data.html"><i class="fa fa-check"></i><b>6</b> Data Analysis of Clinical Language Data</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="data-analysis-of-clinical-language-data.html"><a href="data-analysis-of-clinical-language-data.html#learning-objectives-3"><i class="fa fa-check"></i><b>6.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="6.2" data-path="data-analysis-of-clinical-language-data.html"><a href="data-analysis-of-clinical-language-data.html#overview-of-clinical-data-analysis-language-specific"><i class="fa fa-check"></i><b>6.2</b> Overview of clinical data analysis, language specific</a></li>
+<li class="chapter" data-level="6.3" data-path="data-analysis-of-clinical-language-data.html"><a href="data-analysis-of-clinical-language-data.html#natural-language-processing-nlp"><i class="fa fa-check"></i><b>6.3</b> Natural Language Processing (NLP)</a></li>
+<li class="chapter" data-level="6.4" data-path="data-analysis-of-clinical-language-data.html"><a href="data-analysis-of-clinical-language-data.html#unified-medical-language-systems-umls"><i class="fa fa-check"></i><b>6.4</b> Unified medical language systems (UMLS)</a></li>
+<li class="chapter" data-level="6.5" data-path="data-analysis-of-clinical-language-data.html"><a href="data-analysis-of-clinical-language-data.html#controlled-unclassified-information-cuis"><i class="fa fa-check"></i><b>6.5</b> Controlled unclassified information (CUIs)</a></li>
+<li class="chapter" data-level="6.6" data-path="data-analysis-of-clinical-language-data.html"><a href="data-analysis-of-clinical-language-data.html#llms"><i class="fa fa-check"></i><b>6.6</b> LLMs</a></li>
+<li class="chapter" data-level="6.7" data-path="data-analysis-of-clinical-language-data.html"><a href="data-analysis-of-clinical-language-data.html#showcase-of-itcr-analysis-tools"><i class="fa fa-check"></i><b>6.7</b> Showcase of ITCR analysis tools</a></li>
+<li class="chapter" data-level="6.8" data-path="data-analysis-of-clinical-language-data.html"><a href="data-analysis-of-clinical-language-data.html#conclusion-3"><i class="fa fa-check"></i><b>6.8</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html"><i class="fa fa-check"></i><b>7</b> Data Analysis of Clinical Measures Data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html#learning-objectives-4"><i class="fa fa-check"></i><b>7.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="7.2" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html#overview-of-clinical-data-analysis-measures-specific"><i class="fa fa-check"></i><b>7.2</b> Overview of clinical data analysis, measures specific</a></li>
+<li class="chapter" data-level="7.3" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html#data-cleaninghandling"><i class="fa fa-check"></i><b>7.3</b> Data cleaning/handling</a></li>
+<li class="chapter" data-level="7.4" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html#longitudinal-and-repeated-event-data-analysis"><i class="fa fa-check"></i><b>7.4</b> Longitudinal and repeated event data analysis</a></li>
+<li class="chapter" data-level="7.5" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html#statistical-methods"><i class="fa fa-check"></i><b>7.5</b> Statistical Methods</a></li>
+<li class="chapter" data-level="7.6" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html#tools-for-both-structured-and-unstructured-data"><i class="fa fa-check"></i><b>7.6</b> Tools for both structured and unstructured data</a></li>
+<li class="chapter" data-level="7.7" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html#showcase-of-itcr-analysis-tools-1"><i class="fa fa-check"></i><b>7.7</b> Showcase of ITCR analysis tools</a></li>
+<li class="chapter" data-level="7.8" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html#patient-facing-informatics"><i class="fa fa-check"></i><b>7.8</b> Patient-facing informatics</a></li>
+<li class="chapter" data-level="7.9" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html#common-data-models-national-research-initiatives"><i class="fa fa-check"></i><b>7.9</b> Common data models &amp; national research initiatives</a></li>
+<li class="chapter" data-level="7.10" data-path="data-analysis-of-clinical-measures-data.html"><a href="data-analysis-of-clinical-measures-data.html#conclusion-4"><i class="fa fa-check"></i><b>7.10</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html"><a href="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html"><i class="fa fa-check"></i><b>8</b> Appendix I: Ontologies, Vocabularies, Taxonomies, and Standards</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html"><a href="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html#snomed"><i class="fa fa-check"></i><b>8.1</b> SNOMED</a></li>
+<li class="chapter" data-level="8.2" data-path="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html"><a href="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html#icd10"><i class="fa fa-check"></i><b>8.2</b> ICD10</a></li>
+<li class="chapter" data-level="8.3" data-path="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html"><a href="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html#rxnorm"><i class="fa fa-check"></i><b>8.3</b> RxNorm</a></li>
+<li class="chapter" data-level="8.4" data-path="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html"><a href="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html#loinc"><i class="fa fa-check"></i><b>8.4</b> LOINC</a></li>
+<li class="chapter" data-level="8.5" data-path="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html"><a href="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html#emerging-standards-such-as-fhir"><i class="fa fa-check"></i><b>8.5</b> Emerging standards such as FHIR</a></li>
+<li class="chapter" data-level="8.6" data-path="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html"><a href="appendix-i-ontologies-vocabularies-taxonomies-and-standards.html#omop"><i class="fa fa-check"></i><b>8.6</b> OMOP</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Clinical Data Analysis for Cancer Informatics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src= "assets/dasl_thin_main_image.png">
+</div>
+<div id="header">
+<h1 class="title">Clinical Data Analysis for Cancer Informatics</h1>
+<p class="date"><em>March, 2024</em></p>
+</div>
+<div id="about-this-course" class="section level1 unnumbered">
+<h1>About this Course</h1>
+
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
