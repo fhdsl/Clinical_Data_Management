@@ -1,10 +1,10 @@
 ---
-title: "Course Title"
+title: "Clinical Data Analysis for Cancer Informatics"
 ---
 
 
 ```{r, include = FALSE}
-leanbuild::set_knitr_image_path()
+ottrpal::set_knitr_image_path()
 ```
 
 # Introduction
@@ -20,3 +20,7 @@ The course is intended for ...
 ## Curriculum  
 
 The course covers...
+
+## Objectives
+
+The learning objectives are ...
