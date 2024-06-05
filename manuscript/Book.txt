@@ -1,5 +1,0 @@
-1-Introduction.md
-2-Topic-of-Section.md
-About-this-Course.md
-About-the-Authors.md
-References.md
