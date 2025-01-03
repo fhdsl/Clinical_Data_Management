@@ -12,6 +12,28 @@ ottrpal::set_knitr_image_path()
 
 ## General uses of clinical data
 
+### Cancer Prevention and Care
+
+The near universal adoption of electronic health record (EHR) systems in the US has created unprecedented opportunities to improve cancer prevention and care. As described in previous chapters, EHR systems store comprehensive longitudinal records of a patient's interactions with a healthcare system, including data about demographics, conditions, family history, clinical notes, laboratory test results, medications, procedures, imaging, and genetic test reports. These data can be accessed not only by health professionals, but also by patients through patient portals. EHR data can also be used to enable data-driven interventions such as provider- and patient-facing clinical decision support (CDS) and population health management (PHM).
+
+CDS has been defined as tools that "provide clinicians, staff, patients, or other individuals with knowledge and person-specific information, intelligently filtered or presented at appropriate times, to enhance health and health care" [@Osheroff_2007]. Examples of widely adopted CDS tools with demonstrated effectiveness for cancer prevention, diagnosis, and care include
+
+  * provider and patient reminders for cancer screening
+  * decision aids and shared decision-making tools (e.g., for prostate cancer treatment, lung cancer screening)
+  * AI-supported diagnostic imaging
+  * chemotherapy decision support
+  * at-home symptom care
+
+While CDS tools generally provide decision support focused on a specific patient at a time, PHM are strategies that target specific patient populations [@Swarthout_Bishop_2017]. PHM efforts generally consist of
+
+  * population algorithms that are applied over EHR and other data sources to identify individuals who are eligible for a specific healthcare intervention (e.g., colorectal cancer screening, tobacco cessation, HPV vaccination)
+  * patient engagement strategies (e.g., patient portals, text messaging, chatbots, patient navigators) that provide education and access to those interventions
+  * analytic tools that assess the effectiveness of the PHM program.
+
+Several PHM programs have demonstrated to be effective in increasing the uptake of cancer prevention. For example, the colorectal cancer screening program at Kaiser Permanente uses digital (i.e., text messaging, patient portal), mailed, and patient navigation approaches to increase colorectal cancer screening by mailing Fecal Immunohistochemical Test (FIT) kits to patients' homes [@Gupta2020]. Also the Cancer Moonshot BRIDGE trial used the GARDE platform [@Bradshaw2022] (ITCR-funded) to identify candidates for genetic testing of hereditary cancer syndromes based on EHR data; and for patient outreach, pre- and post-test education via automated chatbots [@Kaphingst2024].
+
+While some CDS and PHM approaches have been successfully adopted widely, emerging technologies such as the use of generative AI approaches to analyze diagnostic imaging, large language models (LLMs) to extract information from narrative texts (e.g., clinical notes), LLM-based chatbots to communicate with patients, and digital health tools such as home-based sensors are creating unprecedented opportunities for next generation CDS and PHM. These approaches have the potential to enable significant breakthroughs through the implementation of patient-tailored cancer prevention and care at a population scale. Nevertheless, substantial research is needed to ensure effective, fair, and equitable implementation of these CDS and PHM interventions.
+
 ## Types of questions that can be asked with clinical data
 
 ### Risk Prediction
