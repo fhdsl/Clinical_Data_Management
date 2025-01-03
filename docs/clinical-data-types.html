@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Clinical Data Types | Clinical Data Analysis for Cancer Informatics</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.39.1 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Clinical Data Types | Clinical Data Analysis for Cancer Informatics" />
   <meta property="og:type" content="book" />
@@ -56,6 +56,28 @@
 <style type="text/css">
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 <link rel="stylesheet" href="assets/style_ITN.css" type="text/css" />
@@ -113,8 +135,18 @@
 <li class="chapter" data-level="4" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html"><i class="fa fa-check"></i><b>4</b> Clinical Data Uses</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#learning-objectives-1"><i class="fa fa-check"></i><b>4.1</b> Learning Objectives</a></li>
-<li class="chapter" data-level="4.2" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#general-uses-of-clinical-data"><i class="fa fa-check"></i><b>4.2</b> General uses of clinical data</a></li>
-<li class="chapter" data-level="4.3" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#types-of-questions-that-can-be-asked-with-clinical-data"><i class="fa fa-check"></i><b>4.3</b> Types of questions that can be asked with clinical data</a></li>
+<li class="chapter" data-level="4.2" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#general-uses-of-clinical-data"><i class="fa fa-check"></i><b>4.2</b> General uses of clinical data</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#cancer-prevention-and-care"><i class="fa fa-check"></i><b>4.2.1</b> Cancer Prevention and Care</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#types-of-questions-that-can-be-asked-with-clinical-data"><i class="fa fa-check"></i><b>4.3</b> Types of questions that can be asked with clinical data</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#risk-prediction"><i class="fa fa-check"></i><b>4.3.1</b> Risk Prediction</a></li>
+<li class="chapter" data-level="4.3.2" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#cohort-identification-for-research"><i class="fa fa-check"></i><b>4.3.2</b> Cohort identification for research</a></li>
+<li class="chapter" data-level="4.3.3" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#case-report-forms"><i class="fa fa-check"></i><b>4.3.3</b> Case report forms</a></li>
+<li class="chapter" data-level="4.3.4" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#clinical-trialsstudies"><i class="fa fa-check"></i><b>4.3.4</b> Clinical trials/studies</a></li>
+<li class="chapter" data-level="4.3.5" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#retrospective-analysis"><i class="fa fa-check"></i><b>4.3.5</b> Retrospective analysis</a></li>
+</ul></li>
 <li class="chapter" data-level="4.4" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#research-design-considerations"><i class="fa fa-check"></i><b>4.4</b> Research Design Considerations</a></li>
 <li class="chapter" data-level="4.5" data-path="clinical-data-uses.html"><a href="clinical-data-uses.html#conclusion-1"><i class="fa fa-check"></i><b>4.5</b> Conclusion</a></li>
 </ul></li>
@@ -214,7 +246,7 @@ often include timestamps and other supporting descriptors. For example, medicati
 <div id="unstructured-data-clinical-notes" class="section level3 hasAnchor" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> Unstructured Data / Clinical Notes<a href="clinical-data-types.html#unstructured-data-clinical-notes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Clinical notes are, perhaps unsurprisingly, generally shared as seemingly straightforward text files. However, the simple format should not be taken as a suggestion that the data are easy to interpret. Some EHR systems contain literally dozens of types of notes, covering specialties such as pathology or surgery; specific moments in care such as admission or discharge; particular procedures such as colonoscopies; patient-provider interactions such as telehealth or phone encounters, and many others. In addition to differing in content, these sources may have different layouts and formats, ranging from free-form reports to structured SOAP (subjective, objective, assessment, and plan) formats or even templated procedure reports. Understanding the types of notes available in a given context and where relevant data might be found is a key step in effectively using clinical notes.</p>
-<p>When used in EHR research, both structured data and clinical notes are generally de-identified to protect patient privacy. Patient ID numbers might be replaced with new identifiers, with linkages maintained by institutional “honest brokers” [INSERT REF HERE] charged with providing clinical data for research purposes. In some cases, dates may be changed as well. Clinical notes are generally “de-identified” through specialized software designed to remove names, dates, locations, and other sensitive details. Researchers working with institutions to access clinical data should be sure to understand local data de-identification practices.</p>
+<p>When used in EHR research, both structured data and clinical notes are generally de-identified to protect patient privacy. Patient ID numbers might be replaced with new identifiers, with linkages maintained by institutional “honest brokers” <span class="citation">(<a href="#ref-Dhir2008">Dhir et al. 2008</a>)</span> charged with providing clinical data for research purposes. In some cases, dates may be changed as well. Clinical notes are generally “de-identified” through specialized software designed to remove names, dates, locations, and other sensitive details. Researchers working with institutions to access clinical data should be sure to understand local data de-identification practices.</p>
 </div>
 </div>
 <div id="physiological" class="section level2 hasAnchor" number="3.3">
@@ -235,6 +267,12 @@ often include timestamps and other supporting descriptors. For example, medicati
 <div id="conclusion" class="section level2 hasAnchor" number="3.8">
 <h2><span class="header-section-number">3.8</span> Conclusion<a href="clinical-data-types.html#conclusion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
+</div>
+</div>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Dhir2008" class="csl-entry">
+Dhir, Rajiv, Ashok A Patel, Sharon Winters, Michelle Bisceglia, Dennis Swanson, Roger Aamodt, and Michael J Becich. 2008. <span>“A Multidisciplinary Approach to Honest Broker Services for Tissue Banks and Clinical Data.”</span> <em>Cancer</em> 113 (August): 1705–15. <a href="https://doi.org/10.1002/cncr.23768">https://doi.org/10.1002/cncr.23768</a>.
 </div>
 </div>
 <hr>
