@@ -24,7 +24,6 @@ Clinical data comes from a wide variety of sources and as such, requires careful
 
 ## Major clinical data types
 
-## Patient Records: Electronic Health Records
 
 Clinical data can come in many different forms, including demographics, diagnoses, lab results, vital signs, medication records, procedures, genetic reports, images, scanned documents, and notes written by physicians, nurses, and other clinicians.  Although any of these types of information might theoretically be available for use in clinical research,  some sources are more accessible than others.   As they are often stored directly in electronic medical record systems, notes, demographics, observations (labs, medications, procedures, and vitals), and images are the easiest data to work with, and are the focus of most Electronic Health Record (EHR) data research efforts. 
 
@@ -59,18 +58,19 @@ When used in EHR research, both structured data and clinical notes are generally
 
 
 
+### Physiological
 
+### Radiology
 
-## Physiological
+### Pathology
 
-## Radiology
+### Monitoring data
 
-## Pathology
-
+### Synthetic Data
 
 ## How to acquire clinical data
 
-## Secondary Sources
+### Secondary Sources
 
 
 ## Description of data
@@ -80,7 +80,5 @@ When used in EHR research, both structured data and clinical notes are generally
 ### Metadata
 
 
-
-## Discussion
 
 ## Conclusion
