@@ -1,0 +1,8 @@
+1-Introduction.md
+2-Clinical-Data-Types.md
+3-Clinical-Data-Uses.md
+4-Clinical-Data-Management.md
+5-Appendix-I:-Ontologies,-Vocabularies,-Taxonomies,-and-Standards.md
+About-this-Course.md
+About-the-Authors.md
+References.md
