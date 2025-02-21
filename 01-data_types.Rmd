@@ -59,12 +59,11 @@ When used in EHR research, both structured data and clinical notes are generally
 
 
 ### Physiological
+### Monitoring data
 
 ### Radiology
 
 ### Pathology
-
-### Monitoring data
 
 ### Synthetic Data
 
