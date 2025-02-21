@@ -14,9 +14,21 @@ ottrpal::set_knitr_image_path()
 
 ### Cancer Prevention and Care
 
-The near universal adoption of electronic health record (EHR) systems in the US has created unprecedented opportunities to improve cancer prevention and care. As described in previous chapters, EHR systems store comprehensive longitudinal records of a patient's interactions with a healthcare system, including data about demographics, conditions, family history, clinical notes, laboratory test results, medications, procedures, imaging, and genetic test reports. These data can be accessed not only by health professionals, but also by patients through patient portals. EHR data can also be used to enable data-driven interventions such as provider- and patient-facing clinical decision support (CDS) and population health management (PHM).
+The near universal adoption of electronic health record (EHR) systems in the US has created unprecedented opportunities to improve cancer prevention and care. As described in previous chapters, EHR systems store comprehensive longitudinal records of a patient's interactions with a healthcare system, including data about:
 
-CDS has been defined as tools that "provide clinicians, staff, patients, or other individuals with knowledge and person-specific information, intelligently filtered or presented at appropriate times, to enhance health and health care" [@Osheroff_2007]. Examples of widely adopted CDS tools with demonstrated effectiveness for cancer prevention, diagnosis, and care include
+ - demographics
+ - conditions
+ - family history
+ - clinical notes
+ - laboratory test results
+ - medications
+ - procedures
+ - imaging
+ - genetic test reports
+
+These data can be accessed not only by health professionals, but also by patients through patient portals. EHR data can also be used to enable data-driven interventions such as provider- and patient-facing clinical decision support (CDS) and population health management (PHM).
+
+CDS has been defined as tools that "provide clinicians, staff, patients, or other individuals with knowledge and person-specific information, intelligently filtered or presented at appropriate times, to enhance health and health care" [@Osheroff_2007]. Examples of widely adopted CDS tools with demonstrated effectiveness for cancer prevention, diagnosis, and care include:
 
   * provider and patient reminders for cancer screening
   * decision aids and shared decision-making tools (e.g., for prostate cancer treatment, lung cancer screening)
@@ -24,7 +36,7 @@ CDS has been defined as tools that "provide clinicians, staff, patients, or othe
   * chemotherapy decision support
   * at-home symptom care
 
-While CDS tools generally provide decision support focused on a specific patient at a time, PHM are strategies that target specific patient populations [@Swarthout_Bishop_2017]. PHM efforts generally consist of
+While CDS tools generally provide decision support focused on a specific patient at a time, PHM are strategies that target specific patient populations [@Swarthout_Bishop_2017]. PHM efforts generally consist of:
 
   * population algorithms that are applied over EHR and other data sources to identify individuals who are eligible for a specific healthcare intervention (e.g., colorectal cancer screening, tobacco cessation, HPV vaccination)
   * patient engagement strategies (e.g., patient portals, text messaging, chatbots, patient navigators) that provide education and access to those interventions
@@ -73,9 +85,11 @@ Cohort identification is important regardless of research study type, but to pro
 
 ### Case report forms
 
+We already have text for this
+
 ### Clinical trials/studies
 
-
+We already have text for this
 
 ### Retrospective analysis
 
