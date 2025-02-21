@@ -26,7 +26,13 @@ conclusion
 clinical-data-uses
 learning-objectives-1
 general-uses-of-clinical-data
+cancer-prevention-and-care
 types-of-questions-that-can-be-asked-with-clinical-data
+risk-prediction
+cohort-identification-for-research
+case-report-forms
+clinical-trialsstudies
+retrospective-analysis
 research-design-considerations
 conclusion-1
 clinical-data-management
