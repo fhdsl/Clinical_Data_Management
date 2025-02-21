@@ -28,6 +28,11 @@ The near universal adoption of electronic health record (EHR) systems in the US 
 
 These data can be accessed not only by health professionals, but also by patients through patient portals. EHR data can also be used to enable data-driven interventions such as provider- and patient-facing clinical decision support (CDS) and population health management (PHM).
 
+```{r, fig.align='center', echo = FALSE, fig.alt= "Electronic health records include many different kinds of records on individuals over time, including, clinical notes, family history information, lab result, images, and medication information. The image shows data on the same individual over a period of time. ", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g338f75828af_0_7" )
+```
+
+
 CDS has been defined as tools that "provide clinicians, staff, patients, or other individuals with knowledge and person-specific information, intelligently filtered or presented at appropriate times, to enhance health and health care" [@Osheroff_2007]. Examples of widely adopted CDS tools with demonstrated effectiveness for cancer prevention, diagnosis, and care include:
 
   * provider and patient reminders for cancer screening
