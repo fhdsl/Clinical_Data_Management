@@ -3,13 +3,12 @@ chapter_name: "Chapter "
 repo: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/
 rmd_files: ["index.Rmd",
             "00-intro.Rmd",
-            "01-intro_content.Rmd",
-            "02-data_types.Rmd",
-            "03-data_uses.Rmd",
-            "04-data_management.Rmd",
-            "05-analysis_language_data.Rmd",
-            "06-analysis_measures_data.Rmd",
-            "07-appendixI.Rmd",
+            "01-data_types.Rmd",
+            "02-data_uses.Rmd",
+            "03-data_management.Rmd",
+            "04-analysis_language_data.Rmd",
+            "05-analysis_measures_data.Rmd",
+            "06-appendixI.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
