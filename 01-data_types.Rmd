@@ -34,7 +34,7 @@ often include timestamps and other supporting descriptors. For example, medicati
 
 Structured data tables often describe entries in terms of codes from standardized vocabularies.  Diagnoses might be described with codes from the International Classification of Diseases (ICD) vocabulary, lab tests with Logical Observation Identifiers Names and Codes (LOINC), medications with National Drug Code (NDC), and procedures with Current Procedural Terminology (CPT) codes. These terms, or "billing codes", provide a common foundation that can be invaluable for identifying patients with a specific disease or who have received specified medications, particularly when integrating data from multiple sources. 
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Example of structured data, a table that includes patient id numbers, billing codes, dates, blood pressure measurements, weight measurements, and height measurements", out.width="100%"}
+```{r, fig.align='center', echo = FALSE, fig.alt= "Example of structured data, a table that includes patient id numbers, billing codes, dates, blood pressure measurements, weight measurements, height measurements, and prescribed medications coded using the National Drug Code (NDC)", out.width="100%"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g3385bea4ad0_0_0" )
 ```
 
