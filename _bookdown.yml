@@ -6,9 +6,7 @@ rmd_files: ["index.Rmd",
             "01-data_types.Rmd",
             "02-data_uses.Rmd",
             "03-data_management.Rmd",
-            "04-analysis_language_data.Rmd",
-            "05-analysis_measures_data.Rmd",
-            "06-appendixI.Rmd",
+            "04-appendixI.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
