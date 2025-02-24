@@ -123,6 +123,7 @@ Descriptive questions aim to summarize and describe the characteristics of a pat
 These questions help in understanding the baseline characteristics and epidemiology of diseases, which is crucial for planning further studies or developing public health interventions.
 
 2. **Treatment and Intervention Questions**
+
 Retrospective data can be used to examine the real-world effectiveness, safety, and patterns of treatment and interventions. These questions are critical for understanding how treatments are applied in clinical practice and their outcomes:
 
 - **Treatment Effectiveness**: What is the effectiveness of a specific treatment or intervention in reducing symptoms, improving quality of life, or achieving clinical outcomes in a real-world setting?
