@@ -73,7 +73,31 @@ Cohort identification is important regardless of research study type, but to pro
 
 ### Case report forms
 
-### Clinical trials/studies
+### Clinical studies and trials.
+
+Clinical data generated from clinical trials and observational studies form the backbone of evidence-based medicine. The ability to analyze and interpret this data enables researchers and clinicians to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.
+
+Clinical trials are tightly regulated studies, controlling patient recruitment and monitoring administration and impact of treatments or interventions [@What_are_clinical_trials_2023]. The goals of clinical trials include assessing the safety and efficacy of new treatments or interventions, comparing different/existing treatment options, determining the optimal dosage and administration of interventions, and identifying potential side effects or adverse events.
+
+::: {.definition}
+The NIH's definition of a clinical trial is "a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of those interventions on health-related biomedical or behavioral outcomes."
+:::
+
+The NIH provides 4 questions and additional clarifications to consider when identifying if a study is a clinical trial or just a clinical study [@CTDefinition].
+
+::: {.definition}
+**Prospectively assigned**: Refers to a pre-defined process (e.g., randomization) specified in an approved protocol that stipulates the assignment of research subjects (individually or in clusters) to one or more arms (e.g., intervention, placebo, or other control) of a clinical trial [@NIHClinicalTrialsProspectively].
+:::
+
+Here, we explore the different categories of questions that can be addressed using clinical trials data, ranging from the evaluation of treatment efficacy and safety to the exploration of predictive factors for disease prognosis and the personalization of medical care.
+
+1. **Efficacy and Effectiveness Questions**
+
+One of the primary objectives of clinical trials is to determine the **efficacy of new treatments or interventions**. Clinical data is used to answer fundamental questions such as "Is the new treatment effective?" and "How does its effectiveness compare to existing treatments?"
+
+Researchers design studies to measure the **magnitude of treatment effects**, comparing outcomes between treatment and control groups (e.g., a new drug versus a placebo or standard care).
+
+Beyond controlled settings, data from real-world evidence (RWE) studies can further address questions about the effectiveness of treatments when applied in routine clinical practice. For example, "Is Drug A more effective than Drug B in managing hypertension in a real-world patient population?" Such questions help to assess how treatments perform outside the controlled environment of clinical trials where patient adherence comorbidities, and polypharmacy may influence outcomes. While clinical trials are an important source of real-world data (RWD), they are typically conducted under tightly controlled conditions, which may not fully reflect the complexities of real-world studies. This makes RWE particularly valuable for understanding how treatments work when patients have varying levels of adherence or multiple chronic conditions that are often excluded from clinical trails.
 
 ### Retrospective analysis
 
