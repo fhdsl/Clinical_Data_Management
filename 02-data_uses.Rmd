@@ -153,6 +153,7 @@ Retrospective analyses are often used to identify potential risk factors for dis
 These questions are critical for developing tools that help clinicians assess risk and make more informed decisions in preventive care and early intervention.
 
 5. **Healthcare Utilization and Cost Questions**
+
 Understanding how healthcare resources are utilized and the associated costs is important for optimizing healthcare delivery. Retrospective data can provide valuable insights into patterns of care and resource allocation for questions such as:
 
 - **Healthcare Resource Utilization**: What are the patterns of healthcare utilization (e.g., hospitalizations, emergency room visits, outpatient visits) for patients with a specific condition? How does utilization vary by patient demographics, disease severity, or geographic location?
