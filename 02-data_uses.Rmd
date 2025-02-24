@@ -107,7 +107,7 @@ Avoiding medical jargon and providing definitions or examples can help ensure th
 
 3. **Experience and Quality of Life Questions**
 
-Understanding how health conditions and treatments affect participants' daily lives and well-being is essential, particularly for those from marginalized communities who may experience unique challenges.
+Understanding how health conditions and treatments affect participants' daily lives and well-being is essential, particularly for those from communities who experience health disparities  and may also experience unique challenges.
 
 - **Daily Living and Social Functioning**: Questions like "How often do your health conditions affect your ability to perform daily tasks (e.g., cooking, cleaning, working)?" can help assess the impact on daily life, with options ranging from "never" to "always."
 - **Emotional and Psychological Well-Being**: Including questions such as "In the past week, how often have you felt anxious or depressed?" using a scale from "not at all" to "very often" can provide insights into mental health needs.
