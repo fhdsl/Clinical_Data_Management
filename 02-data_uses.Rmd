@@ -73,6 +73,107 @@ Cohort identification is important regardless of research study type, but to pro
 
 ### Case report forms
 
+In clinical research, case report forms (CRFs) are essential tools for collecting standardized data from study participants. Note that case report forms are any paper or form that will be filled in at the case or participant level. By that definition, even a consent form is a case report form! And each clinical study may utilize multiple CRFs (e.g., one for consent, another for medical history, another for reporting any adverse effects). CRFs are useful for several tasks already discussed within this chapter -- specifically, tracking adverse events or outcomes (like those discussed in the Risk Prediction section) or tracking demographics and medical history for identifying cohorts (as discussed in the Cohort Identification section). CRFs are also useful for topics this chapter will discuss in later sections (e.g., Retrospective analyses).
+
+Designing CRFs that are inclusive, accessible, and sensitive to the diverse needs of participants, particularly marginalized groups, requires careful consideration. Questions within CRFs should be formulated to gather comprehensive and accurate clinical data while ensuring participants feel safe, respected, and comfortable. This section explores the types of questions that can be asked using CRFs with a focus on **accessibility, sensitivity, inclusivity, and comfort for marginalized people**
+
+::: {.notice}
+
+While within a study, CRFs help to ensure standardization in data collection, there may be a lack of standardization when comparing data between studies if each study did not use the same CRFs or comparable/subsets of questions within forms. This section will provide guidelines for types of questions that may be found within CRFs and writing these questions; however, there aren't necessarily templates that have been used widely within the field. Further, your specific study needs may also require different or additional types of questions -- the guidelines within this section are not exhaustive/all-encompassing of what may be encountered within the field.
+
+:::
+
+Here, we explore the different categories of questions that may be included within case report forms:
+
+1. **Demographic and Socioeconomic Questions**
+
+Capturing demographic and socioeconomic data is fundamental in clinical research to understand the background and diversity of study participants. However, these questions must be asked in a manner that respects privacy, avoids assumptions, and is inclusive of all identities. It’s also good practice in order to respect privacy to include an option allowing the participants to leave the question unanswered or respond with “prefer not to answer”.
+
+- **Sex or Gender**: When asking about gender, it is crucial to go beyond binary options (e.g., male, female) and include a range of choices such as non-binary, genderqueer, or “prefer to self-describe.”
+- **Ethnicity and Race**: Ethnicity and race questions should use inclusive and respectful language, allowing participants to self-identify rather than selecting from a predefined list.
+- **Socioeconomic Status**: Questions about employment, income, or education should be framed to capture social determinants of health without making participants feel judged. For example, asking, "What is your current employment status?" with choices that include full-time, part-time, unemployed, student, and unable to work can help gather relevant data without stigma.
+
+It is essential to use neutral, non-judgmental language and to explain why these questions are being asked, ensuring participants understand the relevance of their responses.
+
+2. **Health and Medial History Questions**
+
+Health and medical history questions provide critical information about participants' baseline conditions and potential risk factors. These questions should be framed clearly and respectfully to avoid any discomfort.
+
+- **Medical Conditions and History**: Questions about past and present health conditions should use clear, accessible language. For example, "Have you ever been diagnosed with any of the following conditions? (Please check all that apply)" followed by a comprehensive and inclusive list.
+- **Medication Use**: Questions about current and past medications should include over-the-counter and alternative therapies, and space should be provided for free-text responses to capture additional details.
+- **Disability and Functional Status**: For many populations, it is important to use person-first language, such as "Do you have any physical, sensory, or cognitive impairments that you would like us to be aware of?" and provide space for participants to describe their specific needs. However, different populations have different preferences. The "Disability Language Style Guide" from the National Center on Disability and Journalism provides some basic guidelines, thorough discussion, and community specific advice on this topic [@ncdj_style_guide].
+
+Avoiding medical jargon and providing definitions or examples can help ensure that participants understand the questions, and confidentiality should be emphasized to encourage honest responses.
+
+3. **Experience and Quality of Life Questions**
+
+Understanding how health conditions and treatments affect participants' daily lives and well-being is essential, particularly for those from marginalized communities who may experience unique challenges.
+
+- **Daily Living and Social Functioning**: Questions like "How often do your health conditions affect your ability to perform daily tasks (e.g., cooking, cleaning, working)?" can help assess the impact on daily life, with options ranging from "never" to "always."
+- **Emotional and Psychological Well-Being**: Including questions such as "In the past week, how often have you felt anxious or depressed?" using a scale from "not at all" to "very often" can provide insights into mental health needs.
+- **Support Systems and Social Networks**: Asking about social support (e.g., "Do you have someone you can rely on for emotional support?") can help identify participants' needs for social and emotional resources.
+
+Using sensitive language and providing mental health support resources where needed is crucial when discussing emotional well-being to avoid triggering emotional distress.
+
+4. **Sexual and Reproductive Health Questions**
+
+Questions about sexual and reproductive health must be asked with sensitivity, as they can be deeply personal, particularly for marginalized groups who may face stigma.
+
+- **Sexual Orientation and Gender Identity (SOGI)**: Instead of just predefined categories, open-ended questions like "How would you describe your sexual orientation?" and "What is your gender identity?" allow participants to self-identify. Offering the option to skip these questions respects participants' privacy.  Options can be provided with a space or text box for the person to fill in their own descriptor, but having the categorical data will allow for easier analysis for those that select one rather than every response being from variable open text responses.
+- **Reproductive Health**: Questions about menstrual health, contraception, or pregnancy should be framed neutrally. For example, "Are you currently using any form of contraception? If yes, please specify."
+- **Sexual Activity and History**: Questions should be direct but framed sensitively, such as "Are there any sexual health concerns you would like to discuss? Your answers will help us understand how to better support your care needs."
+
+These questions should always be optional, with confidentiality emphasized to encourage honest, comfortable participation.
+
+5. **Treatment Preferences and Decision-Making Questions**
+
+Understanding participants’ preferences for treatment and decision-making is vital for providing patient-centered care, especially for those from historically underserved groups.
+
+- **Decision-Making Preferences**: Questions like "How involved would you like to be in decisions about your healthcare?" offer a range of choices from “I prefer to make decisions myself” to “I prefer my healthcare provider to make decisions,” allowing participants to express their autonomy.
+- **Cultural and Religious Considerations**: Asking, "Are there any cultural, religious, or personal beliefs that we should consider when discussing treatment options with you?" ensures that care is respectful and culturally appropriate.
+- **Treatment Burden**: Questions such as "What level of inconvenience or side effects would be acceptable to you when considering a treatment?" help to gauge participants' preferences and comfort levels.
+
+These questions should be framed to respect participants’ autonomy and encourage honest responses without fear of judgment.
+
+6. **Accessibility and Accommodation Needs Questions**
+
+To ensure that all participants can fully engage with the study, it is essential to ask about accessibility and accommodation needs.
+
+- **Language and Communication Needs**: "What is your preferred language for communication? Do you need an interpreter or translated materials?" These questions help ensure language inclusivity.
+- **Physical Accessibility**: Asking, "Do you require any specific accommodations to participate in this study (e.g., wheelchair access, hearing aids, visual aids)?" ensures physical accessibility.
+- **Format Preferences**: "Would you prefer to complete this form online, on paper, or verbally with assistance?" helps accommodate different needs and preferences.
+Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs.
+
+Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs.
+
+7. **Cultural Sensitivity and Identity Questions**
+
+CRFs should respect diverse cultural backgrounds, values, and identities without perpetuating biases or assumptions.
+
+- **Cultural Identity and Practices**: An open-ended question such as "Are there any cultural practices or beliefs that are important for us to be aware of in your care?" allows participants to share relevant information.
+- **Dietary Restrictions and Preferences**: Asking, "Do you have any dietary restrictions or preferences that are culturally or religiously motivated?" ensures that these are respected.
+- **Community and Belonging**: "Is there anything about your community or background that you would like us to know to provide better care?" encourages participants to share relevant aspects of their identity.
+
+These questions should be open-ended, allowing participants to skip questions they find irrelevant or uncomfortable.
+
+8. **Ensuring Comfort, Trust, and Privacy Questions**
+
+Fostering a sense of safety and trust is especially important for marginalized individuals who may have experienced discrimination in healthcare settings.
+
+- **Comfort and Confidentiality**: Asking, "Do you feel comfortable with the way your information is being collected and stored? Are there any specific concerns you would like to address?" helps build trust.
+- **Feedback and Preferences**: "Is there anything about this form or the study process that you find confusing, uncomfortable, or concerning?" invites participants to share their feedback.
+- **Consent and Voluntary Participation**: Questions like, "Would you like to be contacted about the results of this study or for future research opportunities? Participation is entirely voluntary." reinforce autonomy and respect.
+
+Reminding participants of the confidentiality and voluntary nature of their involvement can help foster a trusting environment.
+
+::: {.warning}
+
+The guidelines above sometimes suggest use of open-ended questions where participants would provide free-text responses rather than selecting pre-defined categories. This will require researchers to process those free-text responses and may decrease the overall standardization.
+
+:::
+
+Designing inclusive and sensitive CRFs for clinical studies requires a thoughtful approach that respects the diversity, privacy, and comfort of all participants, especially those from marginalized communities. By using accessible language, offering multiple options, respecting autonomy, and providing a safe space for participants to express themselves, researchers can gather meaningful and accurate data while ensuring participants feel valued and respected. These considerations are vital to fostering a more inclusive and equitable approach to clinical research. Case report forms (CRFs) are often tailored to specific studies and may vary widely in structure and content, lacking standardization across different projects. Despite this, certain themes are commonly expected in CRFs, including sections on participant demographics, medical history, treatment outcomes, and adverse events, ensuring essential data collection across diverse study designs. By thoughtfully addressing both unique study requirements and universally relevant data points, researchers can optimize CRFs for consistency and inclusivity across clinical studies.
+
 ### Clinical trials/studies
 
 ### Retrospective analysis
