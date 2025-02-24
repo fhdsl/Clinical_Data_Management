@@ -139,7 +139,7 @@ These questions should be framed to respect participants’ autonomy and encoura
 
 To ensure that all participants can fully engage with the study, it is essential to ask about accessibility and accommodation needs.
 
-- **Language and Communication Needs**: "What is your preferred language for communication? Do you need an interpreter or translated materials?" These questions help ensure language inclusivity.
+- **Language and Communication Needs**: "What is your preferred language for communication? Do you need an interpreter or translated materials?" These questions help ensure that participants can understand the materials.
 - **Physical Accessibility**: Asking, "Do you require any specific accommodations to participate in this study (e.g., wheelchair access, hearing aids, visual aids)?" ensures physical accessibility.
 - **Format Preferences**: "Would you prefer to complete this form online, on paper, or verbally with assistance?" helps accommodate different needs and preferences.
 Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs.
