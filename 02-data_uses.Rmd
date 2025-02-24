@@ -133,6 +133,7 @@ Retrospective data can be used to examine the real-world effectiveness, safety, 
 By examining historical data, researchers can gain insights into how different treatments perform outside the controlled environment of clinical trials, thereby informing clinical decision-making and guidelines.
 
 3. **Outcome and Prognostic Questions**
+
 Understanding patient outcomes and prognostic factors is central to retrospective analyses. These questions focus on the end results of healthcare practices and patient management, including survival, complications, and quality of life: 
 
 - **Survival and Mortality**: What are the survival rates and mortality rates associated with a particular disease, condition, or treatment? What factors are associated with increased or decreased survival rates?
