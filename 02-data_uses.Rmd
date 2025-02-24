@@ -117,7 +117,7 @@ Using sensitive language and providing mental health support resources where nee
 
 4. **Sexual and Reproductive Health Questions**
 
-Questions about sexual and reproductive health must be asked with sensitivity, as they can be deeply personal, particularly for marginalized groups who may face stigma.
+Questions about sexual and reproductive health must be asked with sensitivity, as they can be deeply personal, particularly for groups who may face stigma.
 
 - **Sexual Orientation and Gender Identity (SOGI)**: Instead of just predefined categories, open-ended questions like "How would you describe your sexual orientation?" and "What is your gender identity?" allow participants to self-identify. Offering the option to skip these questions respects participants' privacy.  Options can be provided with a space or text box for the person to fill in their own descriptor, but having the categorical data will allow for easier analysis for those that select one rather than every response being from variable open text responses.
 - **Reproductive Health**: Questions about menstrual health, contraception, or pregnancy should be framed neutrally. For example, "Are you currently using any form of contraception? If yes, please specify."
