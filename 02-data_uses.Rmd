@@ -148,7 +148,7 @@ Providing multiple options and allowing participants to request changes at any t
 
 7. **Cultural Sensitivity and Identity Questions**
 
-CRFs should respect diverse cultural backgrounds, values, and identities without perpetuating biases or assumptions.
+CRFs should respect different cultural backgrounds, values, and identities without perpetuating biases or assumptions.
 
 - **Cultural Identity and Practices**: An open-ended question such as "Are there any cultural practices or beliefs that are important for us to be aware of in your care?" allows participants to share relevant information.
 - **Dietary Restrictions and Preferences**: Asking, "Do you have any dietary restrictions or preferences that are culturally or religiously motivated?" ensures that these are respected.
