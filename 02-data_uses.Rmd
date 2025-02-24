@@ -169,6 +169,7 @@ Retrospective analysis can be used to evaluate the quality and safety of care pr
 These questions help in assessing healthcare quality, identifying gaps in care, and developing interventions to enhance patient safety and satisfaction.
 
 7. **Temporal and Trend Analysis Questions**
+
 Retrospective studies often involve analyzing temporal patterns to understand how diseases, treatments, or outcomes change over time. These questions help in recognizing trends and patterns that can inform future research and policy decisions:
 
 - **Temporal Trends in Disease Incidence and Prevalence**: How have the incidence and prevalence of a specific disease changed over the past decade? Are there seasonal or cyclical patterns in disease occurrence?
