@@ -158,7 +158,7 @@ These questions should be open-ended, allowing participants to skip questions th
 
 8. **Ensuring Comfort, Trust, and Privacy Questions**
 
-Fostering a sense of safety and trust is especially important for marginalized individuals who may have experienced discrimination in healthcare settings.
+Fostering a sense of safety and trust is especially important for individuals who may have experienced discrimination in healthcare settings.
 
 - **Comfort and Confidentiality**: Asking, "Do you feel comfortable with the way your information is being collected and stored? Are there any specific concerns you would like to address?" helps build trust.
 - **Feedback and Preferences**: "Is there anything about this form or the study process that you find confusing, uncomfortable, or concerning?" invites participants to share their feedback.
