@@ -89,7 +89,7 @@ Here, we explore the different categories of questions that may be included with
 
 Capturing demographic and socioeconomic data is fundamental in clinical research to understand the background of study participants. However, these questions must be asked in a manner that respects privacy, avoids assumptions, and helps identify people with different life experiences. It’s also good practice in order to respect privacy to include an option allowing the participants to leave the question unanswered or respond with “prefer not to answer”.
 
-- **Sex or Gender**: When asking about gender, it is crucial to go beyond binary options (e.g., male, female) and include a range of choices such as non-binary, genderqueer, or “prefer to self-describe.”
+- **Sex and Gender**: When asking about gender and sex include an option of “prefer to self-describe” to capture more information.
 - **Ethnicity and Race**: Ethnicity and race questions should use inclusive and respectful language, allowing participants to self-identify rather than selecting from a predefined list.
 - **Socioeconomic Status**: Questions about employment, income, or education should be framed to capture social determinants of health without making participants feel judged. For example, asking, "What is your current employment status?" with choices that include full-time, part-time, unemployed, student, and unable to work can help gather relevant data without stigma.
 
