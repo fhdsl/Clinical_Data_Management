@@ -99,7 +99,7 @@ It is essential to use neutral, non-judgmental language and to explain why these
 
 Health and medical history questions provide critical information about participants' baseline conditions and potential risk factors. These questions should be framed clearly and respectfully to avoid any discomfort.
 
-- **Medical Conditions and History**: Questions about past and present health conditions should use clear, accessible language. For example, "Have you ever been diagnosed with any of the following conditions? (Please check all that apply)" followed by a comprehensive and inclusive list.
+- **Medical Conditions and History**: Questions about past and present health conditions should use clear, accessible language. For example, "Have you ever been diagnosed with any of the following conditions? (Please check all that apply)" followed by a comprehensive list containing all necessary options.
 - **Medication Use**: Questions about current and past medications should include over-the-counter and alternative therapies, and space should be provided for free-text responses to capture additional details.
 - **Disability and Functional Status**: For many populations, it is important to use person-first language, such as "Do you have any physical, sensory, or cognitive impairments that you would like us to be aware of?" and provide space for participants to describe their specific needs. However, different populations have different preferences. The "Disability Language Style Guide" from the National Center on Disability and Journalism provides some basic guidelines, thorough discussion, and community specific advice on this topic [@ncdj_style_guide].
 
