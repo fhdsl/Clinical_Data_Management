@@ -108,7 +108,7 @@ Beyond controlled settings, data from real-world evidence (RWE) studies can furt
 Safety is a critical aspect of any clinical study, and clinical data is essential in identifying and characterizing the safety profile of new treatments. Questions like "What are the common adverse effects of the new treatment?" or "What is the incidence of serious adverse events (SAEs) in patients receiving Drug A?" are addressed by carefully monitoring and recording adverse events throughout the study. Comparative safety questions also arise, such as "Does Drug A have fewer adverse effects compared to Drug B?" These questions are crucial in weighing the benefits of a treatment against its risk and in identifying specific populations that may be at higher risk of adverse reactions.
 
 ::: {.definition}
-**Serious Adverse Events (SAEs)**: Any medical occurrence during a clinical trial or medical treatment that results in significant negative outcomes, such as death, life-threatening situations, hopsitalization (or its prolongation), persistent or significant disability, or congenital anomalies. SAEs also include any event that requires intervention to prevent one of these outcomes.
+**Serious Adverse Events (SAEs)**: Any medical occurrence during a clinical trial or medical treatment that results in significant negative outcomes, such as death, life-threatening situations, hospitalization (or its prolongation), persistent or significant disability, or congenital anomalies. SAEs also include any event that requires intervention to prevent one of these outcomes.
 :::
 
 ::: {.definition}
