@@ -166,7 +166,7 @@ These questions can inform healthcare policy, budget planning, and the developme
 
 Retrospective analysis can be used to evaluate the quality and safety of care provided to patients, identifying areas for improvement and potential patient safety concerns, helping to answer questions such as:
 
-- **Quality Indicators**: What are the rates of adherence to clinical guidelines, protocols, or standards of care in managing a specific condition? How does adherence impact patient outcomes?
+- **Quality Indicators**: Quality indicators are standardized measures of health care quality and may focus on more specialized groups of care like preventative, inpatient or emergency care, pediatric or maternal health, etc. What are the levels of observed mortality or morbidity for a certain population in a specific setting? How utilized are certain procedures? [@AHRQ]
 - **Adverse Events and Safety**: What is the incidence of adverse events, medication errors, or healthcare-associated infections in a particular patient population? What factors are associated with higher or lower rates of adverse events?
 - **Patient Satisfaction and Experience**: What are the reported levels of patient satisfaction with healthcare services? How does satisfaction vary by demographic or clinical characteristics?
 
