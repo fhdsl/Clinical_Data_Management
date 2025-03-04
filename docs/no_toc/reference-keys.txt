@@ -1,3 +1,9 @@
+def:unlabeled-div-1
+def:unlabeled-div-2
+def:unlabeled-div-3
+def:unlabeled-div-4
+def:unlabeled-div-5
+def:unlabeled-div-6
 introduction
 motivation
 target-audience
@@ -29,7 +35,7 @@ types-of-questions-that-can-be-asked-with-clinical-data
 risk-prediction
 cohort-identification-for-research
 case-report-forms
-clinical-trialsstudies
+clinical-studies-and-trials
 retrospective-analysis
 research-design-considerations
 conclusion-1
