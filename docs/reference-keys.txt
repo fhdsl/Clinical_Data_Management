@@ -34,7 +34,7 @@ cancer-prevention-and-care
 types-of-questions-that-can-be-asked-with-clinical-data
 risk-prediction
 cohort-identification-for-research
-case-report-forms
+case-report-forms-crfs
 clinical-studies-and-trials
 retrospective-analysis
 research-design-considerations
