@@ -45,15 +45,14 @@ While CDS tools generally provide decision support focused on a specific patient
 
 Several PHM programs have demonstrated to be effective in increasing the uptake of cancer prevention. For example, the colorectal cancer screening program at Kaiser Permanente uses digital (i.e., text messaging, patient portal), mailed, and patient navigation approaches to increase colorectal cancer screening by mailing Fecal Immunohistochemical Test (FIT) kits to patients' homes [@Gupta2020]. Also the Cancer Moonshot BRIDGE trial used the GARDE platform [@Bradshaw2022] (ITCR-funded) to identify candidates for genetic testing of hereditary cancer syndromes based on EHR data; and for patient outreach, pre- and post-test education via automated chatbots [@Kaphingst2024].
 
-https://pubmed.ncbi.nlm.nih.gov/31951474/
-
-
 
 <img src="resources/images/02-data_uses_files/figure-html//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g338f75828af_0_28.png" alt="Clinical Decision Support (CDS) can help patients and clinicians make decisions about an individual’s care, while Population Health Management (PHM) can help identify individuals for interventions and engagement. The image shows a single person getting a colorectal screening reminder for CDS and a population being identified for possibly needing colorectal screening for PHM." width="100%" style="display: block; margin: auto;" />
 
 Clinical Decision Support (CDS) can help patients and clinicians make decisions about an individual’s care, while Population Health Management (PHM) can help identify individuals for interventions and engagement. The image shows a single person getting a colorectal screening reminder for CDS and a population being identified for possibly needing colorectal screening for PHM. 
 
-While some CDS and PHM approaches have been successfully adopted widely, emerging technologies such as the use of generative AI approaches to analyze diagnostic imaging, large language models (LLMs) to extract information from narrative texts (e.g., clinical notes), LLM-based chatbots to communicate with patients, and digital health tools such as home-based sensors are creating unprecedented opportunities for next generation CDS and PHM. These approaches have the potential to enable significant breakthroughs through the implementation of patient-tailored cancer prevention and care at a population scale. Nevertheless, substantial research is needed to ensure effective, fair, and equitable implementation of these CDS and PHM interventions.
+While some CDS and PHM approaches have been successfully adopted widely, emerging technologies such as the use of generative AI approaches to analyze diagnostic imaging, large language models (LLMs) to extract information from narrative texts (e.g., clinical notes), LLM-based chatbots to communicate with patients, and digital health tools such as home-based sensors are creating unprecedented opportunities for next generation CDS and PHM. These approaches have the potential to enable significant breakthroughs through the implementation of patient-tailored cancer prevention and care at a population scale. Nevertheless, substantial research is needed to ensure effective and fair implementation of these CDS and PHM interventions.
+
+
 
 ## Types of questions that can be asked with clinical data
 
@@ -203,8 +202,8 @@ One of the most important challenges in using EHR data in cancer research is tha
 
 Recent advances in sophisticated and costly technology such as genetic testing, artificial intelligence, and digital health, which are disproportionately available in high resource healthcare systems further compound the problem. Therefore, cancer researchers increasingly need to use intentional methods to prevent, identify, and correct for biases in EHR data. For example, the National Institutes of Health Pragmatic Trials Collaboratory has made several recommendations to address EHR data biases in research [@BoydCCT2023; @BoydJAMIA2023]:
 
-* Include data from low resource healthcare settings such as community health centers that provide care for patients who are racially diverse, have low socioeconomic status and live in rural areas.
-* Engage with diverse communities in study design and conduct to ensure proper representation, data collection, analysis, and representation.
+* Include data from low resource healthcare settings such as community health centers that provide care for patients who have low socioeconomic status and live in rural areas.
+* Engage with communities during study design and study conduct to ensure proper data collection, analysis, and representation.
 * Use data collection methods for self-reported data that rely on more accessible technology such as text messaging, using accessible and culturally adapted communication.
 * Include subgroup analysis by different demographic groups according to variables such as socioeconomic status, race, ethnicity, sex, geographical location, and social determinants of health.
 
