@@ -1,6 +1,6 @@
 ---
 title: "Informatics Technology for Cancer Research (ITCR): Clinical Data Analysis for Cancer Informatics "
-date: "February, 2025"
+date: "March, 2025"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
