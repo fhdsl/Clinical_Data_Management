@@ -1,0 +1,31 @@
+---
+title: Clinical Data Types
+---
+
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
+
+
+# Specific Clinical Data Types
+
+
+## Learning Objectives
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: 1. Explain why clinical data is unique compared to other types of biomedical research data, 2. Describe the difference between Structured and Unstructured data, 3. List major sources and types of clinical data", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g3385bea4ad0_0_30" )
+```
+
+
+
+### Physiological
+
+### Monitoring data
+
+### Radiology
+
+### Pathology
+
+### Synthetic Data
+
+## Summary
