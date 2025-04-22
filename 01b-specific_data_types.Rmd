@@ -1,14 +1,4 @@
----
-title: Clinical Data Types
----
-
-```{r, include = FALSE}
-ottrpal::set_knitr_image_path()
-```
-
-
 # Specific Clinical Data Types
-
 
 ## Learning Objectives
 
@@ -18,14 +8,43 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0Ge
 
 
 
-### Physiological
+## Physiological
 
-### Monitoring data
+## Monitoring data
 
-### Radiology
+:::bluebox
+This section was written by: Jennifer Kelleher, Ph.D.^1^; Abigail S. Robbertz, Ph.D.^1^; and Meghan E. McGrady, Ph.D.^1,2^
 
-### Pathology
+**NOTE:** Jennifer Kelleher, Ph.D.^1^ and Abigail S. Robbertz, Ph.D.^1^ contributed equally.
 
-### Synthetic Data
+^1^ Center for Adherence and Self-Management, Division of Behavioral Medicine and Clinical Psychology, Cincinnati Children’s Hospital Medical Center, Cincinnati, OH, USA
+
+^2^ Department of Pediatrics, University of Cincinnati College of Medicine, Cincinnati, OH, USA
+
+The work discussed in this section was also supported by the National Cancer Institute at the National Institutes of Health (R21CA263704, K07CA200668) to MEM. JK and ASR are supported by the Eunice Kennedy Shriver National Institute of Child Health & Human Development at the National Institutes of Health (T32HD068223). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
+:::
+
+Electronic monitoring devices are digital tools that can be used to track health behaviors such as:
+
+* Sleep
+* Physical activity
+* Medication-taking
+
+Electronic monitoring devices enable researchers to track day-to-day health behaviors in the patient’s **"real-world" setting**. This allows researchers to explore patterns or changes in a patient’s health behavior and provides a richer understanding of **daily behavior over time**. 
+
+
+### Benefits of Monitoring Data
+
+1) Electronic monitoring devices often include data transmission abilities that enable healthcare providers or researchers to access these data in near **real-time** potentially informing intervention and/or medical decision-making.
+
+1) Electronic monitoring devices also have the potential to produce **more accurate** estimates of health behaviors than alternative strategies (e.g., self-report) as they are not subject to recall bias and can detect efforts to inflate adherence due to social desirability.
+
+
+
+## Radiology
+
+## Pathology
+
+## Synthetic Data
 
 ## Summary
