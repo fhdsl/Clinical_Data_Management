@@ -6,9 +6,8 @@ def:unlabeled-div-5
 def:unlabeled-div-6
 introduction
 motivation
-target-audience
+topics-covered
 curriculum
-objectives
 clinical-data-types
 learning-objectives
 clinical-data-is-unique
