@@ -29,8 +29,10 @@ Clinical data can come in many different forms, including
 * patient demographics
 * medical history or records such as diagnoses, lab results, vital signs, medication records, or procedure history
 * genetic reports
+* health monitor data
 * images
 * scanned documents, and notes written by physicians, nurses, and other clinicians
+* survey/ case report form (CRF responses)
 * and more ...
 
 ```{r fig.align='center', echo = FALSE, fig.alt= "Clinical data refers to information collected from patients during healthcare delivery, clinical trials, and medical research and could include demographics, medical history, lab results, imaging, treatment outcomes, and more", out.width="100%"}
@@ -39,7 +41,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0Ge
 
 Some sources of clinical data are more prevalent and readily obtainable than others. For instance, notes, demographics, images, and histories or observations/records (lab results, vitals, medications, procedures) are often stored directly in electronic medical record systems making them more easily accessible and so are the focus of most Electronic Health Record (EHR) data research efforts.
 
-### Structured Data
+### Structured data
 
 Observational records such as test results and demographic data are often collectively referred to as “structured data”, as they are stored in electronic health record databases and often provided to researchers in tabular form. Structured data types frequently used in EHR research include demographics, diagnoses, lab values, procedures, vitals, and medication records. The tables these data are stored in may be indexed by a patient or visit ID and often include timestamps and other supporting descriptors. For example, medication orders might specify the drug name, class, dose, unit, quantity, route, frequency, and other instructions.
 
@@ -51,7 +53,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0Ge
 
 As we've described it, structured clinical data is expected to have similarities, although specific details may vary based on the type of EHR being used and any customizations to the EHR for the specific environment or institution in which data was collected (e.g., any specialized pre-processing by institutional research offices prior to providing data to researchers). So it is important for researchers to consider differences present in their data if they've obtained it from multiple contexts or institutions.
 
-### Unstructured Data / Clinical Notes
+### Unstructured data / clinical notes
 
 Clinical notes are, perhaps unsurprisingly, generally shared as seemingly straightforward text files. However, the simple format should not be taken as a suggestion that the data are easy to interpret. Some EHR systems contain literally dozens of types of notes, covering specialties such as pathology or surgery; specific moments in care such as admission or discharge; particular procedures such as colonoscopies; patient-provider interactions such as telehealth or phone encounters, and many others. In addition to differing in content, these sources may have different layouts and formats, ranging from free-form reports to structured SOAP (subjective, objective, assessment, and plan) formats or even templated procedure reports. Understanding the types of notes available in a given context and where relevant data might be found is a key step in effectively using clinical notes.
 
