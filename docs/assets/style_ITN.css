@@ -271,6 +271,19 @@ li.appendix span, li.part span { /* for TOC part names */
 /* Sidebar formating --------------------------------------------*/
 /* from r-pkgs.org*/
 
+div.bluebox{
+  border: 4px #14395f;
+  border-style: solid;
+  padding: 1em;
+  margin: 1em 0;
+  padding-left: 40px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-color: #e8ebee;
+  text-align: left;!important
+}
+
 div.notice{
   border: 4px #193a5c;
   border-style: solid;
