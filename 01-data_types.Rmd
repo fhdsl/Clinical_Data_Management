@@ -9,6 +9,7 @@ ottrpal::set_knitr_image_path()
 
 # Clinical Data Types
 
+Clinical data is health-related information collected from patients throughout their healthcare journey. It may come in many forms and its sensitive nature requires careful management by researchers. 
 
 ## Learning Objectives
 
