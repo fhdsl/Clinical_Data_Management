@@ -9,7 +9,7 @@ ottrpal::set_knitr_image_path()
 
 # Clinical Data Types
 
-Clinical data is health-related information collected from patients throughout their healthcare journey. It may come in many forms and its sensitive nature requires careful management by researchers. 
+Clinical data is health-related information collected from patients throughout their healthcare journey. It may come in many forms and its sensitive nature requires careful management by researchers.
 
 ## Learning Objectives
 
@@ -44,7 +44,13 @@ Some sources of clinical data are more prevalent and readily obtainable than oth
 
 ### Structured data
 
-Observational records such as test results and demographic data are often collectively referred to as “structured data”, as they are stored in electronic health record databases and often provided to researchers in tabular form. Structured data types frequently used in EHR research include demographics, diagnoses, lab values, procedures, vitals, and medication records. The tables these data are stored in may be indexed by a patient or visit ID and often include timestamps and other supporting descriptors. For example, medication orders might specify the drug name, class, dose, unit, quantity, route, frequency, and other instructions.
+Observational records such as test results and demographic data are often collectively referred to as “structured data”, as they are stored in electronic health record databases and often provided to researchers in tabular form. Structured data types frequently used in EHR research consist of comprehensive longitudinal records of a patient's interactions with a healthcare system and may include demographics, diagnoses, lab values, procedures, vitals, and medication records.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Electronic health records include many different kinds of records on individuals over time, including, clinical notes, family history information, lab result, images, and medication information. The image shows data on the same individual over a period of time. ", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g338f75828af_0_7" )
+```
+
+The structured nature of this data allows for it to be stored in tables which may be indexed by a patient or visit ID and often include timestamps and other supporting descriptors. For example, medication orders might specify the drug name, class, dose, unit, quantity, route, frequency, and other instructions.
 
 Structured data tables often describe entries in terms of codes from standardized vocabularies. Diagnoses might be described with codes from the International Classification of Diseases (ICD) vocabulary, lab tests with Logical Observation Identifiers Names and Codes (LOINC), medications with National Drug Code (NDC), and procedures with Current Procedural Terminology (CPT) codes. These terms, or "billing codes", provide a common foundation that can be invaluable for identifying patients with a specific disease or who have received specified medications, particularly when integrating data from multiple sources.
 
