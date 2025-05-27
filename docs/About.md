@@ -15,8 +15,8 @@ These credits are based on our [course contributors table guidelines](https://gi
 |Lead Content Instructor(s)|[FirstName LastName](link to personal website)|
 |Lecturer(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved| Delivered the course in some way - video or audio|
 |Content Author(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved | If any other authors besides lead instructor| 
-|Content Contributor(s) (include section name/link in parentheses) - make new line if more than one section involved|  Wrote less than a chapter|
-|Content Editor(s)/Reviewer(s) | Checked your content|
+|Content Contributor(s) (include section name/link in parentheses) - make new line if more than one section involved|  Jennifer Kelleher, Ph.D.1*; Abigail S. Robbertz, Ph.D.|
+|Content Editor(s)/Reviewer(s) | Julia K. Herriott, B.S.|
 |Content Director(s) | Helped guide the content direction|
 |Content Consultants (include chapter name/link in parentheses or word "General") - make new line if more than one chapter involved | Gave high level advice on content|
 |Acknowledgments| Gave small assistance to content but not to the level of consulting |
@@ -54,7 +54,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 ##  collate  en_US.UTF-8
 ##  ctype    en_US.UTF-8
 ##  tz       Etc/UTC
-##  date     2025-04-28
+##  date     2025-05-27
 ##  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
