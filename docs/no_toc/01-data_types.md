@@ -10,7 +10,7 @@ title: Clinical Data Types
 
 ## Learning Objectives
 
-<img src="resources/images/01-data_types_files/figure-html//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3385bea4ad0_0_30.png" alt="Learning Objectives: 1. Explain why clinical data is unique compared to other types of biomedical research data, 2. Describe the difference between Structured and Unstructured data, 3. List major sources and types of clinical data" width="100%" style="display: block; margin: auto;" />
+<img src="01-data_types_files/figure-html//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3385bea4ad0_0_30.png" alt="Learning Objectives: 1. Explain why clinical data is unique compared to other types of biomedical research data, 2. Describe the difference between Structured and Unstructured data, 3. List major sources and types of clinical data" width="100%" style="display: block; margin: auto;" />
 
 
 
@@ -30,7 +30,7 @@ often include timestamps and other supporting descriptors. For example, medicati
 
 Structured data tables often describe entries in terms of codes from standardized vocabularies.  Diagnoses might be described with codes from the International Classification of Diseases (ICD) vocabulary, lab tests with Logical Observation Identifiers Names and Codes (LOINC), medications with National Drug Code (NDC), and procedures with Current Procedural Terminology (CPT) codes. These terms, or "billing codes", provide a common foundation that can be invaluable for identifying patients with a specific disease or who have received specified medications, particularly when integrating data from multiple sources. 
 
-<img src="resources/images/01-data_types_files/figure-html//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3385bea4ad0_0_0.png" alt="Example of structured data, a table that includes patient id numbers, billing codes, dates, blood pressure measurements, weight measurements, height measurements, and prescribed medications coded using the National Drug Code (NDC)" width="100%" style="display: block; margin: auto;" />
+<img src="01-data_types_files/figure-html//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3385bea4ad0_0_0.png" alt="Example of structured data, a table that includes patient id numbers, billing codes, dates, blood pressure measurements, weight measurements, height measurements, and prescribed medications coded using the National Drug Code (NDC)" width="100%" style="display: block; margin: auto;" />
 
 
 ### Unstructured Data / Clinical Notes 
@@ -38,26 +38,11 @@ Structured data tables often describe entries in terms of codes from standardize
 Clinical notes are, perhaps unsurprisingly, generally shared as seemingly straightforward text files.  However, the simple format should not be taken as a suggestion that the data are easy to interpret. Some EHR systems contain literally dozens of types of notes, covering specialties such as pathology or surgery; specific moments in care such as admission or discharge; particular procedures such as colonoscopies; patient-provider interactions such as telehealth or phone encounters, and many others. In addition to differing in content, these sources may have different layouts and formats, ranging from free-form reports to structured SOAP (subjective, objective, assessment, and plan) formats or even templated procedure reports. Understanding the types of notes available in a given context and where relevant data might be found is a key step in effectively using clinical notes. 
 
 
-<img src="resources/images/01-data_types_files/figure-html//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3385bea4ad0_0_14.png" alt="Unstructured Data - Data without specific format: includes images, pathology reports, radiology reports, clinical notes, discharge summaries and more. Includes an image of an x-ray and some clinical notes that states: Patient reports a sharp pain in the right lower abdomen for the past 24 hours.Temperature 98.6°F, BP 120/80, tenderness in the right lower quadrant. Suspected appendicitis. Refer to surgery for evaluation, initiate IV fluids, and pain management." width="100%" style="display: block; margin: auto;" />
+<img src="01-data_types_files/figure-html//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3385bea4ad0_0_14.png" alt="Unstructured Data - Data without specific format: includes images, pathology reports, radiology reports, clinical notes, discharge summaries and more. Includes an image of an x-ray and some clinical notes that states: Patient reports a sharp pain in the right lower abdomen for the past 24 hours.Temperature 98.6°F, BP 120/80, tenderness in the right lower quadrant. Suspected appendicitis. Refer to surgery for evaluation, initiate IV fluids, and pain management." width="100%" style="display: block; margin: auto;" />
 
 
 When used in EHR research, both structured data and clinical notes are generally de-identified to protect patient privacy. Patient ID numbers might be replaced with new identifiers, with linkages maintained by institutional “honest brokers” [@Dhir2008] charged with providing clinical data for research purposes. In some cases, dates may be changed as well. Clinical notes are generally “de-identified” through specialized software designed to remove names, dates, locations, and other sensitive details.  Researchers working with institutions to access clinical data should be sure to understand local data de-identification practices.
 
-
-
-## Specific types of clinical data
-
-
-
-
-### Physiological
-### Monitoring data
-
-### Radiology
-
-### Pathology
-
-### Synthetic Data
 
 ## How to acquire clinical data
 
@@ -71,5 +56,4 @@ When used in EHR research, both structured data and clinical notes are generally
 ### Metadata
 
 
-
-## Conclusion
+## Summary
