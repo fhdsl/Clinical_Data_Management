@@ -26,12 +26,11 @@ The near universal adoption of electronic health record (EHR) systems in the US 
  - imaging
  - genetic test reports
 
+ ```{r, fig.align='center', echo = FALSE, fig.alt= "Electronic health records include many different kinds of records on individuals over time, including, clinical notes, family history information, lab result, images, and medication information. The image shows data on the same individual over a period of time. ", out.width="100%"}
+ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g338f75828af_0_7" )
+ ```
+
 These data can be accessed not only by health professionals, but also by patients through patient portals. EHR data can also be used to enable data-driven interventions such as provider- and patient-facing clinical decision support (CDS) and population health management (PHM).
-
-```{r, fig.align='center', echo = FALSE, fig.alt= "Electronic health records include many different kinds of records on individuals over time, including, clinical notes, family history information, lab result, images, and medication information. The image shows data on the same individual over a period of time. ", out.width="100%"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g338f75828af_0_7" )
-```
-
 
 CDS has been defined as tools that "provide clinicians, staff, patients, or other individuals with knowledge and person-specific information, intelligently filtered or presented at appropriate times, to enhance health and health care" [@Osheroff_2007]. Examples of widely adopted CDS tools with demonstrated effectiveness for cancer prevention, diagnosis, and care include:
 
@@ -54,7 +53,7 @@ Several PHM programs have demonstrated to be effective in increasing the uptake 
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g338f75828af_0_28" )
 ```
 
-Clinical Decision Support (CDS) can help patients and clinicians make decisions about an individual’s care, while Population Health Management (PHM) can help identify individuals for interventions and engagement. The image shows a single person getting a colorectal screening reminder for CDS and a population being identified for possibly needing colorectal screening for PHM. 
+Clinical Decision Support (CDS) can help patients and clinicians make decisions about an individual’s care, while Population Health Management (PHM) can help identify individuals for interventions and engagement. The image shows a single person getting a colorectal screening reminder for CDS and a population being identified for possibly needing colorectal screening for PHM.
 
 While some CDS and PHM approaches have been successfully adopted widely, emerging technologies such as the use of generative AI approaches to analyze diagnostic imaging, large language models (LLMs) to extract information from narrative texts (e.g., clinical notes), LLM-based chatbots to communicate with patients, and digital health tools such as home-based sensors are creating unprecedented opportunities for next generation CDS and PHM. These approaches have the potential to enable significant breakthroughs through the implementation of patient-tailored cancer prevention and care at a population scale. Nevertheless, substantial research is needed to ensure effective and fair implementation of these CDS and PHM interventions.
 
@@ -291,13 +290,13 @@ Clinical Data provides a wealth of information that can be leveraged to answer a
 
 ### Retrospective analysis
 
-Retrospective analysis involves the examination of pre-existing clinical data to answer specific research questions, explore hypotheses, and identify patterns or trends. This method leverages historical data collected from medical records, administrative databases, registries, electronic health records (EHRs), or other sources of clinical information. The types of questions that can be asked through retrospective analysis span a wide range of clinical and epidemiological domains. The questions typically focus on understanding patient characteristics, disease epidemiology, treatment outcomes, risk factors, healthcare utilization, and more. 
+Retrospective analysis involves the examination of pre-existing clinical data to answer specific research questions, explore hypotheses, and identify patterns or trends. This method leverages historical data collected from medical records, administrative databases, registries, electronic health records (EHRs), or other sources of clinical information. The types of questions that can be asked through retrospective analysis span a wide range of clinical and epidemiological domains. The questions typically focus on understanding patient characteristics, disease epidemiology, treatment outcomes, risk factors, healthcare utilization, and more.
 
 Here, we explore the different categories of questions that can be addressed using retrospective data analysis:
 
 1. **Descriptive Questions**
 
-Descriptive questions aim to summarize and describe the characteristics of a patient population, disease, or healthcare process. They provide a foundational understanding of a dataset and are often the starting point for more complex analyses. 
+Descriptive questions aim to summarize and describe the characteristics of a patient population, disease, or healthcare process. They provide a foundational understanding of a dataset and are often the starting point for more complex analyses.
 
 - **Patient Demographics and Characteristics**: What are the demographic profiles (age, gender, ethnicity, socioeconomic status) of patients diagnosed with a specific condition? What are the common comorbidities and risk factors in this population?
 - **Disease Prevalence and Incidence**: What is the prevalence or incidence of a specific disease or condition in a particular population or geographic area over a defined period?
@@ -317,7 +316,7 @@ By examining historical data, researchers can gain insights into how different t
 
 3. **Outcome and Prognostic Questions**
 
-Understanding patient outcomes and prognostic factors is central to retrospective analyses. These questions focus on the end results of healthcare practices and patient management, including survival, complications, and quality of life: 
+Understanding patient outcomes and prognostic factors is central to retrospective analyses. These questions focus on the end results of healthcare practices and patient management, including survival, complications, and quality of life:
 
 - **Survival and Mortality**: What are the survival rates and mortality rates associated with a particular disease, condition, or treatment? What factors are associated with increased or decreased survival rates?
 - **Complication Rates**: What are the rates and types of complications associated with specific diseases, surgeries, or treatments? Are there identifiable risk factors for these complications?
