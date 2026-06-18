@@ -83,7 +83,7 @@ Before implementing data handling methods in an actual clinical trial, it is cru
 
 - **Creating Realistic Dummy Data**: Dummy data should mimic the real data in terms of format, structure, and complexity. It should include various scenarios (e.g., missing data, outliers, data entry errors) to test the system's error-handling capabilities.
 - **Simulating the Full Data Handling Workflow**: The process should involve every stage of data handling, from data collection and entry to storage, cleaning, analysis, and reporting. This comprehensive simulation helps identify potential issues early, such as data loss, security vulnerabilities, or errors in data processing algorithms.
-- **Refining and Optimizing Data Handling Methods**: Based on the findings from dummy data tests, researchers can refine their data handling protocols, adjust tools and settings, and optimize workflows to ensure smooth operations when real data is introduced.
+- **Refining and Optimizing Data Handling Methods**: Based on the findings from dummy data tests, researchers can refine their data handling protocols, such as their survey instruments or case report forms, adjust tools and settings, and optimize workflows to ensure smooth operations when real data is introduced.
 
 Testing with dummy data provides an additional layer of quality assurance and helps build confidence in the data handling process before the clinical trial begins.
 
