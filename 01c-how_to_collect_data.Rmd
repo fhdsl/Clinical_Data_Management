@@ -109,6 +109,8 @@ Designing specific and sensitive CRFs for clinical studies requires a thoughtful
 
 Clinical data generated from clinical trials and observational studies form the backbone of evidence-based medicine. The ability to analyze and interpret this data enables researchers and clinicians to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.
 
+## Clinical Trials 
+
 Clinical trials are tightly regulated studies, controlling patient recruitment and monitoring administration and impact of treatments or interventions [@What_are_clinical_trials_2023]. The goals of clinical trials include assessing the safety and efficacy of new treatments or interventions, comparing different/existing treatment options, determining the optimal dosage and administration of interventions, and identifying potential side effects or adverse events.
 
 ::: {.definition}
@@ -120,6 +122,22 @@ The NIH provides 4 questions and additional clarifications to consider when iden
 ::: {.definition}
 **Prospectively assigned**: Refers to a pre-defined process (e.g., randomization) specified in an approved protocol that stipulates the assignment of research subjects (individually or in clusters) to one or more arms (e.g., intervention, placebo, or other control) of a clinical trial [@NIHClinicalTrialsProspectively].
 :::
+
+### Observational Studies
+
+In observational studies, patients are monitored and outcomes are measured, but there is no intervention or assignment ((Overview of clinical study designs)[https://pmc.ncbi.nlm.nih.gov/articles/PMC11009715/]). 
+
+#### Case-control Studies
+
+In case-control studies, a group of individuals who have a certain disease or condition are identified as cases, and are compared to a group of individuals without the disease or condition (these are the controls). Group level summaries of outcomes, such as medical events or other biological measurements, are compared between the case and control groups. In case-control studies, there is a risk of bias, in which the group of cases and group of controls are systematically different, beyond the disease or condition that is being studied. Therefore, it is important to match the groups in terms of individual characteristics as much as possible. 
+
+#### Cohort Studies
+
+Cohort studies follow study participants over time. Participants are recruited into the cohort if they share a specific characteristic that is being studied. They are then followed over time, and monitored to see which participants develop a specific outcome. Cohort studies can be prospective (the cohort is identified and then monitored), or retrospective (the cohort is identified about a time period has passed and past data is obtained). 
+
+#### Cross-sectional Studies
+
+In a cross-sectional study, data is collected at a specific point in time. Cross-sectional studies are often used to ask questions about the prevalence of an exposure or an outcome (typically a disease or condition) in a population at a specific time point. 
 
 ## Research Design Considerations
 
