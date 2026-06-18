@@ -10,6 +10,10 @@ ottrpal::set_knitr_image_path()
 
 ## Learning Objectives
 
+```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: Learning Objectives: 1. Understand the clinical data handling process and how to choose clinical data handling tools, 2. Explain privacy considerations for clinical data, 3. List major regulations and regulatory bodies for clinical data, 4. Describe different types of documents used when working with clinical data", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3edc229d226_1_0#slide=id.g3edc229d226_1_0" )
+```
+
 ## Clinical data handling tools
 
 Clinical research relies heavily on the collection, processing, analysis, and management of data. Efficient and effective data handling is crucial to ensure the integrity, reliability, and validity of clinical trials and studies. Selecting the right tools for handling clinical data is a critical step in the research process. This section defines data handling in the context of clinical research and contrasts it with data quality, discusses the importance of privacy, provides a comprehensive guide on how to find suitable clinical data handling tools with a focus on open-source options, and emphasizes the importance of testing data handling methods using dummy data in the preliminary phases of a clinical trial.
@@ -34,17 +38,6 @@ Data quality and data handling are closely related but distinct concepts in clin
 - **Data Handling**: Encompasses the broader scope of managing the data lifecycle, from collection and storage to processing, analysis, and sharing. While data quality is a component of data handling, the latter also involves aspects like data security, access management, and regulatory compliance.
 
 Both data quality and data handling are critical for ensuring the integrity of clinical research. Data handling tools must support high data quality standards through features like automated data validation checks, error reporting, and data cleaning functions.
-
-### Privacy considerations
-
-Privacy is a fundamental consideration in clinical data handling, given the sensitive nature of the information involved. Clinical data often contains personally identifiable information (PII) or personal health information (PHI), which must be protected to comply with privacy regulations such as the Health Insurance Portability and Accountability Act (HIPAA) in the United States, the General Data Protection Regulation (GDPR) in the European Union, and other regional laws.
-
-- **Data Anonymization and De-identification**: One of the primary methods to protect privacy is to anonymize or de-identify data, removing or encrypting any information that could directly or indirectly identify an individual.
-- **Privacy-Preserving Record Linkages**: In scenarios where data from multiple sources need to be linked without compromising individual privacy, privacy-preserving record linkage techniques are essential. These methods enable the integration of datasets by matching records in a way that minimizes the risk of re-identification. Techniques such as secure multi-party computation, homomorphic encryption, and differential privacy can be employed to ensure that the linkage process itself does not expose sensitive information.
-- **Access Control and Encryption**: Tools should support robust access controls, ensuring that only authorized users have access to the data. Encryption should be used for both data at rest and data in transit to prevent unauthorized access.
-- **Compliance and Auditing**: Tools should facilitate compliance with regulatory standards and provide auditing capabilities to track data access and usage.
-
-When selecting data handling tools, it is crucial to prioritize those that offer comprehensive privacy features to safeguard sensitive information and maintain public trust in clinical research.
 
 ### Selecting clinical data handling tools 
 
@@ -96,7 +89,16 @@ Testing with dummy data provides an additional layer of quality assurance and he
 
 Effective clinical data handling is fundamental to the success of clinical trials and studies. Selecting the right tools requires careful consideration of privacy, regulatory compliance, open-source versus proprietary options, and the specific needs of the study. Understanding the difference between data quality and data handling is crucial, as both are essential for ensuring the validity and reliability of research outcomes. Running preliminary tests using dummy data is a critical step in validating data handling methods, ensuring that the chosen tools and processes are robust, secure, and efficient. By following these guidelines, researchers can enhance data management practices, protect patient privacy, and achieve meaningful and reliable clinical research outcomes.
 
-## Importance of keeping clinical data safe
+## Privacy considerations for clinical data
+
+Privacy is a fundamental consideration in clinical data management, given the sensitive nature of the information involved. Clinical data often contains personally identifiable information (PII) or personal health information (PHI), which must be protected to comply with privacy regulations such as the [Health Insurance Portability and Accountability Act](https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html) (HIPAA) in the United States, the [General Data Protection Regulation](https://gdpr.eu/what-is-gdpr/) (GDPR) in the European Union, and other regional laws. More information about PII and PHI can be found in [this course](https://hutchdatascience.org/Ethical_Data_Handling_for_Cancer_Research/data-privacy.html) about ethical data handling. 
+
+- **Data Anonymization and De-identification**: One of the primary methods to protect privacy is to anonymize or de-identify data, removing or encrypting any information that could directly or indirectly identify an individual.
+- **Privacy-Preserving Record Linkages**: In scenarios where data from multiple sources need to be linked without compromising individual privacy, privacy-preserving record linkage techniques are essential. These methods enable the integration of datasets by matching records in a way that minimizes the risk of re-identification. Techniques such as secure multi-party computation, homomorphic encryption, and differential privacy can be employed to ensure that the linkage process itself does not expose sensitive information.
+- **Access Control and Encryption**: Tools should support robust access controls, ensuring that only authorized users have access to the data. Encryption should be used for both data at rest and data in transit to prevent unauthorized access.
+- **Compliance and Auditing**: Tools should facilitate compliance with regulatory standards and provide auditing capabilities to track data access and usage.
+
+When selecting data handling tools, it is crucial to prioritize those that offer comprehensive privacy features to safeguard sensitive information and maintain public trust in clinical research.
 
 ## Government regulators
 
