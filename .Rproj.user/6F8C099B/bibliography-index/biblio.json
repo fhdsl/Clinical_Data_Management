@@ -1,0 +1,1471 @@
+{
+    "sources": [
+        {
+            "URL": "https://www.nia.nih.gov/health/clinical-trials-and-studies/what-are-clinical-trials-and-studies",
+            "container-title": "National Institute on Aging",
+            "id": "What_are_clinical_trials_2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        3
+                    ]
+                ]
+            },
+            "title": "What are clinical trials and studies?",
+            "type": ""
+        },
+        {
+            "DOI": "10.1037/amp0001196",
+            "ISSN": "1935-990X, 0003-066X",
+            "URL": "https://doi.apa.org/doi/10.1037/amp0001196",
+            "abstract": "Sensors, including accelerometer-based and electronic adherence monitoring devices, have transformed health data collection. Sensors allow for unobtrusive, real-time sampling of health behaviors that relate to psychological health, including sleep, physical activity, and medicationtaking. These technical strengths have captured scholarly attention, with far less discussion about the level of human touch involved in implementing sensors. Researchers face several subjective decision points when collecting health data via sensors, with these decisions posing ethical concerns for users and the public at large. Using examples from pediatric sleep, physical activity, and medication adherence research, we pose critical ethical questions, practical dilemmas, and guidance for implementing health-based sensors. We focus on youth given that they are often deemed the ideal population for digital health approaches but have unique technologyrelated vulnerabilities and preferences. Ethical considerations are organized according to Belmont principles of respect for persons (e.g., when sensor-based data are valued above the subjective lived experiences of youth and their families), beneficence (e.g., with sensor data management and sharing), and justice (e.g., with sensor access and acceptability among minoritized pediatric populations). Recommendations include the need to increase transparency about the extent of subjective decision making with sensor data management. Without greater attention to the human factors involved in sensor research, ethical risks could outweigh the scientific promise of sensors, thereby negating their potential role in improving child health and care.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2025,
+                        4,
+                        22
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Psihogios",
+                    "given": "Alexandra M."
+                },
+                {
+                    "family": "King-Dowling",
+                    "given": "Sara"
+                },
+                {
+                    "family": "Mitchell",
+                    "given": "Jonathan A."
+                },
+                {
+                    "family": "McGrady",
+                    "given": "Meghan E."
+                },
+                {
+                    "family": "Williamson",
+                    "given": "Ariel A."
+                }
+            ],
+            "container-title": "American Psychologist",
+            "id": "psihogios_ethical_2024",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        1
+                    ]
+                ]
+            },
+            "page": "39-51",
+            "title": "Ethical considerations in using sensors to remotely assess pediatric health behaviors.",
+            "type": "article-journal",
+            "volume": "79"
+        },
+        {
+            "URL": "https://division-research.brown.edu/research-cycle/proposal/agency-specific/nih/clinical-trials",
+            "container-title": "Division of Research at Brown University",
+            "id": "NIHClinicalTrialsProspectively",
+            "title": "NIH clinical trials",
+            "type": ""
+        },
+        {
+            "URL": "https://grants.nih.gov/policy-and-compliance/policy-topics/clinical-trials/definition",
+            "id": "CTDefinition",
+            "title": "NIH’s definition of a clinical trial",
+            "type": ""
+        },
+        {
+            "ISBN": "978-0-19-966588-4",
+            "author": [
+                {
+                    "family": "Drummond",
+                    "given": "M. F."
+                },
+                {
+                    "family": "Sculpher",
+                    "given": "M. J."
+                },
+                {
+                    "family": "Claxton",
+                    "given": "K."
+                },
+                {
+                    "family": "Stoddart",
+                    "given": "G. L."
+                },
+                {
+                    "family": "Torrance",
+                    "given": "G. W."
+                }
+            ],
+            "id": "Drummond_Sculpher_Claxton_Stoddart_Torrance_2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        9
+                    ]
+                ]
+            },
+            "publisher": "Oxford University Press",
+            "publisher-place": "Oxford",
+            "title": "Methods for the economic evaluation of health care programmes",
+            "type": "book"
+        },
+        {
+            "URL": "https://qualityindicators.ahrq.gov/measures/qi_resources",
+            "container-title": "Agency for Healthcare Research and Quality (Department of Health and Human Services)",
+            "id": "AHRQ",
+            "title": "AHRQ quality indicator measures",
+            "type": ""
+        },
+        {
+            "DOI": "10.1016/j.heliyon.2023.e13323",
+            "ISSN": "2405-8440",
+            "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9884646/",
+            "author": [
+                {
+                    "family": "Bodaghi",
+                    "given": "Ali"
+                },
+                {
+                    "family": "Fattahi",
+                    "given": "Nadia"
+                },
+                {
+                    "family": "Ramazani",
+                    "given": "Ali"
+                }
+            ],
+            "container-title": "Heliyon",
+            "id": "Bodaghi_Fattahi_Ramazani_2023",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        1
+                    ]
+                ]
+            },
+            "page": "e13323",
+            "title": "Biomarkers: Promising and valuable tools towards diagnosis, prognosis and treatment of covid-19 and other diseases",
+            "title-short": "Biomarkers",
+            "type": "article-journal",
+            "volume": "9"
+        },
+        {
+            "DOI": "10.1016/j.cct.2023.107238",
+            "ISSN": "1551-7144",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S1551714423001611",
+            "author": [
+                {
+                    "family": "Boyd",
+                    "given": "Andrew D."
+                },
+                {
+                    "family": "Gonzalez-Guarda",
+                    "given": "Rosa"
+                },
+                {
+                    "family": "Lawrence",
+                    "given": "Katharine"
+                },
+                {
+                    "family": "Patil",
+                    "given": "Crystal L."
+                },
+                {
+                    "family": "Ezenwa",
+                    "given": "Miriam O."
+                },
+                {
+                    "family": "O’Brien",
+                    "given": "Emily C."
+                },
+                {
+                    "family": "Paek",
+                    "given": "Hyung"
+                },
+                {
+                    "family": "Braciszewski",
+                    "given": "Jordan M."
+                },
+                {
+                    "family": "Adeyemi",
+                    "given": "Oluwaseun"
+                },
+                {
+                    "family": "Cuthel",
+                    "given": "Allison M."
+                },
+                {
+                    "family": "Darby",
+                    "given": "Juanita E."
+                },
+                {
+                    "family": "Zigler",
+                    "given": "Christina K."
+                },
+                {
+                    "family": "Ho",
+                    "given": "P. Michael"
+                },
+                {
+                    "family": "Faurot",
+                    "given": "Keturah R."
+                },
+                {
+                    "family": "Staman",
+                    "given": "Karen"
+                },
+                {
+                    "family": "Leigh",
+                    "given": "Jonathan W."
+                },
+                {
+                    "family": "Dailey",
+                    "given": "Dana L."
+                },
+                {
+                    "family": "Cheville",
+                    "given": "Andrea"
+                },
+                {
+                    "family": "Del Fiol",
+                    "given": "Guilherme"
+                },
+                {
+                    "family": "Knisely",
+                    "given": "Mitchell R."
+                },
+                {
+                    "family": "Marsolo",
+                    "given": "Keith"
+                },
+                {
+                    "family": "Richesson",
+                    "given": "Rachel L."
+                },
+                {
+                    "family": "Schlaeger",
+                    "given": "Judith M."
+                }
+            ],
+            "container-title": "Contemporary Clinical Trials",
+            "id": "BoydCCT2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        7
+                    ]
+                ]
+            },
+            "page": "107238",
+            "title": "Equity and bias in electronic health records data",
+            "type": "article-journal",
+            "volume": "130"
+        },
+        {
+            "DOI": "10.1093/jamia/ocad115",
+            "ISSN": "1527-974X",
+            "URL": "https://doi.org/10.1093/jamia/ocad115",
+            "author": [
+                {
+                    "family": "Boyd",
+                    "given": "Andrew D"
+                },
+                {
+                    "family": "Gonzalez-Guarda",
+                    "given": "Rosa"
+                },
+                {
+                    "family": "Lawrence",
+                    "given": "Katharine"
+                },
+                {
+                    "family": "Patil",
+                    "given": "Crystal L"
+                },
+                {
+                    "family": "Ezenwa",
+                    "given": "Miriam O"
+                },
+                {
+                    "family": "O’Brien",
+                    "given": "Emily C"
+                },
+                {
+                    "family": "Paek",
+                    "given": "Hyung"
+                },
+                {
+                    "family": "Braciszewski",
+                    "given": "Jordan M"
+                },
+                {
+                    "family": "Adeyemi",
+                    "given": "Oluwaseun"
+                },
+                {
+                    "family": "Cuthel",
+                    "given": "Allison M"
+                },
+                {
+                    "family": "Darby",
+                    "given": "Juanita E"
+                },
+                {
+                    "family": "Zigler",
+                    "given": "Christina K"
+                },
+                {
+                    "family": "Ho",
+                    "given": "P Michael"
+                },
+                {
+                    "family": "Faurot",
+                    "given": "Keturah R"
+                },
+                {
+                    "family": "Staman",
+                    "given": "Karen L"
+                },
+                {
+                    "family": "Leigh",
+                    "given": "Jonathan W"
+                },
+                {
+                    "family": "Dailey",
+                    "given": "Dana L"
+                },
+                {
+                    "family": "Cheville",
+                    "given": "Andrea"
+                },
+                {
+                    "family": "Del Fiol",
+                    "given": "Guilherme"
+                },
+                {
+                    "family": "Knisely",
+                    "given": "Mitchell R"
+                },
+                {
+                    "family": "Grudzen",
+                    "given": "Corita R"
+                },
+                {
+                    "family": "Marsolo",
+                    "given": "Keith"
+                },
+                {
+                    "family": "Richesson",
+                    "given": "Rachel L"
+                },
+                {
+                    "family": "Schlaeger",
+                    "given": "Judith M"
+                }
+            ],
+            "container-title": "Journal of the American Medical Informatics Association",
+            "id": "BoydJAMIA2023",
+            "issue": "9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        9
+                    ]
+                ]
+            },
+            "page": "1561-1566",
+            "title": "Potential bias and lack of generalizability in electronic health record data: Reflections on health equity from the national institutes of health pragmatic trials collaboratory",
+            "title-short": "Potential bias and lack of generalizability in electronic health record data",
+            "type": "article-journal",
+            "volume": "30"
+        },
+        {
+            "DOI": "10.1093/jamia/ocac028",
+            "ISSN": "1067-5027",
+            "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9006693/",
+            "author": [
+                {
+                    "family": "Bradshaw",
+                    "given": "Richard L"
+                },
+                {
+                    "family": "Kawamoto",
+                    "given": "Kensaku"
+                },
+                {
+                    "family": "Kaphingst",
+                    "given": "Kimberly A"
+                },
+                {
+                    "family": "Kohlmann",
+                    "given": "Wendy K"
+                },
+                {
+                    "family": "Hess",
+                    "given": "Rachel"
+                },
+                {
+                    "family": "Flynn",
+                    "given": "Michael C"
+                },
+                {
+                    "family": "Nanjo",
+                    "given": "Claude J"
+                },
+                {
+                    "family": "Warner",
+                    "given": "Phillip B"
+                },
+                {
+                    "family": "Shi",
+                    "given": "Jianlin"
+                },
+                {
+                    "family": "Morgan",
+                    "given": "Keaton"
+                },
+                {
+                    "family": "Kimball",
+                    "given": "Kadyn"
+                },
+                {
+                    "family": "Ranade-Kharkar",
+                    "given": "Pallavi"
+                },
+                {
+                    "family": "Ginsburg",
+                    "given": "Ophira"
+                },
+                {
+                    "family": "Goodman",
+                    "given": "Melody"
+                },
+                {
+                    "family": "Chambers",
+                    "given": "Rachelle"
+                },
+                {
+                    "family": "Mann",
+                    "given": "Devin"
+                },
+                {
+                    "family": "Narus",
+                    "given": "Scott P"
+                },
+                {
+                    "family": "Gonzalez",
+                    "given": "Javier"
+                },
+                {
+                    "family": "Loomis",
+                    "given": "Shane"
+                },
+                {
+                    "family": "Chan",
+                    "given": "Priscilla"
+                },
+                {
+                    "family": "Monahan",
+                    "given": "Rachel"
+                },
+                {
+                    "family": "Borsato",
+                    "given": "Emerson P"
+                },
+                {
+                    "family": "Shields",
+                    "given": "David E"
+                },
+                {
+                    "family": "Martin",
+                    "given": "Douglas K"
+                },
+                {
+                    "family": "Kessler",
+                    "given": "Cecilia M"
+                },
+                {
+                    "family": "Del Fiol",
+                    "given": "Guilherme"
+                }
+            ],
+            "container-title": "Journal of the American Medical Informatics Association : JAMIA",
+            "id": "Bradshaw2022",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        2
+                    ]
+                ]
+            },
+            "page": "928-936",
+            "title": "GARDE: A standards-based clinical decision support platform for identifying population health management cohorts",
+            "title-short": "GARDE",
+            "type": "article-journal",
+            "volume": "29"
+        },
+        {
+            "DOI": "10.1002/cncr.23768",
+            "URL": "https://acsjournals-onlinelibrary-wiley-com.fhcrc.idm.oclc.org/doi/10.1002/cncr.23768",
+            "author": [
+                {
+                    "family": "Dhir",
+                    "given": "Rajiv"
+                },
+                {
+                    "family": "Patel",
+                    "given": "Ashok A"
+                },
+                {
+                    "family": "Winters",
+                    "given": "Sharon"
+                },
+                {
+                    "family": "Bisceglia",
+                    "given": "Michelle"
+                },
+                {
+                    "family": "Swanson",
+                    "given": "Dennis"
+                },
+                {
+                    "family": "Aamodt",
+                    "given": "Roger"
+                },
+                {
+                    "family": "Becich",
+                    "given": "Michael J"
+                }
+            ],
+            "container-title": "Cancer",
+            "id": "Dhir2008",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008,
+                        8
+                    ]
+                ]
+            },
+            "page": "1705-1715",
+            "title": "A multidisciplinary approach to honest broker services for tissue banks and clinical data",
+            "type": "article-journal",
+            "volume": "113"
+        },
+        {
+            "DOI": "10.3322/caac.21615",
+            "ISSN": "0007-9235",
+            "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7523556/",
+            "author": [
+                {
+                    "family": "Gupta",
+                    "given": "Samir"
+                },
+                {
+                    "family": "Coronado",
+                    "given": "Gloria D."
+                },
+                {
+                    "family": "Argenbright",
+                    "given": "Keith"
+                },
+                {
+                    "family": "Brenner",
+                    "given": "Alison T."
+                },
+                {
+                    "family": "Castañeda",
+                    "given": "Sheila F."
+                },
+                {
+                    "family": "Dominitz",
+                    "given": "Jason A."
+                },
+                {
+                    "family": "Green",
+                    "given": "Beverly"
+                },
+                {
+                    "family": "Issaka",
+                    "given": "Rachel B."
+                },
+                {
+                    "family": "Levin",
+                    "given": "Theodore R."
+                },
+                {
+                    "family": "Reuland",
+                    "given": "Daniel S."
+                },
+                {
+                    "family": "Richardson",
+                    "given": "Lisa C."
+                },
+                {
+                    "family": "Robertson",
+                    "given": "Douglas J."
+                },
+                {
+                    "family": "Singal",
+                    "given": "Amit G."
+                },
+                {
+                    "family": "Pignone",
+                    "given": "Michael"
+                }
+            ],
+            "container-title": "CA: a cancer journal for clinicians",
+            "id": "Gupta2020",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        7
+                    ]
+                ]
+            },
+            "page": "283-298",
+            "title": "Mailed fecal immunochemical test outreach for colorectal cancer screening: Summary of a centers for disease control-sponsored summit",
+            "title-short": "Mailed fecal immunochemical test outreach for colorectal cancer screening",
+            "type": "article-journal",
+            "volume": "70"
+        },
+        {
+            "DOI": "10.1001/jamanetworkopen.2024.32143",
+            "ISSN": "2574-3805",
+            "URL": "https://doi.org/10.1001/jamanetworkopen.2024.32143",
+            "author": [
+                {
+                    "family": "Kaphingst",
+                    "given": "Kimberly A."
+                },
+                {
+                    "family": "Kohlmann",
+                    "given": "Wendy K."
+                },
+                {
+                    "family": "Lorenz Chambers",
+                    "given": "Rachelle"
+                },
+                {
+                    "family": "Bather",
+                    "given": "Jemar R."
+                },
+                {
+                    "family": "Goodman",
+                    "given": "Melody S."
+                },
+                {
+                    "family": "Bradshaw",
+                    "given": "Richard L."
+                },
+                {
+                    "family": "Chavez-Yenter",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "Colonna",
+                    "given": "Sarah V."
+                },
+                {
+                    "family": "Espinel",
+                    "given": "Whitney F."
+                },
+                {
+                    "family": "Everett",
+                    "given": "Jessica N."
+                },
+                {
+                    "family": "Flynn",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Gammon",
+                    "given": "Amanda"
+                },
+                {
+                    "family": "Harris",
+                    "given": "Adrian"
+                },
+                {
+                    "family": "Hess",
+                    "given": "Rachel"
+                },
+                {
+                    "family": "Kaiser-Jackson",
+                    "given": "Lauren"
+                },
+                {
+                    "family": "Lee",
+                    "given": "Sang"
+                },
+                {
+                    "family": "Monahan",
+                    "given": "Rachel"
+                },
+                {
+                    "family": "Schiffman",
+                    "given": "Joshua D."
+                },
+                {
+                    "family": "Volkmar",
+                    "given": "Molly"
+                },
+                {
+                    "family": "Wetter",
+                    "given": "David W."
+                },
+                {
+                    "family": "Zhong",
+                    "given": "Lingzi"
+                },
+                {
+                    "family": "Mann",
+                    "given": "Devin M."
+                },
+                {
+                    "family": "Ginsburg",
+                    "given": "Ophira"
+                },
+                {
+                    "family": "Sigireddi",
+                    "given": "Meenakshi"
+                },
+                {
+                    "family": "Kawamoto",
+                    "given": "Kensaku"
+                },
+                {
+                    "family": "Del Fiol",
+                    "given": "Guilherme"
+                },
+                {
+                    "family": "Buys",
+                    "given": "Saundra S."
+                }
+            ],
+            "container-title": "JAMA Network Open",
+            "id": "Kaphingst2024",
+            "issue": "9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        9
+                    ]
+                ]
+            },
+            "page": "e2432143",
+            "title": "Uptake of cancer genetic services for chatbot vs standard-of-care delivery models: The BRIDGE randomized clinical trial",
+            "title-short": "Uptake of cancer genetic services for chatbot vs standard-of-care delivery models",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
+            "URL": "https://ncdj.org/style-guide/",
+            "container-title": "National Center on Disability and Journalism",
+            "id": "ncdj_style_guide",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "Disability language style guide",
+            "type": ""
+        },
+        {
+            "DOI": "10.1197/jamia.M2334",
+            "ISSN": "1067-5027",
+            "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2213467/",
+            "author": [
+                {
+                    "family": "Osheroff",
+                    "given": "Jerome A."
+                },
+                {
+                    "family": "Teich",
+                    "given": "Jonathan M."
+                },
+                {
+                    "family": "Middleton",
+                    "given": "Blackford"
+                },
+                {
+                    "family": "Steen",
+                    "given": "Elaine B."
+                },
+                {
+                    "family": "Wright",
+                    "given": "Adam"
+                },
+                {
+                    "family": "Detmer",
+                    "given": "Don E."
+                }
+            ],
+            "container-title": "Journal of the American Medical Informatics Association : JAMIA",
+            "id": "Osheroff_2007",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "page": "141-145",
+            "title": "A roadmap for national action on clinical decision support",
+            "type": "article-journal",
+            "volume": "14"
+        },
+        {
+            "URL": "https://github.com/rstudio/rmarkdown",
+            "author": [
+                {
+                    "family": "Allaire",
+                    "given": "JJ"
+                },
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "McPherson",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Luraschi",
+                    "given": "Javier"
+                },
+                {
+                    "family": "Ushey",
+                    "given": "Kevin"
+                },
+                {
+                    "family": "Atkins",
+                    "given": "Aron"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Cheng",
+                    "given": "Joe"
+                },
+                {
+                    "family": "Chang",
+                    "given": "Winston"
+                },
+                {
+                    "family": "Iannone",
+                    "given": "Richard"
+                }
+            ],
+            "id": "rmarkdown2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "R package version 2.10",
+            "title": "Rmarkdown: Dynamic documents for r",
+            "title-short": "Rmarkdown",
+            "type": "book"
+        },
+        {
+            "DOI": "10.2146/ajhp170025",
+            "ISSN": "1079-2082",
+            "URL": "https://doi.org/10.2146/ajhp170025",
+            "author": [
+                {
+                    "family": "Swarthout",
+                    "given": "Meghan"
+                },
+                {
+                    "family": "Bishop",
+                    "given": "Martin A."
+                }
+            ],
+            "container-title": "American Journal of Health-System Pharmacy",
+            "id": "Swarthout_Bishop_2017",
+            "issue": "18",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        9
+                    ]
+                ]
+            },
+            "page": "1405-1411",
+            "title": "Population health management: Review of concepts and definitions",
+            "title-short": "Population health management",
+            "type": "article-journal",
+            "volume": "74"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/rmarkdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "Allaire",
+                    "given": "J. J."
+                },
+                {
+                    "family": "Grolemund",
+                    "given": "Garrett"
+                }
+            ],
+            "id": "Xie2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "note": "ISBN 9781138359338",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "R markdown: The definitive guide",
+            "title-short": "R markdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/rmarkdown-cookbook",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "Dervieux",
+                    "given": "Christophe"
+                },
+                {
+                    "family": "Riederer",
+                    "given": "Emily"
+                }
+            ],
+            "id": "Xie2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "ISBN 9780367563837",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "R markdown cookbook",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1037/amp0001196",
+            "ISSN": "1935-990X, 0003-066X",
+            "URL": "https://doi.apa.org/doi/10.1037/amp0001196",
+            "abstract": "Sensors, including accelerometer-based and electronic adherence monitoring devices, have transformed health data collection. Sensors allow for unobtrusive, real-time sampling of health behaviors that relate to psychological health, including sleep, physical activity, and medicationtaking. These technical strengths have captured scholarly attention, with far less discussion about the level of human touch involved in implementing sensors. Researchers face several subjective decision points when collecting health data via sensors, with these decisions posing ethical concerns for users and the public at large. Using examples from pediatric sleep, physical activity, and medication adherence research, we pose critical ethical questions, practical dilemmas, and guidance for implementing health-based sensors. We focus on youth given that they are often deemed the ideal population for digital health approaches but have unique technologyrelated vulnerabilities and preferences. Ethical considerations are organized according to Belmont principles of respect for persons (e.g., when sensor-based data are valued above the subjective lived experiences of youth and their families), beneficence (e.g., with sensor data management and sharing), and justice (e.g., with sensor access and acceptability among minoritized pediatric populations). Recommendations include the need to increase transparency about the extent of subjective decision making with sensor data management. Without greater attention to the human factors involved in sensor research, ethical risks could outweigh the scientific promise of sensors, thereby negating their potential role in improving child health and care.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2025,
+                        4,
+                        22
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Psihogios",
+                    "given": "Alexandra M."
+                },
+                {
+                    "family": "King-Dowling",
+                    "given": "Sara"
+                },
+                {
+                    "family": "Mitchell",
+                    "given": "Jonathan A."
+                },
+                {
+                    "family": "McGrady",
+                    "given": "Meghan E."
+                },
+                {
+                    "family": "Williamson",
+                    "given": "Ariel A."
+                }
+            ],
+            "container-title": "American Psychologist",
+            "id": "psihogios_ethical_2024",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        1
+                    ]
+                ]
+            },
+            "page": "39-51",
+            "title": "Ethical considerations in using sensors to remotely assess pediatric health behaviors.",
+            "type": "article-journal",
+            "volume": "79"
+        },
+        {
+            "DOI": "10.1111/j.1365-2125.2012.04167.x",
+            "ISSN": "0306-5251, 1365-2125",
+            "URL": "https://bpspubs.onlinelibrary.wiley.com/doi/10.1111/j.1365-2125.2012.04167.x",
+            "abstract": "Interest in patient adherence has increased in recent years, with a growing literature that shows the pervasiveness of poor adherence to appropriately prescribed medications. However, four decades of adherence research has not resulted in uniformity in the terminology used to describe deviations from prescribed therapies. The aim of this review was to propose a new taxonomy, in which adherence to medications is conceptualized, based on behavioural and pharmacological science, and which will support quantifiable parameters. A systematic literature review was performed using MEDLINE, EMBASE, CINAHL, the Cochrane Library and PsycINFO from database inception to 1 April 2009. The objective was to identify the different conceptual approaches to adherence research. Definitions were analyzed according to time and methodological perspectives. A taxonomic approach was subsequently derived, evaluated and discussed with international experts. More than 10 different terms describing medication‐taking behaviour were identified through the literature review, often with differing meanings. The conceptual foundation for a new, transparent taxonomy relies on three elements, which make a clear distinction between processes that describe actions through established routines (“Adherence to medications”, “Management of adherence”) and the discipline that studies those processes (“Adherence‐related sciences”). “Adherence to medications” is the process by which patients take their medication as prescribed, further divided into three quantifiable phases: “Initiation”, “Implementation” and “Discontinuation”. In response to the proliferation of ambiguous or unquantifiable terms in the literature on medication adherence, this research has resulted in a new conceptual foundation for a transparent taxonomy. The terms and definitions are focused on promoting consistency and quantification in terminology and methods to aid in the conduct, analysis and interpretation of scientific studies of medication adherence.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2025,
+                        4,
+                        22
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Vrijens",
+                    "given": "Bernard"
+                },
+                {
+                    "family": "De Geest",
+                    "given": "Sabina"
+                },
+                {
+                    "family": "Hughes",
+                    "given": "Dyfrig A."
+                },
+                {
+                    "family": "Przemyslaw",
+                    "given": "Kardas"
+                },
+                {
+                    "family": "Demonceau",
+                    "given": "Jenny"
+                },
+                {
+                    "family": "Ruppar",
+                    "given": "Todd"
+                },
+                {
+                    "family": "Dobbels",
+                    "given": "Fabienne"
+                },
+                {
+                    "family": "Fargher",
+                    "given": "Emily"
+                },
+                {
+                    "family": "Morrison",
+                    "given": "Valerie"
+                },
+                {
+                    "family": "Lewek",
+                    "given": "Pawel"
+                },
+                {
+                    "family": "Matyjaszczyk",
+                    "given": "Michal"
+                },
+                {
+                    "family": "Mshelia",
+                    "given": "Comfort"
+                },
+                {
+                    "family": "Clyne",
+                    "given": "Wendy"
+                },
+                {
+                    "family": "Aronson",
+                    "given": "Jeffrey K."
+                },
+                {
+                    "family": "Urquhart",
+                    "given": "J."
+                },
+                {
+                    "literal": "for the ABC Project Team"
+                }
+            ],
+            "container-title": "British Journal of Clinical Pharmacology",
+            "id": "vrijens_new_2012",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        5
+                    ]
+                ]
+            },
+            "page": "691-705",
+            "title": "A new taxonomy for describing and defining adherence to medications",
+            "type": "article-journal",
+            "volume": "73"
+        },
+        {
+            "DOI": "10.1542/peds.2011-1635",
+            "ISSN": "0031-4005, 1098-4275",
+            "URL": "https://publications.aap.org/pediatrics/article/129/2/e473/32549/Pediatric-Self-management-A-Framework-for-Research",
+            "abstract": "Self-management of chronic pediatric conditions is a formidable challenge for patients, families, and clinicians, with research demonstrating a high prevalence of poor self-management and nonadherence across pediatric conditions. Nevertheless, effective self-management is necessary to maximize treatment efficacy and clinical outcomes and to reduce unnecessary health care utilization and costs. However, this complex behavior is poorly understood as a result of insufficient definitions, reliance on condition-specific and/or adult models of self-management, failure to consider the multitude of factors that influence patient self-management behavior, and lack of synthesis of research, clinical practice, and policy implications. To address this need, we present a comprehensive conceptual model of pediatric self-management that articulates the individual, family, community, and health care system level influences that impact self-management behavior through cognitive, emotional, and social processes. This model further describes the relationship among self-management, adherence, and outcomes at both the patient and system level. Implications for research, clinical practice, and health care policy concerning pediatric chronic care are emphasized with a particular focus on modifiable influences, evidence-based targets for intervention, and the role of clinicians in the provision of self-management support. We anticipate that this unified conceptual approach will equip stakeholders in pediatric health care to (1) develop evidence-based interventions to improve self-management, (2) design programs aimed at preventing the development of poor self-management behaviors, and (3) inform health care policy that will ultimately improve the health and psychosocial outcomes of children with chronic conditions.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2025,
+                        4,
+                        22
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Modi",
+                    "given": "Avani C."
+                },
+                {
+                    "family": "Pai",
+                    "given": "Ahna L."
+                },
+                {
+                    "family": "Hommel",
+                    "given": "Kevin A."
+                },
+                {
+                    "family": "Hood",
+                    "given": "Korey K."
+                },
+                {
+                    "family": "Cortina",
+                    "given": "Sandra"
+                },
+                {
+                    "family": "Hilliard",
+                    "given": "Marisa E."
+                },
+                {
+                    "family": "Guilfoyle",
+                    "given": "Shanna M."
+                },
+                {
+                    "family": "Gray",
+                    "given": "Wendy N."
+                },
+                {
+                    "family": "Drotar",
+                    "given": "Dennis"
+                }
+            ],
+            "container-title": "Pediatrics",
+            "id": "modi_pediatric_2012",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        2
+                    ]
+                ]
+            },
+            "page": "e473-e485",
+            "title": "Pediatric Self-management: A Framework for Research, Practice, and Policy",
+            "title-short": "Pediatric Self-management",
+            "type": "article-journal",
+            "volume": "129"
+        },
+        {
+            "URL": "https://www.R-project.org/",
+            "author": [
+                {
+                    "literal": "R Core Team"
+                }
+            ],
+            "id": "R-base",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "publisher": "R Foundation for Statistical Computing",
+            "publisher-place": "Vienna, Austria",
+            "title": "R: A language and environment for statistical computing",
+            "title-short": "R",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "R-bookdown",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "https://github.com/rstudio/bookdown, https://pkgs.rstudio.com/bookdown/",
+            "title": "Bookdown: Authoring books and technical documents with r markdown",
+            "title-short": "Bookdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://yihui.org/knitr/",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "R-knitr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "R package version 1.33",
+            "title": "Knitr: A general-purpose package for dynamic report generation in r",
+            "title-short": "Knitr",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Allaire",
+                    "given": "JJ"
+                },
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "McPherson",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Luraschi",
+                    "given": "Javier"
+                },
+                {
+                    "family": "Ushey",
+                    "given": "Kevin"
+                },
+                {
+                    "family": "Atkins",
+                    "given": "Aron"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Cheng",
+                    "given": "Joe"
+                },
+                {
+                    "family": "Chang",
+                    "given": "Winston"
+                },
+                {
+                    "family": "Iannone",
+                    "given": "Richard"
+                }
+            ],
+            "id": "R-rmarkdown",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "https://github.com/rstudio/rmarkdown, https://pkgs.rstudio.com/rmarkdown/",
+            "title": "Rmarkdown: Dynamic documents for r",
+            "title-short": "Rmarkdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/bookdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "bookdown2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "note": "ISBN 978-1138700109",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "Bookdown: Authoring books and technical documents with R markdown",
+            "title-short": "Bookdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://yihui.org/knitr/",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "edition": "2nd",
+            "id": "knitr2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "note": "ISBN 978-1498716963",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "Dynamic documents with R and knitr",
+            "type": "book"
+        },
+        {
+            "URL": "http://www.crcpress.com/product/isbn/9781466561595",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "container-title": "Implementing reproducible computational research",
+            "editor": [
+                {
+                    "family": "Stodden",
+                    "given": "Victoria"
+                },
+                {
+                    "family": "Leisch",
+                    "given": "Friedrich"
+                },
+                {
+                    "family": "Peng",
+                    "given": "Roger D."
+                }
+            ],
+            "id": "knitr2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "note": "ISBN 978-1466561595",
+            "publisher": "Chapman; Hall/CRC",
+            "title": "Knitr: A comprehensive tool for reproducible research in R",
+            "title-short": "Knitr",
+            "type": "chapter"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/rmarkdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "Allaire",
+                    "given": "J. J."
+                },
+                {
+                    "family": "Grolemund",
+                    "given": "Garrett"
+                }
+            ],
+            "id": "rmarkdown2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "note": "ISBN 9781138359338",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "R markdown: The definitive guide",
+            "title-short": "R markdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/rmarkdown-cookbook",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "Dervieux",
+                    "given": "Christophe"
+                },
+                {
+                    "family": "Riederer",
+                    "given": "Emily"
+                }
+            ],
+            "id": "rmarkdown2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "ISBN 9780367563837",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "R markdown cookbook",
+            "type": "book"
+        }
+    ],
+    "project_biblios": [
+        "book.bib",
+        "packages.bib"
+    ]
+}

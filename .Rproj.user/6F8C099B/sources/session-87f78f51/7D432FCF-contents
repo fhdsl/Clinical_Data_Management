@@ -1,0 +1,21 @@
+book_filename: "Course_Name"
+chapter_name: "Chapter "
+repo: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/
+rmd_files: ["index.Rmd",
+            "00-intro.Rmd",
+            "01-data_types.Rmd",
+            "01b-specific_data_types.Rmd",
+            "01c-how_to_collect_data.Rmd",
+            "01d-how_to_acquire_data.Rmd"
+            "02-data_uses.Rmd",
+            "03-data_management.Rmd",
+            "04-appendixI.Rmd",
+            "About.Rmd",
+            "References.Rmd"]
+new_session: yes
+bibliography: [book.bib, packages.bib]
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter"
+output_dir: "docs"
