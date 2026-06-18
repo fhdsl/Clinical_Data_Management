@@ -49,6 +49,7 @@ Choosing the right tools for clinical data handling depends on several factors, 
 - **Regulatory Compliance**: The tool should comply with relevant data privacy and security regulations to protect patient data.
 - **Support and Documentation**: Adequate support, including user manuals, tutorials, and customer service, is essential for troubleshooting and maximizing the tool's potential.
 - **Institutional Support**: Your institution may have policies, regulations, or recommendations about which tools can be used—particularly when working with clinical data. Institutions often provide licenses or access to specific tools (for example, an institutional REDCap consortium membership), as well as varying levels of support through scientific staff, data offices, or training programs.
+- **Established Practices in the Field**: Choosing tools that are widely used and accepted in your field is often a safe and effective option. Although newer or less common tools may offer advantages, using them may require additional justification to explain why they are suitable for your specific use case. 
 
 Research teams should conduct thorough evaluations, including reading reviews, seeking recommendations, and conducting pilot tests, to identify the best tool for their specific needs.
 
