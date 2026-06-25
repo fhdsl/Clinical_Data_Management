@@ -109,7 +109,7 @@ Designing specific and sensitive CRFs for clinical studies requires a thoughtful
 
 Clinical data generated from clinical trials and observational studies form the backbone of evidence-based medicine. The ability to analyze and interpret this data enables researchers and clinicians to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.
 
-## Clinical Trials 
+### Clinical Trials 
 
 Clinical trials are tightly regulated studies, controlling patient recruitment and monitoring administration and impact of treatments or interventions [@What_are_clinical_trials_2023]. The goals of clinical trials include assessing the safety and efficacy of new treatments or interventions, comparing different/existing treatment options, determining the optimal dosage and administration of interventions, and identifying potential side effects or adverse events.
 
