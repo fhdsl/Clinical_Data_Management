@@ -16,6 +16,7 @@ colorectal
 comorbidities
 Comorbidities
 CPT
+CRF
 CRFs
 CUIs
 customizations
@@ -48,9 +49,12 @@ McGrady
 MEM
 Modi
 Multivariable
+ncbi
 NCI
 NDC
+nih
 NIH's
+nlm
 NLP
 OMOP
 ontologies
@@ -60,6 +64,8 @@ Permanente
 personalization
 Ph
 PHM
+pmc
+PMC
 polypharmacy
 pre
 PROMs
