@@ -2,18 +2,266 @@
 
 ## Learning Objectives
 
-## Electronic Health Records
+## Registries
 
-## Medical Databases (?)
+### What is a registry
 
-## Registries (?)
+### US-based cancer registries
 
-## Secondary Sources
+#### SEER
 
-## Retrospective Analyses
+1. What is this?
 
-Does this belong in collecting data or acquiring data? 
+2. What populations are the data from?
 
-Retrospective analysis involves the examination of pre-existing clinical data to answer specific research questions, explore hypotheses, and identify patterns or trends. This method leverages historical data collected from medical records, administrative databases, registries, electronic health records (EHRs), or other sources of clinical information.
+3. What types of data are included?
+
+4. How to access this data? 
+
+#### NPCR
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+#### Combined SEER and NPCR data 
+
+1. How to access this data? 
+
+#### NCDB
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. How is this different from the other registries (hospital based instead of population based)
+
+4. What types of data are included?
+
+5. How to access this data? 
+
+### International registries 
+
+#### Nordic cancer registries
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+#### NCRAS (Englad)
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+#### Other international registries
+
+Maybe mention IARC or GLOBOCAN as a place to learn more about registries in other countries
+
+## Data commons
+
+### What is a data commons
+
+### CRDC
+
+#### What is the CRDC
+
+#### GDC
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? (mention dbGaP here)
+
+##### TCGA
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+##### TARGET
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+#### Other types of data commons in the CRC
+
+proteomic data commons, imagining data commons, clinical and translational data commons, population science data commons
+
+### Other data commons
+
+#### ICGC
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+#### PCDC 
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+#### C3DC
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+## Cohorts and BioBanks
+
+### UK BioBank
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+### All of Us
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+## EHR platforms
+
+### What are EHR platforms?
+
+### Research EHR platforms
+
+#### PCORnet
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+#### ENACT
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+### Health system EHR platforms
+
+#### Epic Cosmos
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+### Commerical EHR platforms
+
+#### TriNetx
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+#### Truveta
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+## Clinico-genomic data platforms
+
+### Public platforms
+
+#### Project GENIE
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+Mention cBioPortal when talking about access, note that this is a useful platform for basic analyses and visualizations for many public cancer datasets.
+
+### Commerical platforms
+
+#### Flatiron
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
+
+#### Tempus
+
+1. What is this?
+
+2. What populations are the data from?
+
+3. What types of data are included?
+
+4. How to access this data? 
 
 ## Summary

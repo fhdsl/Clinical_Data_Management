@@ -139,6 +139,12 @@ Cohort studies follow study participants over time. Participants are recruited i
 
 In a cross-sectional study, data is collected at a specific point in time. Cross-sectional studies are often used to ask questions about the prevalence of an exposure or an outcome (typically a disease or condition) in a population at a specific time point. 
 
+## Retrospective Analyses
+
+Does this belong in collecting data or acquiring data? 
+
+Retrospective analysis involves the examination of pre-existing clinical data to answer specific research questions, explore hypotheses, and identify patterns or trends. This method leverages historical data collected from medical records, administrative databases, registries, electronic health records (EHRs), or other sources of clinical information.
+
 ## Research Design Considerations
 
 Researchers need to intentionally use methods earlier in the research process than data analysis to manage data biases associated with clinical data, especially EHR.
