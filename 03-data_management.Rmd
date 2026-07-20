@@ -22,13 +22,21 @@ Clinical research relies heavily on the collection, processing, analysis, and ma
 
 **Clinical data handling** involves the processes and tools used to collect, manage, store, process, and share clinical data in a way that maintains its integrity, security, and usability. It encompasses a range of activities, including:
 
+NOTE: COME BACK HERE AND WORK ON ORDERING, SPECIFICALLY WHAT/WHERE IS DATA AUDITING VS CLEANING???
+
 - Data Collection: Gathering data from various sources such as case report forms (CRFs), electronic health records (EHRs), patient surveys, and laboratory results.
 - Data Storage and Management: Safely storing data in databases or data warehouses and managing access to ensure that only authorized personnel can interact with the data.
+- Data Auditing: Checking that data are complete and meets expectations.
+- Data Sharing: Providing access to data for collaborators, regulators, or stakeholders in a secure and controlled manner.
 - Data Cleaning and Processing: Ensuring data consistency, accuracy, and completeness by detecting and rectifying errors, missing values, and inconsistencies.
 - Data Analysis: Using statistical and analytical tools to generate insights from the data that can inform clinical decisions and study outcomes.
-- Data Sharing and Reporting: Providing access to data for collaborators, regulators, or stakeholders in a secure and controlled manner and generating reports that summarize findings.
+- Data Reporting: Generating reports that summarize findings.
 
 The goal of effective data handling is to ensure that data is accurate, reliable, and available when needed, while also protecting patient privacy and complying with regulatory standards.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Diagram showing some steps of data handling, in a cycle, going from data collection to data storage, data cleaning, data analysis, data sharing, and data reporting", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f5432c677a_0_173#slide=id.g3f5432c677a_0_173" )
+```
 
 #### Data quality vs data handling 
 
@@ -38,6 +46,10 @@ Data quality and data handling are closely related but distinct concepts in clin
 - **Data Handling**: Encompasses the broader scope of managing the data lifecycle, from collection and storage to processing, analysis, and sharing. While data quality is a component of data handling, the latter also involves aspects like data security, access management, and regulatory compliance.
 
 Both data quality and data handling are critical for ensuring the integrity of clinical research. Data handling tools must support high data quality standards through features like automated data validation checks, error reporting, and data cleaning functions.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Data quality is a component of data handling, image showing a small circle labeled data quality within a larger circle labeled data handling, the large circle also includes other aspects of data handling such as data collection and analysis", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3edc229d226_1_10#slide=id.g3edc229d226_1_10" )
+```
 
 ### Selecting clinical data handling tools 
 
@@ -91,9 +103,9 @@ Testing with dummy data provides an additional layer of quality assurance and he
 
 There are several ways to simulate data to use for testing. 
 
-- Write a script that uses a probabilistic modeling framework to create a dataset with values that mimic what you expect to find. There are also R packages that can help with this task, such as [`simstudy`](https://cran.r-project.org/web/packages/simstudy/index.html). After you simulate data, can also remove data or add errors that might occur in your real data collection process
-- If you are using a case report form to collect data, you could answer questions several times to create a dataset, and then continue through the data handling pipeline 
-- In some scenarios, you could start with a real dataset that is publicly available and de-identified, and then directly use that data or sample from that data, adding missing data and errors that might occur in your data generation process
+- Write a script that uses a probabilistic modeling framework to create a dataset with values that mimic what you expect to find. There are also R packages that can help with this task, such as [`simstudy`](https://cran.r-project.org/web/packages/simstudy/index.html). After you simulate data, can also remove data or add errors that might occur in your real data collection process.
+- If you are using a case report form to collect data, you could answer questions several times to create a dataset, and then continue through the data handling pipeline. 
+- In some scenarios, you could start with a real dataset that is publicly available and de-identified, then either directly use that data or modify it for your purposes. You could remove observations to create missing data or purposely include errors that might occur in your data generation process.
 
 ### Conclusion 
 
@@ -167,4 +179,12 @@ For further reading, consider the following resources:
 
 Additionally, remember the insightful quote by [Damian Conway](https://www.questionpro.com/blog/data-documentation/): “Documentation is a love letter that you write to your future self.” This is an invaluable tidbit to keep in mind throughout the lifecycle of a study.
 
-## Conclusion
+## Summary
+
+Clinical data handling includes the processes and tools used to collect, store, process, analyze, and share clinical data. There are a variety of tools available for clinical data handling, including many open-source tools. The right tools for a project depends on existing systems, regulatory compliance, who is using the tools, and what support is included from the tool's developers and from the user's institution. It is important to test clinical handling tools and pipelines using dummy data before using them with actual clinical data. 
+
+Privacy is an important consideration for clinical data, because of the personally identifiable information (PII) and personal health information (PHI) that is often included in clinical data. It is important to keep sensitive information secure, and to only allow access to approved researchers. Data should only be shared more widely if that has been approved and if it is de-identified. 
+
+There are several regulators that govern the collection, storage, use, and sharing of clinical data. Relevant regulations include the Health Insurance Portability and Accountability Act (HIPPA) and regulations from the Food and Drug Administration (FDA) in the United States, the General Data Protection Regulation (GDPR) in the European Union, and honest brokers that connect data sources and researchers. 
+
+Documentation is an important part of clinical data management, in order to ensure proper data management throughout the course of a project. A Data Management Plan (DMP) outlined how data will be handled over the course of a project, a Statistical Analysis Plan (SAP) details the analyses to be performed on the data, a Standard Operating Procedures (SOP) provides instructions for performing tasks, a Data Use Agreement (DUA) defines the conditions for data use and sharing with external parties, and a Data Sharing Agreement (DSA) defines the conditions for sharing data between organizations. 
