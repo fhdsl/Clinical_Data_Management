@@ -81,9 +81,13 @@ Synthetic data are artificially generated datasets designed to reflect the struc
 There are several possible uses for synthetic data:
 
 - Testing or validation: synthetic data may be easier to create or access than real clinical data, while being similar enough to test or validate new tools, methods, or data handling pipelines. It can also be shared between institutions, and used to compare the performance of competing tools.
-- Augmenting or balancing data sets: real patient data can have subgroups with low representation, which can lead to algorithmic bias in some applications. Synthetic data can be used to balance data so that there are more observations that represent these groups. 
+- Augmenting or balancing datasets: real patient data can have subgroups with low representation, which can lead to algorithmic bias in some applications. Synthetic data can be used to balance data so that there are more observations that represent these groups. 
 - Supplementing controls groups in clinical trials: Conducting clinical trials requires a lot of time and money. Synthetic data has been suggested as a supplement to control arms in clinical trials, in order to reduce costs or realign funds to add more patients to the experimental arm [@elvatun2025synthetic]. 
 - Augmenting data for rare disease areas: Rare disease research often suffers from small sample sizes of patient data and can be especially susceptible to privacy concerns, which can lead to underpowered studies. Synthetic data has the potential to be used for detection and development of treatment for rare diseases [@mendes2025synthetic].
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Potential uses for synthetic data, including testing new methods, balancing datasets, supplementing control arms, and augmenting rare disease data", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f5432c677a_0_248#slide=id.g3f5432c677a_0_248" )
+```
 
 ### Resources for generating synthetic data
 
