@@ -96,7 +96,7 @@ There are a wide range of ways to generate synthetic data for different uses. So
 - [Synthea](https://github.com/synthetichealth/synthea): a synthetic patient population simulator, that generates synthetic medical histories. This tool can be used without restriction for research, industry, or government [@walonoski2018synthea]. 
 - [SyntheticMass](https://synthea.mitre.org): a synthetic dataset of residents of Massachusetts (generated using Synthea), which statistically mirrors the real population in terms of demographics, disease burden, and healthcare interaction. This data is free of PII and PHI [@walonoski2018synthea]. 
 - [simstudy](https://cran.r-project.org/package=simstudy): an R package used to simulate datasets. The user specifies a set of relationships between covariates and type of study, and the tool generates synthetic data [@simstudy]. 
-- [synthpop](https://cran.r-project.org/web/packages/synthpop/index.html): an R package that takes patient data with senstive values, and replaces those values with synthetic values, while minimally distorting the statistical summaries of the data set [@nowok2016synthpop]. 
+- [synthpop](https://cran.r-project.org/web/packages/synthpop/index.html): an R package that takes patient data with sensitive values, and replaces those values with synthetic values, while minimally distorting the statistical summaries of the data set [@nowok2016synthpop]. 
 
 ### Benefits of synthetic data
 

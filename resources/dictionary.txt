@@ -16,6 +16,7 @@ colorectal
 comorbidities
 Comorbidities
 CPT
+CRF
 CRFs
 CUIs
 customizations
@@ -60,6 +61,7 @@ Permanente
 personalization
 Ph
 PHM
+PII
 polypharmacy
 pre
 PROMs
@@ -74,14 +76,19 @@ RxNorm
 SAEs
 sexualized
 Shriver
+simstudy
 SNOMED
 socio
 SOGI
+Synthea
+SyntheticMass
+synthpop
 telehealth
 templated
 Tolerability
 UE
 UE5
 UMLS
+underpowered
 Vrijens
 www
