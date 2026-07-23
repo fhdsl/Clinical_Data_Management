@@ -85,7 +85,7 @@ There are several possible uses for synthetic data:
 - Supplementing controls groups in clinical trials: Conducting clinical trials requires a lot of time and money. Using synthetic data has been suggested to supplement control arms in clinical trials, in order to reduce costs or realign funds to add more patients to the experimental arm [@elvatun2025synthetic]. 
 - Augmenting data for rare disease areas: Rare disease research often suffers from small sample sizes of patient data and can be especially susceptible to privacy concerns, which can lead to underpowered studies. Synthetic data have the potential to be used for detection and development of treatment for rare diseases [@mendes2025synthetic].
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Potential uses for synthetic data, including testing new methods, balancing datasets, supplementing control arms, and augmenting rare disease data", out.width="100%"}
+```{r, fig.align='center', echo = FALSE, fig.alt= "Synthetic data has several potential uses, including testing new methods, balancing datasets, supplementing control arms, and augmenting rare disease data.", out.width="100%"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f5432c677a_0_248#slide=id.g3f5432c677a_0_248" )
 ```
 
