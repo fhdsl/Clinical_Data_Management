@@ -22,20 +22,18 @@ Clinical research relies heavily on the collection, processing, analysis, and ma
 
 **Clinical data handling** involves the processes and tools used to collect, manage, store, process, and share clinical data in a way that maintains its integrity, security, and usability. It encompasses a range of activities, including:
 
-NOTE: COME BACK HERE AND WORK ON ORDERING, SPECIFICALLY WHAT/WHERE IS DATA AUDITING VS CLEANING???
-
 - Data Collection: Gathering data from various sources such as case report forms (CRFs), electronic health records (EHRs), patient surveys, and laboratory results.
 - Data Storage and Management: Safely storing data in databases or data warehouses and managing access to ensure that only authorized personnel can interact with the data.
-- Data Auditing: Checking that data are complete and meets expectations.
 - Data Sharing: Providing access to data for collaborators, regulators, or stakeholders in a secure and controlled manner.
 - Data Cleaning and Processing: Ensuring data consistency, accuracy, and completeness by detecting and rectifying errors, missing values, and inconsistencies.
 - Data Analysis: Using statistical and analytical tools to generate insights from the data that can inform clinical decisions and study outcomes.
 - Data Reporting: Generating reports that summarize findings.
+- Data Auditing: Keeping track of all modifications to the data, as well as who made each change [@EthicalDataHandling]. 
 
 The goal of effective data handling is to ensure that data is accurate, reliable, and available when needed, while also protecting patient privacy and complying with regulatory standards.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Diagram showing some steps of data handling, in a cycle, going from data collection to data storage, data cleaning, data analysis, data sharing, and data reporting", out.width="100%"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f5432c677a_0_173#slide=id.g3f5432c677a_0_173" )
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f5432c677a_0_370#slide=id.g3f5432c677a_0_370" )
 ```
 
 #### Data quality vs data handling 
