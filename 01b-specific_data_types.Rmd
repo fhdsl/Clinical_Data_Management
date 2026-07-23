@@ -2,11 +2,9 @@
 
 ## Learning Objectives
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: 1. Explain why clinical data is unique compared to other types of biomedical research data, 2. Describe the difference between Structured and Unstructured data, 3. List major sources and types of clinical data", out.width="100%"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g3385bea4ad0_0_30" )
+```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: 1. Physiological (to-do), 2. Monitoring data (to-do), 3. Radiology, 4. Pathology, 5. Understand the potential uses for and risks of synthetic data", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f5a232af6c_0_0#slide=id.g3f5a232af6c_0_0" )
 ```
-
-
 
 ## Physiological
 
@@ -115,6 +113,6 @@ Although there is a lot of potential for synthetic data to revolutionize fields 
 - Regulations are still in development: because synthetic data are often not considered to be personally identifiable information (PII) or protected health information (PHI), they are not regulated by the same guidelines as other types of clinical data. Different types of synthetic data have different ethical and privacy risks, and regulations are still in development to govern the use and sharing of these data [@nisevic2025synthetic]. 
 - Model collapse: when generative models are repeatedly trained on synthetic data rather than real data, the generated data may progressively diverge from true real-world patterns, reducing their utility. 
 
-Overall, while synthetic data have promise for several areas of clinical research, any synthetic data use needs to be carefully considered and validated. 
+While synthetic data have promise for several areas of clinical research, any synthetic data use needs to be carefully considered and validated. 
 
 ## Summary
