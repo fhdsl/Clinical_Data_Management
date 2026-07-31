@@ -4,141 +4,273 @@
 
 ## Registries
 
-### What is a registry
+A registry is a collection of data about a group of patients with a shared condition or experience. Registries are typically sponsored by government agencies, professional organizations, research institutions, or private companies. Registries have specific guidelines about who will be included, which could be based on the condition of interest, geographic area, or other factors. The data from registries can be used to understand trends in a disease over time and space. 
+
+Cancer registries include data about cancer patients. These data are typically collected by hospitals or other medical facilities that diagnose or treat cancer, aggregated by regional registries, and then sent to national cancer registries. These data often include information about patient demographics, tumor characteristics, cancer stage, and initial treatment. Some registries also include information about outcomes after initial diagnosis and treatment. 
+
+Cancer registries can be classified as either population-based or hospital-based. Population-based registries (including SEER and NPCR, which you will read about below) collect data about all reported cancer cases within a geographic area. These registries are useful for calculating cancer incidence across time, space, and demographic groups. Hospital-based registries (including NCDB, which you will also read about below) collect data from patients treated in a specific type of cancer program or healthcare system. These registries are useful for improving patient care and studying specific cancer types more closely. 
+
+https://www.nih.gov/health-information/nih-clinical-research-trials-you/list-registries
+https://seer.cancer.gov/registries/cancer_registry/ 
+https://training.seer.cancer.gov/registration/types/hospital.html 
 
 ### US-based cancer registries
 
-#### SEER
+In the United States, there are two major organizations that fund cancer registries: the National Cancer Institute (NCI) and the Centers for Disease Control and Prevention (CDC). The NCI oversees the Surveillance, Epidemiology, and End Results (SEER) program, while the CDC oversees the National Program of Cancer Registries (NPCR). Both programs support smaller regional cancer registries across the United States, although typically SEER includes more detailed data for specific geographic regions, and NPCR includes less detailed data for almost the entire country. Data from both of these programs is combined into the U.S. Cancer Statistics (USCS) database. The reason that these data can be combined in a straightforward way is that the North American Association of Central Cancer Registries (NAACCR) has established standards for collecting and reporting cancer registry data in the United States and Canada. 
 
-1. What is this?
+https://training.seer.cancer.gov/operations/standards/setters/naaccr.html 
 
-2. What populations are the data from?
+note: add map of overlapping coverage of these two registries! 
 
-3. What types of data are included?
+#### Surveillance, Epidemiology, and End Results (SEER) program 
 
-4. How to access this data? 
+The SEER program has been funded by the NCI since 1973 to collect data about cancer within the US population. SEER combines data about cancer incidence and survival from regional registries. These regional registries cover approximately 45% of the US population, and include all reported cancers diagnosed among residents of the geographic area they cover. The major goal of the SEER program is to gather data to study patterns of cancer incidence and mortality over time and within geographic areas or across demographic subgroups. 
 
-#### NPCR
+https://seer.cancer.gov/about/goals.html 
 
-1. What is this?
 
-2. What populations are the data from?
+##### What population do the data represent? 
 
-3. What types of data are included?
+The SEER program includes data about people who have been diagnosed with cancer or received cancer care from medical providers within any of the geographic areas that are covered by SEER registries. 
 
-4. How to access this data? 
+**Include this map here:** https://seer.cancer.gov/i/seer-map.PNG
 
-#### Combined SEER and NPCR data 
+##### What types of data are included?
 
-1. How to access this data? 
+Data in the SEER registries includes:
 
-#### NCDB
+* Patient demographics 
+* Primary tumor site
+* Tumor morphology
+* Stage at diagnosis
+* First course of treatment
+* Vital status upon follow up 
+* Months survived
+* Cause of death
 
-1. What is this?
+https://seer.cancer.gov/data/
 
-2. What populations are the data from?
+##### How to access this data? 
 
-3. How is this different from the other registries (hospital based instead of population based)
+There are two data products available from the SEER program: SEER Research Data and SEER Research Plus and NCCR Data.
 
-4. What types of data are included?
+SEER Research Data includes data from 1975-2023, excluding geography, month of diagnosis, and other demographic fields. Any user with an email address can access this data by registering [here](https://seerdataaccess.cancer.gov/seer-data-access). 
 
-5. How to access this data? 
+SEER Research Plus and NCCR Data includes data from 1975-2023, including geography, month of diagnosis, and other demographic fields that are removed from the SEER Research Data. In order to access this data, the user must have an eRA Commons or Department of Health and Human Services (HHS) account. You will use this account to fill out an application form and sign data use and data limitations agreements. The SEER program will process your request within two business days, and send information about how to access the data and download the accompanying software. See [here](https://seer.cancer.gov/data/access.html) for more information about requesting access. 
+
+Additionally, SEER maintains specialized databases that provide additional variables and link the registry data to other administrative databases such as medicare. To access these databases, you must already have access to SEER Research Plus and NCCR Data, and then complete an additional application [process](https://seer.cancer.gov/data/specialized/) to request specialized data. Specialized databases are listed [here](https://seer.cancer.gov/data/specialized/available-databases/). Two of these databases also require NCI Central IRB approval to access. 
+
+#### National Program of Cancer Registries (NPCR)
+
+The NPCR was established by the CDC in 1992 to provide funding and assistance to state cancer registries and to establish standards for collecting and reporting this data. At the same time, states were authorized to create laws governing cancer case reporting and data collection, in order to make cancer registries as complete and comprehensive as possible. NPCR supports cancer registries in 46 states, the District of Columbia, Puerto Rico, and several US territories. Some states receive support from SEER rather than NPCR, and several registry systems contribute data to both programs. Data about new cancer cases are collected at medical facilities, sent to central cancer registries at the state level, and then submitted to NPCR. 
+
+https://www.cdc.gov/national-program-cancer-registries/about/index.html
+
+##### What population do the data represent?
+
+The NPCR includes data about people who have been diagnosed with cancer or received cancer care from medical providers within any of the geographic areas that are covered by NPCR registries. This includes 46 states, the District of Columbia, Puerto Rico, the US Pacific Island Jurisdictions, and the US Virgin Islands, and represents 97% of the US population.
+
+https://www.cdc.gov/national-program-cancer-registries/about/index.html
+
+##### What types of data are included?
+
+Data in the NPCR include:
+
+* Patient demographics (age, sex, race or ethnicity, geographic location)
+* Tumor characteristics at time of diagnosis
+  * Primary site
+  * Histologic type
+  * Behavior code
+  * Grade
+  * Diagnostic confirmation
+  * Laterality
+* Stage of cancer
+* Initial therapy 
+
+https://www.cdc.gov/national-program-cancer-registries/data-modernization/index.html 
+
+##### How to access this data 
+
+Data from the NPCR is accessed through the SEER program. Cancer incidence data from the NPCR and SEER programs are combined as the U.S. Cancer Statistics (USCS). The USCS has a public use database with cancer incidence and population data. This data does not include geographic information at the county or zip code level. This [data dictionary](https://www.cdc.gov/united-states-cancer-statistics/public-use/pdf/uscs-public-use-database-technical-documentation-uspr-2005-2020-508.pdf) specifies what data are included in the public use database. To access this data, you must already have access to the SEER Research Plus data (steps to access this data are provided [here](https://seer.cancer.gov/data/access.html)). Once you have this access, then you can follow the steps outlined [here](https://www.cdc.gov/united-states-cancer-statistics/public-use/access-data.html), which include filling out a brief form. Access requests should be processed within 2 business days. 
+
+The USCS also has a restricted access database. This database includes more detailed geographic variables, such as county and census tract, along with additional demographic variables, and the data dictionary can be accessed [here](https://www.cdc.gov/rdc/media/pdfs/2026/01/USCS-RDC-DataDictionary-CDC-Nov2024.pdf). This database requires more time and effort to access. The data access application requires the researcher to explain their need for the restricted-use variables and describe their research proposal and plan in detail. The application can be seen [here](https://www.cdc.gov/rdc/media/pdfs/2025/07/Proposal-Format-v3.2.pdf). An important part of this process is identifying the minimal set of restricted use variables that you will need for your project, and explaining why these are necessary for the analysis. If your proposal is approved, you will need to complete a Confidentiality Training, and then make an appointment at a research data center (RDC) or a Federal Statistical Research Data Center (FSRDC) to access the data. An overview of the process for accessing the USCS restricted access database can be found [here](https://www.cdc.gov/rdc/other-restricted-data/cancer-statistics.html).
+
+#### National Cancer Database (NCDB)
+
+The NCDB is another database that sources data from hospital registries. It differs from SEER and NPCR registries because instead of sourcing data from a specific geographic region, it includes data from registries at more than 1,500 hospitals or other medical facilities that are accredited by the Commission on Cancer (CoC). The CoC is a program within the American College of Surgeons, and requires accredited programs to meet a set of standards for care. CoC-accredited programs treat more than 74% of newly diagnosed cancer patients. NCDB data contain more detailed information about the facility in which a patient is treated than SEER and NPCR data, and includes longitudinal follow-up and survival information not generally available in the public-use USCS database. Database access is only available to researchers associated with CoC-accredited cancer programs.
+
+https://www.facs.org/quality-programs/cancer-programs/commission-on-cancer/coc-accreditation/ 
+
+##### What population do the data represent?
+
+The NCDB includes data about patients who have been treated by CoC accredited cancer programs, collected from hospital registries. 
+
+##### What types of data are included?
+
+Data in the NCDB include:
+
+* Patient demographics (age, sex, race, education and income for patient's zip code)
+* Cancer identification
+  * Class of case
+  * Year of diagnosis
+  * Primary site
+  * Laterality
+  * Histology
+  * Behavior
+  * Grade
+  * Diagnostic confirmation
+* Stage of disease 
+* Treatment
+  * Surgical treatments
+  * Radiation treatments 
+  * Systemic treatments
+* Outcomes
+  * Thirty day mortality
+  * Sixty day mortality
+  * Last contact or death
+  * Vital status 
+  
+https://www.facs.org/media/ilqb5snq/2024-data-dictionary.pdf 
+
+##### How to access this data?
+
+The NCDB manages a dataset called the Participant User Data File (PUF) which includes information about cancer cases from CoC-accredited hospitals and cancer programs. The PUFs are available only to researchers associated with CoC-accredited cancer programs who submit an application. This application includes letters of support from PIs in the CoC-accredited program and a description of your proposed research project and analysis plan. 
 
 ### International registries 
 
-#### Nordic cancer registries
+Many countries outside of the United States also maintain comprehensive cancer registries. 
 
-1. What is this?
+The Nordic Cancer Registries include population-based cancer data from several Nordic countries, which include some of the oldest and most comprehensive cancer registries in the world. NORDCAN provides free and public aggregated incidence, mortality, prevalence, and survival data at the level of country, year, cancer entity, sex, and age group level. Access to individual level data from any individual registry within the Nordic Cancer Registries requires a request to that specific registry, and typically requires a local collaborator or affiliation. 
 
-2. What populations are the data from?
+Another comprehensive cancer registry is the National Cancer Registration and Analysis Service (NCRAS) in England. These cancer registry data are linked with other data about outcomes, therapies, and hospital visits. These data can only be accessed for health care purposes, and can be requested through [this process](https://digital.nhs.uk/services/data-access-request-service-dars#national-disease-registration-service-ndrs-). 
 
-3. What types of data are included?
+While many countries have cancer registries, only one in three countries worldwide currently report high quality cancer incidence data. The Global Initiative for Cancer Registry Development is an initiative led by the World Health Organization. Regional hubs help individual countries build up their capacity to collect, analyze, and report data from cancer registries. More information about these regional hubs and individual country's registry programs can be found [here](https://gicr.iarc.fr/iarc-regional-hubs-for-cancer-registration/). 
 
-4. How to access this data? 
+![Worldwide cancer incidence data availability](https://gicr.iarc.fr/about-the-gicr/the-value-of-cancer-data/map_world_registrystatus.pdf)
 
-#### NCRAS (Englad)
+https://nordcan.iarc.fr/en 
+https://digital.nhs.uk/ndrs/about/ncras
+https://gicr.iarc.fr 
 
-1. What is this?
+### Summary?
 
-2. What populations are the data from?
-
-3. What types of data are included?
-
-4. How to access this data? 
-
-#### Other international registries
-
-Maybe mention IARC or GLOBOCAN as a place to learn more about registries in other countries
+Potentially provide summary table here? Maybe above, just to compare the US based registries? 
 
 ## Data commons
 
-### What is a data commons
+A data commons is a cloud-based platform that enables a research community to store, manage, analyze, and share data while controlling access through a common governance framework. In addition to hosting data, a data commons typically provides computational resources, software tools, and services that allow researchers to work with data within the same environment. Data commons also often harmonize data from multiple sources, allowing datasets collected by different organizations or studies to be analyzed together. A primary goal of a data commons is to promote data sharing and reuse by reducing barriers to accessing data and computation. Data commons often aim to reduce the gap between the large volume of data that has been collected and the smaller subset of data that can be readily accessed and reused for research. By centralizing data, infrastructure, and governance, data commons can help research communities collaborate more efficiently and share the costs associated with data storage and analysis. 
 
-### CRDC
+Several cancer-focused data commons exist, and are excellent sources of existing cancer data for researchers. 
 
-#### What is the CRDC
+https://www.nature.com/articles/s41597-023-02029-x 
 
-#### GDC
+### Cancer Research Data Commons (CRDC)
 
-1. What is this?
+The CRDC is a data commons run by the National Cancer Institute (NCI) to accelerate cancer research. The CRDC is really a collection of six different data commons, as well as a cloud resource and other computing infrastructure. The seven data commons included in the CRDC are:
 
-2. What populations are the data from?
+* Genomic Data Commons (GDC): DNA methylation and whole genome, whole exome, RNA-seq, miRNA-seq, and ATAC-seq data
+* Proteomic Data Commons (PCD): mass-spectrometry-based proteomic data
+* Imaging Data Commons (IDC): de-identified radiology and pathology data
+* Integrated Canine Data Commons (ICDC): genomic and clinical data from canine patients with cancer
+* General Commons (GC): data that do not fit into other CRDC data commons
+* Clinical and Translational Data Commons (CTDC): clinical, biospecimen, and molecular characterization data from NCI-funded studies 
+* Population Science Data Commons (PSDC): population studies data 
 
-3. What types of data are included?
+As well as including these component data commons, the CRDC provides a cloud resource with access to NCI-funded data, hundreds of publicly available tools and workflows, and computational resources for working with large-scale data. 
 
-4. How to access this data? (mention dbGaP here)
+While each data commons within the CRDC are heavily utilized for cancer research, the most popular and heavily cited component is the GDC. More information about the other data commons, as well as instructions for data access can be found [here](https://datacommons.cancer.gov/explore/data-commons).
 
-##### TCGA
+https://www.cancer.gov/about-nci/organization/cbiit/projects/crdc
 
-1. What is this?
+#### Genomic Data Commons (GDC)
 
-2. What populations are the data from?
+The GDC contains genomic data related to cancer, as well as tools and software to analyze this data. This data commons is a central repository for data from several major NCI studies of genomic changes in cancer, including The Cancer Genome Atlas (TCGA) and the Therapeutically Applicable Research to Generate Effective Treatment (TARGET) program.
 
-3. What types of data are included?
+##### What population do the data represent?
 
-4. How to access this data? 
+The GCD includes genomic data that are donated from many NIH-funded cancer studies and external studies. A partial list of data sources can be found [here](https://gdc.cancer.gov/about-data/data-sources).
 
-##### TARGET
+##### What types of data are included?
 
-1. What is this?
+The GCD provides access to:
 
-2. What populations are the data from?
+* DNA sequence data 
+* Copy number variation data
+* mRNA and miRNA sequence data
+* Structural variant data
+* DNA CpG Methylation data
+* Protein expression data 
+* Metadata (age, diagnosis, sex, etc.)
 
-3. What types of data are included?
+https://gdc.cancer.gov/about-data 
 
-4. How to access this data? 
+##### How to access this data? 
 
-#### Other types of data commons in the CRC
+The GCD data portal allows researchers to download data or to analyze data using the GCD platform. Data within the GDC are classified as either open access or controlled access. 
 
-proteomic data commons, imagining data commons, clinical and translational data commons, population science data commons
+Open access data does not require any authentication or authorization to access. It includes genomic data that is not individually identifiable, and most clinical and all biospecimen data elements. This data can be accessed through the [Genomic Data Commons Data Portal](https://portal.gdc.cancer.gov).
+
+Controlled access data includes individually identifiable data and some clinical data elements. Accessing controlled access data requires first obtaining an eRA Commons account and dbGaP access, then obtaining access to the specific controlled access research project through dbGaP, and finally logging into the GDC Data Portal to access. The eRA Commons lets federal agencies manage research grants, and accounts can only be made for individuals at reseach organizations by officials from the organization (https://www.era.nih.gov/register-accounts/create-and-edit-an-account.htm). The database of Genotypes and Phenotypes (dbGaP) is a database of data and results from studies about genotypes and phenotypes in humans. The dbGaP is commonly used to manage controlled-access data, by requiring researchers to request datasets and data access committees to review requests (https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/dbgap). Only senior researchers can request data through dbGaP, but once they have obtained access to project data, they can provide access to other members of their lab with GDC accounts (https://gdc.cancer.gov/access-data/data-access-processes-and-tools). 
+
+##### The Cancer Genome Atlas (TCGA)
+
+TCGA was a major cancer genomics project led by the NCI and the National Human Genome Research Institute which characterized over 20,000 samples across 33 types of cancers. 
+
+###### What population do the data represent?
+
+TCGA data come from samples collected at a network of tissue source sites, primarily located at cancer centers and hospitals in the United States, with additional contributions from a smaller number of international institutions (https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tissue-source-site-codes). Samples were collected from patients with a wide range of cancer types.
+
+###### What types of data are included?
+
+The TCGA includes genomic, epigenomic, transcriptomic, and proteomic data. 
+
+###### How to access this data
+
+Most of the data from TCGA is part of the open access data stored in the GDC, and accessed through the GDC [Data Portal](https://portal.gdc.cancer.gov). Individual-level genomic data can be accessed through the controlled access tier of the GDC, described above. 
+
+##### Therapeutically Applicable Research to Generate Effective Treatments (TARGET)
+
+The TARGET initiative was another major genomic program, led by the NIH and NCI, to gather genomic data in order to understand the molecular basis of childhood cancers. 
+
+###### What population do the data represent?
+
+TARGET data come from samples from patients who were children or young adults, mainly gathered by members of the Children's Oncology Group (COG) (https://www.cancer.gov/ccg/research/genome-sequencing/target/about).
+
+###### What types of data are included?
+
+TARGET includes genomic, epigenomic, transcriptomic, and proteomic data. 
+
+###### How to access this data
+
+Most of the data from TARGET is part of the open access data stored in the GDC, and accessed through the GDC [Data Portal](https://portal.gdc.cancer.gov). Individual-level genomic data can be accessed through the controlled access tier of the GDC, described above. 
 
 ### Other data commons
 
-#### ICGC
+#### International Cancer Genome Consortium (ICGC)
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
 4. How to access this data? 
 
-#### PCDC 
+#### Pediatric Cancer Data Commons (PCDC)
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
 4. How to access this data? 
 
-#### C3DC
+#### Childhood Cancer Clinical Data Commons (C3DC)
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
@@ -150,7 +282,7 @@ proteomic data commons, imagining data commons, clinical and translational data 
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
@@ -160,7 +292,7 @@ proteomic data commons, imagining data commons, clinical and translational data 
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
@@ -176,7 +308,7 @@ proteomic data commons, imagining data commons, clinical and translational data 
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
@@ -186,7 +318,7 @@ proteomic data commons, imagining data commons, clinical and translational data 
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
@@ -198,7 +330,7 @@ proteomic data commons, imagining data commons, clinical and translational data 
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
@@ -210,7 +342,7 @@ proteomic data commons, imagining data commons, clinical and translational data 
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
@@ -220,7 +352,7 @@ proteomic data commons, imagining data commons, clinical and translational data 
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
@@ -234,7 +366,7 @@ proteomic data commons, imagining data commons, clinical and translational data 
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
@@ -248,7 +380,7 @@ Mention cBioPortal when talking about access, note that this is a useful platfor
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
@@ -258,7 +390,7 @@ Mention cBioPortal when talking about access, note that this is a useful platfor
 
 1. What is this?
 
-2. What populations are the data from?
+2. What population do the data represent??
 
 3. What types of data are included?
 
