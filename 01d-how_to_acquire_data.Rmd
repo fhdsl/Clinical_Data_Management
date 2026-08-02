@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+Add note on getting data from collaborators.
+
 ## Registries
 
 A registry is a collection of data about a group of patients with a shared condition or experience. Registries are typically sponsored by government agencies, professional organizations, research institutions, or private companies. Registries have specific guidelines about who will be included, which could be based on the condition of interest, geographic area, or other factors. The data from registries can be used to understand trends in a disease over time and space. 
@@ -248,55 +250,126 @@ Most of the data from TARGET is part of the open access data stored in the GDC, 
 
 #### International Cancer Genome Consortium (ICGC)
 
-1. What is this?
+Similarly to TCGA, the ICGC aimed to collect genomic data for all major tumor types. As an international consortium, they also aimed to facilitate global genomic data sharing. The group, which involved 86 teams and spanned nearly every continent, produced genomic data from more than 20,000 tumors across 26 cancer types. 
 
-2. What population do the data represent??
+https://www.icgc-argo.org/page/65/icgc-initiatives- 
 
-3. What types of data are included?
+##### What population do the data represent?
 
-4. How to access this data? 
+ICGC data come from samples that were taken by consortium members.
+
+##### What types of data are included?
+
+The ICGC includes genomic, epigenomic, transcriptomic, and clinical data. 
+
+https://docs.cancergenomicscloud.org/docs/icgc-data 
+
+##### How to access this data
+
+While the ICGC data portal has been shut down, the data can be accessed following the steps [here](https://docs.icgc-argo.org/docs/data-access/icgc-25k-data). 
+
+The ICGC includes open access release data, which can be freely downloaded using [these instructions](https://docs.icgc-argo.org/docs/data-access/icgc-25k-data#open-release-data---object-bucket-details). 
+
+The ICGC also includes controlled release data. Access to this data requires an [application](https://docs.icgc-argo.org/docs/data-access/daco/applying). 
 
 #### Pediatric Cancer Data Commons (PCDC)
 
-1. What is this?
+The PCDC is a data commons run by the Data for the Common Good institution at the University of Chicago. The data commons includes pediatric, young adult, and adult cancer data and a unified research platform. This data spans more than forty countries and almost all types of pediatric cancer. The data is harmonized and standardized. This supports defining cohorts based on diseases and demographics across studies
 
-2. What population do the data represent??
+##### What population do the data represent?
 
-3. What types of data are included?
+The data in the PCDC come from clinical trials related to the following diseases: rhabdomyosarcoma, non-rhabdomyosarcoma, neuroblastoma, germ cell tumors, Hodgkin lymphoma, and acute myeloid leukemia. 
 
-4. How to access this data? 
+https://docs.pedscommons.org/DataAccessAndGovernance/ 
+
+##### What types of data are included?
+
+The PCDC includes clinical, genomic, and imaging data. 
+
+##### How to access this data
+
+PCDC data can be accessed through their [data portal](https://portal.pedscommons.org/). A data portal account requires an authenticated email and institutional affiliation. Open access data allow researchers to explore data dictionaries and build cohorts. They do not include participant level data. Researchers are expected to use this open access data for determining feasibility of a proposed study and for early hypothesis exploration, not for publication. 
+
+Scientists who would like to do research on PCDC data need to request access to a dataset associated with a specific disease, and their request will be reviewed. Project request forms can be found [here](https://docs.pedscommons.org/PCDCProjectRequestForm/). 
 
 #### Childhood Cancer Clinical Data Commons (C3DC)
 
-1. What is this?
+The C3DC is a database of demographic and clinical data related to pediatric cancers, supported by the NCI. The data in the C3DC have been harmonized and include a standard set of data elements. This data commons allows researchers to search for harmonized participant-level clinical data across multiple studies and create custom cohorts to analyze. 
 
-2. What population do the data represent??
+##### What population do the data represent?
 
-3. What types of data are included?
+Data that are included in the C3DC come from forty studies, listed [here](https://clinicalcommons.ccdi.cancer.gov/studies), and include over 59,000 participants. 
 
-4. How to access this data? 
+##### What types of data are included?
 
-## Cohorts and BioBanks
+The C3DC contains demographic and clinical data, including:;
 
-### UK BioBank
+* study information
+* demographics (race, sex at birth)
+* tumor information 
+* diagnosis
+* treatment 
+* laboratory test results
+* genetic analysis results
+* survival outcomes
 
-1. What is this?
+https://clinicalcommons.ccdi.cancer.gov/data_model 
 
-2. What population do the data represent??
+##### How to access this data
 
-3. What types of data are included?
+The data can be explored with this [web portal](https://clinicalcommons.ccdi.cancer.gov/explore), and cohorts can be compared with this [web portal](https://clinicalcommons.ccdi.cancer.gov/cohortAnalyzer). The C3DC only includes deidentified open-access clinical data. 
 
-4. How to access this data? 
+### Summary
+
+Potentially add summary table here to compare the listed data commons.
+
+## Cohorts and Biobanks
+
+* rewrite to also emphasize cohorts like all of us!
+
+Biobanks store and manage biological samples (such as blood and saliva samples) for biomedical and clinical research. They support the collection, analysis, storage, and distribution of the samples. Typically samples come from volunteers. The biological samples are often linked with data about the participants, such as demographics, health records, and environmental exposures. Biobanks typically collect data over a continuous or long term basis. Biobanks can be run by hospitals, research institutions, provite companies, patient adocacy organizations, or other organizations. 
+
+Some biobanks are population-based, which means that they gather samples from a general population. Others are disease-oriented, which means they focus on gathering samples associated with a specific disease. Although the biobanks that we discuss in this section are not cancer specific, they provide data that can be useful for studying cancer. 
+
+https://allofus.nih.gov/article/biobank 
+https://www.broadinstitute.org/what-is-a-biobank
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8275637/#CR15 
+
+### UK Biobank
+
+The UK Biobank includes data from half a million volunteers. [add more info here!]
+
+#### What population do the data represent?
+
+Over 500,000 volunteers were recruited for the UK Biobank between 2006 and 2010. Participants lived within 25 miles of the Biobank's 22 research centers in Scotland, England, and Wales when sampled. The participants are balanced between genders, include participants aged 40 to 69, and had a variety of jobs. The participants on average were slightly healthier and wealthier than the general UK population. 95% of the participants were white, and there were relatively low numbers of participants from different ethnic groups.  
+#### What types of data are included?
+
+The UK Biobank includes:
+
+* Imaging data
+* Biomarker data
+* Genetic data
+* Healthcare records
+* Questionnaire data
+* Physical measurements
+* Demographic and lifestyle data
+* Environmental data 
+
+#### How to access this data
+
+Access to the data from the UK Biobank requires researchers to fill out an application and pay an access fee. Eligible researchers must have a track record of health-related research and be affiliated with a recognized research organization. The application requires a summary of the intended research, and the process is outlined [here](https://community.ukbiobank.ac.uk/hc/en-gb/categories/14494598931229-Get-started-with-UK-Biobank). The fee structure for accessing this data is provided [here](https://www.ukbiobank.ac.uk/use-our-data/fees/). 
 
 ### All of Us
 
-1. What is this?
+All of Us is a research program in the United States supported by the NIH, which aims to create a diverse database to be used for health research. 
 
-2. What population do the data represent??
+#### What population do the data represent?
 
-3. What types of data are included?
 
-4. How to access this data? 
+#### What types of data are included?
+
+
+#### How to access this data
 
 ## EHR platforms
 
