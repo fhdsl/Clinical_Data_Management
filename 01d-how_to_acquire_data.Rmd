@@ -631,21 +631,66 @@ MSK-CHORD data can be accessed through [cBioPortal](https://www.cbioportal.org/s
 
 #### Flatiron
 
-Flatiron health 
+Flatiron health is a commercial platform that contains oncology data, as well as additional resources. Flatiron includes more than five million patient records, which are linked with imagining, genomic, pathology, and claims data. Flatiron health has partnered with [Foundation Medicine](https://www.foundationmedicine.com) (FMI), a precision medicine company, to create their Clinico-Genomic Database (CGDB), which combines patient-level clinical data with genomic data from genomic profiling tests. 
+
+https://flatiron.com/real-world-evidence/solutions-for-clinical-development-teams 
+https://jamanetwork.com/journals/jama/fullarticle/2730114 
 
 ##### What population do the data represent?
 
+Flatiron collects data from EHR of patients receiving care from more than 220 cancer practices. Approximately 70% of patients come from community cancer centers and 30% of patients come from academic medical centers. The CGDB includes over 110,000 patients. 
+
+https://flatiron.com/database-characterization 
+
 ##### What types of data are included?
 
+Flatiron data include the following:
+
+* Demographics
+* Tumor information
+* Diagnosis
+date
+* Cancer stage
+* Treatment
+* Unstructured data, processed with natural language processing, machine learning, and large language models
+
+The CGDB pairs this data with data from genomic profiling tests.
+
+https://flatiron.com/database-characterization 
+https://resources.flatiron.com/clinico-genomic-data-is-a-game-changer-for-precision-oncology/ 
+
 ##### How to access this data
+
+Flatiron data can be accessed by contacting them [here](https://flatiron.com/contact). 
 
 #### Tempus
 
+Tempus is a healthcare technology company that can provide a large patient database as well as genomic sequencing and data. Tempus collects EHR data from healthcare systems, normalizes and harmonizes the data, links it with molecular genomic data, and uses AI agents and humans to process unstructured clinical data.
+
+https://www.tempus.com/research/ 
+https://www.tempus.com/tech-blog/The-Tempus-data-pipeline-architecting-the-future-of-precision-medicine/#overview 
+
 ##### What population do the data represent?
+
+The Tempus database includes deidentified patient records from healthcare systems.
+
+https://www.tempus.com/publications/comparison-of-demographics-and-clinical-characteristics-using-real-world-data-from-tempus-multimodal-database-and-seer-cancer-registry-across-17-solid-cancer-cohorts/
 
 ##### What types of data are included?
 
+Tempus includes the following data:
+
+* Clinical (structured and unstructured)
+* Molecular (DNA and RNA data)
+* Imaging
+* Claims
+* Outcomes
+
+https://www.tempus.com/solutions/real-world-data/ 
+
 ##### How to access this data
+
+Tempus data is available to participating institutions. Tempus can be contacted [here](https://www.tempus.com/solutions/tempus-plus/#contact).
 
 ## Summary
 
