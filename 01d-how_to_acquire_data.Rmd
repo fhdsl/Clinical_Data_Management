@@ -246,6 +246,14 @@ TARGET includes genomic, epigenomic, transcriptomic, and proteomic data.
 
 Most of the data from TARGET is part of the open access data stored in the GDC, and accessed through the GDC [Data Portal](https://portal.gdc.cancer.gov). Individual-level genomic data can be accessed through the controlled access tier of the GDC, described above. 
 
+#### Imagining Data Commons (IDC)
+
+##### What population do they data represent?
+
+##### What types of data are included?
+
+##### How to access this data
+
 ### Other data commons
 
 #### International Cancer Genome Consortium (ICGC)
@@ -325,11 +333,13 @@ Potentially add summary table here to compare the listed data commons.
 
 ## Cohorts and Biobanks
 
-* rewrite to also emphasize cohorts like all of us!
+Cohort studies are observational studies in which a group of participants is enrolled and followed over time. Researchers collect information about participants at baseline and then track outcomes such as disease diagnoses, health behaviors, or mortality. By observing how health changes over time, cohort studies can be used to identify factors associated with disease risk, progression, and outcomes.
 
-Biobanks store and manage biological samples (such as blood and saliva samples) for biomedical and clinical research. They support the collection, analysis, storage, and distribution of the samples. Typically samples come from volunteers. The biological samples are often linked with data about the participants, such as demographics, health records, and environmental exposures. Biobanks typically collect data over a continuous or long term basis. Biobanks can be run by hospitals, research institutions, provite companies, patient adocacy organizations, or other organizations. 
+Biobanks are organizations that collect, store, manage, and distribute biological samples, such as blood, saliva, tissue, or DNA, for biomedical research. These samples are typically linked to information about the participants who provided them, including demographic characteristics, health records, environmental exposures, and survey responses. Biobanks may be operated by hospitals, research institutions, private companies, patient advocacy organizations, or government agencies.
 
-Some biobanks are population-based, which means that they gather samples from a general population. Others are disease-oriented, which means they focus on gathering samples associated with a specific disease. Although the biobanks that we discuss in this section are not cancer specific, they provide data that can be useful for studying cancer. 
+Many modern research initiatives combine these two approaches. Participants are enrolled into a cohort study, contribute biological samples to a biobank, and are then followed over time through surveys, physical examinations, electronic health records, or other data sources. This combination allows researchers to connect biological measurements with health outcomes and disease development. Two well-known examples are the UK Biobank and the NIH All of Us Research Program.
+
+Biobanks may be population-based, meaning they recruit participants from the general population, or disease-oriented, meaning they focus on individuals with a particular disease. Although the resources discussed in this section are not cancer-specific, they contain rich clinical, genomic, and lifestyle data that are frequently used in cancer research.
 
 https://allofus.nih.gov/article/biobank 
 https://www.broadinstitute.org/what-is-a-biobank
@@ -337,11 +347,12 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC8275637/#CR15
 
 ### UK Biobank
 
-The UK Biobank includes data from half a million volunteers. [add more info here!]
+The UK Biobank is a large population-based cohort study and biobank that includes data from more than 500,000 middle-aged participants in the United Kingdom. Participants were recruited between 2006 and 2010 and contributed biological samples, physical measurements, and detailed information about their health and lifestyle. The study links these data with healthcare records and continues to follow participants over time.
 
 #### What population do the data represent?
 
-Over 500,000 volunteers were recruited for the UK Biobank between 2006 and 2010. Participants lived within 25 miles of the Biobank's 22 research centers in Scotland, England, and Wales when sampled. The participants are balanced between genders, include participants aged 40 to 69, and had a variety of jobs. The participants on average were slightly healthier and wealthier than the general UK population. 95% of the participants were white, and there were relatively low numbers of participants from different ethnic groups.  
+Over 500,000 volunteers were recruited for the UK Biobank between 2006 and 2010. Participants lived within 25 miles of the Biobank's 22 research centers in Scotland, England, and Wales when sampled. The participants on average were slightly healthier and wealthier than the general UK population. 95% of the participants were white, and there were relatively low numbers of participants from different ethnic groups.  
+
 #### What types of data are included?
 
 The UK Biobank includes:
@@ -361,112 +372,281 @@ Access to the data from the UK Biobank requires researchers to fill out an appli
 
 ### All of Us
 
-All of Us is a research program in the United States supported by the NIH, which aims to create a diverse database to be used for health research. 
+All of Us is a nationwide research program launched by the NIH in 2015 with the goal of building a large and diverse resource for precision medicine research. Like the UK Biobank, All of Us combines a longitudinal cohort study with a biobank. Participants contribute surveys, physical measurements, electronic health record data, and biological samples, and many participants consent to long-term follow-up. The program places particular emphasis on recruiting populations that have historically been underrepresented in biomedical research. Biological samples are processed and stored through a national biobank managed by the Mayo Clinic. Although All of Us is not focused specifically on cancer, its scale, diversity, and breadth of clinical and biological data make it a valuable resource for many types of cancer research.
+
+https://www.joinallofus.org/about 
+https://www.joinallofus.org/faq
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9436122/ 
 
 #### What population do the data represent?
 
+All of Us includes over 800,000 participants in the US. The program aims to include populations that are historically under-represented in medical research, 
 
 #### What types of data are included?
 
+All of Us includes the following data. While the survey responses are collected on all participants, the other types of data are collected only on a subset of participants: 
+
+* Survey responses related to health history, lifestyle, health care access, etc. 
+* Short-read whole genome sequencing data 
+* RNA-seq and proteomics samples 
+* Long-read sequencing data 
+* Data from unstructured clinical text
+* EHR (demographics, visits, diagnoses, medications) 
+* Fitbit data
+* Physical data (blood pressure, heart rate, BMI, etc)
+* Data from cognitive tasks 
 
 #### How to access this data
 
+The All of Us data has three access tiers. The Public Tier includes deidentified and aggregated data. These data are available through the [data browser](https://databrowser.researchallofus.org/?_gl=1*17zo1a7*_ga*MTg0OTEyMTY3OC4xNzg1Nzc1ODcw*_ga_MQVR5DG2C4*czE3ODU3NzU4NzAkbzEkZzEkdDE3ODU3NzYzOTUkajEzJGwwJGgyNjMyMzg5MDM.). The Registered Tier includes individual-level data, including data from EHR, wearables, surveys, and physical measurements. The Controlled Tier includes genomic data, demographic fields in EHR that are suppressed in other tiers, and accurate dates of events that are shifted in other tiers. 
+
+In order to access the Registered and Controlled tiers, your institution must have signed a Data Use and Registration Agreement with All of Us. You can check [here](https://www.researchallofus.org/institutional-agreements/) whether your institution has an agreement in place for the tier that you would like to access, or submit a request if not. If your institution does have an agreement, then you will need to create an account and complete a training. 
+
+https://www.researchallofus.org/data-tools/data-access/
+
 ## EHR platforms
 
-### What are EHR platforms?
+Electronic health records (EHR) are digitized notes, demographics, images, and histories or observations/records from a patient's interaction with the health care system. While these data are products of the healthcare system, they are a major source of data for clinical research. EHR data are stored in databases on EHR platforms. Some platforms are built specifically for research, some are coordinated by health systems, and some are paid commercial platforms. As EHR are not primarily collected for research purposes, they can be challenging to work with due to variation in how data is captured and recorded. 
 
 ### Research EHR platforms
 
 #### PCORnet
 
-1. What is this?
+PCORnet is a health data resource funded by the Patient Centered Outcomes Research Institute (PCORI). PCORnet receives electronic health data from a large network of health systems and standardizes data under a shared data model. PCORnet includes data from more than 50 million patients from across the US. PCORnet is a research platform with resources that it can provide outside of the data, and the Coordinating Center should be contacted early in study design. PCORnet will freely provide a consultation about using PCORnet for a study, a study feasibility review, and either a network collaborator request or data network request, which involves determining what available data in PCORnet would relate to your data and provides site-level aggregate data. If applicable, PCORnet can support data queries, although these will have costs. 
 
-2. What population do the data represent??
+https://pcornet.org/data/common-data-model/ 
+https://pcornet.org/module-3-playbook/ 
 
-3. What types of data are included?
+##### What population do the data represent?
 
-4. How to access this data? 
+Data from PCORnet comes from electronic health records of more than 50 million patients in the healthcare system. These data primarily come from partnerships with PCORnet Clinical Research Networks (CRNs), which are groups of healthcare institutes across the US. A list of the CRNs and their associated healthcare institutions can be found [here](https://pcornet.org/network/). 
+
+##### What types of data are included?
+
+PCORnet includes EHR data, including: 
+
+* Demographics
+* Healthcare enrollment
+* Healthcare encounters
+* Diagnoses
+* Procedures
+* Vital results
+* Prescriptions
+* Immunizations
+* Lab histories 
+* Cause of death 
+
+https://pcornet.org/wp-content/uploads/2025/05/PCORnet_Common_Data_Model_v70_2025_05_01.pdf 
+
+##### How to access this data
+
+PCORnet provides several free resources to streamline research before getting to paid data queries. First, you can do a consultation with the PCORnet [Front Door](https://pcornet.org/front-door/) to access PCORnet. Next, you can request a study feasibility review, to understand what PCORnet data are available for a project and to develop a budget for a project using PCORnet data. After this, you can submit a data network request, in which you will work with PCORnet partners to determine where relevant data exist across hte PCORnet network, and to provide high-level data trends for study planning. Finally, if you end up using PCORnet data in your study, you will work with PCORnet CRNs, which will require funding. More information about these resources can be found [here](https://pcornet.org/module-3-playbook/).
+
+https://pcornet.org/module-3-playbook/ 
 
 #### ENACT
 
-1. What is this?
+ENACT is an EHR platform that facilitates research with EHR for researchers at participating Clinical and Translational Science Award (CTSA) institutions. A list of participating institutions can be found [here](https://enact-network.org/site-access-contacts/). ENACT includes over 150 million patient records, including records from 90% of the CTSA consortium. The primary purpose of ENACT is to provide researchers with data to explore and validate feasibility for clinical studies. 
 
-2. What population do the data represent??
+https://enact-network.org/about/faqs/ 
+https://enact-network.org
 
-3. What types of data are included?
+##### What population do the data represent?
 
-4. How to access this data? 
+ENACT includes over 150 million patient records, including records from 90% of the CTSA consortium. A list of participating institutions can be found [here](https://enact-network.org/site-access-contacts/). 
+
+##### What types of data are included?
+
+ENACT data includes the following:
+
+* Demographics
+* Diagnoses
+* Procedures
+* Visits
+* Medications
+* Lab tests
+
+https://enact-network.org/media/rb3fsitp/act_ontology_data_dictionary.pdf 
+
+##### How to access this data
+
+To request access to ENACT, you must be a member of a participating CTSA institution. If you are, you can reach out to the contact at your local institution, which you can find [here](https://enact-network.org/site-access-contacts/). 
 
 ### Health system EHR platforms
 
 #### Epic Cosmos
 
-1. What is this?
+Epic Cosmos is an EHR platform that includes data from health systems using Epic software, and is available to researchers affiliated with and approved by a Cosmos participating organization. A list of organizations can be found [here](https://cosmos.epic.com/request-access/). If you are not part of a participating organization, you can request a Cosmos collaborator or submit ideas for a study [here](https://www.epicresearch.org). 
 
-2. What population do the data represent??
+##### What population do the data represent?
 
-3. What types of data are included?
+Epic Cosmos includes data from claims transactions and EHR for patients that are part of health systems that use Epic software. This population is representative of the population of the US Census (https://cosmos.epic.com/about/). 
 
-4. How to access this data? 
+##### What types of data are included?
+
+Epic Cosmos includes the following data:
+
+* Demographics
+* Diagnoses
+* Medications
+* Patient-generated health data
+* Birth records
+* Vitals
+* Social drivers (transportation, financial security assessments, etc.)
+
+https://cosmos.epic.com/about/
+
+##### How to access this data
+
+If you are affiliated with a Cosmos participating organization, you can request access [here](https://cosmos.epic.com/request-access/). You will need to submit a form with your contact information and a description of your inquiry. 
 
 ### Commerical EHR platforms
 
-#### TriNetx
+#### TriNetX
 
-1. What is this?
+TriNetx is a commerical EHR platform that provides data for pharma companies, healthcare providers, and academic researchers. It connects researchers to patient data that has been combined from multiple sources and mapped to a common data model. 
 
-2. What population do the data represent??
+##### What population do the data represent?
 
-3. What types of data are included?
+TriNetX includes records from more than 65 million patients, across 20 countries. These data come from a network of healthcare organizations across the world. 
 
-4. How to access this data? 
+https://trinetx.com/data/ 
+
+##### What types of data are included?
+
+TriNetX data includes the following:
+
+* Demographics
+* Diagnoses
+* Procedures
+* Medications
+* Lab tests
+* Vitals
+
+##### How to access this data
+
+Data can be accessed by contacting TriNetX [here](https://trinetx.com/solutions/datasets/#contact). 
 
 #### Truveta
 
-1. What is this?
+Truveta is another commerical EHR platform, with more than 130 million patient records. The data are standardized across healthcare systems and mapped to a common data model. 
 
-2. What population do the data represent??
+##### What population do the data represent?
 
-3. What types of data are included?
+Truveta includes records from more than 130 million patients, which are sourced from more than 900 hospitals and 20,000 clinics. Some affiliated health systems are listed [here](https://www.truveta.com/members/).
 
-4. How to access this data? 
+https://www.truveta.com/data/
 
-## Clinico-genomic data platforms
+##### What types of data are included?
+
+Truveta data includes the following:
+
+* EHR data
+  * Demographics
+  * Diagnoses
+  * Procedures
+  * Medications
+  * Lab results
+  * Immunizations
+  * Pharmacy data
+* Clinical notes
+* Medical images
+
+https://www.truveta.com/data/
+
+##### How to access this data
+
+Data can be accessed by contacting Truveta [here](https://www.truveta.com/contact-us/). 
+
+## Clinico-genomic datasets and data platforms
+
+Clinico-genomic data platforms link EHR with tumor sequencing data. Both EHR data and tumor sequencing data are collected as part of the healthcare process, but a linked database can be used for deeper research about genomic structures of and treatment for a variety of cancer types.
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11869879/
 
 ### Public platforms
 
 #### Project GENIE
 
-1. What is this?
+Project GENIE is a publicly accessible cancer registry that combines cancer genomic sequencing data and clinical outcomes, funded by the American Association for Cancer Research (AACR). A major goal of Project GENIE is to collect a large repository of sequencing and clinical cancer data for precision oncology research. Precision medicine customizes a patient's treatment based on their individual genomic, behavioral, and environmental characteristics, and requires a large amount of data. Project GENIE includes clinical and cancer genome sequencing data from most cancer patients treated at twenty international cancer centers. Through partnerships with [Sage Bionetworks](https://sagebionetworks.org) and [cBioPortal](https://www.cbioportal.org), the registry aggregates and harmonizes this data, and provides it freely for research purposes. Project GENIE also has a research collaboration with the Biopharma Collaborative (BPC), a coalition of ten biopharmaceutical companies, in order to gather additional clinical data to the existing Project GENIE data. 
 
-2. What population do the data represent??
+https://www.aacr.org/professionals/research/aacr-project-genie/ 
+https://www.aacr.org/professionals/research/aacr-project-genie/bpc/ 
 
-3. What types of data are included?
+##### What population do the data represent?
 
-4. How to access this data? 
+The data in Project GENIE are collected from cancer patients from twenty international cancer centers. A list of participating centers can be found [here](https://www.aacr.org/professionals/research/aacr-project-genie/aacr-project-genie-participation/). 
 
-Mention cBioPortal when talking about access, note that this is a useful platform for basic analyses and visualizations for many public cancer datasets.
+##### What types of data are included?
+
+Project GENIE includes the following data: 
+
+* Demographics
+* Treatment
+* Diagnosis (state, histology, etc.)
+* Outcomes 
+* Sequencing data
+
+https://www.aacr.org/professionals/research/aacr-project-genie/aacr-project-genie-data-model/
+https://www.aacr.org/wp-content/uploads/2026/02/19.0_public_data_guide.pdf 
+
+##### How to access this data
+
+There are multiple ways to access the Project GENIE data. Users can either access the data directly through [cBioPortal](https://genie.cbioportal.org), or download the data from [Synapse](https://www.synapse.org/Synapse:syn7222066/wiki/405659). 
+
+cBioPortal is a platform for basic analysis and visualization of cancer genomic data. It provides access to many publicly available cancer datasets (a list of available datasets can be found [here](https://www.cbioportal.org/datasets)). To access Project GENIE data on cBioPortal, you must make a free account and then request access [here](http://www.cbioportal.org/genie). 
+
+Synapse is a platform for data sharing. To access Project GENIE data with Synapse, follow these [steps](https://genie.synapse.org/Access). This involves creating a Synapse account, agreeing to terms of use, submitting a request for access for each desired dataset, and downloading the data using R, Python, or a command line client. 
+
+#### MSK-CHORD
+
+Memorial Sloan Kettering Cancer Center (MSK) curated the MSK-CHORD dataset, which combines deidentified longitudinal clinical data with genomic data from genomic profiling tests of tumors. This dataset includes cases of many prevalent and rare cancer types from over 24,000 patients. The dataset includes natural language processing annotations of unstructured data, along with structured clinical data and genomic data. MSK-CHORD is available through cBioPortal. 
+
+https://www.mskcc.org/research-advantage/support/digital-health-projects/msk-chord-clinico-genomic-data-msk-cancer 
+https://www.nature.com/articles/s41586-024-08167-5 
+
+##### What population do the data represent?
+
+MSK-CHORD includes data from patients who received the MSK-IMPACT tumor-sequencing test at MSK. 
+
+https://www.mskcc.org/msk-impact 
+
+##### What types of data are included?
+
+MSK-CHORD includes the following data. Some of the clinical annotations are derived from natural language processing.
+
+* Demographics
+* Diagnoses
+* Cancer type 
+* Treatment
+* Genomic data
+
+https://www.cbioportal.org/study/summary?id=msk_chord_2024 
+
+##### How to access this data
+
+MSK-CHORD data can be accessed through [cBioPortal](https://www.cbioportal.org/study/summary?id=msk_chord_2024).
 
 ### Commerical platforms
 
 #### Flatiron
 
-1. What is this?
+Flatiron health 
 
-2. What population do the data represent??
+##### What population do the data represent?
 
-3. What types of data are included?
+##### What types of data are included?
 
-4. How to access this data? 
+##### How to access this data
 
 #### Tempus
 
-1. What is this?
+##### What population do the data represent?
 
-2. What population do the data represent??
+##### What types of data are included?
 
-3. What types of data are included?
-
-4. How to access this data? 
+##### How to access this data
 
 ## Summary
+
+Note that more data resources can be found in this [table](https://jhudatascience.org/ITN_computing_resources/dataResourceTable.html).
