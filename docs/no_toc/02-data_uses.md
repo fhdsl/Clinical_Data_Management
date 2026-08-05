@@ -64,7 +64,7 @@ Data used for risk prediction can come from various sources, including:
   * Clinical Data: This includes patient demographics, medical history, laboratory results, and imaging studies.
   * Genetic Data: Genetic information, such as DNA sequencing results, can provide valuable insights into an individual's susceptibility to certain diseases.
   * Environmental and Lifestyle Data: Factors such as diet, exercise habits, smoking status, and environmental exposures can influence disease risk and may be included in risk prediction models.
-  * Biomarkers: Biological markers indicative of disease or physiological processes can be used as predictors in risk models [@Bodaghi_Fattahi_Ramazani_2023].
+  * Biomarkers: Biological markers indicative of disease or physiological processes can be used as predictors in risk models [@deGramont_etal_2015; @Taylor_Ankerst_Andridge_2008].
 
 Once relevant data is collected, statistical and machine learning techniques can be applied to develop predictive models. These models aim to identify patterns and relationships within the data that are associated with the outcome of interest. Common techniques include logistic regression, decision trees, random forests, support vector machines, and neural networks.
 
