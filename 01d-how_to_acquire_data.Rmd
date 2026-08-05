@@ -1,8 +1,8 @@
 # How to Acquire Clinical Data
 
-When proposing new clinical research, a researcher may plan to collect new clinical data or have access to clinical data that they have collected, that a collaborator has collected, or that their institution has access to. However, it is becoming increasingly common to do research on existing clinical data. For these studies, a major question is how to acquire these data. 
+When designing a clinical research study, researchers may collect new clinical data, use data collected by collaborators, or access data already available through their institution. However, it is becoming increasingly common to conduct research using existing clinical data resources. For these studies, a major question is how to acquire these data. 
 
-When evaluating a source of clinical data, it is useful to understand why the data were collected, who is included in the data, what variables are available, and how the data can be accessed and any associated applications or costs. 
+When evaluating a source of clinical data, it is useful to understand why the data were collected, who is included in the data, what variables are available, what requirements, applications, or costs are associated with access.
 
 The major categories of data acquisition sources discussed in this chapter include registries, data commons, cohort studies and biobanks, electronic health record (EHR) platforms, and linked clinical and genomic data resources. 
 
@@ -41,7 +41,7 @@ https://seer.cancer.gov/about/goals.html
 
 ##### What population do the data represent? 
 
-The SEER program includes data about people who have been diagnosed with cancer or received cancer care from medical providers within any of the geographic areas that are covered by SEER registries. 
+The SEER program includes data about people diagnosed with cancer while residing in geographic areas covered by SEER registries.
 
 **Include this map here:** https://seer.cancer.gov/i/seer-map.PNG
 
@@ -96,7 +96,7 @@ The USCS also has a restricted access database. This database includes more deta
 
 #### National Cancer Database (NCDB)
 
-The NCDB is another database that sources data from hospital registries. It differs from SEER and NPCR registries because instead of sourcing data from a specific geographic region, it includes data from registries at more than 1,500 hospitals or other medical facilities that are accredited by the Commission on Cancer (CoC). The CoC is a program within the American College of Surgeons, and requires accredited programs to meet a set of standards for care. CoC-accredited programs treat more than 74% of newly diagnosed cancer patients. NCDB data contain more detailed information about the facility in which a patient is treated than SEER and NPCR data, and includes longitudinal follow-up and survival information not generally available in the public-use USCS database. Database access is only available to researchers associated with CoC-accredited cancer programs.
+The NCDB is hospital-based cancer registry. It differs from SEER and NPCR registries because instead of sourcing data from a specific geographic region, it includes data from registries at more than 1,500 hospitals or other medical facilities that are accredited by the Commission on Cancer (CoC). The CoC is a program within the American College of Surgeons, and requires accredited programs to meet a set of standards for care. CoC-accredited programs treat more than 74% of newly diagnosed cancer patients. NCDB data contain more detailed information about the facility in which a patient is treated than SEER and NPCR data, and includes longitudinal follow-up and survival information not generally available in the public-use USCS database. Database access is only available to researchers associated with CoC-accredited cancer programs.
 
 https://www.facs.org/quality-programs/cancer-programs/commission-on-cancer/coc-accreditation/ 
 
@@ -123,13 +123,13 @@ The NCDB manages a dataset called the Participant User Data File (PUF) which inc
 
 Many countries outside of the United States also maintain comprehensive cancer registries. 
 
-The Nordic Cancer Registries include population-based cancer data from several Nordic countries, which include some of the oldest and most comprehensive cancer registries in the world. NORDCAN provides free and public aggregated incidence, mortality, prevalence, and survival data at the level of country, year, cancer entity, sex, and age group level. Access to individual level data from any individual registry within the Nordic Cancer Registries requires a request to that specific registry, and typically requires a local collaborator or affiliation. 
+The Nordic Cancer Registries include population-based cancer data from several Nordic countries, which have some of the oldest and most comprehensive cancer registries in the world. NORDCAN provides free and public aggregated incidence, mortality, prevalence, and survival data at the level of country, year, cancer entity, sex, and age group level. Access to individual level data from any individual registry within the Nordic Cancer Registries requires a request to that specific registry, and typically requires a local collaborator or affiliation. 
 
-Another comprehensive cancer registry is the National Cancer Registration and Analysis Service (NCRAS) in England. These cancer registry data are linked with other data about outcomes, therapies, and hospital visits. These data can only be accessed for health care purposes, and can be requested through [this process](https://digital.nhs.uk/services/data-access-request-service-dars#national-disease-registration-service-ndrs-). 
+Another comprehensive cancer registry is the National Cancer Registration and Analysis Service (NCRAS) in England. These registry data are linked with information on treatments, outcomes, and healthcare utilization. These data can only be accessed for health care purposes, and can be requested through [this process](https://digital.nhs.uk/services/data-access-request-service-dars#national-disease-registration-service-ndrs-). 
 
 While many countries have cancer registries, only one in three countries worldwide currently report high quality cancer incidence data. The Global Initiative for Cancer Registry Development is an initiative led by the World Health Organization. Regional hubs help individual countries build up their capacity to collect, analyze, and report data from cancer registries. More information about these regional hubs and individual country's registry programs can be found [here](https://gicr.iarc.fr/iarc-regional-hubs-for-cancer-registration/). 
 
-![Worldwide cancer incidence data availability](https://gicr.iarc.fr/about-the-gicr/the-value-of-cancer-data/map_world_registrystatus.pdf)
+Include this image here: https://gicr.iarc.fr/about-the-gicr/the-value-of-cancer-data/map_world_registrystatus.pdf
 
 https://nordcan.iarc.fr/en 
 https://digital.nhs.uk/ndrs/about/ncras
@@ -156,7 +156,7 @@ https://www.nature.com/articles/s41597-023-02029-x
 
 ### Cancer Research Data Commons (CRDC)
 
-The CRDC is a data commons run by the National Cancer Institute (NCI) to accelerate cancer research. The CRDC is really a collection of seven different data commons, as well as a cloud resource and other computing infrastructure. The seven data commons included in the CRDC are:
+The CRDC is a data commons run by the National Cancer Institute (NCI) to accelerate cancer research. The CRDC consists of seven specialized data commons, as well as a cloud infrastructure and other computing resources. The seven data commons included in the CRDC are:
 
 * Genomic Data Commons (GDC): DNA methylation and whole genome, whole exome, RNA-seq, miRNA-seq, and ATAC-seq data
 * Proteomic Data Commons (PCD): mass-spectrometry-based proteomic data
@@ -178,7 +178,7 @@ The GDC contains genomic data related to cancer, as well as tools and software t
 
 ##### What population do the data represent?
 
-The GDC includes genomic data that are donated from many NIH-funded cancer studies and external studies. A partial list of data sources can be found [here](https://gdc.cancer.gov/about-data/data-sources).
+The GDC includes genomic data that contributed by many NIH-funded cancer studies and external studies. A partial list of data sources can be found [here](https://gdc.cancer.gov/about-data/data-sources).
 
 ##### What types of data are included?
 
@@ -197,7 +197,7 @@ https://gdc.cancer.gov/about-data
 
 ##### How to access this data? 
 
-The GDC data portal allows researchers to download data or to analyze data using the GDC platform. Data within the GDC are classified as either open access or controlled access. 
+The GDC data portal allows researchers to download datasets or to analyze data within the GDC platform. Data within the GDC are classified as either open access or controlled access. 
 
 Open access data does not require any authentication or authorization to access. It includes genomic data that is not individually identifiable, and most clinical and all biospecimen data elements. This data can be accessed through the [Genomic Data Commons Data Portal](https://portal.gdc.cancer.gov).
 
@@ -249,7 +249,7 @@ Most of the data from TARGET is part of the open access data stored in the GDC, 
 
 #### Imaging Data Commons (IDC)
 
-The IDC contains publicly available cancer imaging data. It contains more than 85 TB of data, which are all free to access. The images and image-derived data are harmonized to use a standard digital image format. The IDC includes data from many sources, including The Cancer Genome Atlas (TCGA), The Cancer Imaging Archive (TCIA), the Human Tumor Atlas Network (HTAN), and many others. The data can be explored with the [IDC portal](https://portal.imaging.datacommons.cancer.gov/explore/), visualized with a browser-based viewer, and downloaded. 
+The IDC is a data commons for publicly available cancer imaging data. It provides more than 85 TB of freely accessible imaging data. The images and image-derived data are harmonized to use a standard digital image format. The IDC includes data from many sources, including The Cancer Genome Atlas (TCGA), The Cancer Imaging Archive (TCIA), the Human Tumor Atlas Network (HTAN), and many others. The data can be explored with the [IDC portal](https://portal.imaging.datacommons.cancer.gov/explore/), visualized with a browser-based viewer, and downloaded. 
 
 ##### What population do the data represent?
 
@@ -310,7 +310,7 @@ The ICGC also includes controlled release data. Access to this data requires an 
 
 #### Pediatric Cancer Data Commons (PCDC)
 
-The PCDC is a data commons run by the Data for the Common Good institution at the University of Chicago. The data commons includes pediatric, young adult, and adult cancer data and a unified research platform. This data spans more than forty countries and almost all types of pediatric cancer. The data is harmonized and standardized. This supports defining cohorts based on diseases and demographics across studies.
+The PCDC is a data commons run by the Data for the Common Good institution at the University of Chicago. The data commons includes pediatric, young adult, and adult cancer data, as well as a unified research platform. The data represents more than 40 countries and most types of pediatric cancer. The PCDC standardizes and harmonizes the data, which supports defining cohorts based on diseases and demographics across studies.
 
 https://commons.cri.uchicago.edu/pcdc/
 
@@ -412,7 +412,7 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC9436122/
 
 #### What population do the data represent?
 
-All of Us includes over 800,000 participants in the US. The program aims to include populations that are historically under-represented in medical research, 
+All of Us includes over 800,000 participants across the US. The program aims to include populations that are historically under-represented in medical research.
 
 #### What types of data are included?
 
@@ -445,13 +445,13 @@ Provide summary of this section (may not need table because we just have the two
 
 ## EHR platforms
 
-Electronic health records (EHR) are digitized notes, demographics, images, and histories or observations/records from a patient's interaction with the health care system over time. Unlike registries and cohort studies, in which data are collected primarily for research purposes, EHR are primarily collected and stored to support clinical care, healthcare billing, and health system operations. Although research is not their primary purpose, they provide a very useful longitudinal real world data source for clinical researchers. However, these records may be incomplete, missing relevant variables, or recorded differently across health care systems and institutions. It would be difficult for researchers to directly access EHR from healthcare systems, as there may not be enough cases to study from a single institution or data may be difficult to harmonize from different systems. Instead, researchers typically access EHR data from EHR platforms. These platforms receive EHR data from healthcare systems, standardize and harmonize the data, and create research databases. Part of this process is creating common data models, that provide a standardized approach to representing healthcare data such as diagnoses, lab results, medications, and healthcare system encounters. EHR platforms differ in their funding, major goals, cost to access, and data scope. EHR platforms are increasingly used for cancer research because they can capture detailed treatment histories, lab results, medications, and outcomes that may not be available in traditional cancer registries.
+Electronic health records (EHR) contain digital information generated through a patient's interactions with the healthcare system over time, including demographics, diagnoses, medications, laboratory tests, clinical notes, images, and other clinical observations. Unlike registries and cohort studies, in which data are collected primarily for research purposes, EHR are primarily collected and stored to support clinical care, healthcare billing, and health system operations. Although research is not their primary purpose, they provide a very useful longitudinal real world data source for clinical researchers. However, these records may be incomplete, missing relevant variables, or recorded differently across health care systems and institutions. It would be difficult for researchers to directly access EHR from healthcare systems, as there may not be enough cases to study from a single institution or data may be difficult to harmonize from different systems. Instead, researchers typically access EHR data from EHR platforms. These platforms receive EHR data from healthcare systems, standardize and harmonize the data, and create research databases. Part of this process involves mapping original data into common data models, which provide a standardized way to represent diagnoses, medications, laboratory results, healthcare encounters, and other clinical information. EHR platforms differ in their funding, major goals, cost to access, and data scope. EHR platforms are increasingly used for cancer research because they can capture detailed treatment histories, lab results, medications, and outcomes that may not be available in traditional cancer registries.
 
 ### Research EHR platforms
 
 #### PCORnet
 
-PCORnet is a health data resource funded by the Patient Centered Outcomes Research Institute (PCORI). PCORnet receives electronic health data from a large network of health systems and standardizes data under a shared data model. PCORnet includes data from more than 50 million patients from across the US. PCORnet is a research platform with resources that it can provide outside of the data, and the Coordinating Center should be contacted early in study design. PCORnet will freely provide a consultation about using PCORnet for a study, a study feasibility review, and either a network collaborator request or data network request, which involves determining what available data in PCORnet would relate to your data and provides site-level aggregate data. If applicable, PCORnet can support data queries, although these will have costs. Unlike many centralized databases, PCORnet uses a distributed research network. Participating institutions retain control of their local patient data behind institutional firewalls. Researchers submit standardized queries across the network, and participating sites return approved results.
+PCORnet is a health data resource funded by the Patient Centered Outcomes Research Institute (PCORI). PCORnet receives electronic health data from a large network of health systems and standardizes data under a shared data model. PCORnet includes data from more than 50 million patients from across the US. PCORnet provides both data resources and study support services for researchers. PCORnet will freely provide a consultation about using PCORnet for a study, a study feasibility review, and potentially a data network request, which involves determining what available data in PCORnet would relate to a proposed study and providing site-level aggregate data. If applicable, PCORnet can support data queries, although these will have associated costs. Unlike many centralized databases, PCORnet uses a distributed research network. Participating institutions retain control of their local patient data behind institutional firewalls. Researchers submit standardized queries across the network, and participating sites return approved results.
 
 https://pcornet.org/data/common-data-model/ 
 https://pcornet.org/module-3-playbook/ 
@@ -540,7 +540,7 @@ If you are affiliated with a Cosmos participating organization, you can request 
 
 #### TriNetX
 
-TriNetX is a Commercial EHR platform that provides data for pharma companies, healthcare providers, and academic researchers. It connects researchers to patient data that has been combined from healthcare organizations and mapped to a common data model. TriNetX sources data directly from healthcare organizations, from more than 14,000 clinical sites. TriNetX is a federated EHR network, which means that patient data is queried within healthcare systems and answers are returned without the patient-level data leaving the healthcare system. A major use of TriNetX is to assess the feasibility of proposed clinical studies. 
+TriNetX is a commercial EHR platform that provides data for pharma companies, healthcare providers, and academic researchers. It connects researchers to harmonized patient data from participating healthcare organizations that have mapped their data to a common data model. TriNetX sources data directly from healthcare organizations, from more than 14,000 clinical sites. TriNetX is a federated EHR network, which means that patient data is queried within healthcare systems and answers are returned without the patient-level data leaving the healthcare system. A major use of TriNetX is to assess the feasibility of proposed clinical studies. 
 
 https://trinetx.com/data/ 
 https://trinetx.com/solutions/trinetx-live/
@@ -569,7 +569,7 @@ Data can be accessed by contacting TriNetX [here](https://trinetx.com/solutions/
 
 #### Truveta
 
-Truveta is another Commercial EHR platform, with more than 130 million patient records. The data are standardized across healthcare systems and mapped to a common data model. Truveta was created by and is governed by a collective of US health systems, including the systems listed [here](https://www.truveta.com/members/). Data are delivered daily from these health systems to the EHR platform. 
+Truveta is another commercial EHR platform, with more than 130 million patient records. The data are standardized across healthcare systems and mapped to a common data model. Truveta was created by and is governed by a collective of US health systems, including the systems listed [here](https://www.truveta.com/members/). Data are delivered daily from these health systems to the EHR platform. 
 
 ##### What population do the data represent?
 
@@ -602,7 +602,7 @@ Provide summary table comparing these resources!
 
 ## Linked Clinical and Genomic Data Resources
 
-A major limitation of most registries and EHR platforms is a lack of detailed tumor molecular data. Clinico-genomic data platforms link clinical data with tumor sequencing data. Both clinical data and  sequencing data are collected as part of the healthcare process, but a linked database can be used for deeper research about genomic structures of and treatment for a variety of cancer types.
+A major limitation of most registries and EHR platforms is a lack of detailed tumor molecular data. Clinico-genomic data platforms link clinical data with tumor sequencing data. Both clinical data and sequencing data are collected as part of the healthcare process. By linking clinical information with equencing results, these resources allow researchers to study how genomic alterations relate to treatment response and clinical outcomes across cancer types.
 
 https://pmc.ncbi.nlm.nih.gov/articles/PMC11869879/
 
@@ -610,7 +610,7 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC11869879/
 
 #### Project GENIE
 
-Project GENIE is a publicly accessible cancer-focused clinicl-genomic data resource that combines cancer genomic sequencing data and clinical outcomes, funded by the American Association for Cancer Research (AACR). A major goal of Project GENIE is to collect a large repository of sequencing and clinical cancer data for precision oncology research. Precision medicine customizes a patient's treatment based on their individual genomic, behavioral, and environmental characteristics, and requires a large amount of data. Project GENIE includes clinical and cancer genome sequencing data from most cancer patients treated at twenty international cancer centers. Through partnerships with [Sage Bionetworks](https://sagebionetworks.org) and [cBioPortal](https://www.cbioportal.org), the registry aggregates and harmonizes this data, and provides it freely for research purposes. Project GENIE also has a research collaboration with the Biopharma Collaborative (BPC), a coalition of ten biopharmaceutical companies, in order to gather additional clinical data to the existing Project GENIE data. 
+Project GENIE is a publicly accessible cancer-focused clinico-genomic data resource that combines genomic sequencing data and clinical outcomes, funded by the American Association for Cancer Research (AACR). A major goal of Project GENIE is to collect a large repository of sequencing and clinical cancer data for precision oncology research. Precision medicine customizes a patient's treatment based on their individual genomic, behavioral, and environmental characteristics, and requires a large amount of data. Project GENIE includes clinical and cancer genome sequencing data from most cancer patients treated at twenty international cancer centers. Through partnerships with [Sage Bionetworks](https://sagebionetworks.org) and [cBioPortal](https://www.cbioportal.org), the project aggregates and harmonizes this data, and provides it freely for research purposes. Project GENIE also has a research collaboration with the Biopharma Collaborative (BPC), a coalition of ten biopharmaceutical companies, in order to gather additional clinical data to the existing Project GENIE data. 
 
 https://www.aacr.org/professionals/research/aacr-project-genie/ 
 https://www.aacr.org/professionals/research/aacr-project-genie/bpc/ 
@@ -703,7 +703,7 @@ Flatiron data can be accessed by contacting them [here](https://flatiron.com/con
 
 #### Tempus
 
-Tempus is a healthcare technology company that can provide a large patient database as well as genomic sequencing and data. Tempus collects EHR data from healthcare systems, normalizes and harmonizes the data, links it with molecular genomic data, and uses AI agents and humans to process unstructured clinical data.
+Tempus is a healthcare technology company that maintains a large clinico-genomic database and provides genomic sequencing services. Tempus collects EHR data from healthcare systems, normalizes and harmonizes the data, links it with molecular genomic data, and uses AI agents and human experts to process unstructured clinical data.
 
 https://www.tempus.com/research/ 
 https://www.tempus.com/tech-blog/The-Tempus-data-pipeline-architecting-the-future-of-precision-medicine/#overview 
