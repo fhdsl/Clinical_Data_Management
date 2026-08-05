@@ -2,7 +2,7 @@
 
 When designing a clinical research study, researchers may collect new clinical data, use data collected by collaborators, or access data already available through their institution. However, it is becoming increasingly common to conduct research using existing clinical data resources. For these studies, a major question is how to acquire these data. 
 
-When evaluating a source of clinical data, it is useful to understand why the data were collected, who is included in the data, what variables are available, what requirements, applications, or costs are associated with access.
+When evaluating a source of clinical data, it is useful to understand why the data were collected, which individuals are included in the data, what variables are available, what requirements, applications, or costs are associated with access.
 
 The major categories of data acquisition sources discussed in this chapter include registries, data commons, cohort studies and biobanks, electronic health record (EHR) platforms, and linked clinical and genomic data resources. 
 
@@ -26,7 +26,7 @@ https://training.seer.cancer.gov/registration/types/hospital.html
 
 ### US-based cancer registries
 
-In the United States, there are two major organizations that fund cancer registries: the National Cancer Institute (NCI) and the Centers for Disease Control and Prevention (CDC). The NCI oversees the Surveillance, Epidemiology, and End Results (SEER) program, while the CDC oversees the National Program of Cancer Registries (NPCR). Both programs support smaller regional cancer registries across the United States, although typically SEER includes more detailed data for specific geographic regions, and NPCR includes less detailed data for almost the entire country. Data from both of these programs is combined into the U.S. Cancer Statistics (USCS) database. The reason that these data can be combined in a straightforward way is that the North American Association of Central Cancer Registries (NAACCR) has established standards for collecting and reporting cancer registry data in the United States and Canada. 
+In the United States, there are two major organizations that fund cancer registries: the National Cancer Institute (NCI) and the Centers for Disease Control and Prevention (CDC). The NCI oversees the Surveillance, Epidemiology, and End Results (SEER) program, while the CDC oversees the National Program of Cancer Registries (NPCR). Both programs support smaller regional cancer registries across the United States, although typically SEER includes more detailed data for specific geographic regions, and NPCR includes less detailed data for almost the entire country. Data from both of these programs are combined into the U.S. Cancer Statistics (USCS) database. The reason that these data can be combined in a straightforward way is that the North American Association of Central Cancer Registries (NAACCR) has established standards for collecting and reporting cancer registry data in the United States and Canada. 
 
 https://training.seer.cancer.gov/operations/standards/setters/naaccr.html 
 
@@ -56,7 +56,7 @@ SEER registries include the following data:
 
 https://seer.cancer.gov/data/
 
-##### How to access this data? 
+##### How to access the data
 
 There are two data products available from the SEER program: SEER Research Data and SEER Research Plus and NCCR Data.
 
@@ -88,9 +88,9 @@ Data in the NPCR include:
 
 https://www.cdc.gov/national-program-cancer-registries/data-modernization/index.html 
 
-##### How to access this data 
+##### How to access the data 
 
-Data from the NPCR is accessed through the SEER program. Cancer incidence data from the NPCR and SEER programs are combined as the U.S. Cancer Statistics (USCS). The USCS has a public use database with cancer incidence and population data. This data does not include geographic information at the county or zip code level. This [data dictionary](https://www.cdc.gov/united-states-cancer-statistics/public-use/pdf/uscs-public-use-database-technical-documentation-uspr-2005-2020-508.pdf) specifies what data are included in the public use database. To access this data, you must already have access to the SEER Research Plus data (steps to access this data are provided [here](https://seer.cancer.gov/data/access.html)). Once you have this access, then you can follow the steps outlined [here](https://www.cdc.gov/united-states-cancer-statistics/public-use/access-data.html), which include filling out a brief form. Access requests should be processed within 2 business days. 
+Data from the NPCR are accessed through the SEER program. Cancer incidence data from the NPCR and SEER programs are combined as the U.S. Cancer Statistics (USCS). The USCS has a public use database with cancer incidence and population data. This data does not include geographic information at the county or zip code level. This [data dictionary](https://www.cdc.gov/united-states-cancer-statistics/public-use/pdf/uscs-public-use-database-technical-documentation-uspr-2005-2020-508.pdf) specifies what data are included in the public use database. To access this data, you must already have access to the SEER Research Plus data (steps to access this data are provided [here](https://seer.cancer.gov/data/access.html)). Once you have this access, then you can follow the steps outlined [here](https://www.cdc.gov/united-states-cancer-statistics/public-use/access-data.html), which include filling out a brief form. Access requests should be processed within 2 business days. 
 
 The USCS also has a restricted access database. This database includes more detailed geographic variables, such as county and census tract, along with additional demographic variables, and the data dictionary can be accessed [here](https://www.cdc.gov/rdc/media/pdfs/2026/01/USCS-RDC-DataDictionary-CDC-Nov2024.pdf). This database requires more time and effort to access. The data access application requires the researcher to explain their need for the restricted-use variables and describe their research proposal and plan in detail. The application can be seen [here](https://www.cdc.gov/rdc/media/pdfs/2025/07/Proposal-Format-v3.2.pdf). An important part of this process is identifying the minimal set of restricted use variables that you will need for your project, and explaining why these are necessary for the analysis. If your proposal is approved, you will need to complete a Confidentiality Training, and then make an appointment at a research data center (RDC) or a Federal Statistical Research Data Center (FSRDC) to access the data. An overview of the process for accessing the USCS restricted access database can be found [here](https://www.cdc.gov/rdc/other-restricted-data/cancer-statistics.html).
 
@@ -115,7 +115,7 @@ Data in the NCDB include:
   
 https://www.facs.org/media/ilqb5snq/2024-data-dictionary.pdf 
 
-##### How to access this data?
+##### How to access the data
 
 The NCDB manages a dataset called the Participant User Data File (PUF) which includes information about cancer cases from CoC-accredited hospitals and cancer programs. The PUFs are available only to researchers associated with CoC-accredited cancer programs who submit an application. This application includes letters of support from PIs in the CoC-accredited program and a description of your proposed research project and analysis plan. 
 
@@ -178,7 +178,7 @@ The GDC contains genomic data related to cancer, as well as tools and software t
 
 ##### What population do the data represent?
 
-The GDC includes genomic data that contributed by many NIH-funded cancer studies and external studies. A partial list of data sources can be found [here](https://gdc.cancer.gov/about-data/data-sources).
+The GDC includes genomic data contributed by many NIH-funded cancer studies and external studies. A partial list of data sources can be found [here](https://gdc.cancer.gov/about-data/data-sources).
 
 ##### What types of data are included?
 
@@ -195,13 +195,13 @@ The GDC includes the following data:
 
 https://gdc.cancer.gov/about-data 
 
-##### How to access this data? 
+##### How to access the data
 
 The GDC data portal allows researchers to download datasets or to analyze data within the GDC platform. Data within the GDC are classified as either open access or controlled access. 
 
-Open access data does not require any authentication or authorization to access. It includes genomic data that is not individually identifiable, and most clinical and all biospecimen data elements. This data can be accessed through the [Genomic Data Commons Data Portal](https://portal.gdc.cancer.gov).
+Open access data do not require any authentication or authorization to access. This includes genomic data that is not individually identifiable, and most clinical and all biospecimen data elements. The data can be accessed through the [Genomic Data Commons Data Portal](https://portal.gdc.cancer.gov).
 
-Controlled access data includes individually identifiable data and some clinical data elements. Accessing controlled access data requires first obtaining an eRA Commons account and dbGaP access, then obtaining access to the specific controlled access research project through dbGaP, and finally logging into the GDC Data Portal to access. The eRA Commons lets federal agencies manage research grants, and accounts can only be made for individuals at reseach organizations by officials from the organization (https://www.era.nih.gov/register-accounts/create-and-edit-an-account.htm). The database of Genotypes and Phenotypes (dbGaP) is a database of data and results from studies about genotypes and phenotypes in humans. The dbGaP is commonly used to manage controlled-access data, by requiring researchers to request datasets and data access committees to review requests (https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/dbgap). Only senior researchers can request data through dbGaP, but once they have obtained access to project data, they can provide access to other members of their lab with GDC accounts (https://gdc.cancer.gov/access-data/data-access-processes-and-tools). 
+Controlled access data include individually identifiable data and some clinical data elements. Accessing controlled access data requires first obtaining an eRA Commons account and dbGaP access, then obtaining access to the specific controlled access research project through dbGaP, and finally logging into the GDC Data Portal to access. The eRA Commons lets federal agencies manage research grants, and accounts can only be made for individuals at reseach organizations by officials from the organization (https://www.era.nih.gov/register-accounts/create-and-edit-an-account.htm). The database of Genotypes and Phenotypes (dbGaP) is a database of data and results from studies about genotypes and phenotypes in humans. The dbGaP is commonly used to manage controlled-access data, by requiring researchers to request datasets and data access committees to review requests (https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/dbgap). Only senior researchers can request data through dbGaP, but once they have obtained access to project data, they can provide access to other members of their lab with GDC accounts (https://gdc.cancer.gov/access-data/data-access-processes-and-tools). 
 
 ##### The Cancer Genome Atlas (TCGA)
 
@@ -221,7 +221,7 @@ The TCGA includes the following data:
   * Transcriptomic
   * Proteomic
 
-###### How to access this data
+###### How to access the data
 
 Most of the data from TCGA is part of the open access data stored in the GDC, and accessed through the GDC [Data Portal](https://portal.gdc.cancer.gov). Individual-level genomic data can be accessed through the controlled access tier of the GDC, described above. 
 
@@ -243,7 +243,7 @@ TARGET includes the following data:
   * Transcriptomic
   * Proteomic
 
-###### How to access this data
+###### How to access the data
 
 Most of the data from TARGET is part of the open access data stored in the GDC, and accessed through the GDC [Data Portal](https://portal.gdc.cancer.gov). Individual-level genomic data can be accessed through the controlled access tier of the GDC, described above. 
 
@@ -271,7 +271,7 @@ The IDC includes the following data:
 
 https://datacommons.cancer.gov/repository/imaging-data-commons
 
-##### How to access this data
+##### How to access the data
 
 The data can be freely explored with the [IDC portal](https://portal.imaging.datacommons.cancer.gov/explore/), visualized with a browser-based viewer, and downloaded. The IDC also maintains a Python [package](https://github.com/ImagingDataCommons/idc-index) for programatically querying metadata and downloading imaging data. 
 
@@ -300,7 +300,7 @@ The ICGC includes the following data:
 
 https://docs.cancergenomicscloud.org/docs/icgc-data 
 
-##### How to access this data
+##### How to access the data
 
 While the ICGC data portal has been shut down, the data can be accessed following the steps [here](https://docs.icgc-argo.org/docs/data-access/icgc-25k-data). 
 
@@ -310,7 +310,7 @@ The ICGC also includes controlled release data. Access to this data requires an 
 
 #### Pediatric Cancer Data Commons (PCDC)
 
-The PCDC is a data commons run by the Data for the Common Good institution at the University of Chicago. The data commons includes pediatric, young adult, and adult cancer data, as well as a unified research platform. The data represents more than 40 countries and most types of pediatric cancer. The PCDC standardizes and harmonizes the data, which supports defining cohorts based on diseases and demographics across studies.
+The PCDC is a data commons run by the Data for the Common Good institution at the University of Chicago. The data commons includes pediatric, young adult, and adult cancer data, as well as a unified research platform. The data come from more than 40 countries and encompass most types of pediatric cancer. The PCDC standardizes and harmonizes the data, which supports defining cohorts based on diseases and demographics across studies.
 
 https://commons.cri.uchicago.edu/pcdc/
 
@@ -328,7 +328,7 @@ The PCDC includes the following data:
 * genomic data
 * imaging data
 
-##### How to access this data
+##### How to access the data
 
 PCDC data can be accessed through their [data portal](https://portal.pedscommons.org/). A data portal account requires an authenticated email and institutional affiliation. Open access data allow researchers to explore data dictionaries and build cohorts. They do not include participant level data. Researchers are expected to use this open access data for determining feasibility of a proposed study and for early hypothesis exploration, not for publication. 
 
@@ -355,7 +355,7 @@ The C3DC includes the following data:
 
 https://clinicalcommons.ccdi.cancer.gov/data_model 
 
-##### How to access this data
+##### How to access the data
 
 The data can be explored with this [web portal](https://clinicalcommons.ccdi.cancer.gov/explore), and cohorts can be compared with this [web portal](https://clinicalcommons.ccdi.cancer.gov/cohortAnalyzer). The C3DC only includes deidentified open-access clinical data. 
 
@@ -398,7 +398,7 @@ The UK Biobank includes the following data:
 * EHR data
 * Environmental exposures 
 
-#### How to access this data
+#### How to access the data
 
 Access to the data from the UK Biobank requires researchers to fill out an application and pay an access fee. Eligible researchers must have a track record of health-related research and be affiliated with a recognized research organization. The application requires a summary of the intended research, and the process is outlined [here](https://community.ukbiobank.ac.uk/hc/en-gb/categories/14494598931229-Get-started-with-UK-Biobank). The fee structure for accessing this data is provided [here](https://www.ukbiobank.ac.uk/use-our-data/fees/). 
 
@@ -431,9 +431,9 @@ All of Us includes the following data. While the survey responses are collected 
 
 https://support.researchallofus.org/hc/en-us/articles/4619151535508-Data-Types-and-Organization
 
-#### How to access this data
+#### How to access the data
 
-The All of Us data has three access tiers. The Public Tier includes deidentified and aggregated data. These data are available through the [data browser](https://databrowser.researchallofus.org/?_gl=1*17zo1a7*_ga*MTg0OTEyMTY3OC4xNzg1Nzc1ODcw*_ga_MQVR5DG2C4*czE3ODU3NzU4NzAkbzEkZzEkdDE3ODU3NzYzOTUkajEzJGwwJGgyNjMyMzg5MDM.). The Registered Tier includes individual-level data, including data from EHR, wearables, surveys, and physical measurements. The Controlled Tier includes genomic data, demographic fields in EHR that are suppressed in other tiers, and accurate dates of events that are shifted in other tiers. 
+The All of Us dataset has three access tiers. The Public Tier includes deidentified and aggregated data. These data are available through the [data browser](https://databrowser.researchallofus.org/?_gl=1*17zo1a7*_ga*MTg0OTEyMTY3OC4xNzg1Nzc1ODcw*_ga_MQVR5DG2C4*czE3ODU3NzU4NzAkbzEkZzEkdDE3ODU3NzYzOTUkajEzJGwwJGgyNjMyMzg5MDM.). The Registered Tier includes individual-level data, including data from EHR, wearables, surveys, and physical measurements. The Controlled Tier includes genomic data, demographic fields in EHR that are suppressed in other tiers, and accurate dates of events that are shifted in other tiers. 
 
 In order to access the Registered and Controlled tiers, your institution must have signed a Data Use and Registration Agreement with All of Us. You can check [here](https://www.researchallofus.org/institutional-agreements/) whether your institution has an agreement in place for the tier that you would like to access, or submit a request if not. If your institution does have an agreement, then you will need to create an account and complete a training. 
 
@@ -476,7 +476,7 @@ PCORnet includes EHR data, including:
 
 https://pcornet.org/wp-content/uploads/2025/05/PCORnet_Common_Data_Model_v70_2025_05_01.pdf 
 
-##### How to access this data
+##### How to access the data
 
 PCORnet provides several free resources to streamline research before getting to paid data queries. First, you can do a consultation with the PCORnet [Front Door](https://pcornet.org/front-door/) to access PCORnet. Next, you can request a study feasibility review, to understand what PCORnet data are available for a project and to develop a budget for a project using PCORnet data. After this, you can submit a data network request, in which you will work with PCORnet partners to determine where relevant data exist across the PCORnet network, and to provide high-level data trends for study planning. Finally, if you end up using PCORnet data in your study, you will work with PCORnet CRNs, which will require funding. More information about these resources can be found [here](https://pcornet.org/module-3-playbook/).
 
@@ -506,7 +506,7 @@ ENACT data includes the following:
 
 https://enact-network.org/media/rb3fsitp/act_ontology_data_dictionary.pdf 
 
-##### How to access this data
+##### How to access the data
 
 To request access to ENACT, you must be a member of a participating CTSA institution. If you are, you can reach out to the contact at your local institution, which you can find [here](https://enact-network.org/site-access-contacts/). 
 
@@ -532,7 +532,7 @@ Epic Cosmos includes the following data:
 
 https://cosmos.epic.com/about/
 
-##### How to access this data
+##### How to access the data
 
 If you are affiliated with a Cosmos participating organization, you can request access [here](https://cosmos.epic.com/request-access/). You will need to submit a form with your contact information and a description of your inquiry. 
 
@@ -563,7 +563,7 @@ TriNetX data includes the following:
 * Vital signs
 * Outcomes
 
-##### How to access this data
+##### How to access the data
 
 Data can be accessed by contacting TriNetX [here](https://trinetx.com/solutions/datasets/#contact). 
 
@@ -592,7 +592,7 @@ Truveta data includes the following:
 
 https://www.truveta.com/data/
 
-##### How to access this data
+##### How to access the data
 
 Data can be accessed by contacting Truveta [here](https://www.truveta.com/contact-us/). 
 
@@ -610,7 +610,7 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC11869879/
 
 #### Project GENIE
 
-Project GENIE is a publicly accessible cancer-focused clinico-genomic data resource that combines genomic sequencing data and clinical outcomes, funded by the American Association for Cancer Research (AACR). A major goal of Project GENIE is to collect a large repository of sequencing and clinical cancer data for precision oncology research. Precision medicine customizes a patient's treatment based on their individual genomic, behavioral, and environmental characteristics, and requires a large amount of data. Project GENIE includes clinical and cancer genome sequencing data from most cancer patients treated at twenty international cancer centers. Through partnerships with [Sage Bionetworks](https://sagebionetworks.org) and [cBioPortal](https://www.cbioportal.org), the project aggregates and harmonizes this data, and provides it freely for research purposes. Project GENIE also has a research collaboration with the Biopharma Collaborative (BPC), a coalition of ten biopharmaceutical companies, in order to gather additional clinical data to the existing Project GENIE data. 
+Project GENIE is a publicly accessible cancer-focused clinico-genomic data resource that combines genomic sequencing data and clinical outcomes, funded by the American Association for Cancer Research (AACR). A major goal of Project GENIE is to collect a large repository of sequencing and clinical cancer data for precision oncology research. Precision medicine customizes a patient's treatment based on their individual genomic, behavioral, and environmental characteristics, and requires a large amount of data. Project GENIE includes clinical and cancer genome sequencing data from most cancer patients treated at twenty international cancer centers. Through partnerships with [Sage Bionetworks](https://sagebionetworks.org) and [cBioPortal](https://www.cbioportal.org), the project aggregates and harmonizes the data and provides it freely for research purposes. Project GENIE also has a research collaboration with the Biopharma Collaborative (BPC), a coalition of ten biopharmaceutical companies, in order to gather additional clinical data to the existing Project GENIE data. 
 
 https://www.aacr.org/professionals/research/aacr-project-genie/ 
 https://www.aacr.org/professionals/research/aacr-project-genie/bpc/ 
@@ -632,7 +632,7 @@ Project GENIE includes the following data:
 https://www.aacr.org/professionals/research/aacr-project-genie/aacr-project-genie-data-model/
 https://www.aacr.org/wp-content/uploads/2026/02/19.0_public_data_guide.pdf 
 
-##### How to access this data
+##### How to access the data
 
 There are multiple ways to access the Project GENIE data. Users can either access the data directly through [cBioPortal](https://genie.cbioportal.org), or download the data from [Synapse](https://www.synapse.org/Synapse:syn7222066/wiki/405659). 
 
@@ -664,7 +664,7 @@ MSK-CHORD includes the following data. Some of the clinical annotations are deri
 
 https://www.cbioportal.org/study/summary?id=msk_chord_2024 
 
-##### How to access this data
+##### How to access the data
 
 MSK-CHORD data can be accessed through [cBioPortal](https://www.cbioportal.org/study/summary?id=msk_chord_2024).
 
@@ -697,7 +697,7 @@ The CGDB additionally links these records to genomic profiling data.
 https://flatiron.com/database-characterization 
 https://resources.flatiron.com/clinico-genomic-data-is-a-game-changer-for-precision-oncology/ 
 
-##### How to access this data
+##### How to access the data
 
 Flatiron data can be accessed by contacting them [here](https://flatiron.com/contact). 
 
@@ -729,9 +729,9 @@ Tempus includes the following data:
 
 https://www.tempus.com/solutions/real-world-data/ 
 
-##### How to access this data
+##### How to access the data
 
-Tempus data is available to participating institutions. Tempus can be contacted [here](https://www.tempus.com/solutions/tempus-plus/#contact).
+Tempus data are available to participating institutions. Tempus can be contacted [here](https://www.tempus.com/solutions/tempus-plus/#contact).
 
 ### Summary 
 
