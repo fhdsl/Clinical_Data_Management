@@ -1,6 +1,6 @@
 ---
 title: "Informatics Technology for Cancer Research (ITCR): Clinical Data Management "
-date: "July, 2026"
+date: "August, 2026"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
