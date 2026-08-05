@@ -58,7 +58,7 @@ https://seer.cancer.gov/data/
 
 ##### How to access the data
 
-There are two data products available from the SEER program: SEER Research Data and SEER Research Plus and NCCR Data.
+There are two data products available from the SEER program: SEER Research Data and SEER Research Plus and National Childhood Cancer Registry (NCCR) Data.
 
 SEER Research Data includes data from 1975-2023, excluding geography, month of diagnosis, and other demographic fields. Any user with an email address can access this data by registering [here](https://seerdataaccess.cancer.gov/seer-data-access). 
 
