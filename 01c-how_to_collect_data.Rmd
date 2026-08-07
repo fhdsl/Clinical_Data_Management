@@ -1,8 +1,82 @@
-# How to Collect Clinical Data
+# Clinical Study Design
+
+In this chapter, we describe a variety of clinical study designs (distinguishing between a clinical trial and an observational study, and several commons types of observational studies) and discuss several considerations for collecting data and conducting studies. We provide an in-depth description of case report forms and discuss possible types of bias in clinical studies. 
+
+Throughout this chapter, we will use the word "exposure" 
 
 ## Learning Objectives
 
-## Case Report Forms (CRFs)
+## Types of Clinical Studies 
+
+Clinical data generated from clinical trials and observational studies form the backbone of evidence-based medicine. The ability to analyze and interpret this data enables researchers and clinicians to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.
+
+### Clinical Trials
+
+Clinical trials are tightly regulated studies, controlling patient recruitment and monitoring administration and impact of treatments or interventions [@What_are_clinical_trials_2023]. The goals of clinical trials include assessing the safety and efficacy of new treatments or interventions, comparing new treatments or interventions to existing treatment options, determining the optimal dosage and administration of treatments or interventions, and identifying potential side effects or adverse events. Clinical trials may also be referred to as randomized controlled trials (RCTs).
+
+::: {.definition}
+The NIH's definition of a clinical trial is "a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of those interventions on health-related biomedical or behavioral outcomes" [@CTDefinition].
+:::
+
+In this definition, "prospectively assigned" refers to a "pre-defined process (e.g. randomization) specified in an approved protocol that stipulates the assignment of research subjects" in a clinical trial  [@NIHClinicalTrialsProspectively].
+
+Key components of this definition that are necessary for a study to be classified as a clinical trial are: 
+
+* Human participants
+* The prospective assignment of participants to an intervention 
+* The goal of evaluating the effects of the intervention 
+* A health-related biomedical or behavioral outcome
+
+Clinical trials are often considered the gold standard for evaluating new clinical treatments or interventions because well-designed trials can support causal conclusions about the effects of interventions on health outcomes. Like other types of scientific experiments, clinical trials are designed to test hypotheses about how changes in one variable, such as a treatment, affect another variable, such as a health outcome. Random assignment helps reduce the influence of confounding factors, making it easier to attribute observed differences in outcomes to the intervention being studied. However, clinical trials are not always ethical, feasible, or optimal. A trial would not be ethical when an intervention exposes participants to unnecessary risks (for example, assigning a nonsmoker to a smoking arm of a trial) or withholding access to a treatment that is already known to be beneficial. A trial is not feasible when studying an intervention that cannot be assigned, such as genetic factors, sex at birth, or environmental or occupational exposures that occur naturally. In some cases, a trial might be ethical and feasible but not optimal when researchers want to understand the effects of an intervention in the real world and not the tightly regulated environment of a clinical trial or when the cost of a clinical trial is too high. 
+
+https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.121.057201 (equipoise)
+https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html (ethics of research on human subjects)
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4083571/ (trials vs observational studies)
+
+### Observational Studies
+
+In observational studies, participants are monitored and exposures and outcomes are measured, but there is no intervention or assignment of treatments ((Overview of clinical study designs)[https://pmc.ncbi.nlm.nih.gov/articles/PMC11009715/]). Observational studies are conducted in many situations, such as when a clinical trial is unethical or infeasible, when gathering preliminary evidence before conducting a clinical trial, or when studying the effect of an intervention or treatment in real world practice. There are several major observational study designs, each of which has benefits and drawbacks. 
+
+#### Cross-sectional Study
+
+In a cross-sectional study, data are collected at a specific point in time. Cross-sectional studies are often used to ask questions about the prevalence of an exposure or an outcome (typically a disease or condition) in a population at a specific time point. A cross-sectional study is conducted by measuring every individual in a population or a representative sample from a population. This design is primarily used to estimate the prevalence of an exposure or outcome in a population at a specific time. Because data are collected once and multiple exposures and outcomes can be measured simultaneously, this is a relatively inexpensive type of study, although costs rise as the population and sample size get larger. 
+
+(cite Mann review)
+(cite Lash book ch)
+
+#### Cohort Study
+
+A cohort study follows a group of study participants over time. These study participants are then followed over time, and monitored to see which participants develop a specific outcome. In some studies there is a single cohort, with one or multiple exposures measured at the beginning of the study. In other studies there are two cohorts, defined by exposure status. Cohort studies are typically prospective (the cohort is identified and then monitored over time), but can also be retrospective (the cohort is identified after the outcome has occurred, and then historical data are used to measure past exposure). Cohort studies are often used to estimate the incidence of an outcome (the number of new cases in a population over a specific time period) and the association between exposure and outcome(s). An advantage of cohort studies is that they can be used to study multiple outcomes at once. When an outcome is rare a cohort study can be inefficient, because it will take a very large cohort to identify a large enough set of cases of that outcome to study. Additionally, cohort studies can be quite expensive when they follow a large number of participants over a long time period.
+
+(cite Mann review)
+(cite Lash book ch)
+
+#### Case-control Study 
+
+In case-control studies, a group of individuals who have a certain disease or condition are identified as cases, and are compared to a control group of individuals without the disease or condition. Case-control studies are typically retrospective, i.e. cases and controls are identified after the outcome has occurred or not, and their past exposure is retrospectively measured. Case-control studies are often more efficient and cost-effective, because the number of cases can be chosen. This is particularly important for studies of rare diseases. A single outcome can be studied in a case-control study (to define the cases and controls) but multiple exposures can be measured and studied. A case-control study can be conceptualized as a sample from a cohort study, in which we take all of the cases from a specific cohort but only a sample of controls. Ideally the sample of cases and controls will be similar to each other in terms of exposures and other characteristics that may affect the outcome. 
+
+(cite Mann review)
+(cite Lash book ch)
+
+#### Prospective or Retrospective? 
+
+Prospective and retrospective are two terms that are frequently used when describing observational studies. However, there are several different contexts in which these terms are used. 
+
+A retrospective study with secondary data... 
+
+Retrospective analysis involves the examination of pre-existing clinical data to answer specific research questions, explore hypotheses, and identify patterns or trends. This method leverages historical data collected from medical records, administrative databases, registries, electronic health records (EHRs), or other sources of clinical information.
+
+Q: What am I trying to do here... 
+
+### Meta-analysis
+
+A meta-analysis is a study that combines data from multiple studies. 
+
+## Considerations for Designing Studies 
+
+There are several factors to consider when designing studies. In this section, we will focus on designing case report forms and on identifying and reducing sources of bias in clinical studies. 
+
+### Case Report Forms (CRFs)
 
 In clinical research, case report forms (CRFs) are essential tools for collecting standardized data from study participants. Note that case report forms are any paper or form that will be filled in at the case or participant level. By that definition, even a consent form is a case report form! And each clinical study may utilize multiple CRFs (e.g., one for consent, another for medical history, another for reporting any adverse effects). CRFs are useful for several tasks already discussed within this chapter -- specifically, tracking adverse events or outcomes (like those discussed in the Risk Prediction section) or tracking demographics and medical history for identifying cohorts (as discussed in the Cohort Identification section). CRFs are also useful for topics this chapter will discuss in later sections (e.g., Retrospective analyses).
 
@@ -105,49 +179,11 @@ The guidelines above sometimes suggest use of open-ended questions where partici
 
 Designing specific and sensitive CRFs for clinical studies requires a thoughtful approach that respects the different backgrounds, privacy, and comfort of all participants, especially those from communities that experience health disparities. By using accessible language, offering multiple options, respecting autonomy, and providing a safe space for participants to express themselves, researchers can gather meaningful and accurate data while ensuring participants feel valued and respected. These considerations are vital to fostering clinical research that captures enough information about a wide variety of individuals. Case report forms (CRFs) are often tailored to specific studies and may vary widely in structure and content, lacking standardization across different projects. Despite this, certain themes are commonly expected in CRFs, including sections on participant demographics, medical history, treatment outcomes, and adverse events, ensuring essential data collection across a variety of study designs. By thoughtfully addressing both unique study requirements and universally relevant data points, researchers can optimize CRFs for consistency across clinical studies.
 
-## Clinical Studies and Trials
+### Potential Biases in Clinical Studies
 
-Clinical data generated from clinical trials and observational studies form the backbone of evidence-based medicine. The ability to analyze and interpret this data enables researchers and clinicians to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.
+**Note for Carrie when reviewing: this section comes from content written by Guillermo and Chris, but I'm curious if we need to change some of this language for the course.**
 
-### Clinical Trials 
-
-Clinical trials are tightly regulated studies, controlling patient recruitment and monitoring administration and impact of treatments or interventions [@What_are_clinical_trials_2023]. The goals of clinical trials include assessing the safety and efficacy of new treatments or interventions, comparing different/existing treatment options, determining the optimal dosage and administration of interventions, and identifying potential side effects or adverse events.
-
-::: {.definition}
-The NIH's definition of a clinical trial is "a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of those interventions on health-related biomedical or behavioral outcomes."
-:::
-
-The NIH provides 4 questions and additional clarifications to consider when identifying if a study is a clinical trial or just a clinical study [@CTDefinition].
-
-::: {.definition}
-**Prospectively assigned**: Refers to a pre-defined process (e.g., randomization) specified in an approved protocol that stipulates the assignment of research subjects (individually or in clusters) to one or more arms (e.g., intervention, placebo, or other control) of a clinical trial [@NIHClinicalTrialsProspectively].
-:::
-
-### Observational Studies
-
-In observational studies, patients are monitored and outcomes are measured, but there is no intervention or assignment ((Overview of clinical study designs)[https://pmc.ncbi.nlm.nih.gov/articles/PMC11009715/]). 
-
-#### Case-control Studies
-
-In case-control studies, a group of individuals who have a certain disease or condition are identified as cases, and are compared to a group of individuals without the disease or condition (these are the controls). Group level summaries of outcomes, such as medical events or other biological measurements, are compared between the case and control groups. In case-control studies, there is a risk of bias, in which the group of cases and group of controls are systematically different, beyond the disease or condition that is being studied. Therefore, it is important to match the groups in terms of individual characteristics as much as possible. 
-
-#### Cohort Studies
-
-Cohort studies follow study participants over time. Participants are recruited into the cohort if they share a specific characteristic that is being studied. They are then followed over time, and monitored to see which participants develop a specific outcome. Cohort studies can be prospective (the cohort is identified and then monitored), or retrospective (the cohort is identified about a time period has passed and past data is obtained). 
-
-#### Cross-sectional Studies
-
-In a cross-sectional study, data is collected at a specific point in time. Cross-sectional studies are often used to ask questions about the prevalence of an exposure or an outcome (typically a disease or condition) in a population at a specific time point. 
-
-## Retrospective Analyses
-
-Does this belong in collecting data or acquiring data? 
-
-Retrospective analysis involves the examination of pre-existing clinical data to answer specific research questions, explore hypotheses, and identify patterns or trends. This method leverages historical data collected from medical records, administrative databases, registries, electronic health records (EHRs), or other sources of clinical information.
-
-## Research Design Considerations
-
-Researchers need to intentionally use methods earlier in the research process than data analysis to manage data biases associated with clinical data, especially EHR.
+Researchers need to consider how biases may affect their study and results in all stages of clinical study development, especially when designing the study. 
 
 One of the most important challenges in using EHR data in cancer research is that, as in many other fields, healthcare data are plagued with several types of biases that result from disparities in the delivery of healthcare. Overall, cancer research has historically relied on data from high resource academic medical centers, which disproportionately provide care to patients who are White, have high socioeconomic status, and live in urban areas. As a result, medical knowledge produced from these data have disproportionately benefited those patients. Different sources of bias are prevalent in EHR data. For example,
 
