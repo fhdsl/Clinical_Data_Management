@@ -60,12 +60,6 @@ Clinical notes are, perhaps unsurprisingly, generally shared as seemingly straig
 
 When used in EHR research, both structured data and clinical notes are generally de-identified to protect patient privacy. Patient ID numbers might be replaced with new identifiers, with linkages maintained by institutional “honest brokers” [@Dhir2008] charged with providing clinical data for research purposes. In some cases, dates may be changed as well. Clinical notes are generally “de-identified” through specialized software designed to remove names, dates, locations, and other sensitive details. Researchers working with institutions to access clinical data should be sure to understand local data de-identification practices.
 
-
-## How to acquire clinical data
-
-### Secondary Sources
-
-
 ## Description of data
 
 ### File types
