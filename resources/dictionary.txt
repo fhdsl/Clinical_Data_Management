@@ -38,6 +38,7 @@ CRF
 CRFs
 CRNs
 CTDC
+CTSA
 CUIs
 customizations
 DaSL
@@ -131,6 +132,7 @@ PUF
 PUFs
 QALY
 QALYs
+RCTs
 RDC
 representativeness
 rhabdomyosarcoma
