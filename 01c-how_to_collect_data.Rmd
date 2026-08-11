@@ -73,7 +73,7 @@ Because the terms **prospective** and **retrospective** are used with multiple d
 
 ### Meta-analysis
 
-A meta-analysis is a study that combines data from multiple studies. 
+Potentially add a section here on meta-analyses! (To draft later)
 
 ## Considerations for Designing Studies 
 
