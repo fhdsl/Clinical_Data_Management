@@ -6,6 +6,11 @@ Throughout this chapter, we will use the word **outcome** to refer to the health
 
 ## Learning Objectives
 
+```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: 1. Understand the major differences between clinical trials and observational studies, 2. List different types of observational studies and benefits and drawbacks of each design, 3. Describe best practices for designing case report forms, 4. Recognize potential biases in clinical data and how to combat biases through study design", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f6d7b45ddf_0_0#slide=id.g3f6d7b45ddf_0_0" )
+```
+
+
 ## Types of Clinical Studies 
 
 Clinical data generated from clinical trials and observational studies form the backbone of evidence-based medicine. The ability to analyze and interpret this data enables researchers and clinicians to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.
