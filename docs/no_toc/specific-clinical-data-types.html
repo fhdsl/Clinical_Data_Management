@@ -131,7 +131,13 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="3.4" data-path="specific-clinical-data-types.html"><a href="specific-clinical-data-types.html#radiology"><i class="fa fa-check"></i><b>3.4</b> Radiology</a></li>
 <li class="chapter" data-level="3.5" data-path="specific-clinical-data-types.html"><a href="specific-clinical-data-types.html#pathology"><i class="fa fa-check"></i><b>3.5</b> Pathology</a></li>
-<li class="chapter" data-level="3.6" data-path="specific-clinical-data-types.html"><a href="specific-clinical-data-types.html#synthetic-data"><i class="fa fa-check"></i><b>3.6</b> Synthetic Data</a></li>
+<li class="chapter" data-level="3.6" data-path="specific-clinical-data-types.html"><a href="specific-clinical-data-types.html#synthetic-data"><i class="fa fa-check"></i><b>3.6</b> Synthetic Data</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="specific-clinical-data-types.html"><a href="specific-clinical-data-types.html#uses-of-synthetic-data"><i class="fa fa-check"></i><b>3.6.1</b> Uses of synthetic data</a></li>
+<li class="chapter" data-level="3.6.2" data-path="specific-clinical-data-types.html"><a href="specific-clinical-data-types.html#resources-for-generating-synthetic-data"><i class="fa fa-check"></i><b>3.6.2</b> Resources for generating synthetic data</a></li>
+<li class="chapter" data-level="3.6.3" data-path="specific-clinical-data-types.html"><a href="specific-clinical-data-types.html#benefits-of-synthetic-data"><i class="fa fa-check"></i><b>3.6.3</b> Benefits of synthetic data</a></li>
+<li class="chapter" data-level="3.6.4" data-path="specific-clinical-data-types.html"><a href="specific-clinical-data-types.html#concerns-about-synthetic-data"><i class="fa fa-check"></i><b>3.6.4</b> Concerns about synthetic data</a></li>
+</ul></li>
 <li class="chapter" data-level="3.7" data-path="specific-clinical-data-types.html"><a href="specific-clinical-data-types.html#summary-1"><i class="fa fa-check"></i><b>3.7</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="how-to-collect-clinical-data.html"><a href="how-to-collect-clinical-data.html"><i class="fa fa-check"></i><b>4</b> How to Collect Clinical Data</a>
@@ -259,7 +265,7 @@ div.csl-indent {
 <h1><span class="header-section-number">Chapter 3</span> Specific Clinical Data Types<a href="specific-clinical-data-types.html#specific-clinical-data-types" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="learning-objectives-1" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Learning Objectives<a href="specific-clinical-data-types.html#learning-objectives-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="01b-specific_data_types_files/figure-html/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3385bea4ad0_0_30.png" alt="Learning Objectives: 1. Explain why clinical data is unique compared to other types of biomedical research data, 2. Describe the difference between Structured and Unstructured data, 3. List major sources and types of clinical data" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="01b-specific_data_types_files/figure-html/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3f5a232af6c_0_0.png" alt="Learning Objectives: 1. Physiological (to-do), 2. Monitoring data (to-do), 3. Radiology, 4. Pathology, 5. Understand the potential uses for and risks of synthetic data" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="physiological" class="section level2 hasAnchor" number="3.2">
 <h2><span class="header-section-number">3.2</span> Physiological<a href="specific-clinical-data-types.html#physiological" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -323,6 +329,49 @@ div.csl-indent {
 </div>
 <div id="synthetic-data" class="section level2 hasAnchor" number="3.6">
 <h2><span class="header-section-number">3.6</span> Synthetic Data<a href="specific-clinical-data-types.html#synthetic-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Synthetic data are artificially generated datasets designed to reflect the structure and patterns of real-world populations, without containing information about actual patients <span class="citation">(<a href="#ref-susser2024synthetic">Susser et al. 2024</a>)</span>. There are many ways to generate synthetic data. Some approaches are simple, like creating partially synthetic data by replacing potentially identifying pieces of information with synthetic values. Others are more complex, like using AI systems to fully generate synthetic patient notes. The goal of synthetic data is to mimic the characteristics and patterns in real patient data, while avoiding privacy concerns, cost, or biases of using real datasets.</p>
+<div id="uses-of-synthetic-data" class="section level3 hasAnchor" number="3.6.1">
+<h3><span class="header-section-number">3.6.1</span> Uses of synthetic data<a href="specific-clinical-data-types.html#uses-of-synthetic-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are several possible uses for synthetic data:</p>
+<ul>
+<li>Testing or validation: synthetic data may be easier to create or access than real clinical data, while being similar enough to test or validate new tools, methods, or data handling pipelines. It can also be shared between institutions, and used to compare the performance of competing tools. However please see the consideration section about some limitations of this approach.</li>
+<li>Augmenting or balancing datasets: real patient data can have subgroups with low representation, which can lead to algorithmic bias in some applications. Synthetic data can be used to balance data so that there are more observations that represent these groups.</li>
+<li>Supplementing controls groups in clinical trials: Conducting clinical trials requires a lot of time and money. Using synthetic data has been suggested to supplement control arms in clinical trials, in order to reduce costs or realign funds to add more patients to the experimental arm <span class="citation">(<a href="#ref-elvatun2025synthetic">Elvatun et al. 2025</a>)</span>.</li>
+<li>Augmenting data for rare disease areas: Rare disease research often suffers from small sample sizes of patient data and can be especially susceptible to privacy concerns, which can lead to underpowered studies. Synthetic data have the potential to be used for detection and development of treatment for rare diseases <span class="citation">(<a href="#ref-mendes2025synthetic">Mendes, Barbar, and Refaie 2025</a>)</span>.</li>
+</ul>
+<p><img src="01b-specific_data_types_files/figure-html/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3f5432c677a_0_248.png" alt="Synthetic data has several potential uses, including testing new methods, balancing datasets, supplementing control arms, and augmenting rare disease data." width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="resources-for-generating-synthetic-data" class="section level3 hasAnchor" number="3.6.2">
+<h3><span class="header-section-number">3.6.2</span> Resources for generating synthetic data<a href="specific-clinical-data-types.html#resources-for-generating-synthetic-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are a wide range of ways to generate synthetic data for different uses. Some tools to access or generate synthetic clinical data include:</p>
+<ul>
+<li><a href="https://github.com/synthetichealth/synthea">Synthea</a>: a synthetic patient population simulator, that generates synthetic medical histories. This tool can be used without restriction for research, industry, or government <span class="citation">(<a href="#ref-walonoski2018synthea">Walonoski et al. 2018</a>)</span>.</li>
+<li><a href="https://synthea.mitre.org">SyntheticMass</a>: a synthetic dataset of residents of Massachusetts (generated using Synthea), which statistically mirrors the real population in terms of demographics, disease burden, and healthcare interaction. This data is free of PII and PHI <span class="citation">(<a href="#ref-walonoski2018synthea">Walonoski et al. 2018</a>)</span>.</li>
+<li><a href="https://cran.r-project.org/package=simstudy">simstudy</a>: an R package used to simulate datasets. The user specifies a set of relationships between covariates and type of study, and the tool generates synthetic data <span class="citation">(<a href="#ref-simstudy">Goldfeld and Wujciak-Jens 2020</a>)</span>.</li>
+<li><a href="https://cran.r-project.org/web/packages/synthpop/index.html">synthpop</a>: an R package that takes patient data with sensitive values, and replaces those values with synthetic values, while minimally distorting the statistical summaries of the dataset <span class="citation">(<a href="#ref-nowok2016synthpop">Nowok, Raab, and Dibben 2016</a>)</span>.</li>
+</ul>
+</div>
+<div id="benefits-of-synthetic-data" class="section level3 hasAnchor" number="3.6.3">
+<h3><span class="header-section-number">3.6.3</span> Benefits of synthetic data<a href="specific-clinical-data-types.html#benefits-of-synthetic-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Using synthetic data has a variety of potential benefits.</p>
+<ul>
+<li>Reducing privacy risks: synthetic data are intended to have little or no information about individuals, and therefore reduce privacy risks associated with using clinical data. This also means they can more easily be shared across institutions and without needing to be granted access.<br />
+</li>
+<li>Lower cost to generate: synthetic data typically cost less to generate than the cost to collect real patient data, and once an AI system has been trained to generate synthetic data then it can keep producing more. This is particularly useful for training AI systems, which need large sample sizes.</li>
+</ul>
+</div>
+<div id="concerns-about-synthetic-data" class="section level3 hasAnchor" number="3.6.4">
+<h3><span class="header-section-number">3.6.4</span> Concerns about synthetic data<a href="specific-clinical-data-types.html#concerns-about-synthetic-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Although there is a lot of potential for synthetic data to revolutionize fields that use clinical data, there are also quite a few practical and ethical concerns.</p>
+<ul>
+<li>Accuracy and reliability: it is challenging to assess how well synthetic data actually mimic real data. Therefore, it is often unknown exactly how reliable statistical tests are based on synthetic data, as opposed to real patient data.</li>
+<li>Privacy risks: if synthetic data are built from real patient data, there are still threats of identifying patients in some cases, or small subgroups of patients in other cases.</li>
+<li>Bias: using AI systems in many applications has been shown to lead to algorithmic bias. It is possible for synthetic data to reinforce biases from original patient data or to create new biases.</li>
+<li>Regulations are still in development: because synthetic data are often not considered to be personally identifiable information (PII) or protected health information (PHI), they are not regulated by the same guidelines as other types of clinical data. Different types of synthetic data have different ethical and privacy risks, and regulations are still in development to govern the use and sharing of these data <span class="citation">(<a href="#ref-nisevic2025synthetic">Nisevic, Milojevic, and Spajic 2025</a>)</span>.</li>
+<li>Model collapse: when generative models are repeatedly trained on synthetic data rather than real data, the generated data may progressively diverge from true real-world patterns, reducing their utility.</li>
+</ul>
+<p>While synthetic data have promise for several areas of clinical research, any synthetic data use needs to be carefully considered and validated.</p>
+</div>
 </div>
 <div id="summary-1" class="section level2 hasAnchor" number="3.7">
 <h2><span class="header-section-number">3.7</span> Summary<a href="specific-clinical-data-types.html#summary-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -331,11 +380,32 @@ div.csl-indent {
 </div>
 <h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-elvatun2025synthetic" class="csl-entry">
+Elvatun, Severin, Daan Knoors, Simon Brant, Christian Jonasson, and Jan F Nygård. 2025. <span>“Synthetic Data as External Control Arms in Scarce Single-Arm Clinical Trials.”</span> <em>PLOS Digital Health</em> 4 (1): e0000581.
+</div>
+<div id="ref-simstudy" class="csl-entry">
+Goldfeld, Keith, and Jacob Wujciak-Jens. 2020. <span>“Simstudy: Illuminating Research Methods Through Data Generation.”</span> <em>Journal of Open Source Software</em> 5 (54): 2763. <a href="https://doi.org/10.21105/joss.02763">https://doi.org/10.21105/joss.02763</a>.
+</div>
+<div id="ref-mendes2025synthetic" class="csl-entry">
+Mendes, Jorge M, Aziz Barbar, and Marwa Refaie. 2025. <span>“Synthetic Data Generation: A Privacy-Preserving Approach to Accelerate Rare Disease Research.”</span> <em>Frontiers in Digital Health</em> 7: 1563991.
+</div>
 <div id="ref-modi_pediatric_2012" class="csl-entry">
 Modi, Avani C., Ahna L. Pai, Kevin A. Hommel, Korey K. Hood, Sandra Cortina, Marisa E. Hilliard, Shanna M. Guilfoyle, Wendy N. Gray, and Dennis Drotar. 2012. <span>“Pediatric <span>Self</span>-Management: <span>A</span> <span>Framework</span> for <span>Research</span>, <span>Practice</span>, and <span>Policy</span>.”</span> <em>Pediatrics</em> 129 (2): e473–85. <a href="https://doi.org/10.1542/peds.2011-1635">https://doi.org/10.1542/peds.2011-1635</a>.
 </div>
+<div id="ref-nisevic2025synthetic" class="csl-entry">
+Nisevic, Maja, Dusko Milojevic, and Daniela Spajic. 2025. <span>“Synthetic Data in Medicine: Legal and Ethical Considerations for Patient Profiling.”</span> <em>Computational and Structural Biotechnology Journal</em> 28: 190–98.
+</div>
+<div id="ref-nowok2016synthpop" class="csl-entry">
+Nowok, Beata, Gillian M Raab, and Chris Dibben. 2016. <span>“Synthpop: Bespoke Creation of Synthetic Data in r.”</span> <em>Journal of Statistical Software</em> 74: 1–26.
+</div>
 <div id="ref-psihogios_ethical_2024" class="csl-entry">
 Psihogios, Alexandra M., Sara King-Dowling, Jonathan A. Mitchell, Meghan E. McGrady, and Ariel A. Williamson. 2024. <span>“Ethical Considerations in Using Sensors to Remotely Assess Pediatric Health Behaviors.”</span> <em>American Psychologist</em> 79 (1): 39–51. <a href="https://doi.org/10.1037/amp0001196">https://doi.org/10.1037/amp0001196</a>.
+</div>
+<div id="ref-susser2024synthetic" class="csl-entry">
+Susser, Daniel, Daniel S Schiff, Sara Gerke, Laura Y Cabrera, I Glenn Cohen, Megan Doerr, Jordan Harrod, et al. 2024. <span>“Synthetic Health Data: Real Ethical Promise and Peril.”</span> <em>Hastings Center Report</em> 54 (5): 8–13.
+</div>
+<div id="ref-walonoski2018synthea" class="csl-entry">
+Walonoski, Jason, Mark Kramer, Joseph Nichols, Andre Quina, Chris Moesel, Dylan Hall, Carlton Duffett, Kudakwashe Dube, Thomas Gallagher, and Scott McLachlan. 2018. <span>“Synthea: An Approach, Method, and Software Mechanism for Generating Synthetic Patients and the Synthetic Electronic Health Care Record.”</span> <em>Journal of the American Medical Informatics Association</em> 25 (3): 230–38.
 </div>
 </div>
 <hr>
