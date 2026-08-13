@@ -38,6 +38,7 @@ CRF
 CRFs
 CRNs
 CTDC
+CTSA
 CUIs
 customizations
 DaSL
@@ -117,6 +118,7 @@ pharma
 phenotypes
 Phenotypes
 PHM
+PII
 PIs
 pmc
 PMC
@@ -142,9 +144,13 @@ RxNorm
 SAEs
 sexualized
 Shriver
+simstudy
 SNOMED
 socio
 SOGI
+Synthea
+SyntheticMass
+synthpop
 spectrometry
 TCGA
 TCIA
@@ -159,6 +165,7 @@ Truveta
 UE
 UE5
 UMLS
+underpowered
 USCS
 Vrijens
 wearables
