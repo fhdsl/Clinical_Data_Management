@@ -1,8 +1,10 @@
-# Clinical Study Design
+# Clinical Study Design and Considerations
 
 In this chapter, we describe a variety of clinical study designs (distinguishing between a clinical trial and an observational study, and several commons types of observational studies) and discuss several considerations for collecting data and conducting studies. We provide an in-depth description of case report forms and discuss possible types of bias in clinical studies. 
 
 Throughout this chapter, we will use the word **outcome** to refer to the health-related effect that we would like to study, often the occurrence of a disease or condition. We use the term **exposure** to refer to a factor that may influence the outcome and that differs across groups being compared. An exposure may be a treatment, behavior, environmental factor, genetic characteristic, or demographic attribute. We use the term **intervention** to refer to an exposure that is deliberately assigned by researchers within a clinical trial. The goal of many clinical studies is to understand the relationship between an exposure or intervention and an outcome.
+
+[placeholder for image to explain terms: outcome, exposure, intervention]
 
 ## Learning Objectives
 
@@ -76,7 +78,12 @@ Because the terms **prospective** and **retrospective** are used with multiple d
 
 ### Meta-analysis
 
-Potentially add a section here on meta-analyses! (To draft later)
+Meta-analyses combine data or results from multiple studies investigating a common or related research question. By pooling data or results across studies, researchers can perform analyses with larger sample sizes, reuse existing data, or generate a consensus result from a set of studies. 
+
+However, meta-analyses must be conducted with care, as combining data from studies with different participant populations and different study designs can lead to misleading results.
+
+
+Handbook of Meta-Analysis, Schmid et al., Ch 1 
 
 ## Considerations for Designing Studies 
 
