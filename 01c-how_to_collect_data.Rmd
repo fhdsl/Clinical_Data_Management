@@ -78,12 +78,13 @@ Because the terms **prospective** and **retrospective** are used with multiple d
 
 ### Meta-analysis
 
-Meta-analyses combine data or results from multiple studies investigating a common or related research question. By pooling data or results across studies, researchers can perform analyses with larger sample sizes, reuse existing data, or generate a consensus result from a set of studies. 
+A meta-analysis is a type of study that combines data or results from multiple studies investigating a common or related research question. By pooling information across studies, researchers can increase statistical power through larger sample sizes, leverage existing data, generate consensus results from a set of studies, and identify gaps or inconsistencies in existing research. However, the validity and interpretation of meta-analysis results depend heavily on methodological decisions, including which studies are included and how information is combined.
 
-However, meta-analyses must be conducted with care, as combining data from studies with different participant populations and different study designs can lead to misleading results.
+Conducting a meta-analysis starts with defining the topic and scope, and formulating testable research questions. A set of inclusion and exclusion criteria is established to determine which studies are eligible for review. These criteria often address characteristics such as the participant population, interventions or exposures, outcomes, and study designs. Differences across studies in these factors should be carefully evaluated, as heterogeneity can impact the interpretation and generalizability of results. 
 
+A major component of a meta-analysis is a systematic literature review to identify relevant studies that meet the inclusion criteria. Once a set of studies is determined, statistical analyses are performed either to summarize aggregated outcomes and results across studies or to pool data from individual participants across studies. Meta-analyses benefit from sensitivity analyses, which evaluate how robust results are to alternative analytical choices or the inclusion or exclusion of specific studies. 
 
-Handbook of Meta-Analysis, Schmid et al., Ch 1 
+cite handbook of Meta-Analysis, Schmid et al., Ch 1 
 
 ## Considerations for Designing Studies 
 
