@@ -78,13 +78,16 @@ Because the terms **prospective** and **retrospective** are used with multiple d
 
 ### Meta-analysis
 
-A meta-analysis is a type of study that combines data or results from multiple studies investigating a common or related research question. By pooling information across studies, researchers can increase statistical power through larger sample sizes, leverage existing data, generate consensus results from a set of studies, and identify gaps or inconsistencies in existing research. However, the validity and interpretation of meta-analysis results depend heavily on methodological decisions, including which studies are included and how information is combined.
+A meta-analysis is a type of study that synthesizes results from multiple studies investigating a common or related research question. By pooling information across studies, researchers can increase statistical power through larger sample sizes, leverage existing data, generate consensus results from a set of studies, and identify gaps or inconsistencies in existing research. However, the validity and interpretation of meta-analysis results depend heavily on methodological decisions, including which studies are included and how information is combined.
 
 Conducting a meta-analysis starts with defining the topic and scope, and formulating testable research questions. A set of inclusion and exclusion criteria is established to determine which studies are eligible for review. These criteria often address characteristics such as the participant population, interventions or exposures, outcomes, and study designs. Differences across studies in these factors should be carefully evaluated, as heterogeneity can impact the interpretation and generalizability of results. 
 
-A major component of a meta-analysis is a systematic literature review to identify relevant studies that meet the inclusion criteria. Once a set of studies is determined, statistical analyses are performed either to summarize aggregated outcomes and results across studies or to pool data from individual participants across studies. Meta-analyses benefit from sensitivity analyses, which evaluate how robust results are to alternative analytical choices or the inclusion or exclusion of specific studies. 
+A major component of a meta-analysis is a systematic literature review to identify relevant studies that meet the inclusion criteria. Once a set of studies is determined, statistical analyses are performed either to summarize aggregated outcomes and results across studies. Meta-analyses benefit from sensitivity analyses, which evaluate how robust results are to alternative analytical choices or the inclusion or exclusion of specific studies. 
+
+A mega-analysis, often referred to as an individual participant or patient data meta-analysis, takes a similar approach to a traditional meta-analysis but pools participant-level data from multiple comparable studies instead of combining reported study-level results. This approach requires access to the raw data from the included studies, which may limit the number of constituent studies, and often involves additional effort to harmonize variables and data across studies. However, it allows researchers to analyze all data consistently while providing flexibility in the specific questions asked and the statistical methods used to answer them.
 
 cite handbook of Meta-Analysis, Schmid et al., Ch 1 
+Meta-analysis and mega-analysis: A simple introduction (Eisenhauer) https://onlinelibrary-wiley-com.fhcrc.idm.oclc.org/doi/epdf/10.1111/test.12242 
 
 ## Considerations for Designing Studies 
 
