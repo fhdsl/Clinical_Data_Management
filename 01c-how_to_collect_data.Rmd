@@ -117,7 +117,7 @@ Capturing demographic and socioeconomic data is fundamental in clinical research
 
 It is essential to use neutral, non-judgmental language and to explain why these questions are being asked, ensuring participants understand the relevance of their responses.
 
-2. **Health and Medial History Questions**
+2. **Health and Medical History Questions**
 
 Health and medical history questions provide critical information about baseline conditions and potential risk factors of participants. These questions should be framed clearly and respectfully to avoid any discomfort.
 
