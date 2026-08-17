@@ -198,8 +198,6 @@ Designing specific and sensitive CRFs for clinical studies requires a thoughtful
 
 ### Potential Biases in Clinical Studies
 
-**Note for Carrie when reviewing: this section comes from content written by Guillermo and Chris, but I'm curious if we need to change some of this language for the course.**
-
 Researchers need to consider how data representativeness and other data distortions may affect their study and results in all stages of clinical study development, especially when designing the study. 
 
  Overall, cancer research has historically relied on data from high resource academic medical centers, which are often located in cities and disproportionately provide care to patients with certain demographics such as those that have higher incomes, and those live in urban areas. As a result, medical knowledge produced from these data tend to be more beneficial to other patients of similar demographics and the knowledge is not necessarily generalizable to other different populations. 
