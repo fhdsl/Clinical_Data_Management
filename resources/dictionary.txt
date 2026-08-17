@@ -133,6 +133,7 @@ PUF
 PUFs
 QALY
 QALYs
+RCTs
 RDC
 representativeness
 rhabdomyosarcoma
