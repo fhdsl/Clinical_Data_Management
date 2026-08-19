@@ -28,6 +28,10 @@ medication-adherence
 radiology
 pathology
 synthetic-data
+uses-of-synthetic-data
+resources-for-generating-synthetic-data
+benefits-of-synthetic-data
+concerns-about-synthetic-data
 summary-1
 how-to-collect-clinical-data
 learning-objectives-2
