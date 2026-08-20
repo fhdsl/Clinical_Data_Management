@@ -229,11 +229,11 @@ Most of the data from TCGA is part of the open access data stored in the GDC, an
 
 ##### Therapeutically Applicable Research to Generate Effective Treatments (TARGET)
 
-The TARGET initiative was another major genomic program, led by the NIH and NCI, to gather genomic data in order to understand the molecular basis of childhood cancers. 
+The TARGET initiative was another major genomic program, led by the NIH and NCI, to gather genomic data in order to understand the molecular basis of childhood cancers. The cancer types primarily studied in this initiative include Acute Lymphoblastic Leukemia, Acute Myeloid Leukemia, Wilms Tumor, Neuroblastoma, and Osteosarcoma (https://www.cancer.gov/ccg/research/genome-sequencing/target/studied-cancers). 
 
 ###### What population do the data represent?
 
-TARGET data come from samples from patients who were children or young adults, mainly gathered by members of the Children's Oncology Group (COG) (https://www.cancer.gov/ccg/research/genome-sequencing/target/about).
+TARGET data were collected from children or young adults with one of the cancer types listed above, mainly gathered by clinicians at member institutes of the Children's Oncology Group (COG) (https://www.cancer.gov/ccg/research/genome-sequencing/target/about).
 
 ###### What types of data are included?
 
