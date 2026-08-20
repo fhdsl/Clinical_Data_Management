@@ -60,7 +60,7 @@ https://seer.cancer.gov/data/
 
 There are two data products available from the SEER program: SEER Research Data and SEER Research Plus and National Childhood Cancer Registry (NCCR) Data.
 
-SEER Research Data includes data from 1975-2023, excluding geographic region, month of diagnosis, and other demographic fields. Any user with an email address can access this data by registering [here](https://seerdataaccess.cancer.gov/seer-data-access). 
+SEER Research Data includes data from 1975 through the most recent year available, excluding geographic region, month of diagnosis, and other demographic fields. Any user with an email address can access this data by registering [here](https://seerdataaccess.cancer.gov/seer-data-access). 
 
 SEER Research Plus and NCCR Data includes data from 1975-2023, including geography, month of diagnosis, and other demographic fields that are removed from the SEER Research Data. In order to access this data, the user must have an eRA Commons or Department of Health and Human Services (HHS) account. You will use this account to fill out an application form and sign data use and data limitations agreements. The SEER program will process your request within two business days, and send information about how to access the data and download the accompanying software. See [here](https://seer.cancer.gov/data/access.html) for more information about requesting access. 
 
