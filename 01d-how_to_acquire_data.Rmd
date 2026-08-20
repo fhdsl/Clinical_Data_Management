@@ -215,11 +215,13 @@ TCGA data come from samples collected at a network of tissue source sites, prima
 
 The TCGA includes the following data:
 
+* Demographics
 * Genomic and molecular data
   * Genomic
   * Epigenomic
   * Transcriptomic
   * Proteomic
+* Outcomes
 
 ###### How to access the data
 
@@ -237,11 +239,13 @@ TARGET data come from samples from patients who were children or young adults, m
 
 TARGET includes the following data:
 
+* Demographics
 * Genomic and molecular data
   * Genomic
   * Epigenomic
   * Transcriptomic
   * Proteomic
+* Outcomes
 
 ###### How to access the data
 
@@ -291,12 +295,14 @@ ICGC data come from samples that were taken by consortium members.
 
 The ICGC includes the following data:
 
+* Demographics
 * Genomic and molecular data
   * Genomic
   * Epigenomic
   * Transcriptomic
   * Proteomic
 * Clinical data
+* Outcomes
 
 https://docs.cancergenomicscloud.org/docs/icgc-data 
 
@@ -324,9 +330,12 @@ https://docs.pedscommons.org/DataAccessAndGovernance/
 
 The PCDC includes the following data:
 
-* clinical data
-* genomic data
-* imaging data
+* Demographics
+* Cancer characteristics
+* Treatment
+* Laboratory data
+* Genomic data
+* Outcomes
 
 ##### How to access the data
 
