@@ -79,6 +79,7 @@ Leanpub
 LLM
 LLMs
 LOINC
+Lymphoblastic
 Markua
 McGrady
 MEM
@@ -105,6 +106,7 @@ NORDCAN
 NPCR
 OMOP
 ontologies
+Osteosarcoma
 participants'
 PCD
 PCDC
@@ -169,4 +171,5 @@ underpowered
 USCS
 Vrijens
 wearables
+Wilms
 www
