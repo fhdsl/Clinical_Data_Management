@@ -1,10 +1,46 @@
-# Specific Clinical Data Types
+# Multimodal Data
 
 ## Learning Objectives
 
 <img src="01b-specific_data_types_files/figure-html//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3f5a232af6c_0_0.png" alt="Learning Objectives: 1. Physiological (to-do), 2. Monitoring data (to-do), 3. Radiology, 4. Pathology, 5. Understand the potential uses for and risks of synthetic data" width="100%" style="display: block; margin: auto;" />
 
-## Physiological
+
+Clinical research is becoming increasingly multimodal, meaning that it combines more classical clinical data like EHR with other forms of data. The use of different kinds of data together can be very valuable for understanding the underlying biology leading to different forms of cancer, evaluating new potential treatments for cancer, and understanding rates of cancer across various populations, including what exposures may influence those rates.
+
+These data can include:
+
+- Omic data
+- Physiological data
+- Imaging data
+- Monitoring data
+- Geographic data
+- Environmental data
+- Social determinants of health data
+- Synthetic data (in some cases)
+
+Methods for finding patterns when combining different kinds of data together, as well as how to harmonize and store data together are still in development. Machine Learning and AI show particular promise for finding patterns across vast amounts of data https://arxiv.org/abs/2510.23639 , https://www.mdpi.com/2079-9292/11/8/1199, https://www.nature.com/articles/s41746-022-00712-8 and indicate that prediction performance across many different biomedical studies are improved when multiple data types are combinedhttps://www.nature.com/articles/s41746-022-00712-8  . 
+
+
+### Omic Data
+Omic data such as genetic or protein information about patients can also be combined with clinical data to enhance research. Examples include polygeneic risk scores using single nucleotide polymorhisms https://pmc.ncbi.nlm.nih.gov/articles/PMC4157459/, methylation risk scores using DNA methylation data, transcriptomic data (or data about the expression of RNAs),  and more recently evaluation of microbiome data and proteomic data https://pmc.ncbi.nlm.nih.gov/articles/PMC11682975/ . 
+
+### Physiological Data
+
+This data includes any type of test measurement that may be performed to evaluate bodily form and function including but not limited to:
+Urine and blood test measurements (such as levels of vitamins, minerals, hormones, antibodies, as well as cell compositions and characteristics, presence and type of bacteria or viruses and more)
+Vital measurements (blood pressure, pulse rate, oxygen level, body temperature), and more. 
+Electrode based measurements to assess organ function (such as electrocardiogram measurements of heart rhythm, and electroencephalogram of brain activity)
+
+### Imaging Data
+
+There are several types of clinical imaging data. This includes pathology, radiology, and molecular based imaging among others (https://ilearn.th-deg.de/pluginfile.php/480243/mod_book/chapter/8248/updated_JXIJSIS2015.pdf ). All of these produce a file or multiple files of imaging data that can be paired with demographics of individuals or other clinical data to perform research.
+
+Pathology imaging involves examination of tissue, fluid, and other bodily samples like free cells. These samples are taken from patients in the form of tissue biopsies, body fluid collections, or other sampling methods.  Historically this was done on slides with various forms of staining to help clinicians and researchers examine cell populations and cellular and extracellular structures. More modern techniques are allowing for faster preparations that don’t require slides and offer greater capacity for visualization https://pmc.ncbi.nlm.nih.gov/articles/PMC12054849/. 
+
+Radiology imaging involves using radiation or magnets and sound waves to evaluate structures in living patients. This includes radiation-based methods such as X-ray and Computed Tomography (CT), as well as magnet based methods like Magnetic Resonance Imaging (MRI), and sound wave-based methods called ultrasound which are often used to detect tumors https://ilearn.th-deg.de/pluginfile.php/480243/mod_book/chapter/8248/updated_JXIJSIS2015.pdf.
+
+Molecular imaging involves evaluation of molecular function within living patients. This can include radiological techniques such as Positron Emission Tomography (PET) and Single Photon Emission Computed Tomography (SPECT) imaging. Positron Emission Tomography uses radiotracers to monitor physiological aspects such as metabolism of cancer tumors or bone mineralization in bone cancer. SPECT is used to monitor apoptosis and lymph node mapping linkinghub.elsevier.com/retrieve/pii/S0001299803700063, https://pmc.ncbi.nlm.nih.gov/articles/PMC6667427/. In addition Magnetic Resonance Imaging (MRI) with contrast agents, have helped investigators and clinicians examine biomarkers less invasively in human samples. Computed Tomography (CT) combined with contrast agents can also help evaluation of tissue composition and microstructure. Newer forms of molecular imaging include Magnetic Particle Imaging (MPI) which uses the magnetic properties of injected tracers to create 3D images of vasculature or Optical Coherent Tomography (OCT) which has proven to be a great method for shallow noninvasive in situ biopsies (meaning biopsies that don't require physically taking a sample from a patient). Hybrid imaging, combining multiple forms of molecular imaging, such as PET and CT continue to be developed and offer advantages over use of a single method https://www.jscimedcentral.com/journal-article-pdf/JSM-Cardiothoracic-Surgery/cardiothoracicsurgery-5-1019.pdf , https://pmc.ncbi.nlm.nih.gov/articles/PMC6667427/ .
+
 
 ## Monitoring data
 
@@ -64,9 +100,14 @@ For more information see:
 - [A new taxonomy for describing and defining adherence to medications (Vrijens et al., 2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3403197/)
 - [Pediatric self-management: A framework for research, practice, and policy. (Modi et al., 2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9923567/)
 
-## Radiology
 
-## Pathology
+
+## Geographic, environmental, and social determinants of health Data
+
+To better understand if specific populations have higher rates of cancer due to environmental exposures, geographic and environmental data can be very useful. Data include measurements of air pollution, amounts of chemical exposures from food contamination, quantities and proximity to green space, amounts of nearby traffic, proximity to manufacturing, or agricultural industry, and even weather and temperature patterns which can cause events like wild fires and all have been shown to influence cancer risk https://www.sciencedirect.com/science/article/pii/S0167814026000460, https://pmc.ncbi.nlm.nih.gov/articles/PMC10031963/, https://ascopubs.org/doi/10.1200/EDBK-26-521654 . 
+
+Social determinants of health data includes aspects about an individual's lifestyle including their job, access to health care, housing and neighborhood, economic stability, and education. Studies indicate that incorporation of these aspects into clinical research can help uncover social aspects that may inhibit or enhance cancer detection or treatment in different populations.  https://pmc.ncbi.nlm.nih.gov/articles/PMC7671639/.
+
 
 ## Synthetic Data
 
