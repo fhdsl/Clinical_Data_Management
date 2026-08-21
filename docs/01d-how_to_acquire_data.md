@@ -12,7 +12,7 @@ The major categories of data acquisition sources discussed in this chapter inclu
 
 ## Registries
 
-A registry is a collection of data about a group of patients with a shared condition or experience. Registries are typically sponsored by government agencies, professional organizations, research institutions, or private companies. Registries have specific guidelines about who will be included, which could be based on the condition of interest, geographic area, or other factors. The data from registries can be used to understand trends in a disease over time and space. 
+A registry is a collection of data about a group of patients with a shared condition or experience. Registries are typically sponsored by government agencies, professional organizations, research institutions, or private companies. Registries have specific guidelines about who will be included, which could be based on the condition of interest, geographic area, or other factors. The data from registries can be used to understand trends in a disease over time and geographic location. 
 
 Cancer registries include data about cancer patients. These data are typically collected by hospitals or other medical facilities that diagnose or treat cancer, aggregated by regional registries, and then sent to national cancer registries. These data often include information about patient demographics, tumor characteristics, cancer stage, and initial treatment. Some registries also include information about outcomes after initial diagnosis and treatment. 
 
@@ -58,9 +58,9 @@ https://seer.cancer.gov/data/
 
 There are two data products available from the SEER program: SEER Research Data and SEER Research Plus and National Childhood Cancer Registry (NCCR) Data.
 
-SEER Research Data includes data from 1975-2023, excluding geography, month of diagnosis, and other demographic fields. Any user with an email address can access this data by registering [here](https://seerdataaccess.cancer.gov/seer-data-access). 
+SEER Research Data includes data from 1975 through the most recent year available, excluding geographic region, month of diagnosis, and other demographic fields. Any user with an email address can access this data by registering [here](https://seerdataaccess.cancer.gov/seer-data-access). 
 
-SEER Research Plus and NCCR Data includes data from 1975-2023, including geography, month of diagnosis, and other demographic fields that are removed from the SEER Research Data. In order to access this data, the user must have an eRA Commons or Department of Health and Human Services (HHS) account. You will use this account to fill out an application form and sign data use and data limitations agreements. The SEER program will process your request within two business days, and send information about how to access the data and download the accompanying software. See [here](https://seer.cancer.gov/data/access.html) for more information about requesting access. 
+SEER Research Plus and NCCR Data includes all SEER Research Data, with the addition of geographic region, month of diagnosis, and other demographic fields that are removed from the SEER Research Data. In order to access this data, the user must have an eRA Commons or Department of Health and Human Services (HHS) account. You will use this account to fill out an application form and sign data use and data limitations agreements. The SEER program will process your request within two business days, and send information about how to access the data and download the accompanying software. See [here](https://seer.cancer.gov/data/access.html) for more information about requesting access. 
 
 Additionally, SEER maintains specialized databases that provide additional variables and link the registry data to other administrative databases such as Medicare. To access these databases, you must already have access to SEER Research Plus and NCCR Data, and then complete an additional application [process](https://seer.cancer.gov/data/specialized/) to request specialized data. Specialized databases are listed [here](https://seer.cancer.gov/data/specialized/available-databases/). Two of these databases also require NCI Central IRB approval to access. 
 
@@ -115,13 +115,13 @@ https://www.facs.org/media/ilqb5snq/2024-data-dictionary.pdf
 
 ##### How to access the data
 
-The NCDB manages a dataset called the Participant User Data File (PUF) which includes information about cancer cases from CoC-accredited hospitals and cancer programs. The PUFs are available only to researchers associated with CoC-accredited cancer programs who submit an application. This application includes letters of support from PIs in the CoC-accredited program and a description of your proposed research project and analysis plan. 
+The NCDB manages a dataset called the Participant User Data File (PUF) which includes information about cancer cases from CoC-accredited hospitals and cancer programs. The PUFs are available only to researchers associated with CoC-accredited cancer programs who submit an application. This application includes letters of support from principal investigators (PIs) in the CoC-accredited program and a description of your proposed research project and analysis plan. 
 
 ### International registries 
 
 Many countries outside of the United States also maintain comprehensive cancer registries. 
 
-The Nordic Cancer Registries include population-based cancer data from several Nordic countries, which have some of the oldest and most comprehensive cancer registries in the world. NORDCAN provides free and public aggregated incidence, mortality, prevalence, and survival data at the level of country, year, cancer entity, sex, and age group level. Access to individual level data from any individual registry within the Nordic Cancer Registries requires a request to that specific registry, and typically requires a local collaborator or affiliation. 
+The Nordic Cancer Registries include population-based cancer data from several Nordic countries, which have some of the oldest and most comprehensive cancer registries in the world. NORDCAN provides free and public aggregated incidence, mortality, prevalence, and survival data at the level of country, year, cancer entity, sex, and age group. Access to individual level data from any individual registry within the Nordic Cancer Registries requires a request to that specific registry, and typically requires a local collaborator or affiliation. 
 
 Another comprehensive cancer registry is the National Cancer Registration and Analysis Service (NCRAS) in England. These registry data are linked with information on treatments, outcomes, and healthcare utilization. These data can only be accessed for health care purposes, and can be requested through [this process](https://digital.nhs.uk/services/data-access-request-service-dars#national-disease-registration-service-ndrs-). 
 
@@ -144,7 +144,7 @@ A data commons is a cloud-based platform that enables a research community to st
 The major features of a data commons are:
 
 1. A data commons stores data and computing tools and computation resources 
-2. A data commons brings analyses to the data 
+2. A data commons facilitates analysis within the platform
 3. A data commons contains multiple harmonized datasets 
 4. A data commons is typically designed for collaboration and data reuse 
 
@@ -160,13 +160,13 @@ The CRDC is a data commons run by the National Cancer Institute (NCI) to acceler
 * Proteomic Data Commons (PCD): mass-spectrometry-based proteomic data
 * Imaging Data Commons (IDC): de-identified radiology and pathology data
 * Integrated Canine Data Commons (ICDC): genomic and clinical data from canine patients with cancer
-* General Commons (GC): data that do not fit into other CRDC data commons
 * Clinical and Translational Data Commons (CTDC): clinical, biospecimen, and molecular characterization data from NCI-funded studies 
 * Population Science Data Commons (PSDC): population studies data 
+* General Commons (GC): data that do not fit into other CRDC data commons
 
 As well as including these component data commons, the CRDC provides a cloud resource with access to NCI-funded data, hundreds of publicly available tools and workflows, and computational resources for working with large-scale data. 
 
-While each data commons within the CRDC are heavily utilized for cancer research, the most popular and heavily cited component is the GDC. The IDC is also heavily used for imaging data. More information about the other data commons, as well as instructions for data access can be found [here](https://datacommons.cancer.gov/explore/data-commons).
+While each data commons within the CRDC is heavily utilized for cancer research, the most popular and heavily cited component is the GDC. The IDC is also heavily used for imaging data. More information about the other data commons, as well as instructions for data access can be found [here](https://datacommons.cancer.gov/explore/data-commons).
 
 https://www.cancer.gov/about-nci/organization/cbiit/projects/crdc
 
@@ -197,9 +197,9 @@ https://gdc.cancer.gov/about-data
 
 The GDC data portal allows researchers to download datasets or to analyze data within the GDC platform. Data within the GDC are classified as either open access or controlled access. 
 
-Open access data do not require any authentication or authorization to access. This includes genomic data that is not individually identifiable, and most clinical and all biospecimen data elements. The data can be accessed through the [Genomic Data Commons Data Portal](https://portal.gdc.cancer.gov).
+Open access data do not require any authentication or authorization to access. This includes genomic data that are not individually identifiable, and most clinical and all biospecimen data elements. The data can be accessed through the [Genomic Data Commons Data Portal](https://portal.gdc.cancer.gov).
 
-Controlled access data include individually identifiable data and some clinical data elements. Accessing controlled access data requires first obtaining an eRA Commons account and dbGaP access, then obtaining access to the specific controlled access research project through dbGaP, and finally logging into the GDC Data Portal to access. The eRA Commons lets federal agencies manage research grants, and accounts can only be made for individuals at research organizations by officials from the organization (https://www.era.nih.gov/register-accounts/create-and-edit-an-account.htm). The database of Genotypes and Phenotypes (dbGaP) is a database of data and results from studies about genotypes and phenotypes in humans. The dbGaP is commonly used to manage controlled-access data, by requiring researchers to request datasets and data access committees to review requests (https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/dbgap). Only senior researchers can request data through dbGaP, but once they have obtained access to project data, they can provide access to other members of their lab with GDC accounts (https://gdc.cancer.gov/access-data/data-access-processes-and-tools). 
+Controlled access data include individually identifiable data and some clinical data elements. Accessing controlled access data requires first obtaining an eRA Commons account and access to the database of Genotypes and Phenotypes (dbGaP), then obtaining access to the specific controlled access research project through dbGaP, and finally logging into the GDC Data Portal to access. The eRA Commons lets federal agencies manage research grants, and accounts can only be made for individuals at research organizations by officials from the organization (https://www.era.nih.gov/register-accounts/create-and-edit-an-account.htm). The dbGaP is commonly used to manage controlled-access data, enabling researchers to request datasets and data access committees to review requests (https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/dbgap). Only senior researchers can request data through dbGaP, but once they have obtained access to project data, they can provide access to other members of their lab with GDC accounts (https://gdc.cancer.gov/access-data/data-access-processes-and-tools). Senior researchers must be permanent employees of their institutions who are either academic professors or researchers with responsibilities that include laboratory or research program administration. Laboratory staff and trainees are not eligible to submit data access requests in dbGaP, but can take part in data analysis for projects overseen by a senior researcher. (https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/dbgap)
 
 ##### The Cancer Genome Atlas (TCGA)
 
@@ -213,11 +213,13 @@ TCGA data come from samples collected at a network of tissue source sites, prima
 
 The TCGA includes the following data:
 
+* Demographics
 * Genomic and molecular data
   * Genomic
   * Epigenomic
   * Transcriptomic
   * Proteomic
+* Outcomes
 
 ###### How to access the data
 
@@ -225,21 +227,23 @@ Most of the data from TCGA is part of the open access data stored in the GDC, an
 
 ##### Therapeutically Applicable Research to Generate Effective Treatments (TARGET)
 
-The TARGET initiative was another major genomic program, led by the NIH and NCI, to gather genomic data in order to understand the molecular basis of childhood cancers. 
+The TARGET initiative was another major genomic program led by the NIH and NCI to generate genomic data in order to understand the molecular basis of childhood cancers. The cancer types primarily studied in this initiative include Acute Lymphoblastic Leukemia, Acute Myeloid Leukemia, Wilms Tumor, Neuroblastoma, and Osteosarcoma (https://www.cancer.gov/ccg/research/genome-sequencing/target/studied-cancers). 
 
 ###### What population do the data represent?
 
-TARGET data come from samples from patients who were children or young adults, mainly gathered by members of the Children's Oncology Group (COG) (https://www.cancer.gov/ccg/research/genome-sequencing/target/about).
+TARGET data were collected from children or young adults with one of the cancer types listed above, mainly gathered by clinicians at member institutes of the Children's Oncology Group (COG) (https://www.cancer.gov/ccg/research/genome-sequencing/target/about).
 
 ###### What types of data are included?
 
 TARGET includes the following data:
 
+* Demographics
 * Genomic and molecular data
   * Genomic
   * Epigenomic
   * Transcriptomic
   * Proteomic
+* Outcomes
 
 ###### How to access the data
 
@@ -289,12 +293,14 @@ ICGC data come from samples that were taken by consortium members.
 
 The ICGC includes the following data:
 
+* Demographics
 * Genomic and molecular data
   * Genomic
   * Epigenomic
   * Transcriptomic
   * Proteomic
 * Clinical data
+* Outcomes
 
 https://docs.cancergenomicscloud.org/docs/icgc-data 
 
@@ -308,7 +314,7 @@ The ICGC also includes controlled release data. Access to this data requires an 
 
 #### Pediatric Cancer Data Commons (PCDC)
 
-The PCDC is a data commons run by the Data for the Common Good institution at the University of Chicago. The data commons includes pediatric, young adult, and adult cancer data, as well as a unified research platform. The data come from more than 40 countries and encompass most types of pediatric cancer. The PCDC standardizes and harmonizes the data, which supports defining cohorts based on diseases and demographics across studies.
+The PCDC is a data commons run by the Data for the Common Good institution at the University of Chicago. The data commons includes pediatric, young adult, and adult cancer data, as well as an analysis platform with tools to explore available data and assess study feasibility. The data come from more than 40 countries and encompass most types of pediatric cancer. The PCDC standardizes and harmonizes the data, which supports defining cohorts based on diseases and demographics across studies.
 
 https://commons.cri.uchicago.edu/pcdc/
 
@@ -322,9 +328,12 @@ https://docs.pedscommons.org/DataAccessAndGovernance/
 
 The PCDC includes the following data:
 
-* clinical data
-* genomic data
-* imaging data
+* Demographics
+* Cancer characteristics
+* Treatment
+* Laboratory data
+* Genomic data
+* Outcomes
 
 ##### How to access the data
 
@@ -431,7 +440,7 @@ https://support.researchallofus.org/hc/en-us/articles/4619151535508-Data-Types-a
 
 #### How to access the data
 
-The All of Us dataset has three access tiers. The Public Tier includes deidentified and aggregated data. These data are available through the [data browser](https://databrowser.researchallofus.org/?_gl=1*17zo1a7*_ga*MTg0OTEyMTY3OC4xNzg1Nzc1ODcw*_ga_MQVR5DG2C4*czE3ODU3NzU4NzAkbzEkZzEkdDE3ODU3NzYzOTUkajEzJGwwJGgyNjMyMzg5MDM.). The Registered Tier includes individual-level data, including data from EHR, wearables, surveys, and physical measurements. The Controlled Tier includes genomic data, demographic fields in EHR that are suppressed in other tiers, and accurate dates of events that are shifted in other tiers. 
+The All of Us dataset has three access tiers. The Public Tier includes deidentified and aggregated data. These data are available through the [data browser](https://databrowser.researchallofus.org). The Registered Tier includes individual-level data, including data from EHR, wearables, surveys, and physical measurements. The Controlled Tier includes genomic data, demographic fields in EHR that are suppressed in other tiers, and accurate dates of events that are shifted in other tiers. 
 
 In order to access the Registered and Controlled tiers, your institution must have signed a Data Use and Registration Agreement with All of Us. You can check [here](https://www.researchallofus.org/institutional-agreements/) whether your institution has an agreement in place for the tier that you would like to access, or submit a request if not. If your institution does have an agreement, then you will need to create an account and complete a training. 
 
@@ -443,7 +452,7 @@ Provide summary of this section (may not need table because we just have the two
 
 ## EHR platforms
 
-Electronic health records (EHR) contain digital information generated through a patient's interactions with the healthcare system over time, including demographics, diagnoses, medications, laboratory tests, clinical notes, images, and other clinical observations. Unlike registries and cohort studies, in which data are collected primarily for research purposes, EHR are primarily collected and stored to support clinical care, healthcare billing, and health system operations. Although research is not their primary purpose, they provide a very useful longitudinal real world data source for clinical researchers. However, these records may be incomplete, missing relevant variables, or recorded differently across health care systems and institutions. It would be difficult for researchers to directly access EHR from healthcare systems, as there may not be enough cases to study from a single institution or data may be difficult to harmonize from different systems. Instead, researchers typically access EHR data from EHR platforms. These platforms receive EHR data from healthcare systems, standardize and harmonize the data, and create research databases. Part of this process involves mapping original data into common data models, which provide a standardized way to represent diagnoses, medications, laboratory results, healthcare encounters, and other clinical information. EHR platforms differ in their funding, major goals, cost to access, and data scope. EHR platforms are increasingly used for cancer research because they can capture detailed treatment histories, lab results, medications, and outcomes that may not be available in traditional cancer registries.
+Electronic health records (EHR) contain digital information generated through a patient's interactions with the healthcare system over time, including demographics, diagnoses, medications, laboratory tests, clinical notes, images, and other clinical observations. Unlike registries and cohort studies, in which data are collected primarily for research purposes, EHR are primarily collected and stored to support clinical care, healthcare billing, and health system operations. Although research is not their primary purpose, they provide a very useful longitudinal real world data source for clinical researchers. However, these records may be incomplete, missing relevant variables, or recorded differently across health care systems and institutions. Instead of accessing EHR directly from healthcare systems, researchers typically access data through EHR platforms. These platforms aggregate EHR data from healthcare systems, standardize and harmonize the data, and create research databases. Part of this process involves mapping original data into common data models, which provide a standardized way to represent diagnoses, medications, laboratory results, healthcare encounters, and other clinical information. EHR platforms differ in their funding, major goals, cost to access, and data scope. EHR platforms are increasingly used for cancer research because they can capture detailed treatment histories, lab results, medications, and outcomes that may not be available in traditional cancer registries.
 
 ### Research EHR platforms
 
@@ -510,7 +519,7 @@ To request access to ENACT, you must be a member of a participating CTSA institu
 
 #### Epic Cosmos
 
-Epic Cosmos is an EHR platform that includes data from health systems using Epic software, and is available to researchers affiliated with and approved by a Cosmos participating organization. A list of organizations can be found [here](https://cosmos.epic.com/request-access/). If you are not part of a participating organization, you can request a Cosmos collaborator or submit ideas for a study [here](https://www.epicresearch.org). 
+Epic Cosmos is an EHR platform that includes data from health systems using Epic software, and is available to researchers affiliated with and approved by a Cosmos participating organization. A list of organizations can be found [here](https://cosmos.epic.com/request-access/). If you are not part of a participating organization, you can search for a collaborator at a participating organization or submit ideas for a study [here](https://www.epicresearch.org). 
 
 ##### What population do the data represent?
 
@@ -640,7 +649,7 @@ Synapse is a platform for data sharing. To access Project GENIE data with Synaps
 
 #### MSK-CHORD
 
-Memorial Sloan Kettering Cancer Center (MSK) curated the MSK-CHORD dataset, which combines deidentified longitudinal clinical data with genomic data from genomic profiling tests of tumors. This dataset includes cases of many prevalent and rare cancer types from over 24,000 patients. The dataset includes natural language processing annotations of unstructured data, along with structured clinical data and genomic data. MSK-CHORD is available through cBioPortal. 
+Memorial Sloan Kettering Cancer Center (MSK) curated the MSK-CHORD dataset, which combines deidentified longitudinal clinical data with genomic data from genomic profiling tests of tumors. This dataset includes cases of many common and rare cancer types from over 24,000 patients. The dataset includes natural language processing annotations of unstructured data, along with structured clinical data and genomic data. MSK-CHORD is available through cBioPortal. 
 
 https://www.mskcc.org/research-advantage/support/digital-health-projects/msk-chord-clinico-genomic-data-msk-cancer 
 https://www.nature.com/articles/s41586-024-08167-5 
