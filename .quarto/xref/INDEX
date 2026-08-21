@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "9eeeea88"
+  },
+  "00-intro.qmd": {
+    "00-intro.html": "ae285425"
+  },
+  "01-data_types.qmd": {
+    "01-data_types.html": "5c137f06"
+  },
+  "01b-specific_data_types.qmd": {
+    "01b-specific_data_types.html": "10a04c10"
+  },
+  "01c-how_to_collect_data.qmd": {
+    "01c-how_to_collect_data.html": "354d3bf0"
+  },
+  "01d-how_to_acquire_data.qmd": {
+    "01d-how_to_acquire_data.html": "032c2762"
+  },
+  "02-data_uses.qmd": {
+    "02-data_uses.html": "06a99186"
+  },
+  "03-data_management.qmd": {
+    "03-data_management.html": "7a86d448"
+  },
+  "04-appendixI.qmd": {
+    "04-appendixI.html": "527573ad"
+  }
+}

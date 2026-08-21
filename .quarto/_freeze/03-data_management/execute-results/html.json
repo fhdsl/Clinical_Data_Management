@@ -1,0 +1,15 @@
+{
+  "hash": "e710ddf2129fc167af421dbd362476e4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Clinical Data Management\n---\n\n\n\n# Clinical Data Management\n\n## Learning Objectives\n\n## Clinical data handling tools\n\n## Importance of keeping clinical data safe\n\n## Government regulators\n\n## Documentation\n\n## Conclusion",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
