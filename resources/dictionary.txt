@@ -60,6 +60,7 @@ GC
 GDC
 generalizability
 generalizable
+Github
 HAQ
 HD
 HTAN
@@ -79,6 +80,7 @@ Leanpub
 LLM
 LLMs
 LOINC
+Lymphoblastic
 Markua
 McGrady
 MEM
@@ -105,6 +107,7 @@ NORDCAN
 NPCR
 OMOP
 ontologies
+Osteosarcoma
 participants'
 PCD
 PCDC
@@ -169,4 +172,5 @@ underpowered
 USCS
 Vrijens
 wearables
+Wilms
 www
