@@ -32,7 +32,7 @@ Clinical research relies heavily on the collection, processing, analysis, and ma
 
 The goal of effective data handling is to ensure that data is accurate, reliable, and available when needed, while also protecting patient privacy and complying with regulatory standards.
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Diagram showing some steps of data handling, in a cycle, going from data collection to data storage, data cleaning, data analysis, data sharing, and data reporting", out.width="100%"}
+```{r, fig.align='center', echo = FALSE, fig.alt= "Diagram showing some steps of data handling, including data collection, data storage, data cleaning, data analysis, data sharing, and data reporting, and data auditing.", out.width="100%"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f5432c677a_0_370#slide=id.g3f5432c677a_0_370" )
 ```
 
