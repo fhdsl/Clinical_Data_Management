@@ -144,9 +144,9 @@ Honest brokers act as neutral intermediaries between the data source and researc
 
 In data management, several types of documentation are frequently encountered, each serving a specific purpose throughout the lifecycle of a research project. These documents are crucial for ensuring data integrity, regulatory compliance, and effective project management.
 
-### Data Management Plan
+### Data Management and Sharing Plan
 
-A Data Management Plan (DMP) outlines how data will be handled during and after a research project. Typically created at the beginning of a project, it is stored in project documentation repositories or institutional databases. Often required by funding agencies, a DMP may include plans for testing with dummy data to ensure data integrity. The importance of a DMP lies in its role in planning and managing data throughout the project, ensuring that data is handled consistently and responsibly [[@DataManagement]](https://www.tableau.com/learn/articles/what-is-data-management).
+A Data Management and Sharing (DMS) Plan outlines how data will be handled during and after a research project. This includes how data will be shared, how PII and PHI will be protected, and the types of data that will be generated during the project. A DMS Plan is often required by funding agencies. Typically created at the beginning of a project, it is stored in project documentation repositories or institutional databases. The importance of a DMS Plan lies in its role in planning and managing data throughout the project, ensuring that data is handled and shared consistently and responsibly [[@DMSPlan]](https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms/writing-dms-plan).
 
 ### Statistical Analysis Plan
 
