@@ -186,6 +186,7 @@ Synthea
 SyntheticMass
 synthpop
 spectrometry
+tabset
 TCGA
 TCIA
 telehealth
