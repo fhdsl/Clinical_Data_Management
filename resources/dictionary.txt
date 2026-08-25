@@ -56,6 +56,7 @@ dbGaP
 de
 deidentified
 DMP
+DMS
 DSA
 DSAs
 DUA
@@ -81,7 +82,7 @@ generalizable
 Github
 HAQ
 HD
-HIPPA
+HIPAA
 homomorphic
 HTAN
 https
