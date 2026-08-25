@@ -1,12 +1,9 @@
-url	chapt_title	img_path
-https://hutchdatascience.org/Clinical_Data_Management/index.html	About this Course	./resources/chapt_screen_images/index.png
-https://hutchdatascience.org/Clinical_Data_Management/introduction.html	1 Introduction	./resources/chapt_screen_images/introduction.png
-https://hutchdatascience.org/Clinical_Data_Management/clinical-data-types.html	2 Clinical Data Types	./resources/chapt_screen_images/clinical-data-types.png
-https://hutchdatascience.org/Clinical_Data_Management/specific-clinical-data-types.html	3 Specific Clinical Data Types	./resources/chapt_screen_images/specific-clinical-data-types.png
-https://hutchdatascience.org/Clinical_Data_Management/how-to-collect-clinical-data.html	4 How to Collect Clinical Data	./resources/chapt_screen_images/how-to-collect-clinical-data.png
-https://hutchdatascience.org/Clinical_Data_Management/how-to-acquire-clinical-data.html	5 How to Acquire Clinical Data	./resources/chapt_screen_images/how-to-acquire-clinical-data.png
-https://hutchdatascience.org/Clinical_Data_Management/clinical-data-uses.html	6 Clinical Data Uses	./resources/chapt_screen_images/clinical-data-uses.png
-https://hutchdatascience.org/Clinical_Data_Management/clinical-data-management.html	7 Clinical Data Management	./resources/chapt_screen_images/clinical-data-management.png
-https://hutchdatascience.org/Clinical_Data_Management/appendix-i-ontologies-vocabularies-taxonomies-and-standards.html	8 Appendix I: Ontologies, Vocabularies, Taxonomies, and Standards	./resources/chapt_screen_images/appendix-i-ontologies-vocabularies-taxonomies-and-standards.png
-https://hutchdatascience.org/Clinical_Data_Management/about-the-authors.html	About the Authors	./resources/chapt_screen_images/about-the-authors.png
-https://hutchdatascience.org/Clinical_Data_Management/references.html	References	./resources/chapt_screen_images/references.png
+chapt_title	data_level	url	img_path
+Clinical Data Management	1	https://hutchdatascience.org/Clinical_Data_Management/00-intro.html	./resources/chapt_screen_images/00-intro.png
+Clinical Data Types	2	https://hutchdatascience.org/Clinical_Data_Management/01-data_types.html	./resources/chapt_screen_images/01-data_types.png
+Specific Clinical Data Types	3	https://hutchdatascience.org/Clinical_Data_Management/01b-specific_data_types.html	./resources/chapt_screen_images/01b-specific_data_types.png
+How to Collect Clinical Data	4	https://hutchdatascience.org/Clinical_Data_Management/01c-how_to_collect_data.html	./resources/chapt_screen_images/01c-how_to_collect_data.png
+How to Acquire Clinical Data	5	https://hutchdatascience.org/Clinical_Data_Management/01d-how_to_acquire_data.html	./resources/chapt_screen_images/01d-how_to_acquire_data.png
+Clinical Data Uses	6	https://hutchdatascience.org/Clinical_Data_Management/02-data_uses.html	./resources/chapt_screen_images/02-data_uses.png
+Clinical Data Management	7	https://hutchdatascience.org/Clinical_Data_Management/03-data_management.html	./resources/chapt_screen_images/03-data_management.png
+Appendix I	8	https://hutchdatascience.org/Clinical_Data_Management/04-appendixI.html	./resources/chapt_screen_images/04-appendixI.png
