@@ -113,7 +113,7 @@ Social determinants of health data includes aspects about an individual's lifest
 
 ## Synthetic Data
 
-Synthetic data are artificially generated datasets designed to reflect the structure and patterns of real-world populations, without containing information about actual patients [@susser2024synthetic]. There are many ways to generate synthetic data. Some approaches are simple, like creating partially synthetic data by replacing potentially identifying pieces of information with synthetic values. Others are more complex, like using AI systems to fully generate synthetic patient notes. The goal of synthetic data is to mimic the characteristics and patterns in real patient data, while avoiding privacy concerns, cost, or biases of using real datasets. 
+Synthetic data are artificially generated datasets designed to reflect the structure and patterns of real-world populations, without containing information about actual patients [@susser2024synthetic]. There are many ways to generate synthetic data. Some approaches are simple, like creating partially synthetic data by replacing potentially identifying pieces of information with synthetic values. Others are more complex, such as using AI models to fully generate synthetic patient notes. The goal of synthetic data is to mimic the characteristics and patterns in real patient data, while avoiding privacy concerns, cost, or biases of using real datasets. A related concept is simulated data. While simulated data are also artificial datasets, they are typically generated directly from mathematical or probabilistic models. In contrast, synthetic data are typically generated using methods that are informed by real-world data.
 
 ### Uses of synthetic data
 
@@ -134,8 +134,11 @@ There are a wide range of ways to generate synthetic data for different uses. So
 
 - [Synthea](https://github.com/synthetichealth/synthea): a synthetic patient population simulator, that generates synthetic medical histories. This tool can be used without restriction for research, industry, or government [@walonoski2018synthea]. 
 - [SyntheticMass](https://synthea.mitre.org): a synthetic dataset of residents of Massachusetts (generated using Synthea), which statistically mirrors the real population in terms of demographics, disease burden, and healthcare interaction. This data is free of PII and PHI [@walonoski2018synthea]. 
-- [simstudy](https://cran.r-project.org/package=simstudy): an R package used to simulate datasets. The user specifies a set of relationships between covariates and type of study, and the tool generates synthetic data [@simstudy]. 
 - [synthpop](https://cran.r-project.org/web/packages/synthpop/index.html): an R package that takes patient data with sensitive values, and replaces those values with synthetic values, while minimally distorting the statistical summaries of the dataset [@nowok2016synthpop]. 
+
+There are also tools that generate simulated data (using probabilistic models). One such tool is the following:
+
+- [simstudy](https://cran.r-project.org/package=simstudy): an R package used to simulate datasets. The user specifies a set of relationships between covariates, type of study, and probability distribution to use, and the tool generates synthetic data [@simstudy]. 
 
 ### Benefits of synthetic data
 
