@@ -20,10 +20,12 @@ The ability to analyze and interpret this data enables researchers to answer a v
 
 ### Clinical Trials
 
-Clinical trials are tightly regulated studies, controlling patient recruitment and monitoring the administration and impact of treatments or interventions [@What_are_clinical_trials_2023]. The goals of clinical trials include assessing the safety and efficacy of new treatments or interventions, comparing new treatments or interventions to existing treatment options, determining the optimal dosage and administration of treatments or interventions, and identifying potential side effects or adverse events. Randomized clinical trials may also be referred to as randomized controlled trials (RCTs).
+Clinical trials are tightly regulated studies, controlling patient recruitment and monitoring the administration and impact of treatments or interventions [@What_are_clinical_trials_2023]. 
 
-::: {.definition}
+::: {.dictionary}
+
 The NIH's definition of a clinical trial is "a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of those interventions on health-related biomedical or behavioral outcomes" [@CTDefinition].
+
 :::
 
 In this definition, "prospectively assigned" refers to a "pre-defined process (e.g. randomization) specified in an approved protocol that stipulates the assignment of research subjects" in a clinical trial  [@NIHClinicalTrialsProspectively].
@@ -34,6 +36,8 @@ Key components of this definition that are necessary for a study to be classifie
 * The prospective assignment of participants to an intervention 
 * The goal of evaluating the effects of the intervention 
 * A health-related biomedical or behavioral outcome
+
+The goals of clinical trials include assessing the safety and efficacy of new treatments or interventions, comparing new treatments or interventions to existing treatment options, determining the optimal dosage and administration of treatments or interventions, and identifying potential side effects or adverse events. Some of these objectives are evaluated through early phase trials, which often have a single-arm design and focus primarily on safety, tolerability, and preliminary evidence of effectiveness. These are typically followed by randomized controlled trials (RCTs), in which participants are randomized to either the treatment arm or a comparator arm, and the effectiveness of the new treatment is evaluated. 
 
 Randomized clinical trials are often considered the gold standard for evaluating new clinical treatments or interventions because well-designed randomized trials can support causal conclusions about the effects of interventions on health outcomes. Like other types of scientific experiments, clinical trials are designed to test hypotheses about how changes in one variable, such as a treatment, affect another variable, such as a health outcome. Random assignment helps reduce the influence of confounding factors, making it easier to attribute observed differences in outcomes to the intervention being studied. 
 
