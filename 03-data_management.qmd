@@ -159,15 +159,15 @@ Standard Operating Procedures (SOPs) provide detailed instructions on how to per
 
 ### Data Use Agreements
 
-Data Use Agreements (DUAs) define the terms and conditions for data sharing and use. Encountered before data is shared with external parties, they are stored in legal or administrative offices. DUAs are required when sharing data with external collaborators. DUAs are important for protecting data privacy and ensuring that data is used appropriately [[@DataCompliance]](https://www.ibm.com/topics/data-compliance).
+Data Use Agreements (DUAs) define the terms and conditions for data sharing and use. Encountered before data are shared with external parties, they are stored in legal or administrative offices. DUAs are required when sharing data with external collaborators. DUAs are important for protecting data privacy and ensuring that data is used appropriately [[@DataCompliance]](https://www.ibm.com/topics/data-compliance).
 
 ### Data Sharing Agreements
 
-Data Sharing Agreements (DSAs) specify the terms for sharing data between organizations. Encountered prior to data sharing, they are stored in legal or administrative offices. DSAs are necessary for formalizing data sharing arrangements. The importance of DSAs lies in their role in facilitating collaboration while protecting data integrity and compliance with legal requirements [[@DataComplianceAtlan]](https://atlan.com/know/data-governance/data-compliance-management/).
+Data Sharing Agreements (DSAs) are similar to DUAs, but govern bidirectional sharing of data between organizations. Like DUAs, DSAs are created before data are shared, and describe what data will be shared and permitted uses. DSAs are important for facilitating collaboration while protecting data integrity and compliance with legal requirements [[@DataSharing]](https://casrai.org/guides/data-sharing-agreements-between-collaborators-and-institutions).
 
 ### Documentation across the span of a project
 
-These documents are encountered at various stages of a project, from planning (DMP, SAP) to execution (SOP) and data sharing (DUA, DSA). They are typically stored in project documentation repositories, institutional databases, or document management systems, with access restricted to authorized personnel. Not all documents are required for every project; their necessity depends on the project’s scope, regulatory requirements, and institutional policies. Some documents, like the DMP, SAP, and SOP, may include provisions for testing with artificial data to ensure data integrity and validate processes.
+These documents are encountered at various stages of a project, from planning (DMP, SAP) to execution (SOP) and data sharing (DUA, DSA). They are typically stored in project documentation repositories, institutional databases, or document management systems, with access restricted to authorized personnel. Not all documents are required for every project; their necessity depends on the project’s scope, regulatory requirements, and institutional policies. Some documents, like the DMS Plan, SAP, and SOP, may include provisions for testing with artificial data to ensure data integrity and validate processes.
 
 To ensure compliance with these documents, organizations should implement robust data governance frameworks that include regular audits, training programs, and clear policies and procedures [[@DocumentManagement]](https://teamhub.com/blog/document-management-compliance-2/). Standardized templates for these documents are often available from funding agencies, regulatory bodies, or institutional guidelines, helping to ensure consistency and compliance with best practices. It’s best to ask before starting any document to ensure the correct format is used.
 
