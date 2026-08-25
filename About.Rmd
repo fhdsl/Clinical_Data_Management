@@ -1,5 +1,5 @@
 ---
-title: "Clinical Data Analysis for Cancer Informatics"
+title: "Clinical Data Management for Cancer Informatics"
 ---
 
 # About the Authors {-}
