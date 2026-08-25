@@ -46,7 +46,7 @@ The SEER program includes data about people diagnosed with cancer while residing
 
 **Include this map here:** https://seer.cancer.gov/i/seer-map.PNG
 
-## What data are incuded?
+## What data are included?
 
 SEER registries include the following data: 
 
@@ -82,7 +82,7 @@ The NPCR includes data about people who have been diagnosed with cancer or recei
 
 https://www.cdc.gov/national-program-cancer-registries/about/index.html
 
-## What data are incuded?
+## What data are included?
 
 Data in the NPCR include:
 
@@ -111,7 +111,7 @@ https://www.facs.org/quality-programs/cancer-programs/commission-on-cancer/coc-a
 
 The NCDB includes data about patients who have been treated by CoC accredited cancer programs, collected from hospital registries. 
 
-## What data are incuded?
+## What data are included?
 
 Data in the NCDB include:
 
@@ -189,7 +189,7 @@ The GDC contains genomic data related to cancer, as well as tools and software t
 
 The GDC includes genomic data contributed by many NIH-funded cancer studies and external studies. A partial list of data sources can be found [here](https://gdc.cancer.gov/about-data/data-sources).
 
-## What data are incuded?
+## What data are included?
 
 The GDC includes the following data:
 
@@ -222,7 +222,7 @@ TCGA was a major cancer genomics project led by the NCI and the National Human G
 
 TCGA data come from samples collected at a network of tissue source sites, primarily located at cancer centers and hospitals in the United States, with additional contributions from a smaller number of international institutions (https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tissue-source-site-codes). Samples were collected from patients with a wide range of cancer types.
 
-## What data are incuded?
+## What data are included?
 
 The TCGA includes the following data:
 
@@ -249,7 +249,7 @@ The TARGET initiative was another major genomic program led by the NIH and NCI t
 
 TARGET data were collected from children or young adults with one of the cancer types listed above, mainly gathered by clinicians at member institutes of the Children's Oncology Group (COG) (https://www.cancer.gov/ccg/research/genome-sequencing/target/about).
 
-## What data are incuded?
+## What data are included?
 
 TARGET includes the following data:
 
@@ -276,7 +276,7 @@ The IDC is a data commons for publicly available cancer imaging data. It provide
 
 The IDC includes data from many sources, including The Cancer Genome Atlas (TCGA), The Cancer Imaging Archive (TCIA), the Human Tumor Atlas Network (HTAN), and many others. A full list can be found [here](https://portal.imaging.datacommons.cancer.gov/collections/).
 
-## What data are incuded?
+## What data are included?
 
 The IDC includes the following data: 
 
@@ -311,7 +311,7 @@ https://www.icgc-argo.org/page/65/icgc-initiatives-
 
 ICGC data come from samples that were taken by consortium members.
 
-## What data are incuded?
+## What data are included?
 
 The ICGC includes the following data:
 
@@ -349,7 +349,7 @@ The data in the PCDC come from clinical trials related to the following diseases
 
 https://docs.pedscommons.org/DataAccessAndGovernance/ 
 
-## What data are incuded?
+## What data are included?
 
 The PCDC includes the following data:
 
@@ -377,7 +377,7 @@ The C3DC is a database of demographic and clinical data related to pediatric can
 
 Data that are included in the C3DC come from forty studies, listed [here](https://clinicalcommons.ccdi.cancer.gov/studies), and include over 59,000 participants. 
 
-## What data are incuded?
+## What data are included?
 
 The C3DC includes the following data:
 
@@ -423,7 +423,7 @@ The UK Biobank is a large population-based cohort study and biobank that include
 
 Over 500,000 volunteers were recruited for the UK Biobank between 2006 and 2010. Participants lived within 25 miles of the Biobank's 22 research centers in Scotland, England, and Wales, and had ages between 40 and 69 when recruited. The participants on average were slightly healthier and wealthier than the general UK population. Approximately 95% of the participants were white, and there were relatively low numbers of participants from different ethnic groups.  
 
-## What data are incuded?
+## What data are included?
 
 The UK Biobank includes the following data:
 
@@ -455,7 +455,7 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC9436122/
 
 All of Us includes over 800,000 participants across the US. The program aims to include populations that are historically under-represented in medical research.
 
-## What data are incuded?
+## What data are included?
 
 All of Us includes the following data. While the survey responses are collected on all participants, the other types of data are collected only on a subset of participants: 
 
@@ -504,7 +504,7 @@ https://pcornet.org/module-3-playbook/
 
 Data from PCORnet comes from electronic health records of more than 50 million patients in the healthcare system. These data primarily come from partnerships with PCORnet Clinical Research Networks (CRNs), which are groups of healthcare institutes across the US. A list of the CRNs and their associated healthcare institutions can be found [here](https://pcornet.org/network/). 
 
-## What data are incuded?
+## What data are included?
 
 PCORnet includes EHR data, including: 
 
@@ -540,7 +540,7 @@ https://enact-network.org
 
 ENACT includes over 150 million patient records, including records from 90% of the CTSA consortium. A list of participating institutions can be found [here](https://enact-network.org/site-access-contacts/). 
 
-## What data are incuded?
+## What data are included?
 
 ENACT data includes the following:
 
@@ -568,7 +568,7 @@ Epic Cosmos is an EHR platform that includes data from health systems using Epic
 
 Epic Cosmos includes EHR data from patients that are part of health systems that use Epic software. Epic reports that the demographic composition of Cosmos is similar to that of the U.S. population, although it only includes patients receiving care through participating Epic health systems (https://cosmos.epic.com/about/). 
 
-## What data are incuded?
+## What data are included?
 
 Epic Cosmos includes the following data:
 
@@ -604,7 +604,7 @@ TriNetX includes records from more than 65 million patients, across 20 countries
 
 https://trinetx.com/data/ 
 
-## What data are incuded?
+## What data are included?
 
 TriNetX data includes the following:
 
@@ -633,7 +633,7 @@ Truveta includes records from more than 130 million patients, which are sourced 
 
 https://www.truveta.com/data/
 
-## What data are incuded?
+## What data are included?
 
 Truveta data includes the following:
 
@@ -678,7 +678,7 @@ https://www.aacr.org/professionals/research/aacr-project-genie/bpc/
 
 The data in Project GENIE are collected from cancer patients from twenty international cancer centers. A list of participating centers can be found [here](https://www.aacr.org/professionals/research/aacr-project-genie/aacr-project-genie-participation/). 
 
-## What data are incuded?
+## What data are included?
 
 Project GENIE includes the following data: 
 
@@ -715,7 +715,7 @@ MSK-CHORD includes data from patients who received the MSK-IMPACT tumor-sequenci
 
 https://www.mskcc.org/msk-impact 
 
-## What data are incuded?
+## What data are included?
 
 MSK-CHORD includes the following data. Some of the clinical annotations are derived from natural language processing.
 
@@ -748,7 +748,7 @@ Flatiron collects oncology EHR data from patients receiving care at more than 22
 
 https://flatiron.com/database-characterization 
 
-## What data are incuded?
+## What data are included?
 
 Flatiron data include the following:
 
@@ -782,7 +782,7 @@ The Tempus database includes deidentified patient records from healthcare system
 
 https://www.tempus.com/publications/comparison-of-demographics-and-clinical-characteristics-using-real-world-data-from-tempus-multimodal-database-and-seer-cancer-registry-across-17-solid-cancer-cohorts/
 
-## What data are incuded?
+## What data are included?
 
 Tempus includes the following data:
 
