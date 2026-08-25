@@ -27,6 +27,7 @@ chatbots
 clinico
 Clinico
 CoC
+comparator
 Coursera
 Collaboratory
 colorectal
@@ -164,6 +165,7 @@ TCIA
 Tempus
 telehealth
 templated
+tolerability
 Tolerability
 Transcriptomic
 Translational
