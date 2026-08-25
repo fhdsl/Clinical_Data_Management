@@ -60,6 +60,7 @@ GC
 GDC
 generalizability
 generalizable
+Github
 HAQ
 HD
 HTAN
@@ -79,6 +80,7 @@ Leanpub
 LLM
 LLMs
 LOINC
+Lymphoblastic
 Markua
 McGrady
 MEM
@@ -105,6 +107,7 @@ NORDCAN
 NPCR
 OMOP
 ontologies
+Osteosarcoma
 participants'
 PCD
 PCDC
@@ -118,6 +121,7 @@ pharma
 phenotypes
 Phenotypes
 PHM
+PII
 PIs
 pmc
 PMC
@@ -144,10 +148,15 @@ RxNorm
 SAEs
 sexualized
 Shriver
+simstudy
 SNOMED
 socio
 SOGI
+Synthea
+SyntheticMass
+synthpop
 spectrometry
+tabset
 TCGA
 TCIA
 Tempus
@@ -161,7 +170,9 @@ Truveta
 UE
 UE5
 UMLS
+underpowered
 USCS
 Vrijens
 wearables
+Wilms
 www
