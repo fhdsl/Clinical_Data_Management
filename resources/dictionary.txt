@@ -46,10 +46,11 @@ data's
 dbGaP
 de
 deidentified
-et
 EHR
+Eisenhauer
 Epigenomic
 eRA
+et
 exome
 faq
 FHIR
@@ -146,6 +147,7 @@ RWD
 RWE
 RxNorm
 SAEs
+Schmid
 sexualized
 Shriver
 simstudy
