@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: Clinical Data Analysis for Cancer Informatics
+  title: Clinical Data Management for Cancer Informatics
   favicon: assets/ITN_favicon.ico
   bread-crumbs: false
 

@@ -1,4 +1,4 @@
-# Clinical Data Analysis for Cancer Informatics
+# Clinical Data Management for Cancer Informatics
 
 This course was created from [this GitHub template](https://github.com/jhudsl/OTTR_Template).
 
