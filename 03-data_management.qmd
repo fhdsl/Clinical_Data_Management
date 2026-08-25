@@ -1,5 +1,5 @@
 ---
-title: Clinical Data Management
+title: Clinical Data Handling, Privacy, and Sharing
 ---
 
 ```{r, include = FALSE}
