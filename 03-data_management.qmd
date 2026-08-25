@@ -16,7 +16,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0Ge
 
 ## Clinical data handling tools
 
-Clinical research relies heavily on the collection, processing, analysis, and management of data. Efficient and effective data handling is crucial to ensure the integrity, reliability, and validity of clinical trials and studies. Selecting the right tools for handling clinical data is a critical step in the research process. This section defines data handling in the context of clinical research and contrasts it with data quality, discusses the importance of privacy, provides a comprehensive guide on how to find suitable clinical data handling tools with a focus on open-source options, and emphasizes the importance of testing data handling methods using dummy data in the preliminary phases of a clinical trial.
+Clinical research relies heavily on the collection, processing, analysis, and management of data. Efficient and effective data handling is crucial to ensure the integrity, reliability, and validity of clinical trials and studies. Selecting the right tools for handling clinical data is a critical step in the research process. This section defines data handling in the context of clinical research and contrasts it with data quality, discusses the importance of privacy, provides a comprehensive guide on how to find suitable clinical data handling tools with a focus on open-source options, and emphasizes the importance of testing data handling methods using artificial data in the preliminary phases of a clinical trial.
 
 ### Clinical data handling
 
@@ -108,7 +108,7 @@ There are several ways to generate data to use for testing.
 
 ### Conclusion 
 
-Effective clinical data handling is fundamental to the success of clinical trials and studies. Selecting the right tools requires careful consideration of privacy, regulatory compliance, open-source versus proprietary options, and the specific needs of the study. Understanding the difference between data quality and data handling is crucial, as both are essential for ensuring the validity and reliability of research outcomes. Running preliminary tests using dummy data is a critical step in validating data handling methods, ensuring that the chosen tools and processes are robust, secure, and efficient. By following these guidelines, researchers can enhance data management practices, protect patient privacy, and achieve meaningful and reliable clinical research outcomes.
+Effective clinical data handling is fundamental to the success of clinical trials and studies. Selecting the right tools requires careful consideration of privacy, regulatory compliance, open-source versus proprietary options, and the specific needs of the study. Understanding the difference between data quality and data handling is crucial, as both are essential for ensuring the validity and reliability of research outcomes. Running preliminary tests using pre-existing or artificial data is a critical step in validating data handling methods, ensuring that the chosen tools and processes are robust, secure, and efficient. By following these guidelines, researchers can enhance data management practices, protect patient privacy, and achieve meaningful and reliable clinical research outcomes.
 
 ## Privacy considerations for clinical data
 
@@ -151,23 +151,23 @@ A Data Management and Sharing (DMS) Plan outlines how data will be handled durin
 
 ### Statistical Analysis Plan
 
-The Statistical Analysis Plan (SAP) details the statistical methods and analyses to be performed on the collected data. Developed before data analysis begins, it is stored with project documentation or in electronic lab notebooks. Essential for clinical trials and other research requiring rigorous statistical analysis, the SAP may involve testing statistical methods on dummy data. The SAP is crucial for maintaining the integrity and reproducibility of statistical analyses [[@Documentation]](https://www.questionpro.com/blog/data-documentation/).
+The Statistical Analysis Plan (SAP) details the statistical methods and analyses to be performed on the collected data. Developed before data analysis begins, it is stored with project documentation or in electronic lab notebooks. Essential for clinical trials and other research requiring rigorous statistical analysis, the SAP may involve testing statistical methods on artificial data. The SAP is crucial for maintaining the integrity and reproducibility of statistical analyses [[@Documentation]](https://www.questionpro.com/blog/data-documentation/).
 
 ### Standard Operating Procedures
 
-Standard Operating Procedures (SOPs) provide detailed instructions on how to perform specific tasks or processes. Used throughout the project lifecycle, they are stored in organizational repositories or document management systems. SOPs are often required for regulatory compliance and may include procedures for testing with dummy data. The importance of SOPs lies in their ability to standardize processes, ensuring consistency and compliance with regulatory requirements [[@DocumentingData]](https://managing-qualitative-data.org/modules/2/a/).
+Standard Operating Procedures (SOPs) provide detailed instructions on how to perform specific tasks or processes. Used throughout the project lifecycle, they are stored in organizational repositories or document management systems. SOPs are often required for regulatory compliance and may include procedures for testing with artificial data. The importance of SOPs lies in their ability to standardize processes, ensuring consistency and compliance with regulatory requirements [[@DocumentingData]](https://managing-qualitative-data.org/modules/2/a/).
 
 ### Data Use Agreements
 
-Data Use Agreements (DUAs) define the terms and conditions for data sharing and use. Encountered before data is shared with external parties, they are stored in legal or administrative offices. DUAs are required when sharing data with external collaborators but are typically not directly related to dummy data. DUAs are important for protecting data privacy and ensuring that data is used appropriately [[@DataCompliance]](https://www.ibm.com/topics/data-compliance).
+Data Use Agreements (DUAs) define the terms and conditions for data sharing and use. Encountered before data is shared with external parties, they are stored in legal or administrative offices. DUAs are required when sharing data with external collaborators. DUAs are important for protecting data privacy and ensuring that data is used appropriately [[@DataCompliance]](https://www.ibm.com/topics/data-compliance).
 
 ### Data Sharing Agreements
 
-Data Sharing Agreements (DSAs) specify the terms for sharing data between organizations. Encountered prior to data sharing, they are stored in legal or administrative offices. DSAs are necessary for formalizing data sharing arrangements and generally do not relate to dummy data. The importance of DSAs lies in their role in facilitating collaboration while protecting data integrity and compliance with legal requirements [[@DataComplianceAtlan]](https://atlan.com/know/data-governance/data-compliance-management/).
+Data Sharing Agreements (DSAs) specify the terms for sharing data between organizations. Encountered prior to data sharing, they are stored in legal or administrative offices. DSAs are necessary for formalizing data sharing arrangements. The importance of DSAs lies in their role in facilitating collaboration while protecting data integrity and compliance with legal requirements [[@DataComplianceAtlan]](https://atlan.com/know/data-governance/data-compliance-management/).
 
 ### Documentation across the span of a project
 
-These documents are encountered at various stages of a project, from planning (DMP, SAP) to execution (SOP) and data sharing (DUA, DSA). They are typically stored in project documentation repositories, institutional databases, or document management systems, with access restricted to authorized personnel. Not all documents are required for every project; their necessity depends on the project’s scope, regulatory requirements, and institutional policies. Some documents, like the DMP, SAP, and SOP, may include provisions for testing with dummy data to ensure data integrity and validate processes.
+These documents are encountered at various stages of a project, from planning (DMP, SAP) to execution (SOP) and data sharing (DUA, DSA). They are typically stored in project documentation repositories, institutional databases, or document management systems, with access restricted to authorized personnel. Not all documents are required for every project; their necessity depends on the project’s scope, regulatory requirements, and institutional policies. Some documents, like the DMP, SAP, and SOP, may include provisions for testing with artificial data to ensure data integrity and validate processes.
 
 To ensure compliance with these documents, organizations should implement robust data governance frameworks that include regular audits, training programs, and clear policies and procedures [[@DocumentManagement]](https://teamhub.com/blog/document-management-compliance-2/). Standardized templates for these documents are often available from funding agencies, regulatory bodies, or institutional guidelines, helping to ensure consistency and compliance with best practices. It’s best to ask before starting any document to ensure the correct format is used.
 
@@ -180,7 +180,7 @@ Additionally, remember the insightful quote by Damian Conway: “Documentation i
 
 ## Summary
 
-Clinical data handling includes the processes and tools used to collect, store, process, analyze, and share clinical data. There are a variety of tools available for clinical data handling, including many open-source tools. The right tools for a project depends on existing systems, regulatory compliance, who is using the tools, and what support is included from the tool's developers and from the user's institution. It is important to test clinical handling tools and pipelines using dummy data before using them with actual clinical data. 
+Clinical data handling includes the processes and tools used to collect, store, process, analyze, and share clinical data. There are a variety of tools available for clinical data handling, including many open-source tools. The right tools for a project depends on existing systems, regulatory compliance, who is using the tools, and what support is included from the tool's developers and from the user's institution. It is important to test clinical handling tools and pipelines using artificial data before using them with actual clinical data. 
 
 Privacy is an important consideration for clinical data, because of the personally identifiable information (PII) and personal health information (PHI) that is often included in clinical data. It is essential to keep sensitive information secure, and to only allow access to approved researchers. Data should only be shared more widely if that has been approved and if it is de-identified. 
 
