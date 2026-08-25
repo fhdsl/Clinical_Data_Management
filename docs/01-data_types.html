@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Clinical Data Management for Cancer Informatics</title>
+<title>2&nbsp; Clinical Data Types – Clinical Data Management for Cancer Informatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./00-intro.html" rel="next">
+<link href="./01b-specific_data_types.html" rel="next">
+<link href="./00-intro.html" rel="prev">
 <link href="./assets/ITN_favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -94,7 +115,7 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Clinical Data Management for Cancer Informatics</h1>
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Clinical Data Types</span></h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -127,7 +148,7 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About this Course</span></a>
   </div>
 </li>
@@ -139,7 +160,7 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-data_types.html" class="sidebar-item-text sidebar-link">
+  <a href="./01-data_types.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Clinical Data Types</span></span></a>
   </div>
 </li>
@@ -189,16 +210,31 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#about-this-course" id="toc-about-this-course" class="nav-link active" data-scroll-target="#about-this-course">About this Course</a></li>
+  <li><a href="#clinical-data-types" id="toc-clinical-data-types" class="nav-link active" data-scroll-target="#clinical-data-types"><span class="header-section-number">3</span> Clinical Data Types</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><span class="header-section-number">3.1</span> Learning Objectives</a></li>
+  <li><a href="#clinical-data-is-unique" id="toc-clinical-data-is-unique" class="nav-link" data-scroll-target="#clinical-data-is-unique"><span class="header-section-number">3.2</span> Clinical data is unique</a></li>
+  <li><a href="#major-clinical-data-types" id="toc-major-clinical-data-types" class="nav-link" data-scroll-target="#major-clinical-data-types"><span class="header-section-number">3.3</span> Major clinical data types</a>
+  <ul class="collapse">
+  <li><a href="#structured-data" id="toc-structured-data" class="nav-link" data-scroll-target="#structured-data"><span class="header-section-number">3.3.1</span> Structured data</a></li>
+  <li><a href="#unstructured-data-clinical-notes" id="toc-unstructured-data-clinical-notes" class="nav-link" data-scroll-target="#unstructured-data-clinical-notes"><span class="header-section-number">3.3.2</span> Unstructured data / clinical notes</a></li>
+  </ul></li>
+  <li><a href="#description-of-data" id="toc-description-of-data" class="nav-link" data-scroll-target="#description-of-data"><span class="header-section-number">3.4</span> Description of data</a>
+  <ul class="collapse">
+  <li><a href="#file-types" id="toc-file-types" class="nav-link" data-scroll-target="#file-types"><span class="header-section-number">3.4.1</span> File types</a></li>
+  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata"><span class="header-section-number">3.4.2</span> Metadata</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.5</span> Summary</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/index.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/01-data_types.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Clinical Data Management for Cancer Informatics</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Clinical Data Types</span></h1>
 </div>
 
 
@@ -215,11 +251,107 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
 </header>
 
 
-<section id="about-this-course" class="level1 unnumbered">
-<h1 class="unnumbered">About this Course</h1>
-<p>This course is part of a series of courses created for the <a href="https://www.cancer.gov/about-nci/organization/cssi/research/itcr">Informatics Technology for Cancer Research (ITCR)</a> Training Network (ITN). The ITN is a collaborative effort of researchers around the United States that supports cancer informatics and data science training through resources, technology, and events. This initiative is funded by the following grant: <a href="https://www.cancer.gov/">National Cancer Institute (NCI)</a> UE5 CA254170. Our courses feature tools developed by ITCR Investigators and make it easier for principal investigators, scientists, and analysts to integrate cancer informatics into their workflows. Please see our <a href="https://www.itcrtraining.org">website</a> at itcrtraining.org for more information. Except where otherwise indicated, the contents of this course are available for use under the Creative Commons Attribution 4.0 license. You are free to adapt and share the work, but you must give appropriate credit, provide a link to the license, and indicate if changes were made. Sample attribution: Cancer Data Management by Fred Hutchinson Data Science Lab (CC-BY 4.0). You can download the illustrations by clicking on this <a href="https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?usp=sharing">link for our slides</a>.</p>
+<section id="clinical-data-types" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Clinical Data Types</h1>
+<p>Clinical data is health-related information collected from patients throughout their healthcare journey. It may come in many forms and its sensitive nature requires careful management by researchers.</p>
+<section id="learning-objectives" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">3.1</span> Learning Objectives</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3385bea4ad0_0_30.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Learning Objectives: 1. Explain why clinical data is unique compared to other types of biomedical research data, 2. Describe the difference between Structured and Unstructured data, 3. List major sources and types of clinical data"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="clinical-data-is-unique" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="clinical-data-is-unique"><span class="header-section-number">3.2</span> Clinical data is unique</h2>
+<p>Clinical data refers to information <strong>collected from patients</strong> during healthcare delivery, clinical trials, and medical research. Clinical data comes from a wide variety of sources and as such, requires careful consideration when designing, collecting, and analyzing this data. Unlike domains such as Finance or other areas in the sciences which predominantly use structured data with predictable and consistent formats, clinical data is often heterogeneous, integrating many forms of both structured and unstructured data: quantitative measurements, categorical data, genotyping, images, subjective narratives from patient notes, and objective observations or conclusions. The unstructured nature of free text from notes reflecting subjective patient experiences or qualitative insights from healthcare professionals especially adds a further layer of complexity. Furthermore, the contrast between patient and doctor notes reflects the dual perspectives of symptoms and formal diagnoses. In essence, clinical data’s unique blend of structured and unstructured components, along with its multidisciplinary nature, necessitates specialized methodologies for comprehensive analysis and interpretation in the realm of healthcare. Further, because clinical data contains sensitive, personal information about patients, there are additional security and ethics concerns in the handling and management of clinical data.</p>
+</section>
+<section id="major-clinical-data-types" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="major-clinical-data-types"><span class="header-section-number">3.3</span> Major clinical data types</h2>
+<p>Clinical data can come in many different forms, including</p>
+<ul>
+<li>patient demographics</li>
+<li>medical history or records such as diagnoses, lab results, vital signs, medication records, or procedure history</li>
+<li>genetic reports</li>
+<li>health monitor data</li>
+<li>images</li>
+<li>scanned documents, and notes written by physicians, nurses, and other clinicians</li>
+<li>survey/ case report form (CRF responses)</li>
+<li>and more …</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g35bf5e18bfe_0_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Clinical data refers to information collected from patients during healthcare delivery, clinical trials, and medical research and could include demographics, medical history, lab results, imaging, treatment outcomes, and more"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Some sources of clinical data are more prevalent and readily obtainable than others. For instance, notes, demographics, images, and histories or observations/records (lab results, vitals, medications, procedures) are often stored directly in electronic medical record systems making them more easily accessible and so are the focus of most Electronic Health Record (EHR) data research efforts.</p>
+<section id="structured-data" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="structured-data"><span class="header-section-number">3.3.1</span> Structured data</h3>
+<p>Observational records such as test results and demographic data are often collectively referred to as “structured data”, as they are stored in electronic health record databases and often provided to researchers in tabular form. Structured data types frequently used in EHR research consist of comprehensive longitudinal records of a patient’s interactions with a healthcare system and may include demographics, diagnoses, lab values, procedures, vitals, and medication records.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g338f75828af_0_7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Electronic health records include many different kinds of records on individuals over time, including, clinical notes, family history information, lab result, images, and medication information. The image shows data on the same individual over a period of time. "></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The structured nature of this data allows for it to be stored in tables which may be indexed by a patient or visit ID and often include timestamps and other supporting descriptors. For example, medication orders might specify the drug name, class, dose, unit, quantity, route, frequency, and other instructions.</p>
+<p>Structured data tables often describe entries in terms of codes from standardized vocabularies. Diagnoses might be described with codes from the International Classification of Diseases (ICD) vocabulary, lab tests with Logical Observation Identifiers Names and Codes (LOINC), medications with National Drug Code (NDC), and procedures with Current Procedural Terminology (CPT) codes. These terms, or “billing codes”, provide a common foundation that can be invaluable for identifying patients with a specific disease or who have received specified medications, particularly when integrating data from multiple sources.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3385bea4ad0_0_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Example of structured data, a table that includes patient id numbers, billing codes, dates, blood pressure measurements, weight measurements, height measurements, and prescribed medications coded using the National Drug Code (NDC)"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>As we’ve described it, structured clinical data is expected to have similarities, although specific details may vary based on the type of EHR being used and any customizations to the EHR for the specific environment or institution in which data was collected (e.g., any specialized pre-processing by institutional research offices prior to providing data to researchers). So it is important for researchers to consider differences present in their data if they’ve obtained it from multiple contexts or institutions.</p>
+</section>
+<section id="unstructured-data-clinical-notes" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="unstructured-data-clinical-notes"><span class="header-section-number">3.3.2</span> Unstructured data / clinical notes</h3>
+<p>Clinical notes are, perhaps unsurprisingly, generally shared as seemingly straightforward text files. However, the simple format should not be taken as a suggestion that the data are easy to interpret. Some EHR systems contain literally dozens of types of notes, covering specialties such as pathology or surgery; specific moments in care such as admission or discharge; particular procedures such as colonoscopies; patient-provider interactions such as telehealth or phone encounters, and many others. In addition to differing in content, these sources may have different layouts and formats, ranging from free-form reports to structured SOAP (subjective, objective, assessment, and plan) formats or even templated procedure reports. Understanding the types of notes available in a given context and where relevant data might be found is a key step in effectively using clinical notes.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3385bea4ad0_0_14.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Unstructured Data - Data without specific format: includes images, pathology reports, radiology reports, clinical notes, discharge summaries and more. Includes an image of an x-ray and some clinical notes that states: Patient reports a sharp pain in the right lower abdomen for the past 24 hours.Temperature 98.6°F, BP 120/80, tenderness in the right lower quadrant. Suspected appendicitis. Refer to surgery for evaluation, initiate IV fluids, and pain management."></p>
+</figure>
+</div>
+</div>
+</div>
+<p>When used in EHR research, both structured data and clinical notes are generally de-identified to protect patient privacy. Patient ID numbers might be replaced with new identifiers, with linkages maintained by institutional “honest brokers” <span class="citation" data-cites="Dhir2008">(<a href="#ref-Dhir2008" role="doc-biblioref">Dhir et al. 2008</a>)</span> charged with providing clinical data for research purposes. In some cases, dates may be changed as well. Clinical notes are generally “de-identified” through specialized software designed to remove names, dates, locations, and other sensitive details. Researchers working with institutions to access clinical data should be sure to understand local data de-identification practices.</p>
+</section>
+</section>
+<section id="description-of-data" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="description-of-data"><span class="header-section-number">3.4</span> Description of data</h2>
+<section id="file-types" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="file-types"><span class="header-section-number">3.4.1</span> File types</h3>
+</section>
+<section id="metadata" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="metadata"><span class="header-section-number">3.4.2</span> Metadata</h3>
+</section>
+</section>
+<section id="summary" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.5</span> Summary</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Dhir2008" class="csl-entry" role="listitem">
+Dhir, Rajiv, Ashok A Patel, Sharon Winters, Michelle Bisceglia, Dennis Swanson, Roger Aamodt, and Michael J Becich. 2008. <span>“A Multidisciplinary Approach to Honest Broker Services for Tissue Banks and Clinical Data.”</span> <em>Cancer</em> 113 (August): 1705–15. <a href="https://doi.org/10.1002/cncr.23768">https://doi.org/10.1002/cncr.23768</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -630,10 +762,13 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./00-intro.html" class="pagination-link" aria-label="Clinical Data Management">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Clinical Data Management</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./00-intro.html" class="pagination-link" aria-label="Clinical Data Management">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Clinical Data Management</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./01b-specific_data_types.html" class="pagination-link" aria-label="Specific Clinical Data Types">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Specific Clinical Data Types</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -645,7 +780,7 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
 </div>   
     <div class="nav-footer-center">
 <p>All illustrations <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0000FF;">CC-BY. </a> <br> All other materials <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0000FF;"> CC-BY </a> unless noted otherwise.</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/index.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/01-data_types.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
