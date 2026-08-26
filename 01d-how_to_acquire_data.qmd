@@ -1,4 +1,4 @@
-# How to Acquire Clinical Data
+# Clinical Data Acquisition
 
 When designing a clinical research study, researchers may collect new clinical data, use data collected by collaborators, or access data already available through their institution. However, it is becoming increasingly common to conduct research using existing clinical data resources. For these studies, a major question is how to acquire these data. 
 
@@ -125,6 +125,7 @@ https://www.facs.org/media/ilqb5snq/2024-data-dictionary.pdf
 ## How to access?
 
 The NCDB manages a dataset called the Participant User Data File (PUF) which includes information about cancer cases from CoC-accredited hospitals and cancer programs. The PUFs are available only to researchers associated with CoC-accredited cancer programs who submit an application. This application includes letters of support from principal investigators (PIs) in the CoC-accredited program and a description of your proposed research project and analysis plan. 
+:::
 
 ### International registries 
 
@@ -211,6 +212,7 @@ The GDC data portal allows researchers to download datasets or to analyze data w
 Open access data do not require any authentication or authorization to access. This includes genomic data that are not individually identifiable, and most clinical and all biospecimen data elements. The data can be accessed through the [Genomic Data Commons Data Portal](https://portal.gdc.cancer.gov).
 
 Controlled access data include individually identifiable data and some clinical data elements. Accessing controlled access data requires first obtaining an eRA Commons account and access to the database of Genotypes and Phenotypes (dbGaP), then obtaining access to the specific controlled access research project through dbGaP, and finally logging into the GDC Data Portal to access. The eRA Commons lets federal agencies manage research grants, and accounts can only be made for individuals at research organizations by officials from the organization (https://www.era.nih.gov/register-accounts/create-and-edit-an-account.htm). The dbGaP is commonly used to manage controlled-access data, enabling researchers to request datasets and data access committees to review requests (https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/dbgap). Only senior researchers can request data through dbGaP, but once they have obtained access to project data, they can provide access to other members of their lab with GDC accounts (https://gdc.cancer.gov/access-data/data-access-processes-and-tools). Senior researchers must be permanent employees of their institutions who are either academic professors or researchers with responsibilities that include laboratory or research program administration. Laboratory staff and trainees are not eligible to submit data access requests in dbGaP, but can take part in data analysis for projects overseen by a senior researcher. (https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/dbgap)
+:::
 
 ##### The Cancer Genome Atlas (TCGA)
 
