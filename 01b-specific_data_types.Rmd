@@ -113,13 +113,13 @@ Social determinants of health data includes aspects about an individual's lifest
 
 ## Synthetic Data
 
-Synthetic data are artificially generated datasets designed to reflect the structure and patterns of real-world populations, without containing information about actual patients [@susser2024synthetic]. There are many ways to generate synthetic data. Some approaches are simple, like creating partially synthetic data by replacing potentially identifying pieces of information with synthetic values. Others are more complex, like using AI systems to fully generate synthetic patient notes. The goal of synthetic data is to mimic the characteristics and patterns in real patient data, while avoiding privacy concerns, cost, or biases of using real datasets. 
+Synthetic data are artificially generated datasets designed to reflect the structure and patterns of real-world populations, without containing information about actual patients [@susser2024synthetic]. There are many ways to generate synthetic data. Some approaches are simple, like creating partially synthetic data by replacing potentially identifying pieces of information with synthetic values. Others are more complex, such as using AI models to fully generate synthetic patient notes. The goal of synthetic data is to mimic the characteristics and patterns in real patient data, while avoiding privacy concerns, cost, or biases of using real datasets. A related concept is simulated data. While simulated data are also artificial datasets, they are typically generated directly from mathematical or probabilistic models. In contrast, synthetic data are typically generated using methods that are informed by real-world data.
 
 ### Uses of synthetic data
 
 There are several possible uses for synthetic data:
 
-- Testing or validation: synthetic data may be easier to create or access than real clinical data, while being similar enough to test or validate new tools, methods, or data handling pipelines. It can also be shared between institutions, and used to compare the performance of competing tools. However please see the consideration section about some limitations of this approach.
+- Testing or validation: synthetic data may be easier to create or access than real clinical data, while being similar enough to test or validate new tools, methods, or data handling pipelines. It can also be shared between institutions, and used to compare the performance of competing tools. However, please see the Section @sec-synthetic-concerns for some limitations of this approach.
 - Augmenting or balancing datasets: real patient data can have subgroups with low representation, which can lead to algorithmic bias in some applications. Synthetic data can be used to balance data so that there are more observations that represent these groups. 
 - Supplementing controls groups in clinical trials: Conducting clinical trials requires a lot of time and money. Using synthetic data has been suggested to supplement control arms in clinical trials, in order to reduce costs or realign funds to add more patients to the experimental arm [@elvatun2025synthetic]. 
 - Augmenting data for rare disease areas: Rare disease research often suffers from small sample sizes of patient data and can be especially susceptible to privacy concerns, which can lead to underpowered studies. Synthetic data have the potential to be used for detection and development of treatment for rare diseases [@mendes2025synthetic].
@@ -134,8 +134,11 @@ There are a wide range of ways to generate synthetic data for different uses. So
 
 - [Synthea](https://github.com/synthetichealth/synthea): a synthetic patient population simulator, that generates synthetic medical histories. This tool can be used without restriction for research, industry, or government [@walonoski2018synthea]. 
 - [SyntheticMass](https://synthea.mitre.org): a synthetic dataset of residents of Massachusetts (generated using Synthea), which statistically mirrors the real population in terms of demographics, disease burden, and healthcare interaction. This data is free of PII and PHI [@walonoski2018synthea]. 
-- [simstudy](https://cran.r-project.org/package=simstudy): an R package used to simulate datasets. The user specifies a set of relationships between covariates and type of study, and the tool generates synthetic data [@simstudy]. 
 - [synthpop](https://cran.r-project.org/web/packages/synthpop/index.html): an R package that takes patient data with sensitive values, and replaces those values with synthetic values, while minimally distorting the statistical summaries of the dataset [@nowok2016synthpop]. 
+
+There are also tools that generate simulated data (using probabilistic models). One such tool is the following:
+
+- [simstudy](https://cran.r-project.org/package=simstudy): an R package used to simulate datasets. The user specifies a set of relationships between covariates, type of study, and probability distribution to use, and the tool generates synthetic data [@simstudy]. 
 
 ### Benefits of synthetic data
 
@@ -144,7 +147,7 @@ Using synthetic data has a variety of potential benefits.
 - Reducing privacy risks: synthetic data are intended to have little or no information about individuals, and therefore reduce privacy risks associated with using clinical data. This also means they can more easily be shared across institutions and without needing to be granted access.  
 - Lower cost to generate: synthetic data typically cost less to generate than the cost to collect real patient data, and once an AI system has been trained to generate synthetic data then it can keep producing more. This is particularly useful for training AI systems, which need large sample sizes.
 
-### Concerns about synthetic data
+### Concerns about synthetic data {#sec-synthetic-concerns}
 
 Although there is a lot of potential for synthetic data to revolutionize fields that use clinical data, there are also quite a few practical and ethical concerns. 
 
