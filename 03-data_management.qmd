@@ -91,9 +91,9 @@ When moving between multiple data handling tools, it is important to consider in
 
 Before implementing data handling methods in an actual clinical trial, it is crucial to run tests using pre-existing or artificial data. This step ensures that the data handling process is robust, efficient, and free from errors across different conditions, without risking sensitive patient information.
 
-- **Creating Realistic Artificial Data**: Artificial data should mimic the real data in terms of format, structure, and complexity. It should include various scenarios (e.g., missing data, outliers, data entry errors) to test the system's error-handling capabilities.
-- **Testing the Full Data Handling Workflow**: The process should involve every stage of data handling, from data collection and entry to storage, cleaning, analysis, and reporting. This comprehensive test helps identify potential issues early, such as data loss, security vulnerabilities, or errors in data processing algorithms.
-- **Refining and Optimizing Data Handling Methods**: Based on the findings from these tests, researchers can refine their data handling protocols, such as their survey instruments or case report forms, adjust tools and settings, and optimize workflows to ensure smooth operations when real data is introduced.
+1. **Creating Realistic Artificial Data**: Artificial data should mimic the real data in terms of format, structure, and complexity. It should include various scenarios (e.g., missing data, outliers, data entry errors) to test the system's error-handling capabilities.
+2. **Testing the Full Data Handling Workflow**: The process should involve every stage of data handling, from data collection and entry to storage, cleaning, analysis, and reporting. This comprehensive test helps identify potential issues early, such as data loss, security vulnerabilities, or errors in data processing algorithms.
+3. **Refining and Optimizing Data Handling Methods**: Based on the findings from these tests, researchers can refine their data handling protocols, such as their survey instruments or case report forms, adjust tools and settings, and optimize workflows to ensure smooth operations when real data is introduced.
 
 Testing with pre-existing or artificial data provides an additional layer of quality assurance and helps build confidence in the data handling process before the clinical trial begins.
 
