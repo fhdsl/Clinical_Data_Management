@@ -14,21 +14,11 @@ ottrpal::set_knitr_image_path()
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f8679e29af_0_0#slide=id.g3f8679e29af_0_0" )
 ```
 
-## Types of questions that can be asked with clinical data
+## Questions that can be studied using clinical data
 
-### Risk Prediction
+### Questions that can be studied using primary data
 
-Risk prediction in clinical research involves using data to assess the likelihood of certain outcomes or events occurring in patients. This could include predicting the risk of developing a particular disease, experiencing a specific complication, or responding to a treatment.
-
-Overall, risk prediction in clinical research allows healthcare professionals to identify individuals at higher risk of certain outcomes, enabling targeted interventions, personalized treatments, and more efficient resource allocation.
-
-### Cohort identification for research
-
-Researchers typically use electronic health records (EHRs), medical databases, or registries to identify cohorts based on specific criteria such as age, gender, medical conditions, treatments, medications, and outcomes. Advanced data mining and natural language processing techniques can also be employed to extract relevant information from unstructured data sources like clinical notes. Once cohorts are identified, researchers can analyze the data to study disease progression, treatment effectiveness, and outcomes.
-
-### Questions that can be asked using clinical studies and trials
-
-Here, we explore the different categories of questions that can be addressed using clinical trials data, ranging from the evaluation of treatment efficacy and safety to the exploration of predictive factors for disease prognosis and the personalization of medical care.
+Here, we explore the different categories of questions that can be addressed using primary data from clinical studies and trials, ranging from the evaluation of treatment efficacy and safety to the exploration of predictive factors for disease prognosis and the personalization of medical care. Primary data are data collected by a researcher for a specific study. Different types of clinical studies and trials are described in Section (!!! reference the relevant section in study design chapter once that content is merged !!!).  
 
 1. **Efficacy and Effectiveness Questions**
 
@@ -98,11 +88,9 @@ Clinical data is also crucial in answering questions related to prevention and r
 
 Clinical Data provides a wealth of information that can be leveraged to answer a broad array of questions in clinical trials and studies. From understanding treatment efficacy and safety to exploring long-term outcomes, quality of life impacts, and the potential for personalized medicine, clinical data is foundational to advancing medical knowledge and improving patient care. Case report forms (CRFs) are instrumental in identifying patient cohorts or subgroups, documenting baseline characteristics, and capturing information on comorbidities, while also monitoring adherence data, which are essential for ensuring accurate and meaningful analysis. The type of questions that can be asked and answered are continually evolving as new data sources, analytical methods, and research paradigms emerge, further enriching the field of clinical research.
 
-### Questions that can be asked with retrospective analysis
+### Questions that can be asked with secondary data
 
-The types of questions that can be asked through retrospective analysis span a wide range of clinical and epidemiological domains. The questions typically focus on understanding patient characteristics, disease epidemiology, treatment outcomes, risk factors, healthcare utilization, and more.
-
-Here, we explore the different categories of questions that can be addressed using retrospective data analysis:
+Here, we explore the different categories of questions that can be addressed using secondary data. Secondary data are data collected by someone else for a different purpose (often another research study or for clinical documentation or administration). These questions span a wide range of clinical and epidemiological domains. The questions typically focus on understanding patient characteristics, disease epidemiology, treatment outcomes, risk factors, healthcare utilization, and more. More information about resources for acquiring secondary data can be found in Chapter @sec-data-acquisition. Many of these question categories overlap with the categories of questions that can be addressed using primary data. 
 
 1. **Descriptive Questions**
 
@@ -116,7 +104,7 @@ These questions help in understanding the baseline characteristics and epidemiol
 
 2. **Treatment and Intervention Questions**
 
-Retrospective data can be used to examine the real-world effectiveness, safety, and patterns of treatment and interventions. These questions are critical for understanding how treatments are applied in clinical practice and their outcomes:
+Secondary data can be used to examine the real-world effectiveness, safety, and patterns of treatment and interventions. These questions are critical for understanding how treatments are applied in clinical practice and their outcomes:
 
 - **Treatment Effectiveness**: What is the effectiveness of a specific treatment or intervention in reducing symptoms, improving quality of life, or achieving clinical outcomes in a real-world setting?
 - **Adherence and Persistence**: What are the rates of adherence and persistence with a prescribed treatment regimen over time? What factors are associated with higher or lower adherence rates?
@@ -126,7 +114,7 @@ By examining historical data, researchers can gain insights into how different t
 
 3. **Outcome and Prognostic Questions**
 
-Understanding patient outcomes and prognostic factors is central to retrospective analyses. These questions focus on the end results of healthcare practices and patient management, including survival, complications, and quality of life:
+Understanding patient outcomes and prognostic factors is central to secondary data analyses. These questions focus on the end results of healthcare practices and patient management, including survival, complications, and quality of life:
 
 - **Survival and Mortality**: What are the survival rates and mortality rates associated with a particular disease, condition, or treatment? What factors are associated with increased or decreased survival rates?
 - **Complication Rates**: What are the rates and types of complications associated with specific diseases, surgeries, or treatments? Are there identifiable risk factors for these complications?
@@ -136,7 +124,7 @@ These questions help identify factors that influence patient outcomes, guiding c
 
 4. **Risk Factor and Predictive Modeling Questions**
 
-Retrospective analyses are often used to identify potential risk factors for diseases and develop predictive models. These questions aim to uncover associations between variables and outcomes to help predict future events:
+Secondary data analyses are often used to identify potential risk factors for diseases and develop predictive models. These questions aim to uncover associations between variables and outcomes to help predict future events:
 
 - **Risk Factors for Disease**: What are the risk factors associated with developing a particular disease or condition? Are there demographic, genetic, behavioral, or environmental factors that significantly increase the risk?
 - **Prediction Models**: Can we develop a predictive model to estimate the likelihood of disease progression, relapse, or adverse outcomes based on historical patient data?
@@ -146,7 +134,7 @@ These questions are critical for developing tools that help clinicians assess ri
 
 5. **Healthcare Utilization and Cost Questions**
 
-Understanding how healthcare resources are utilized and the associated costs is important for optimizing healthcare delivery. Retrospective data can provide valuable insights into patterns of care and resource allocation for questions such as:
+Understanding how healthcare resources are utilized and the associated costs is important for optimizing healthcare delivery. Secondary data can provide valuable insights into patterns of care and resource allocation for questions such as:
 
 - **Healthcare Resource Utilization**: What are the patterns of healthcare utilization (e.g., hospitalizations, emergency room visits, outpatient visits) for patients with a specific condition? How does utilization vary by patient demographics, disease severity, or geographic location?
 - **Cost of Care**: What are the direct and indirect costs associated with managing a specific disease or condition? How do different treatment options impact overall healthcare costs?
@@ -156,7 +144,7 @@ These questions can inform healthcare policy, budget planning, and the developme
 
 6. **Quality of Care and Patient Safety Questions**
 
-Retrospective analysis can be used to evaluate the quality and safety of care provided to patients, identifying areas for improvement and potential patient safety concerns, helping to answer questions such as:
+Secondary data analysis can be used to evaluate the quality and safety of care provided to patients, identifying areas for improvement and potential patient safety concerns, helping to answer questions such as:
 
 - **Quality Indicators**: Quality indicators are standardized measures of health care quality and may focus on more specialized groups of care like preventative, inpatient or emergency care, pediatric or maternal health, etc. What are the levels of observed mortality or morbidity for a certain population in a specific setting? How utilized are certain procedures? [@AHRQ]
 - **Adverse Events and Safety**: What is the incidence of adverse events, medication errors, or healthcare-associated infections in a particular patient population? What factors are associated with higher or lower rates of adverse events?
@@ -166,7 +154,7 @@ These questions help in assessing healthcare quality, identifying gaps in care, 
 
 7. **Temporal and Trend Analysis Questions**
 
-Retrospective studies often involve analyzing temporal patterns to understand how diseases, treatments, or outcomes change over time. These questions help in recognizing trends and patterns that can inform future research and policy decisions:
+Studies of secondary data often involve analyzing temporal patterns to understand how diseases, treatments, or outcomes change over time. These questions help in recognizing trends and patterns that can inform future research and policy decisions:
 
 - **Temporal Trends in Disease Incidence and Prevalence**: How have the incidence and prevalence of a specific disease changed over the past decade? Are there seasonal or cyclical patterns in disease occurrence?
 - **Trends in Treatment Practices**: How have treatment practices and prescribing patterns evolved over time? Are there emerging trends in the use of certain medications or interventions?
@@ -192,7 +180,7 @@ Researchers typically use electronic health records (EHRs), medical databases, o
 - **Natural History of Disease**: What factors influence disease progression or treatment response over time?
 - **Healthcare Policy and Planning**: What targeted interventions should be enacted to improve health outcomes and reduce disparities? 
 
-Retrospective analysis of clinical data allows researchers to ask a wide range of questions that provide valuable insights into patient characteristics, disease epidemiology, treatment effectiveness, outcomes, risk factors, healthcare utilization, and more. By carefully formulating questions and analyzing historical data, researchers can uncover patterns, identify trends, and generate evidence that informs clinical practice, healthcare policy, and future research directions. This chapter outlines the various categories of questions that can be addressed through retrospective analysis, highlighting the potential of this approach to advance knowledge and improve patient care in diverse clinical settings.
+Analysis of clinical secondary data allows researchers to ask a wide range of questions that provide valuable insights into patient characteristics, disease epidemiology, treatment effectiveness, outcomes, risk factors, healthcare utilization, and more. By carefully formulating questions and analyzing historical data, researchers can uncover patterns, identify trends, and generate evidence that informs clinical practice, healthcare policy, and future research directions. 
 
 ## Clinical Data Uses for Cancer Prevention and Care 
 
