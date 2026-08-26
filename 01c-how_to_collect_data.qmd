@@ -101,22 +101,33 @@ There are several factors to consider when designing studies. In this section, w
 
 In clinical research, case report forms (CRFs) are essential tools for collecting standardized data from study participants. Note that case report forms are any paper or electronic form that will be filled in at the participant level. By that definition, even a consent form is a case report form! And each clinical study may utilize multiple CRFs (e.g., one for consent, another for medical history, another for reporting any adverse effects). CRFs are useful for several tasks already discussed within this chapter -- specifically, documenting adverse events or outcomes or recording demographics and medical history for identifying cohorts. CRFs are also useful for topics this chapter will discuss in later sections (e.g., Retrospective analyses).
 
-Designing CRFs that are accessible and sensitive to the different needs of participants requires careful consideration. Questions within CRFs should be formulated to gather comprehensive and accurate clinical data while ensuring participants feel safe, respected, and comfortable. This section explores the types of questions that can be asked using CRFs with a focus on **accessibility, sensitivity, specificity, and comfort for people.**
+Designing CRFs that are sensitive to the different needs of researchers requires careful consideration. Questions within CRFs should be formulated to gather comprehensive and accurate clinical data. CRFs are often filled out by clinical staff using information from EHR data. In rarer cases, CRFs may be patient/participant-facing.  Special care should be taken with these CRFs to ensure that participants feel safe, respected, and comfortable. This section explores the types of questions that can be asked using CRFs with a focus on **accessibility, sensitivity, specificity, and comfort for people.**
 
 ::: {.notice}
 
-While within a study CRFs help to ensure standardization in data collection, there may be a lack of standardization when comparing data between studies if each study did not use the same CRFs or comparable/subsets of questions within forms. This section will provide guidelines for types of questions that may be found within CRFs and writing these questions; however, there aren't necessarily templates that have been used widely within the field. Further, your specific study needs may also require different or additional types of questions -- the guidelines within this section are not exhaustive/all-encompassing of what may be encountered within the field.
+While within a study CRFs help to ensure standardization in data collection, there may be a lack of standardization when comparing data between studies if each study did not use the same CRFs or comparable/subsets of questions within forms. This section will provide guidelines for types of questions that may be found within CRFs and writing these questions. Your specific study needs may also require different or additional types of questions -- the guidelines within this section are not exhaustive nor all-encompassing of what may be encountered within the field. Researchers may also benefit from established standards for CRF development, such as the Clinical Data Acquisition Standards Harmonization (CDASH), which provides a consistent way to collect data with CRFs across studies (https://www.cdisc.org/standards/foundational/cdash).
 
 :::
 
-Here, we explore the different categories of questions that may be included within case report forms:
+Different categories of questions that may be included within case report forms include:
+
+1. Demographic and Socioeconomic Questions
+2. Health and Medical History Questions
+3. Experience and Quality of Life Questions
+4. Sexual and Reproductive Health Questions
+5. Treatment Preferences and Decision-Making Questions
+6. Accessibility and Accommodation Needs Questions
+7. Cultural Sensitivity and Identity Questions
+8. Ensuring Comfort, Trust, and Privacy Questions
+
+<details> <summary> Click here for additional considerations for patient/participant facing CRFs. </summary>
 
 1. **Demographic and Socioeconomic Questions**
 
-Capturing demographic and socioeconomic data is fundamental in clinical research to understand the background of study participants. However, these questions must be asked in a manner that respects privacy, avoids assumptions, and helps identify people with different life experiences. It’s also good practice in order to respect privacy to include an option allowing the participants to leave the question unanswered or respond with “prefer not to answer”.
+Capturing demographic and socioeconomic data is fundamental in clinical research to understand the background of study participants. However, these questions must be asked in a manner that respects privacy, avoids assumptions, and helps identify people with different life experiences. It’s also good practice for patient/participant facing CRFs to respect privacy and  include an options allowing the participants to leave the question unanswered,respond with "prefer not to answer", or fill in their own answer.
 
 - **Sex and Gender**: When asking about gender and sex include an option of “prefer to self-describe” to capture more information.
-- **Ethnicity and Race**: Ethnicity and race questions should be specific and use respectful language, allowing participants to self-identify rather than selecting from a predefined list.
+- **Ethnicity and Race**: Ethnicity and race questions should be specific and use respectful language. Allowing participants to self-identify rather than select from a predefined list can help capture more specific information.
 - **Socioeconomic Status**: Questions about employment, income, or education should be framed to capture social determinants of health without making participants feel judged. For example, asking, "What is your current employment status?" with choices that include full-time, part-time, unemployed, student, and unable to work can help gather relevant data without stigma.
 
 It is essential to use neutral, non-judgmental language and to explain why these questions are being asked, ensuring participants understand the relevance of their responses.
@@ -165,7 +176,7 @@ These questions should be framed to respect participants’ autonomy and encoura
 
 To ensure that all participants can fully engage with the study, it is essential to ask about accessibility and accommodation needs.
 
-- **Language and Communication Needs**: "What is your preferred language for communication? Do you need an interpreter or translated materials?" These questions help ensure that participants can understand the materials.
+- **Language and Communication Needs**: "What is your preferred language for communication? Do you need an interpreter or translated materials?" These questions help ensure that participants can understand the materials. This requires the researcher to make translated materials available, which will require additional time and effort, including validation that the materials are appropriately translated to allow for collection of comparable data. PROMIS is a great resource for this (https://www.promishealth.org/promis-translations/).
 - **Physical Accessibility**: Asking, "Do you require any specific accommodations to participate in this study (e.g., wheelchair access, hearing aids, visual aids)?" ensures physical accessibility.
 - **Format Preferences**: "Would you prefer to complete this form online, on paper, or verbally with assistance?" helps accommodate different needs and preferences.
 Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs.
@@ -198,7 +209,9 @@ The guidelines above sometimes suggest use of open-ended questions where partici
 
 :::
 
-Designing specific and sensitive CRFs for clinical studies requires a thoughtful approach that respects the different backgrounds, privacy, and comfort of all participants, especially those from communities that experience health disparities. By using accessible language, offering multiple options, respecting autonomy, and providing a safe space for participants to express themselves, researchers can gather meaningful and accurate data while ensuring participants feel valued and respected. These considerations are vital to fostering clinical research that captures enough information about a wide variety of individuals. Case report forms (CRFs) are often tailored to specific studies and may vary widely in structure and content, lacking standardization across different projects. Despite this, certain themes are commonly expected in CRFs, including sections on participant demographics, medical history, treatment outcomes, and adverse events, ensuring essential data collection across a variety of study designs. By thoughtfully addressing both unique study requirements and universally relevant data points, researchers can optimize CRFs for consistency across clinical studies.
+Designing specific and sensitive CRFs for clinical studies requires a thoughtful approach that captures the different backgrounds of all participants. By using accessible language, offering multiple options, respecting autonomy, and providing a safe space for participants to express themselves, researchers can gather meaningful and accurate data while ensuring participants feel valued and respected. These considerations are vital to fostering clinical research that captures enough information about a wide variety of individuals. Case report forms (CRFs) are often tailored to specific studies and may vary widely in structure and content, lacking standardization across different projects. Despite this, certain themes are commonly expected in CRFs, including sections on participant demographics, medical history, treatment outcomes, patient’s feelings about side effects, and adverse events, ensuring essential data collection across a variety of study designs. By thoughtfully addressing both unique study requirements and universally relevant data points, researchers can optimize CRFs for consistency across clinical studies.
+
+</details>
 
 ### Potential Biases in Clinical Studies
 
