@@ -70,7 +70,7 @@ For more information see:
 
 ## Pathology
 
-## Synthetic Data
+## Synthetic Data {#sec-synthetic-data}
 
 Synthetic data are artificially generated datasets designed to reflect the structure and patterns of real-world populations, without containing information about actual patients [@susser2024synthetic]. There are many ways to generate synthetic data. Some approaches are simple, like creating partially synthetic data by replacing potentially identifying pieces of information with synthetic values. Others are more complex, like using AI systems to fully generate synthetic patient notes. The goal of synthetic data is to mimic the characteristics and patterns in real patient data, while avoiding privacy concerns, cost, or biases of using real datasets. 
 
