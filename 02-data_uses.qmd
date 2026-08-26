@@ -20,36 +20,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0Ge
 
 Risk prediction in clinical research involves using data to assess the likelihood of certain outcomes or events occurring in patients. This could include predicting the risk of developing a particular disease, experiencing a specific complication, or responding to a treatment.
 
-Data used for risk prediction can come from various sources, including:
-
-  * Clinical Data: This includes patient demographics, medical history, laboratory results, and imaging studies.
-  * Genetic Data: Genetic information, such as DNA sequencing results, can provide valuable insights into an individual's susceptibility to certain diseases.
-  * Environmental and Lifestyle Data: Factors such as diet, exercise habits, smoking status, and environmental exposures can influence disease risk and may be included in risk prediction models.
-  * Biomarkers: Biological markers indicative of disease or physiological processes can be used as predictors in risk models [@deGramont_etal_2015; @Taylor_Ankerst_Andridge_2008].
-
-Once relevant data is collected, statistical and machine learning techniques can be applied to develop predictive models. These models aim to identify patterns and relationships within the data that are associated with the outcome of interest. Common techniques include logistic regression, decision trees, random forests, support vector machines, and neural networks.
-
-After the model is trained on a dataset, it can be validated using independent datasets to assess its performance and generalizability. Once validated, the model can be used to predict risk in new patients based on their individual characteristics and data.
-
-Clinical prediction rules are a subset of risk prediction models, specific to clinical research.
-
-Examples of risk prediction models ...
-
-Risk prediction models are important because ...
-
 Overall, risk prediction in clinical research allows healthcare professionals to identify individuals at higher risk of certain outcomes, enabling targeted interventions, personalized treatments, and more efficient resource allocation.
 
 ### Cohort identification for research
 
-Clinical data plays a crucial role in cohort identification for research purposes. Researchers typically use electronic health records (EHRs), medical databases, or registries to identify cohorts based on specific criteria such as age, gender, medical conditions, treatments, medications, and outcomes. Advanced data mining and natural language processing techniques can also be employed to extract relevant information from unstructured data sources like clinical notes. Once cohorts are identified, researchers can analyze the data to study disease progression, treatment effectiveness, and outcomes.
-
-Cohort identification is important regardless of research study type, but to provide specific examples:
-
-* Research Design: Identifying cohorts allows researchers to design studies with appropriate inclusion or exclusion criteria. By selecting specific groups of individuals with similar characteristics or exposures, researchers can investigate hypotheses effectively.
-* Clinical Insights: Cohort studies enable researchers to observe the natural history of diseases, track outcomes over time, and assess the effectiveness of interventions or treatments. Understanding how different factors influence disease progression or treatment response can inform clinical decision-making and improve patient care.
-* Epidemiological Studies: Cohort identification is crucial for epidemiological research to understand the incidence, prevalence, and risk factors associated with diseases. By following cohorts over time, researchers can identify trends, patterns, and associations that contribute to our understanding of disease causation and prevention.
-* Precision Medicine: Identifying cohorts based on genetic profiles, biomarkers, or other specific characteristics allows researchers to tailor treatments and interventions to individual patients. This approach, known as precision medicine, aims to optimize therapeutic outcomes while minimizing adverse effects.
-* Healthcare Policy and Planning: Cohort studies provide valuable data for informing healthcare policies, resource allocation, and public health strategies. By identifying high-risk populations or groups with specific healthcare needs, policymakers can develop targeted interventions to improve health outcomes and reduce disparities.
+Researchers typically use electronic health records (EHRs), medical databases, or registries to identify cohorts based on specific criteria such as age, gender, medical conditions, treatments, medications, and outcomes. Advanced data mining and natural language processing techniques can also be employed to extract relevant information from unstructured data sources like clinical notes. Once cohorts are identified, researchers can analyze the data to study disease progression, treatment effectiveness, and outcomes.
 
 ### Questions that can be asked using clinical studies and trials
 
@@ -125,8 +100,6 @@ Clinical Data provides a wealth of information that can be leveraged to answer a
 
 ### Questions that can be asked with retrospective analysis
 
-**Note**: I wonder if these are more accurately questions that can be asked with observational data analysis (either prospective or retrospective studies)
-
 The types of questions that can be asked through retrospective analysis span a wide range of clinical and epidemiological domains. The questions typically focus on understanding patient characteristics, disease epidemiology, treatment outcomes, risk factors, healthcare utilization, and more.
 
 Here, we explore the different categories of questions that can be addressed using retrospective data analysis:
@@ -161,7 +134,7 @@ Understanding patient outcomes and prognostic factors is central to retrospectiv
 
 These questions help identify factors that influence patient outcomes, guiding clinicians in predicting disease progression and tailoring individual treatment plans.
 
-4. Risk Factor and Predictive Modeling Questions
+4. **Risk Factor and Predictive Modeling Questions**
 
 Retrospective analyses are often used to identify potential risk factors for diseases and develop predictive models. These questions aim to uncover associations between variables and outcomes to help predict future events:
 
@@ -211,6 +184,13 @@ Subgroup analyses can help uncover differences in disease characteristics, treat
 
 Questions focusing on subgroups are crucial for understanding variations in care and outcomes, identifying at-risk populations, and developing targeted interventions.
 
+9. **Cohort Identification Questions**
+
+Researchers typically use electronic health records (EHRs), medical databases, or registries to identify cohorts based on specific criteria such as age, gender, medical conditions, treatments, medications, and outcomes. Once cohorts are identified, researchers can analyze the data to study disease progression, treatment effectiveness, and outcomes.
+
+- **Identifying Cohorts for Study Design**: How to select specific groups of individuals with similar characteristics or exposures?
+- **Natural History of Disease**: What factors influence disease progression or treatment response over time?
+- **Healthcare Policy and Planning**: What targeted interventions should be enacted to improve health outcomes and reduce disparities? 
 
 Retrospective analysis of clinical data allows researchers to ask a wide range of questions that provide valuable insights into patient characteristics, disease epidemiology, treatment effectiveness, outcomes, risk factors, healthcare utilization, and more. By carefully formulating questions and analyzing historical data, researchers can uncover patterns, identify trends, and generate evidence that informs clinical practice, healthcare policy, and future research directions. This chapter outlines the various categories of questions that can be addressed through retrospective analysis, highlighting the potential of this approach to advance knowledge and improve patient care in diverse clinical settings.
 
