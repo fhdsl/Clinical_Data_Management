@@ -235,3 +235,5 @@ Recent advances in sophisticated and costly technology such as genetic testing, 
 
 
 ## Summary
+
+A substantial proportion of clinical data is generated through clinical studies, making careful study design essential for producing reliable and meaningful evidence. Clinical studies can be broadly classified as either clinical trials or observational studies. In clinical trials, researchers prospectively assign participants to interventions and evaluate their effects on outcomes of interest. In observational studies, researchers examine associations between naturally occurring exposures and outcomes. Common observational study designs include cross-sectional, cohort, and case-control studies. Researchers may also conduct meta-analyses to synthesize findings across multiple studies. Beyond selecting an appropriate study design, researchers must consider several factors that influence data quality, including the development of standardized and comprehensive case report forms and the mitigation of common sources of data distortion that can compromise the validity and generalizability of study results.
