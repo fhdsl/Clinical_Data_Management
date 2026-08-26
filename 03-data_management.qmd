@@ -99,12 +99,13 @@ Testing with pre-existing or artificial data provides an additional layer of qua
 
 #### How to Generate Data for Testing
 
-There are several ways to generate data to use for testing. 
+There are several ways to generate data to use for testing:
 
-- In some cases, you could start with a real dataset that is publicly available and de-identified, then either directly use that data or modify it for your purposes. You could remove observations to create missing data or purposely include errors that might occur in your data generation process.
-- If you are using a case report form to collect data, you could answer questions several times to create a dataset, and then continue through the data handling pipeline. 
-- Simulate data to create a dataset with values that align with what you expect to find. There are R packages that can help with this task, such as [`simstudy`](https://cran.r-project.org/web/packages/simstudy/index.html) [@simstudy]. After you simulate data, you can also remove data or add errors that might occur in your real data collection process.
-- Generate synthetic data. You can read more about synthetic data and how to generate it in @sec-synthetic-data.
+- **Start with real data.** In some cases, you could start with a real dataset that is publicly available and de-identified, then either directly use that data or modify it for your purposes. You could remove observations to create missing data or purposely include errors that might occur in your data generation process.
+- **Create test data by responding.** If you are using a case report form to collect data, you could answer questions several times to create a dataset, and then continue through the data handling pipeline. 
+ - **Simulate test data.**  You can create a dataset with values that align with what you expect to find. There are R packages that can help with this task, such as [`simstudy`](https://cran.r-project.org/web/packages/simstudy/index.html) [@simstudy]. After you simulate data, you can also remove data or add errors that might occur in your real data collection process.
+ 
+- **Generate synthetic data.** You can read more about synthetic data and how to generate it in @sec-synthetic-data.
 
 ### Conclusion 
 
