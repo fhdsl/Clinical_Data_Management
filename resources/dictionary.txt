@@ -23,17 +23,18 @@ bookdown
 Bookdown
 BPC
 cBioPortal
+CDASH
 CDS
 centric
 CFR
 chatbots
 CITI
-codebase
 CGDB
 chatbots
 clinico
 Clinico
 CoC
+codebase
 comparator
 Coursera
 Collaboratory
@@ -158,6 +159,7 @@ polypharmacy
 pre
 programatically
 Prokscha
+PROMIS
 PROMs
 proteomic
 Proteomic
