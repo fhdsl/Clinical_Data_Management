@@ -8,9 +8,11 @@ ottrpal::set_knitr_image_path()
 
 # Clinical Data Uses
 
+The previous chapters describe how to carefully design studies to collect clinical data and resources for acquiring existing clinical data. In this chapter, we discuss different ways in which clinical data can be used and the types of questions that can be addressed by analyses of clinical data.
+
 ## Learning Objectives
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: 1. ..., out.width="100%"}
+```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: 1. List questions that can be studied using primary data from clinical studies and trials, 2. List questions that can be studied using pre-existing clinical data, 3. Describe and contrast clinical decision support and population health management", out.width="100%"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f8679e29af_0_0#slide=id.g3f8679e29af_0_0" )
 ```
 
@@ -22,25 +24,23 @@ Here, we explore the different categories of questions that can be addressed usi
 
 1. **Efficacy and Effectiveness Questions**
 
-One of the primary objectives of clinical trials is to determine the **efficacy of new treatments or interventions**. Clinical data is used to answer fundamental questions such as "Is the new treatment effective?" and "How does its effectiveness compare to existing treatments?"
+One of the primary objectives of clinical trials is to determine the **efficacy of new treatments or interventions**. Data from trials are used to answer fundamental questions such as "What is the capacity of the new treatment to affect the outcome in controlled settings?" and "How does the effect of this new treatment compare to existing treatments?" Researchers design studies to measure the **magnitude of treatment effects**, comparing outcomes between treatment and control groups (e.g., a new drug versus a placebo or standard care).
 
-Researchers design studies to measure the **magnitude of treatment effects**, comparing outcomes between treatment and control groups (e.g., a new drug versus a placebo or standard care).
+Beyond controlled settings, data from observational studies can further address questions about the effectiveness of treatments when applied in routine clinical practice. For example, "Is Drug A more effective than Drug B in managing hypertension in a real-world patient population?" Such questions help to assess how treatments perform outside the controlled environment of clinical trials where patient adherence, comorbidities, and polypharmacy may influence outcomes. While clinical trials are an important source of real-world data, they are typically conducted under tightly controlled conditions, which may not fully reflect the complexities of real-world studies. This makes real-world evidence from observational studies particularly valuable for understanding how treatments work when patients have varying levels of adherence or multiple chronic conditions that are often excluded from clinical trails.
 
-Beyond controlled settings, data from real-world evidence (RWE) studies can further address questions about the effectiveness of treatments when applied in routine clinical practice. For example, "Is Drug A more effective than Drug B in managing hypertension in a real-world patient population?" Such questions help to assess how treatments perform outside the controlled environment of clinical trials where patient adherence comorbidities, and polypharmacy may influence outcomes. While clinical trials are an important source of real-world data (RWD), they are typically conducted under tightly controlled conditions, which may not fully reflect the complexities of real-world studies. This makes RWE particularly valuable for understanding how treatments work when patients have varying levels of adherence or multiple chronic conditions that are often excluded from clinical trails.
-
-::: {.definition}
+::: {.dictionary}
 **Comorbidities**: refer to the presence of one or more additional medical conditions or diseases that coexist with a primary condition in a patient. These conditions can occur independently or be related to the primary disease.
 :::
 
 2. **Safety and Tolerability Questions**
 
-Safety is a critical aspect of any clinical study, and clinical data is essential in identifying and characterizing the safety profile of new treatments. Questions like "What are the common adverse effects of the new treatment?" or "What is the incidence of serious adverse events (SAEs) in patients receiving Drug A?" are addressed by carefully monitoring and recording adverse events throughout the study. Comparative safety questions also arise, such as "Does Drug A have fewer adverse effects compared to Drug B?" These questions are crucial in weighing the benefits of a treatment against its risk and in identifying specific populations that may be at higher risk of adverse reactions.
+Safety is a critical aspect of any clinical study, and clinical data are essential in identifying and characterizing the safety profile of new treatments. Questions like "What are the common adverse effects of the new treatment?" or "What is the incidence of serious adverse events (SAEs) in patients receiving Drug A?" are addressed by carefully monitoring and recording adverse events throughout the study. Comparative safety questions also arise, such as "Does Drug A have fewer adverse effects compared to Drug B?" These questions are crucial in weighing the benefits of a treatment against its risk and in identifying specific populations that may be at higher risk of adverse reactions.
 
-::: {.definition}
+::: {.dictionary}
 **Serious Adverse Events (SAEs)**: Any medical occurrence during a clinical trial or medical treatment that results in significant negative outcomes, such as death, life-threatening situations, hospitalization (or its prolongation), persistent or significant disability, or congenital anomalies. SAEs also include any event that requires intervention to prevent one of these outcomes.
 :::
 
-::: {.definition}
+::: {.dictionary}
 **Incidence**: Refers to the rate or number of new cases of SAEs that occur within a specific population during a defined time period, typically during a clinical trial or study. Is it usually expressed as a proportion, such as the number of SAEs per 100 or 1,000 participants, and helps measure how frequently these serious events happen among those exposed to a particular treatment or intervention.
 :::
 
@@ -48,7 +48,7 @@ Safety is a critical aspect of any clinical study, and clinical data is essentia
 
 Beyond safety and efficacy, clinical data can be used to evaluate the comparative effectiveness of different treatments and their cost-effectiveness. These questions often guide healthcare policy and clinical guidelines: "Is Drug A more cost-effective than standard care for managing chronic heart failure?" and "What is the cost per quality-adjusted life year (QALY) gained with the new intervention?" Such analyses provide valuable information for stakeholders, including healthcare providers, payers, and policymakers, to make informed decisions on resource allocation.
 
-::: {.definition}
+::: {.dictionary}
 **Cost per quality-adjusted life year (QALY)** is a metric used in health economics to assess the value of a medical intervention by measuring the cost of gaining one year of life adjusted for its quality. A QALY incorporates both the **quantity** and **quality** of life lived, where one QALY is equivalent to one year of life in perfect health. If a treatment improves both the length and quality of life, it earns more QALYs. The **cost per QALY** is calculated by dividing the cost of the treatment by the number of QALYs gained, helping to determine the cost-effectiveness of healthcare interventions. Lower cost per QALY indicates better value for money in terms of health benefits achieved [-@Drummond_Sculpher_Claxton_Stoddart_Torrance_2015].
 :::
 
@@ -60,7 +60,7 @@ Clinical studies often explore not just whether a treatment works, but also how 
 
 Clinical trials and studies frequently aim to identify factors that predict disease outcomes or treatment responses. For example, "What baseline characteristics predict a better response to Drug A?" or "What are the predictors of mortality in patients with severe heart failure?" Such prognostic and predictive questions are crucial for identifying high-risk patients, guiding treatment decisions, and developing clinical guidelines. Identifying patient subgroups that benefit more or less from a treatment also facilitates personalized medicine approaches, ensuring that the right treatment is delivered to the right patient at the right time.
 
-With the advent of personalized medicine, clinical data is increasingly being used to answer questions tailored to individual patient profiles. For instance, "What patient characteristics modify the effect of the treatment?" or "Can we predict which patients are most likely to benefit from Drug A using machine learning models?" These questions are at the forefront of precision medicine, where the goal is to customize healthcare to each patient based on their unique genetic, biomarker, and clinical characteristics.
+With the advent of personalized medicine, clinical data are increasingly being used to answer questions tailored to individual patient profiles. For instance, "What patient characteristics modify the effect of the treatment?" or "Can we predict which patients are most likely to benefit from Drug A using machine learning models?" These questions are at the forefront of precision medicine, where the goal is to customize healthcare to each patient based on their unique genetic, biomarker, and clinical characteristics.
 
 6. **Quality of Life and Patient-Reported Outcome Questions**
 
@@ -84,20 +84,22 @@ Real-world evidence (RWE) studies help bridge the gap between clinical trial res
 
 11. **Prevention and Risk Reduction Questions**
 
-Clinical data is also crucial in answering questions related to prevention and risk reduction strategies. For example, "Can the new treatment reduce the risk of developing diabetes in high-risk individuals?" or "What factors are associated with a reduced risk of cardiovascular disease in a large cohort study?" These questions are fundamental in preventive medicine, guiding public health interventions and informing clinical practice.
+Clinical data are also crucial in answering questions related to prevention and risk reduction strategies. For example, "Can the new treatment reduce the risk of developing diabetes in high-risk individuals?" or "What factors are associated with a reduced risk of cardiovascular disease in a large cohort study?" These questions are fundamental in preventive medicine, guiding public health interventions and informing clinical practice.
 
-Clinical Data provides a wealth of information that can be leveraged to answer a broad array of questions in clinical trials and studies. From understanding treatment efficacy and safety to exploring long-term outcomes, quality of life impacts, and the potential for personalized medicine, clinical data is foundational to advancing medical knowledge and improving patient care. Case report forms (CRFs) are instrumental in identifying patient cohorts or subgroups, documenting baseline characteristics, and capturing information on comorbidities, while also monitoring adherence data, which are essential for ensuring accurate and meaningful analysis. The type of questions that can be asked and answered are continually evolving as new data sources, analytical methods, and research paradigms emerge, further enriching the field of clinical research.
+#### Summary
+
+Clinical trials and studies provide a wealth of information that can be leveraged to answer a broad array of questions. From understanding treatment efficacy and safety to exploring long-term outcomes, quality of life impacts, and the potential for personalized medicine, clinical data are foundational to advancing medical knowledge and improving patient care. The types of questions that can be asked and answered are continually evolving as new data sources, analysis methods, and research paradigms emerge, further enriching the field of clinical research.
 
 ### Questions that can be asked with secondary data
 
-Here, we explore the different categories of questions that can be addressed using secondary data. Secondary data are data collected by someone else for a different purpose (often another research study or for clinical documentation or administration). These questions span a wide range of clinical and epidemiological domains. The questions typically focus on understanding patient characteristics, disease epidemiology, treatment outcomes, risk factors, healthcare utilization, and more. More information about resources for acquiring secondary data can be found in Chapter @sec-data-acquisition. Many of these question categories overlap with the categories of questions that can be addressed using primary data. 
+Here, we explore categories of questions that can be addressed using secondary data. Secondary data analysis involves the examination of pre-existing clinical data to answer specific research questions, explore hypotheses, and identify patterns or trends. This method leverages historical data collected from medical records, administrative databases, registries, electronic health records (EHRs), or other sources of clinical information. More information about resources for acquiring secondary data can be found in @sec-data-acquisition. Many of these question categories overlap with the categories of questions that can be addressed using primary data. 
 
 1. **Descriptive Questions**
 
-Descriptive questions aim to summarize and describe the characteristics of a patient population, disease, or healthcare process. They provide a foundational understanding of a dataset and are often the starting point for more complex analyses.
+Descriptive questions aim to summarize and describe the characteristics of a patient population, disease, or healthcare process. They are often the starting point for more complex analyses.
 
 - **Patient Demographics and Characteristics**: What are the demographic profiles (age, gender, ethnicity, socioeconomic status) of patients diagnosed with a specific condition? What are the common comorbidities and risk factors in this population?
-- **Disease Prevalence and Incidence**: What is the prevalence or incidence of a specific disease or condition in a particular population or geographic area over a defined period?
+- **Disease Prevalence and Incidence**: What is the prevalence (number of cases at a specific time point) or incidence (number of cases over a specific time period) of a specific disease or condition in a particular population or geographic area over a defined period?
 - **Clinical Presentation**: What are the most common presenting symptoms, clinical signs, or laboratory findings associated with a specific disease or condition?
 
 These questions help in understanding the baseline characteristics and epidemiology of diseases, which is crucial for planning further studies or developing public health interventions.
@@ -174,57 +176,43 @@ Questions focusing on subgroups are crucial for understanding variations in care
 
 9. **Cohort Identification Questions**
 
-Researchers typically use electronic health records (EHRs), medical databases, or registries to identify cohorts based on specific criteria such as age, gender, medical conditions, treatments, medications, and outcomes. Once cohorts are identified, researchers can analyze the data to study disease progression, treatment effectiveness, and outcomes.
+Researchers typically use electronic health records (EHRs), administrative databases, or registries to identify cohorts based on predefined inclusion and exclusion criteria, including age, gender, medical conditions, treatments, medications, and outcomes. 
 
-- **Identifying Cohorts for Study Design**: How to select specific groups of individuals with similar characteristics or exposures?
-- **Natural History of Disease**: What factors influence disease progression or treatment response over time?
-- **Healthcare Policy and Planning**: What targeted interventions should be enacted to improve health outcomes and reduce disparities? 
+- **Cohort Identification**: Which individuals meet the eligibility criteria for the study of a particular treatment, exposure, or outcome? 
 
-Analysis of clinical secondary data allows researchers to ask a wide range of questions that provide valuable insights into patient characteristics, disease epidemiology, treatment effectiveness, outcomes, risk factors, healthcare utilization, and more. By carefully formulating questions and analyzing historical data, researchers can uncover patterns, identify trends, and generate evidence that informs clinical practice, healthcare policy, and future research directions. 
+Cohort identification is a critical step in study design. After identifying eligible cohorts, researchers may analyze the secondary data to evaluate disease progression, treatment effectiveness, and outcomes, or use the identified population to support recruitment for a prospective clinical study or trial.
 
-## Clinical Data Uses for Cancer Prevention and Care 
+#### Summary
 
-The near universal adoption of electronic health record (EHR) systems in the US has created unprecedented opportunities to improve cancer prevention and care. As described in previous chapters, EHR systems store comprehensive longitudinal records of a patient's interactions with a healthcare system, including data about:
+Analysis of secondary clinical data allows researchers to ask a wide range of questions that provide valuable insights into patient characteristics, disease epidemiology, treatment effectiveness, outcomes, risk factors, healthcare utilization, and more. By carefully formulating questions and analyzing historical data, researchers can uncover patterns, identify trends, and generate evidence that informs clinical practice, healthcare policy, and future research directions. 
 
- - demographics
- - conditions
- - family history
- - clinical notes
- - laboratory test results
- - medications
- - procedures
- - imaging
- - genetic test reports
+## Applications of Clinical Data 
 
- ```{r, fig.align='center', echo = FALSE, fig.alt= "Electronic health records include many different kinds of records on individuals over time, including, clinical notes, family history information, lab result, images, and medication information. The image shows data on the same individual over a period of time. ", out.width="100%"}
- ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g338f75828af_0_7" )
- ```
-
-These data can be accessed not only by health professionals, but also by patients through patient portals. EHR data can also be used to enable data-driven interventions such as provider- and patient-facing clinical decision support (CDS) and population health management (PHM).
+Clinical data can be used to enable data-driven interventions such as provider- and patient-facing clinical decision support (CDS) and population health management (PHM).
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Clinical Decision Support (CDS) can help patients and clinicians make decisions about an individual’s care, while Population Health Management (PHM) can help identify individuals for interventions and engagement. The image shows a single person getting a colorectal screening reminder for CDS and a population being identified for possibly needing colorectal screening for PHM.", out.width="100%"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g338f75828af_0_28" )
 ```
 
-Clinical Decision Support (CDS) can help patients and clinicians make decisions about an individual’s care, while Population Health Management (PHM) can help identify individuals for interventions and engagement. The image shows a single person getting a colorectal screening reminder for CDS and a population being identified for possibly needing colorectal screening for PHM.
+CDS can help patients and clinicians make decisions about an individual’s care, while PHM can help identify individuals for interventions and engagement. The image shows a single person getting a colorectal screening reminder for CDS and a population being identified for possibly needing colorectal screening for PHM.
 
 ### Clinical Decision Support (CDS)
 
 CDS has been defined as tools that "provide clinicians, staff, patients, or other individuals with knowledge and person-specific information, intelligently filtered or presented at appropriate times, to enhance health and health care" [@Osheroff_2007]. Examples of widely adopted CDS tools with demonstrated effectiveness for cancer prevention, diagnosis, and care include:
 
-  * provider and patient reminders for cancer screening
-  * decision aids and shared decision-making tools (e.g., for prostate cancer treatment, lung cancer screening)
-  * AI-supported diagnostic imaging
-  * chemotherapy decision support
-  * at-home symptom care
+* Provider and patient reminders for cancer screening
+* Decision aids and shared decision-making tools (e.g., for prostate cancer treatment, lung cancer screening)
+* AI-supported diagnostic imaging
+* Chemotherapy decision support
+* At-home symptom care
 
 ### Population Health Management (PHM)
 
 While CDS tools generally provide decision support focused on a specific patient at a time, PHM are strategies that target specific patient populations [@Swarthout_Bishop_2017]. PHM efforts generally consist of:
 
-  * population algorithms that are applied over EHR and other data sources to identify individuals who are eligible for a specific healthcare intervention (e.g., colorectal cancer screening, tobacco cessation, HPV vaccination)
-  * patient engagement strategies (e.g., patient portals, text messaging, chatbots, patient navigators) that provide education and access to those interventions
-  * analytic tools that assess the effectiveness of the PHM program.
+* Population algorithms that are applied over EHR and other data sources to identify individuals who are eligible for a specific healthcare intervention (e.g., colorectal cancer screening, tobacco cessation, HPV vaccination)
+* Patient engagement strategies (e.g., patient portals, text messaging, chatbots, patient navigators) that provide education and access to those interventions
+* Analytic tools that assess the effectiveness of the PHM program.
 
 Several PHM programs have demonstrated to be effective in increasing the uptake of cancer prevention. For example, the colorectal cancer screening program at Kaiser Permanente uses digital (i.e., text messaging, patient portal), mailed, and patient navigation approaches to increase colorectal cancer screening by mailing Fecal Immunohistochemical Test (FIT) kits to patients' homes [@Gupta2020]. Also the Cancer Moonshot BRIDGE trial used the GARDE platform [@Bradshaw2022] (ITCR-funded) to identify candidates for genetic testing of hereditary cancer syndromes based on EHR data; and for patient outreach, pre- and post-test education via automated chatbots [@Kaphingst2024].
 
@@ -232,5 +220,6 @@ Several PHM programs have demonstrated to be effective in increasing the uptake 
 
 While some CDS and PHM approaches have been successfully adopted widely, emerging technologies such as the use of generative AI approaches to analyze diagnostic imaging, large language models (LLMs) to extract information from narrative texts (e.g., clinical notes), LLM-based chatbots to communicate with patients, and digital health tools such as home-based sensors are creating unprecedented opportunities for next generation CDS and PHM. These approaches have the potential to enable significant breakthroughs through the implementation of patient-tailored cancer prevention and care at a population scale. Nevertheless, substantial research is needed to ensure effective and fair implementation of these CDS and PHM interventions.
 
-
 ## Summary
+
+Clinical data have many important uses in evaluating treatments and interventions, understanding diseases, and improving healthcare delivery. Some questions are best answered using primary data collected from clinical studies and trials, while others can be answered using secondary clinical data from EHR, administrative databases, registries, and other sources. Clinical data can also be applied to clinical decision support for individuals and to population health management for specific patient populations. 
