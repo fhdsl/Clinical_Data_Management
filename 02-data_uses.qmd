@@ -92,7 +92,7 @@ Clinical trials and studies provide a wealth of information that can be leverage
 
 ### Questions that can be asked with secondary data
 
-Here, we explore categories of questions that can be addressed using secondary data. Secondary data analysis involves the examination of pre-existing clinical data to answer specific research questions, explore hypotheses, and identify patterns or trends. This method leverages historical data collected from medical records, administrative databases, registries, electronic health records (EHRs), or other sources of clinical information. More information about resources for acquiring secondary data can be found in @sec-data-acquisition. Many of these question categories overlap with the categories of questions that can be addressed using primary data. 
+Here, we explore categories of questions that can be addressed using secondary data. Secondary data analysis involves the examination of pre-existing clinical data to answer specific research questions, explore hypotheses, and identify patterns or trends. This method leverages data collected from medical records, administrative databases, registries, electronic health records (EHRs), or other sources of clinical information. More information about resources for acquiring secondary data can be found in @sec-data-acquisition. Many of these question categories overlap with the categories of questions that can be addressed using primary data. 
 
 1. **Descriptive Questions**
 
@@ -184,7 +184,7 @@ Cohort identification is a critical step in study design. After identifying elig
 
 #### Summary
 
-Analysis of secondary clinical data allows researchers to ask a wide range of questions that provide valuable insights into patient characteristics, disease epidemiology, treatment effectiveness, outcomes, risk factors, healthcare utilization, and more. By carefully formulating questions and analyzing historical data, researchers can uncover patterns, identify trends, and generate evidence that informs clinical practice, healthcare policy, and future research directions. 
+Analysis of secondary clinical data allows researchers to ask a wide range of questions that provide valuable insights into patient characteristics, disease epidemiology, treatment effectiveness, outcomes, risk factors, healthcare utilization, and more. By carefully formulating questions and analyzing pre-existing data, researchers can uncover patterns, identify trends, and generate evidence that informs clinical practice, healthcare policy, and future research directions. 
 
 ## Applications of Clinical Data 
 
