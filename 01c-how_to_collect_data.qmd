@@ -12,7 +12,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0Ge
 
 ## Types of Clinical Studies 
 
-Clinical studies, in the forms of trials and observational studies, are major scientific initiatives in which researchers and clinicians collect data about groups of patients, typically organized around a specific treatment, exposure, or health outcome.
+Clinical studies are major scientific initiatives in which researchers and clinicians collect data about groups of patients, typically organized around a specific treatment, exposure, or health outcome.
 The ability to analyze and interpret this data enables researchers to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.
 
 ### Clinical Trials
@@ -34,7 +34,14 @@ Key components of this definition that are necessary for a study to be classifie
 * The goal of evaluating the effects of the intervention 
 * A health-related biomedical or behavioral outcome
 
-The goals of clinical trials include assessing the safety and efficacy of new treatments or interventions, comparing new treatments or interventions to existing treatment options, determining the optimal dosage and administration of treatments or interventions, and identifying potential side effects or adverse events. Some of these objectives are evaluated through early phase trials, which often have a single-arm design and focus primarily on safety, tolerability, and preliminary evidence of effectiveness. These are typically followed by randomized controlled trials (RCTs), in which participants are randomized to either the treatment arm or a comparator arm, and the effectiveness of the new treatment is evaluated. 
+The goals of clinical trials include:
+
+- Assessing the safety and efficacy of new treatments or interventions
+- Comparing new treatments or interventions to existing treatment options
+- Determining the optimal dosage and administration of treatments or interventions
+- Identifying potential side effects or adverse events
+
+Some of these objectives are evaluated through early phase trials, which often have a single-arm design and focus primarily on safety, tolerability, and preliminary evidence of effectiveness. These are typically followed by randomized controlled trials (RCTs), in which participants are randomized to either the treatment arm or a comparator arm, and the effectiveness of the new treatment is evaluated. 
 
 Randomized clinical trials are often considered the gold standard for evaluating new clinical treatments or interventions because well-designed randomized trials can support causal conclusions about the effects of interventions on health outcomes. Like other types of scientific experiments, clinical trials are designed to test hypotheses about how changes in one variable, such as a treatment, affect another variable, such as a health outcome. Random assignment helps reduce the influence of confounding factors, making it easier to attribute observed differences in outcomes to the intervention being studied. 
 
@@ -78,7 +85,7 @@ There are several factors to consider when designing studies. In this section, w
 
 ### Case Report Forms (CRFs)
 
-In clinical research, case report forms (CRFs) are essential tools for collecting standardized data from study participants. Note that case report forms are any paper or electronic form that will be filled in at the participant level. By that definition, even a consent form is a case report form! And each clinical study may utilize multiple CRFs (e.g., one for consent, another for medical history, another for reporting any adverse effects). CRFs are useful for several tasks already discussed within this chapter -- specifically, documenting adverse events or outcomes or recording demographics and medical history for identifying cohorts. CRFs are also useful for topics this chapter will discuss in later sections (e.g., Retrospective analyses).
+In clinical research, case report forms (CRFs) are essential tools for collecting standardized data from study participants or about patients. Note that case report forms are any paper or electronic form that will be filled in at the participant level by participants or clinical team members. By that definition, even a consent form is a case report form! And each clinical study may utilize multiple CRFs (e.g., one for consent, another for medical history, another for reporting any adverse effects). CRFs are useful for several tasks already discussed within this chapter -- specifically, documenting adverse events or outcomes or recording demographics and medical history for identifying cohorts. CRFs are also useful for topics this chapter will discuss in later sections (e.g., Retrospective analyses).
 
 Designing CRFs that are sensitive to the different needs of researchers requires careful consideration. Questions within CRFs should be formulated to gather comprehensive and accurate clinical data. CRFs are often filled out by clinical staff using information from EHR data. In rarer cases, CRFs may be patient/participant-facing.  Special care should be taken with these CRFs to ensure that participants feel safe, respected, and comfortable. This section explores the types of questions that can be asked using CRFs with a focus on **accessibility, sensitivity, specificity, and comfort for people.**
 
@@ -97,13 +104,17 @@ Different categories of questions that may be included within case report forms 
 5. Treatment Preferences and Decision-Making Questions
 6. Accessibility and Accommodation Needs Questions
 7. Cultural Sensitivity and Identity Questions
-8. Ensuring Comfort, Trust, and Privacy Questions
+8. Comfort, Trust, and Privacy Questions
 
 <details> <summary> Click here for additional considerations for patient/participant facing CRFs. </summary>
 
+::: {.warning}
+
+Although the following recommendations may help your research team write more respectful and responsive CRFs, it is essential to always have an Internal Review Board (IRB) or other institutional ethics review committee perform an ethical review or your final forms for appropriateness and ethical consideration.
+:::
 1. **Demographic and Socioeconomic Questions**
 
-Capturing demographic and socioeconomic data is fundamental in clinical research to understand the background of study participants. However, these questions must be asked in a manner that respects privacy, avoids assumptions, and helps identify people with different life experiences. It’s also good practice for patient/participant facing CRFs to respect privacy and  include an options allowing the participants to leave the question unanswered,respond with "prefer not to answer", or fill in their own answer.
+Capturing demographic and socioeconomic data is fundamental in clinical research to understand the background of study participants. However, these questions must be asked in a manner that respects privacy, avoids assumptions, and helps identify people with different life experiences. It’s also good practice for patient/participant facing CRFs to respect privacy and  include options allowing the participants to leave the question unanswered, respond with "prefer not to answer", or fill in their own answer.
 
 - **Sex and Gender**: When asking about gender and sex include an option of “prefer to self-describe” to capture more information.
 - **Ethnicity and Race**: Ethnicity and race questions should be specific and use respectful language. Allowing participants to self-identify rather than select from a predefined list can help capture more specific information.
@@ -123,7 +134,7 @@ Avoiding medical jargon and providing definitions or examples can help ensure th
 
 3. **Experience and Quality of Life Questions**
 
-Understanding how health conditions and treatments affect participants' daily lives and well-being is essential, particularly for those from communities who experience health disparities  and may also experience unique challenges.
+Understanding how health conditions and treatments affect participants' daily lives and well-being is essential, particularly for those who may experience unique challenges.
 
 - **Daily Living and Social Functioning**: Questions like "How often do your health conditions affect your ability to perform daily tasks (e.g., cooking, cleaning, working)?" can help assess the impact on daily life, with options ranging from "never" to "always."
 - **Emotional and Psychological Well-Being**: Including questions such as "In the past week, how often have you felt anxious or depressed?" using a scale from "not at all" to "very often" can provide insights into mental health needs.
@@ -135,7 +146,6 @@ Using sensitive language and providing mental health support resources where nee
 
 Questions about sexual and reproductive health must be asked with sensitivity, as they can be deeply personal, particularly for groups who may face stigma.
 
-- **Sexual Orientation and Gender Identity (SOGI)**: Instead of just predefined categories, open-ended questions like "How would you describe your sexual orientation?" and "What is your gender identity?" allow participants to self-identify. Offering the option to skip these questions respects participants' privacy.  Options can be provided with a space or text box for the person to fill in their own descriptor, but having the categorical data will allow for easier analysis for those that select one rather than every response being from variable open text responses.
 - **Reproductive Health**: Questions about menstrual health, contraception, or pregnancy should be framed neutrally. For example, "Are you currently using any form of contraception? If yes, please specify."
 - **Sexual Activity and History**: Questions should be direct but framed sensitively, such as "Are there any sexual health concerns you would like to discuss? Your answers will help us understand how to better support your care needs."
 
@@ -158,13 +168,13 @@ To ensure that all participants can fully engage with the study, it is essential
 - **Language and Communication Needs**: "What is your preferred language for communication? Do you need an interpreter or translated materials?" These questions help ensure that participants can understand the materials. This requires the researcher to make translated materials available, which will require additional time and effort, including validation that the materials are appropriately translated to allow for collection of comparable data. PROMIS is a great resource for this (https://www.promishealth.org/promis-translations/).
 - **Physical Accessibility**: Asking, "Do you require any specific accommodations to participate in this study (e.g., wheelchair access, hearing aids, visual aids)?" ensures physical accessibility.
 - **Format Preferences**: "Would you prefer to complete this form online, on paper, or verbally with assistance?" helps accommodate different needs and preferences.
-Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs.
+Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs where possible.
 
 Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs.
 
 7. **Cultural Sensitivity and Identity Questions**
 
-CRFs should respect different cultural backgrounds, values, and identities without perpetuating biases or assumptions.
+CRFs should respect different cultural backgrounds, values, and identities without perpetuating assumptions.
 
 - **Cultural Identity and Practices**: An open-ended question such as "Are there any cultural practices or beliefs that are important for us to be aware of in your care?" allows participants to share relevant information.
 - **Dietary Restrictions and Preferences**: Asking, "Do you have any dietary restrictions or preferences that are culturally or religiously motivated?" ensures that these are respected.
@@ -207,7 +217,7 @@ Such challenges include:
 
 Recent advances in sophisticated and costly technology such as genetic testing, artificial intelligence, and digital health are more available in high resource healthcare systems further compounding these challenges. Therefore, cancer researchers increasingly need to use intentional methods to prevent, identify, and correct for such challenges with clinical data. For example, the National Institutes of Health Pragmatic Trials Collaboratory has made several recommendations [@BoydCCT2023; @BoydJAMIA2023]:
 
-* Include data from low resource healthcare settings such as community health centers that provide care for patients who tend to have lower incomes and or live in rural areas.
+* Include data from low resource healthcare settings such as community health centers that provide care for patients who tend to have lower incomes and or live in inner city or rural areas.
 * Engage with communities during study design and study conduct to ensure proper data collection, analysis, and representation.
 * Use data collection methods for self-reported data that rely on more accessible technology such as text messaging, using accessible and culturally adapted communication.
 * Include subgroup analysis by different demographic groups.
