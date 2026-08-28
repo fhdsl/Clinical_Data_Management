@@ -16,7 +16,7 @@ book:
 
   chapters:
     - index.qmd
-    - 00-intro.qmd
+    - 01-intro.qmd
     - 01-data_types.qmd
     - 01b-specific_data_types.qmd
     - 01c-how_to_collect_data.qmd
