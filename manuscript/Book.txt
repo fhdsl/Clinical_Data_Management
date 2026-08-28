@@ -1,0 +1,8 @@
+Clinical-Data-Management.md
+Clinical-Data-Types.md
+Specific-Clinical-Data-Types.md
+Clinical-Study-Design-and-Considerations.md
+How-to-Acquire-Clinical-Data.md
+Clinical-Data-Uses.md
+Clinical-Data-Handling,-Privacy,-and-Sharing.md
+Appendix-I.md
