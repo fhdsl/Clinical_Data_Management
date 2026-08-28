@@ -96,6 +96,7 @@ ICGC
 IDC
 Immunohistochemical
 individuals'
+invasively
 IRB
 IRBs
 ITCR
@@ -114,6 +115,9 @@ Markua
 McGrady
 MEM
 methylation
+microbiome
+microstructure
+mineralization
 miRNA
 Modi
 MSK
@@ -134,6 +138,8 @@ nlm
 NLP
 NORDCAN
 NPCR
+omic
+Omic
 OMOP
 OpenClinica
 ontologies
@@ -155,6 +161,8 @@ PII
 PIs
 pmc
 PMC
+polygenic
+polymorphisms
 polypharmacy
 pre
 programatically
@@ -171,9 +179,12 @@ QALYs
 RCTs
 RDC
 REDCap
+radiological
+radiotracers
 representativeness
 reproducibility
 rhabdomyosarcoma
+RNAs
 Robbertz
 RMarkdown
 RWD
@@ -185,11 +196,13 @@ SAEs
 Schmid
 sexualized
 Shriver
+situ
 simstudy
 SNOMED
 socio
 SOGI
 SOPs
+SPECT
 Synthea
 SyntheticMass
 synthpop
@@ -202,6 +215,7 @@ templated
 Tempus
 tolerability
 Tolerability
+transcriptomic
 Transcriptomic
 Translational
 TriNetX
@@ -211,6 +225,7 @@ UE5
 UMLS
 underpowered
 USCS
+vasculature
 Vrijens
 wearables
 Wilms
