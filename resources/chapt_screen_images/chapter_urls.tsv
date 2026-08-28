@@ -2,8 +2,8 @@ chapt_title	data_level	url	img_path
 Clinical Data Management	1	https://hutchdatascience.org/Clinical_Data_Management/00-intro.html	./resources/chapt_screen_images/00-intro.png
 Clinical Data Types	2	https://hutchdatascience.org/Clinical_Data_Management/01-data_types.html	./resources/chapt_screen_images/01-data_types.png
 Specific Clinical Data Types	3	https://hutchdatascience.org/Clinical_Data_Management/01b-specific_data_types.html	./resources/chapt_screen_images/01b-specific_data_types.png
-How to Collect Clinical Data	4	https://hutchdatascience.org/Clinical_Data_Management/01c-how_to_collect_data.html	./resources/chapt_screen_images/01c-how_to_collect_data.png
+Clinical Study Design and Considerations	4	https://hutchdatascience.org/Clinical_Data_Management/01c-how_to_collect_data.html	./resources/chapt_screen_images/01c-how_to_collect_data.png
 How to Acquire Clinical Data	5	https://hutchdatascience.org/Clinical_Data_Management/01d-how_to_acquire_data.html	./resources/chapt_screen_images/01d-how_to_acquire_data.png
 Clinical Data Uses	6	https://hutchdatascience.org/Clinical_Data_Management/02-data_uses.html	./resources/chapt_screen_images/02-data_uses.png
-Clinical Data Management	7	https://hutchdatascience.org/Clinical_Data_Management/03-data_management.html	./resources/chapt_screen_images/03-data_management.png
+Clinical Data Handling, Privacy, and Sharing	7	https://hutchdatascience.org/Clinical_Data_Management/03-data_management.html	./resources/chapt_screen_images/03-data_management.png
 Appendix I	8	https://hutchdatascience.org/Clinical_Data_Management/04-appendixI.html	./resources/chapt_screen_images/04-appendixI.png
