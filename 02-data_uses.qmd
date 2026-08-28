@@ -20,7 +20,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0Ge
 
 ### Questions that can be studied using primary data
 
-Here, we explore the different categories of questions that can be addressed using primary data from clinical studies and trials, ranging from the evaluation of treatment efficacy and safety to the exploration of predictive factors for disease prognosis and the personalization of medical care. Primary data are data collected by a researcher for a specific study. Different types of clinical studies and trials are described in Section (!!! reference the relevant section in study design chapter once that content is merged !!!).  
+Here, we explore the different categories of questions that can be addressed using primary data from clinical studies and trials, ranging from the evaluation of treatment efficacy and safety to the exploration of predictive factors for disease prognosis and the personalization of medical care. Primary data are data collected by a researcher for a specific study. Different types of clinical studies and trials are described in @sec-clinical-studies.  
 
 1. **Efficacy and Effectiveness Questions**
 
