@@ -23,17 +23,19 @@ bookdown
 Bookdown
 BPC
 cBioPortal
+CDASH
 CDS
 centric
 CFR
 chatbots
 CITI
-codebase
 CGDB
 chatbots
 clinico
 Clinico
 CoC
+codebase
+comparator
 Coursera
 Collaboratory
 colorectal
@@ -63,8 +65,10 @@ DUA
 DUAs
 et
 EHR
+Eisenhauer
 Epigenomic
 eRA
+et
 exome
 faq
 FDA's
@@ -155,6 +159,7 @@ polypharmacy
 pre
 programatically
 Prokscha
+PROMIS
 PROMs
 proteomic
 Proteomic
@@ -163,6 +168,7 @@ PUF
 PUFs
 QALY
 QALYs
+RCTs
 RDC
 REDCap
 representativeness
@@ -176,6 +182,7 @@ RxNorm
 Scalability
 scalable
 SAEs
+Schmid
 sexualized
 Shriver
 simstudy
@@ -193,6 +200,7 @@ TCIA
 telehealth
 templated
 Tempus
+tolerability
 Tolerability
 Transcriptomic
 Translational
