@@ -1,4 +1,4 @@
-# How to Acquire Clinical Data
+# How to Acquire Clinical Data {#sec-data-acquisition}
 
 When designing a clinical research study, researchers may collect new clinical data, use data collected by collaborators, or access data already available through their institution. However, it is becoming increasingly common to conduct research using existing clinical data resources. For these studies, a major question is how to acquire these data. 
 

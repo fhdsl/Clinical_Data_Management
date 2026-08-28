@@ -10,7 +10,7 @@ Throughout this chapter, we will use the word **outcome** to refer to the health
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f6d7b45ddf_0_0#slide=id.g3f6d7b45ddf_0_0" )
 ```
 
-## Types of Clinical Studies 
+## Types of Clinical Studies {#sec-clinical-studies}
 
 Clinical studies are major scientific initiatives in which researchers and clinicians collect data about groups of patients, typically organized around a specific treatment, exposure, or health outcome.
 The ability to analyze and interpret this data enables researchers to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.
