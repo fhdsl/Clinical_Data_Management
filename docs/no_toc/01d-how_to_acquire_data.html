@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; How to Acquire Clinical Data – Clinical Data Management for Cancer Informatics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./02-data_uses.html" rel="next">
+<link href="./01c-how_to_collect_data.html" rel="prev">
+<link href="./assets/ITN_favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e2438b6c5eff994fcebf09a84868fa80.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="assets/style_ITN.css">
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">How to Acquire Clinical Data</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>When designing a clinical research study, researchers may collect new clinical data, use data collected by collaborators, or access data already available through their institution. However, it is becoming increasingly common to conduct research using existing clinical data resources. For these studies, a major question is how to acquire these data.</p>
+<p>When evaluating a source of clinical data, it is useful to understand why the data were collected, which individuals are included in the data, what variables are available, what requirements, applications, or costs are associated with access.</p>
+<p>The major categories of data acquisition sources discussed in this chapter include registries, data commons, cohort studies and biobanks, electronic health record (EHR) platforms, and linked clinical and genomic data resources.</p>
+<section id="learning-objectives" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">5.1</span> Learning Objectives</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3f65f827b50_0_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Learning Objectives: 1. List the major categories of clinical data sources, 2. Understand when a researcher may want to use one category of data sources over others, 3. Compare data sources in terms of where the data come from, what data are included, and ease of access"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="registries" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="registries"><span class="header-section-number">5.2</span> Registries</h2>
+<p>A registry is a collection of data about a group of patients with a shared condition or experience. Registries are typically sponsored by government agencies, professional organizations, research institutions, or private companies. Registries have specific guidelines about who will be included, which could be based on the condition of interest, geographic area, or other factors. The data from registries can be used to understand trends in a disease over time and geographic location.</p>
+<p>Cancer registries include data about cancer patients. These data are typically collected by hospitals or other medical facilities that diagnose or treat cancer, aggregated by regional registries, and then sent to national cancer registries. These data often include information about patient demographics, tumor characteristics, cancer stage, and initial treatment. Some registries also include information about outcomes after initial diagnosis and treatment.</p>
+<p>Cancer registries can be classified as either population-based or hospital-based. Population-based registries (including SEER and NPCR, which you will read about below) collect data about all reported cancer cases within a geographic area. These registries are useful for calculating cancer incidence across time, space, and demographic groups. Hospital-based registries (including NCDB, which you will also read about below) collect data from patients treated in a specific type of cancer program or healthcare system. These registries are useful for improving patient care and studying specific cancer types more closely.</p>
+<p>https://www.nih.gov/health-information/nih-clinical-research-trials-you/list-registries https://seer.cancer.gov/registries/cancer_registry/ https://training.seer.cancer.gov/registration/types/hospital.html</p>
+<section id="us-based-cancer-registries" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="us-based-cancer-registries"><span class="header-section-number">5.2.1</span> US-based cancer registries</h3>
+<p>In the United States, there are two major organizations that fund cancer registries: the National Cancer Institute (NCI) and the Centers for Disease Control and Prevention (CDC). The NCI oversees the Surveillance, Epidemiology, and End Results (SEER) program, while the CDC oversees the National Program of Cancer Registries (NPCR). Both programs support smaller regional cancer registries across the United States, although typically SEER includes more detailed data for specific geographic regions, and NPCR includes less detailed data for almost the entire country. Data from both of these programs are combined into the U.S. Cancer Statistics (USCS) database. The reason that these data can be combined in a straightforward way is that the North American Association of Central Cancer Registries (NAACCR) has established standards for collecting and reporting cancer registry data in the United States and Canada.</p>
+<p>https://training.seer.cancer.gov/operations/standards/setters/naaccr.html</p>
+<p>note: add map of overlapping coverage of these two registries!</p>
+<section id="surveillance-epidemiology-and-end-results-seer-program" class="level4" data-number="5.2.1.1">
+<h4 data-number="5.2.1.1" class="anchored" data-anchor-id="surveillance-epidemiology-and-end-results-seer-program"><span class="header-section-number">5.2.1.1</span> Surveillance, Epidemiology, and End Results (SEER) program</h4>
+<p>The SEER program has been funded by the NCI since 1973 to collect data about cancer within the US population. SEER combines data about cancer incidence and survival from regional registries. These regional registries cover approximately 45% of the US population, and include all reported cancers diagnosed among residents of the geographic area they cover. The major goal of the SEER program is to gather data to study patterns of cancer incidence and mortality over time and within geographic areas or across demographic subgroups.</p>
+<p>https://seer.cancer.gov/about/goals.html</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The SEER program includes data about people diagnosed with cancer while residing in geographic areas covered by SEER registries.</p>
+<p><strong>Include this map here:</strong> https://seer.cancer.gov/i/seer-map.PNG</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>SEER registries include the following data:</p>
+<ul>
+<li>Demographics</li>
+<li>Cancer characteristics (primary site, morphology, stage)</li>
+<li>Initial treatment</li>
+<li>Outcomes (vital status, survival time, cause of death)</li>
+</ul>
+<p>https://seer.cancer.gov/data/</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>There are two data products available from the SEER program: SEER Research Data and SEER Research Plus and National Childhood Cancer Registry (NCCR) Data.</p>
+<p>SEER Research Data includes data from 1975 through the most recent year available, excluding geographic region, month of diagnosis, and other demographic fields. Any user with an email address can access this data by registering <a href="https://seerdataaccess.cancer.gov/seer-data-access">here</a>.</p>
+<p>SEER Research Plus and NCCR Data includes all SEER Research Data, with the addition of geographic region, month of diagnosis, and other demographic fields that are removed from the SEER Research Data. In order to access this data, the user must have an eRA Commons or Department of Health and Human Services (HHS) account. You will use this account to fill out an application form and sign data use and data limitations agreements. The SEER program will process your request within two business days, and send information about how to access the data and download the accompanying software. See <a href="https://seer.cancer.gov/data/access.html">here</a> for more information about requesting access.</p>
+<p>Additionally, SEER maintains specialized databases that provide additional variables and link the registry data to other administrative databases such as Medicare. To access these databases, you must already have access to SEER Research Plus and NCCR Data, and then complete an additional application <a href="https://seer.cancer.gov/data/specialized/">process</a> to request specialized data. Specialized databases are listed <a href="https://seer.cancer.gov/data/specialized/available-databases/">here</a>. Two of these databases also require NCI Central IRB approval to access.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="national-program-of-cancer-registries-npcr" class="level4" data-number="5.2.1.2">
+<h4 data-number="5.2.1.2" class="anchored" data-anchor-id="national-program-of-cancer-registries-npcr"><span class="header-section-number">5.2.1.2</span> National Program of Cancer Registries (NPCR)</h4>
+<p>The NPCR was established by the CDC in 1992 to provide funding and assistance to state cancer registries and to establish standards for collecting and reporting this data. At the same time, states were authorized to create laws governing cancer case reporting and data collection, in order to make cancer registries as complete and comprehensive as possible. NPCR supports cancer registries in 46 states, the District of Columbia, Puerto Rico, and several US territories. Some states receive support from SEER rather than NPCR, and several registry systems contribute data to both programs. Data about new cancer cases are collected at medical facilities, sent to central cancer registries at the state level, and then submitted to NPCR.</p>
+<p>https://www.cdc.gov/national-program-cancer-registries/about/index.html</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>The NPCR includes data about people who have been diagnosed with cancer or received cancer care from medical providers within any of the geographic areas that are covered by NPCR registries. This includes 46 states, the District of Columbia, Puerto Rico, the US Pacific Island Jurisdictions, and the US Virgin Islands, and represents 97% of the US population.</p>
+<p>https://www.cdc.gov/national-program-cancer-registries/about/index.html</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Data in the NPCR include:</p>
+<ul>
+<li>Demographics</li>
+<li>Cancer characteristics (primary site, histology, grade, behavior, stage)</li>
+<li>Initial treatment</li>
+</ul>
+<p>https://www.cdc.gov/national-program-cancer-registries/data-modernization/index.html</p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>Data from the NPCR are accessed through the SEER program. Cancer incidence data from the NPCR and SEER programs are combined as the U.S. Cancer Statistics (USCS). The USCS has a public use database with cancer incidence and population data. This data does not include geographic information at the county or zip code level. This <a href="https://www.cdc.gov/united-states-cancer-statistics/public-use/pdf/uscs-public-use-database-technical-documentation-uspr-2005-2020-508.pdf">data dictionary</a> specifies what data are included in the public use database. To access this data, you must already have access to the SEER Research Plus data (steps to access this data are provided <a href="https://seer.cancer.gov/data/access.html">here</a>). Once you have this access, then you can follow the steps outlined <a href="https://www.cdc.gov/united-states-cancer-statistics/public-use/access-data.html">here</a>, which include filling out a brief form. Access requests should be processed within 2 business days.</p>
+<p>The USCS also has a restricted access database. This database includes more detailed geographic variables, such as county and census tract, along with additional demographic variables, and the data dictionary can be accessed <a href="https://www.cdc.gov/rdc/media/pdfs/2026/01/USCS-RDC-DataDictionary-CDC-Nov2024.pdf">here</a>. This database requires more time and effort to access. The data access application requires the researcher to explain their need for the restricted-use variables and describe their research proposal and plan in detail. The application can be seen <a href="https://www.cdc.gov/rdc/media/pdfs/2025/07/Proposal-Format-v3.2.pdf">here</a>. An important part of this process is identifying the minimal set of restricted use variables that you will need for your project, and explaining why these are necessary for the analysis. If your proposal is approved, you will need to complete a Confidentiality Training, and then make an appointment at a research data center (RDC) or a Federal Statistical Research Data Center (FSRDC) to access the data. An overview of the process for accessing the USCS restricted access database can be found <a href="https://www.cdc.gov/rdc/other-restricted-data/cancer-statistics.html">here</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="national-cancer-database-ncdb" class="level4" data-number="5.2.1.3">
+<h4 data-number="5.2.1.3" class="anchored"><span class="header-section-number">5.2.1.3</span> National Cancer Database (NCDB)</h4>
+<p>The NCDB is hospital-based cancer registry. It differs from SEER and NPCR registries because instead of sourcing data from a specific geographic region, it includes data from registries at more than 1,500 hospitals or other medical facilities that are accredited by the Commission on Cancer (CoC). The CoC is a program within the American College of Surgeons, and requires accredited programs to meet a set of standards for care. CoC-accredited programs treat more than 74% of newly diagnosed cancer patients. NCDB data contain more detailed information about the facility in which a patient is treated than SEER and NPCR data, and includes longitudinal follow-up and survival information not generally available in the public-use USCS database. Database access is only available to researchers associated with CoC-accredited cancer programs.</p>
+<p>https://www.facs.org/quality-programs/cancer-programs/commission-on-cancer/coc-accreditation/</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-21-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-21-1" role="tab" aria-controls="tabset-21-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-21-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-21-2" role="tab" aria-controls="tabset-21-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-21-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-21-3" role="tab" aria-controls="tabset-21-3" aria-selected="false" href="">How to access?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-21-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-21-4" role="tab" aria-controls="tabset-21-4" aria-selected="false" href="">Data commons</a></li></ul>
+<div class="tab-content">
+<div id="tabset-21-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-21-1-tab">
+<p>The NCDB includes data about patients who have been treated by CoC accredited cancer programs, collected from hospital registries.</p>
+</div>
+<div id="tabset-21-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-21-2-tab">
+<p>Data in the NCDB include:</p>
+<ul>
+<li>Demographics (including education and income for patient’s zip code)</li>
+<li>Cancer characteristics (primary site, histology, grade, stage)</li>
+<li>Treatment</li>
+<li>Outcomes (30 day mortality, 60 day mortality, last contact or death, vital status)</li>
+</ul>
+<p>https://www.facs.org/media/ilqb5snq/2024-data-dictionary.pdf</p>
+</div>
+<div id="tabset-21-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-21-3-tab">
+<p>The NCDB manages a dataset called the Participant User Data File (PUF) which includes information about cancer cases from CoC-accredited hospitals and cancer programs. The PUFs are available only to researchers associated with CoC-accredited cancer programs who submit an application. This application includes letters of support from principal investigators (PIs) in the CoC-accredited program and a description of your proposed research project and analysis plan.</p>
+<section id="international-registries" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="international-registries"><span class="header-section-number">5.2.2</span> International registries</h3>
+<p>Many countries outside of the United States also maintain comprehensive cancer registries.</p>
+<p>The Nordic Cancer Registries include population-based cancer data from several Nordic countries, which have some of the oldest and most comprehensive cancer registries in the world. NORDCAN provides free and public aggregated incidence, mortality, prevalence, and survival data at the level of country, year, cancer entity, sex, and age group. Access to individual level data from any individual registry within the Nordic Cancer Registries requires a request to that specific registry, and typically requires a local collaborator or affiliation.</p>
+<p>Another comprehensive cancer registry is the National Cancer Registration and Analysis Service (NCRAS) in England. These registry data are linked with information on treatments, outcomes, and healthcare utilization. These data can only be accessed for health care purposes, and can be requested through <a href="https://digital.nhs.uk/services/data-access-request-service-dars#national-disease-registration-service-ndrs-">this process</a>.</p>
+<p>While many countries have cancer registries, only one in three countries worldwide currently report high quality cancer incidence data. The Global Initiative for Cancer Registry Development is an initiative led by the World Health Organization. Regional hubs help individual countries build up their capacity to collect, analyze, and report data from cancer registries. More information about these regional hubs and individual country’s registry programs can be found <a href="https://gicr.iarc.fr/iarc-regional-hubs-for-cancer-registration/">here</a>.</p>
+<p>Include this image here: https://gicr.iarc.fr/about-the-gicr/the-value-of-cancer-data/map_world_registrystatus.pdf</p>
+<p>https://nordcan.iarc.fr/en https://digital.nhs.uk/ndrs/about/ncras https://gicr.iarc.fr</p>
+</section>
+<section id="summary" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.2.3</span> Summary</h3>
+<p>Provide summary table to compare these resources! (maybe just the US resources because these are the ones with detail)</p>
+</section>
+</div>
+<div id="tabset-21-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-21-4-tab">
+<p>A data commons is a cloud-based platform that enables a research community to store, manage, analyze, and share data while controlling access through a common governance framework. In addition to hosting data, a data commons typically provides computational resources, software tools, and services that allow researchers to work with data within the same environment. Data commons also often harmonize data from multiple sources, allowing datasets collected by different organizations or studies to be analyzed together. A primary goal of a data commons is to promote data sharing and reuse by reducing barriers to accessing data and computation. Data commons often aim to reduce the gap between the large volume of data that has been collected and the smaller subset of data that can be readily accessed and reused for research. By centralizing data, infrastructure, and governance, data commons can help research communities collaborate more efficiently and share the costs associated with data storage and analysis.</p>
+<p>The major features of a data commons are:</p>
+<ol type="1">
+<li>A data commons stores data and computing tools and computation resources</li>
+<li>A data commons facilitates analysis within the platform</li>
+<li>A data commons contains multiple harmonized datasets</li>
+<li>A data commons is typically designed for collaboration and data reuse</li>
+</ol>
+<p>Several cancer-focused data commons exist, and are excellent sources of existing cancer data for researchers.</p>
+<p>https://www.nature.com/articles/s41597-023-02029-x</p>
+<section id="cancer-research-data-commons-crdc" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="cancer-research-data-commons-crdc"><span class="header-section-number">5.2.4</span> Cancer Research Data Commons (CRDC)</h3>
+<p>The CRDC is a data commons run by the National Cancer Institute (NCI) to accelerate cancer research. The CRDC consists of seven specialized data commons, as well as a cloud infrastructure and other computing resources. The seven data commons included in the CRDC are:</p>
+<ul>
+<li>Genomic Data Commons (GDC): DNA methylation and whole genome, whole exome, RNA-seq, miRNA-seq, and ATAC-seq data</li>
+<li>Proteomic Data Commons (PCD): mass-spectrometry-based proteomic data</li>
+<li>Imaging Data Commons (IDC): de-identified radiology and pathology data</li>
+<li>Integrated Canine Data Commons (ICDC): genomic and clinical data from canine patients with cancer</li>
+<li>Clinical and Translational Data Commons (CTDC): clinical, biospecimen, and molecular characterization data from NCI-funded studies</li>
+<li>Population Science Data Commons (PSDC): population studies data</li>
+<li>General Commons (GC): data that do not fit into other CRDC data commons</li>
+</ul>
+<p>As well as including these component data commons, the CRDC provides a cloud resource with access to NCI-funded data, hundreds of publicly available tools and workflows, and computational resources for working with large-scale data.</p>
+<p>While each data commons within the CRDC is heavily utilized for cancer research, the most popular and heavily cited component is the GDC. The IDC is also heavily used for imaging data. More information about the other data commons, as well as instructions for data access can be found <a href="https://datacommons.cancer.gov/explore/data-commons">here</a>.</p>
+<p>https://www.cancer.gov/about-nci/organization/cbiit/projects/crdc</p>
+<section id="genomic-data-commons-gdc" class="level4" data-number="5.2.4.1">
+<h4 data-number="5.2.4.1" class="anchored"><span class="header-section-number">5.2.4.1</span> Genomic Data Commons (GDC)</h4>
+<p>The GDC contains genomic data related to cancer, as well as tools and software to analyze this data. This data commons is a central repository for data from several major NCI studies of genomic changes in cancer, including The Cancer Genome Atlas (TCGA) and the Therapeutically Applicable Research to Generate Effective Treatment (TARGET) program.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-20-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-20-1" role="tab" aria-controls="tabset-20-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-20-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-20-2" role="tab" aria-controls="tabset-20-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-20-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-20-3" role="tab" aria-controls="tabset-20-3" aria-selected="false" href="">How to access?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-20-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-20-4" role="tab" aria-controls="tabset-20-4" aria-selected="false" href="">Cohorts and Biobanks</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-20-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-20-5" role="tab" aria-controls="tabset-20-5" aria-selected="false" href="">EHR platforms</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-20-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-20-6" role="tab" aria-controls="tabset-20-6" aria-selected="false" href="">Linked Clinical and Genomic Data Resources</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-20-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-20-7" role="tab" aria-controls="tabset-20-7" aria-selected="false" href="">Summary</a></li></ul>
+<div class="tab-content">
+<div id="tabset-20-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-20-1-tab">
+<p>The GDC includes genomic data contributed by many NIH-funded cancer studies and external studies. A partial list of data sources can be found <a href="https://gdc.cancer.gov/about-data/data-sources">here</a>.</p>
+</div>
+<div id="tabset-20-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-20-2-tab">
+<p>The GDC includes the following data:</p>
+<ul>
+<li>Genomic and molecular data
+<ul>
+<li>DNA sequencing</li>
+<li>Copy number variation</li>
+<li>Structural variation</li>
+<li>DNA methylation</li>
+<li>RNA expression</li>
+<li>Protein expression</li>
+</ul></li>
+<li>Clinical metadata (diagnosis, age, sex, etc.)</li>
+</ul>
+<p>https://gdc.cancer.gov/about-data</p>
+</div>
+<div id="tabset-20-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-20-3-tab">
+<p>The GDC data portal allows researchers to download datasets or to analyze data within the GDC platform. Data within the GDC are classified as either open access or controlled access.</p>
+<p>Open access data do not require any authentication or authorization to access. This includes genomic data that are not individually identifiable, and most clinical and all biospecimen data elements. The data can be accessed through the <a href="https://portal.gdc.cancer.gov">Genomic Data Commons Data Portal</a>.</p>
+<p>Controlled access data include individually identifiable data and some clinical data elements. Accessing controlled access data requires first obtaining an eRA Commons account and access to the database of Genotypes and Phenotypes (dbGaP), then obtaining access to the specific controlled access research project through dbGaP, and finally logging into the GDC Data Portal to access. The eRA Commons lets federal agencies manage research grants, and accounts can only be made for individuals at research organizations by officials from the organization (https://www.era.nih.gov/register-accounts/create-and-edit-an-account.htm). The dbGaP is commonly used to manage controlled-access data, enabling researchers to request datasets and data access committees to review requests (https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/dbgap). Only senior researchers can request data through dbGaP, but once they have obtained access to project data, they can provide access to other members of their lab with GDC accounts (https://gdc.cancer.gov/access-data/data-access-processes-and-tools). Senior researchers must be permanent employees of their institutions who are either academic professors or researchers with responsibilities that include laboratory or research program administration. Laboratory staff and trainees are not eligible to submit data access requests in dbGaP, but can take part in data analysis for projects overseen by a senior researcher. (https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/dbgap)</p>
+<section id="the-cancer-genome-atlas-tcga" class="level5" data-number="5.2.4.1.1">
+<h5 data-number="5.2.4.1.1" class="anchored" data-anchor-id="the-cancer-genome-atlas-tcga"><span class="header-section-number">5.2.4.1.1</span> The Cancer Genome Atlas (TCGA)</h5>
+<p>TCGA was a major cancer genomics project led by the NCI and the National Human Genome Research Institute which characterized over 20,000 samples across 33 types of cancers.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>TCGA data come from samples collected at a network of tissue source sites, primarily located at cancer centers and hospitals in the United States, with additional contributions from a smaller number of international institutions (https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tissue-source-site-codes). Samples were collected from patients with a wide range of cancer types.</p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>The TCGA includes the following data:</p>
+<ul>
+<li>Demographics</li>
+<li>Genomic and molecular data
+<ul>
+<li>Genomic</li>
+<li>Epigenomic</li>
+<li>Transcriptomic</li>
+<li>Proteomic</li>
+</ul></li>
+<li>Outcomes</li>
+</ul>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>Most of the data from TCGA is part of the open access data stored in the GDC, and accessed through the GDC <a href="https://portal.gdc.cancer.gov">Data Portal</a>. Individual-level genomic data can be accessed through the controlled access tier of the GDC, described above.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="therapeutically-applicable-research-to-generate-effective-treatments-target" class="level5" data-number="5.2.4.1.2">
+<h5 data-number="5.2.4.1.2" class="anchored" data-anchor-id="therapeutically-applicable-research-to-generate-effective-treatments-target"><span class="header-section-number">5.2.4.1.2</span> Therapeutically Applicable Research to Generate Effective Treatments (TARGET)</h5>
+<p>The TARGET initiative was another major genomic program led by the NIH and NCI to generate genomic data in order to understand the molecular basis of childhood cancers. The cancer types primarily studied in this initiative include Acute Lymphoblastic Leukemia, Acute Myeloid Leukemia, Wilms Tumor, Neuroblastoma, and Osteosarcoma (https://www.cancer.gov/ccg/research/genome-sequencing/target/studied-cancers).</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>TARGET data were collected from children or young adults with one of the cancer types listed above, mainly gathered by clinicians at member institutes of the Children’s Oncology Group (COG) (https://www.cancer.gov/ccg/research/genome-sequencing/target/about).</p>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p>TARGET includes the following data:</p>
+<ul>
+<li>Demographics</li>
+<li>Genomic and molecular data
+<ul>
+<li>Genomic</li>
+<li>Epigenomic</li>
+<li>Transcriptomic</li>
+<li>Proteomic</li>
+</ul></li>
+<li>Outcomes</li>
+</ul>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p>Most of the data from TARGET is part of the open access data stored in the GDC, and accessed through the GDC <a href="https://portal.gdc.cancer.gov">Data Portal</a>. Individual-level genomic data can be accessed through the controlled access tier of the GDC, described above.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="imaging-data-commons-idc" class="level4" data-number="5.2.4.2">
+<h4 data-number="5.2.4.2" class="anchored" data-anchor-id="imaging-data-commons-idc"><span class="header-section-number">5.2.4.2</span> Imaging Data Commons (IDC)</h4>
+<p>The IDC is a data commons for publicly available cancer imaging data. It provides more than 85 TB of freely accessible imaging data. The images and image-derived data are harmonized to use a standard digital image format. The IDC includes data from many sources, including The Cancer Genome Atlas (TCGA), The Cancer Imaging Archive (TCIA), the Human Tumor Atlas Network (HTAN), and many others. The data can be explored with the <a href="https://portal.imaging.datacommons.cancer.gov/explore/">IDC portal</a>, visualized with a browser-based viewer, and downloaded.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<p>The IDC includes data from many sources, including The Cancer Genome Atlas (TCGA), The Cancer Imaging Archive (TCIA), the Human Tumor Atlas Network (HTAN), and many others. A full list can be found <a href="https://portal.imaging.datacommons.cancer.gov/collections/">here</a>.</p>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<p>The IDC includes the following data:</p>
+<ul>
+<li>Imaging
+<ul>
+<li>Radiology images</li>
+<li>Digital pathology images</li>
+<li>Multispectral microscopy images</li>
+</ul></li>
+<li>Image-derived features
+<ul>
+<li>Annotations</li>
+<li>Parametric maps</li>
+<li>Measurements</li>
+<li>Expert assessments</li>
+</ul></li>
+</ul>
+<p>https://datacommons.cancer.gov/repository/imaging-data-commons</p>
+</div>
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<p>The data can be freely explored with the <a href="https://portal.imaging.datacommons.cancer.gov/explore/">IDC portal</a>, visualized with a browser-based viewer, and downloaded. The IDC also maintains a Python <a href="https://github.com/ImagingDataCommons/idc-index">package</a> for programatically querying metadata and downloading imaging data.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="other-data-commons" class="level3" data-number="5.2.5">
+<h3 data-number="5.2.5" class="anchored" data-anchor-id="other-data-commons"><span class="header-section-number">5.2.5</span> Other data commons</h3>
+<section id="international-cancer-genome-consortium-icgc" class="level4" data-number="5.2.5.1">
+<h4 data-number="5.2.5.1" class="anchored" data-anchor-id="international-cancer-genome-consortium-icgc"><span class="header-section-number">5.2.5.1</span> International Cancer Genome Consortium (ICGC)</h4>
+<p>Similarly to TCGA, the ICGC aimed to collect genomic data for all major tumor types. As an international consortium, they also aimed to facilitate global genomic data sharing. The group, which involved 86 teams and spanned nearly every continent, produced genomic data from more than 20,000 tumors across 26 cancer types.</p>
+<p>https://www.icgc-argo.org/page/65/icgc-initiatives-</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<p>ICGC data come from samples that were taken by consortium members.</p>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<p>The ICGC includes the following data:</p>
+<ul>
+<li>Demographics</li>
+<li>Genomic and molecular data
+<ul>
+<li>Genomic</li>
+<li>Epigenomic</li>
+<li>Transcriptomic</li>
+<li>Proteomic</li>
+</ul></li>
+<li>Clinical data</li>
+<li>Outcomes</li>
+</ul>
+<p>https://docs.cancergenomicscloud.org/docs/icgc-data</p>
+</div>
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
+<p>While the ICGC data portal has been shut down, the data can be accessed following the steps <a href="https://docs.icgc-argo.org/docs/data-access/icgc-25k-data">here</a>.</p>
+<p>The ICGC includes open access release data, which can be freely downloaded using <a href="https://docs.icgc-argo.org/docs/data-access/icgc-25k-data#open-release-data---object-bucket-details">these instructions</a>.</p>
+<p>The ICGC also includes controlled release data. Access to this data requires an <a href="https://docs.icgc-argo.org/docs/data-access/daco/applying">application</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="pediatric-cancer-data-commons-pcdc" class="level4" data-number="5.2.5.2">
+<h4 data-number="5.2.5.2" class="anchored" data-anchor-id="pediatric-cancer-data-commons-pcdc"><span class="header-section-number">5.2.5.2</span> Pediatric Cancer Data Commons (PCDC)</h4>
+<p>The PCDC is a data commons run by the Data for the Common Good institution at the University of Chicago. The data commons includes pediatric, young adult, and adult cancer data, as well as an analysis platform with tools to explore available data and assess study feasibility. The data come from more than 40 countries and encompass most types of pediatric cancer. The PCDC standardizes and harmonizes the data, which supports defining cohorts based on diseases and demographics across studies.</p>
+<p>https://commons.cri.uchicago.edu/pcdc/</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<p>The data in the PCDC come from clinical trials related to the following diseases: rhabdomyosarcoma, non-rhabdomyosarcoma, neuroblastoma, germ cell tumors, Hodgkin lymphoma, and acute myeloid leukemia.</p>
+<p>https://docs.pedscommons.org/DataAccessAndGovernance/</p>
+</div>
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<p>The PCDC includes the following data:</p>
+<ul>
+<li>Demographics</li>
+<li>Cancer characteristics</li>
+<li>Treatment</li>
+<li>Laboratory data</li>
+<li>Genomic data</li>
+<li>Outcomes</li>
+</ul>
+</div>
+<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
+<p>PCDC data can be accessed through their <a href="https://portal.pedscommons.org/">data portal</a>. A data portal account requires an authenticated email and institutional affiliation. Open access data allow researchers to explore data dictionaries and build cohorts. They do not include participant level data. Researchers are expected to use this open access data for determining feasibility of a proposed study and for early hypothesis exploration, not for publication.</p>
+<p>Scientists who would like to do research on PCDC data need to request access to a dataset associated with a specific disease, and their request will be reviewed. Project request forms can be found <a href="https://docs.pedscommons.org/PCDCProjectRequestForm/">here</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="childhood-cancer-clinical-data-commons-c3dc" class="level4" data-number="5.2.5.3">
+<h4 data-number="5.2.5.3" class="anchored" data-anchor-id="childhood-cancer-clinical-data-commons-c3dc"><span class="header-section-number">5.2.5.3</span> Childhood Cancer Clinical Data Commons (C3DC)</h4>
+<p>The C3DC is a database of demographic and clinical data related to pediatric cancers, supported by the NCI. The data in the C3DC have been harmonized and include a standard set of data elements. This data commons allows researchers to search for harmonized participant-level clinical data across multiple studies and create custom cohorts to analyze.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-3" role="tab" aria-controls="tabset-8-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
+<p>Data that are included in the C3DC come from forty studies, listed <a href="https://clinicalcommons.ccdi.cancer.gov/studies">here</a>, and include over 59,000 participants.</p>
+</div>
+<div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
+<p>The C3DC includes the following data:</p>
+<ul>
+<li>Demographics</li>
+<li>Cancer characteristics</li>
+<li>Treatment</li>
+<li>Laboratory data</li>
+<li>Genomic data</li>
+<li>Outcomes</li>
+</ul>
+<p>https://clinicalcommons.ccdi.cancer.gov/data_model</p>
+</div>
+<div id="tabset-8-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-3-tab">
+<p>The data can be explored with this <a href="https://clinicalcommons.ccdi.cancer.gov/explore">web portal</a>, and cohorts can be compared with this <a href="https://clinicalcommons.ccdi.cancer.gov/cohortAnalyzer">web portal</a>. The C3DC only includes deidentified open-access clinical data.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="summary-1" class="level3" data-number="5.2.6">
+<h3 data-number="5.2.6" class="anchored" data-anchor-id="summary-1"><span class="header-section-number">5.2.6</span> Summary</h3>
+<p>Provide summary table to compare these resources!</p>
+</section>
+</div>
+<div id="tabset-20-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-20-4-tab">
+<p>Cohort studies are observational studies in which a group of participants is enrolled and followed over time. Researchers collect information about participants at baseline and then track outcomes such as disease diagnoses, health behaviors, or mortality. By observing how health changes over time, cohort studies can be used to identify factors associated with disease risk, progression, and outcomes.</p>
+<p>Biobanks are organizations that collect, store, manage, and distribute biological samples, such as blood, saliva, tissue, or DNA, for biomedical research. These samples are typically linked to information about the participants who provided them, including demographic characteristics, health records, environmental exposures, and survey responses. Biobanks may be operated by hospitals, research institutions, private companies, patient advocacy organizations, or government agencies.</p>
+<p>Many modern research initiatives combine these two approaches. Participants are enrolled into a cohort study, contribute biological samples to a biobank, and are then followed over time through surveys, physical examinations, electronic health records, or other data sources. This combination allows researchers to connect biological measurements with health outcomes and disease development. Two well-known examples are the UK Biobank and the NIH All of Us Research Program.</p>
+<p>Biobanks may be population-based, meaning they recruit participants from the general population, or disease-oriented, meaning they focus on individuals with a particular disease. Although the resources discussed in this section are not cancer-specific, they contain rich clinical, genomic, and lifestyle data that are frequently used in cancer research.</p>
+<p>https://allofus.nih.gov/article/biobank https://www.broadinstitute.org/what-is-a-biobank https://pmc.ncbi.nlm.nih.gov/articles/PMC8275637/#CR15</p>
+<section id="uk-biobank" class="level3" data-number="5.2.7">
+<h3 data-number="5.2.7" class="anchored" data-anchor-id="uk-biobank"><span class="header-section-number">5.2.7</span> UK Biobank</h3>
+<p>The UK Biobank is a large population-based cohort study and biobank that includes data from more than 500,000 middle-aged participants in the United Kingdom. Participants were recruited between 2006 and 2010 and contributed biological samples, physical measurements, and detailed information about their health and lifestyle. The study links these data with healthcare records and continues to follow participants over time.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-9-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-1" role="tab" aria-controls="tabset-9-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-2" role="tab" aria-controls="tabset-9-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-3" role="tab" aria-controls="tabset-9-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-9-1-tab">
+<p>Over 500,000 volunteers were recruited for the UK Biobank between 2006 and 2010. Participants lived within 25 miles of the Biobank’s 22 research centers in Scotland, England, and Wales, and had ages between 40 and 69 when recruited. The participants on average were slightly healthier and wealthier than the general UK population. Approximately 95% of the participants were white, and there were relatively low numbers of participants from different ethnic groups.</p>
+</div>
+<div id="tabset-9-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-2-tab">
+<p>The UK Biobank includes the following data:</p>
+<ul>
+<li>Demographics and lifestyle</li>
+<li>Survey/questionnaire data</li>
+<li>Physical measurements</li>
+<li>Biomarker data</li>
+<li>Genomic data</li>
+<li>Imaging data</li>
+<li>EHR data</li>
+<li>Environmental exposures</li>
+</ul>
+</div>
+<div id="tabset-9-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-3-tab">
+<p>Access to the data from the UK Biobank requires researchers to fill out an application and pay an access fee. Eligible researchers must have a track record of health-related research and be affiliated with a recognized research organization. The application requires a summary of the intended research, and the process is outlined <a href="https://community.ukbiobank.ac.uk/hc/en-gb/categories/14494598931229-Get-started-with-UK-Biobank">here</a>. The fee structure for accessing this data is provided <a href="https://www.ukbiobank.ac.uk/use-our-data/fees/">here</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="all-of-us" class="level3" data-number="5.2.8">
+<h3 data-number="5.2.8" class="anchored" data-anchor-id="all-of-us"><span class="header-section-number">5.2.8</span> All of Us</h3>
+<p>All of Us is a nationwide research program launched by the NIH in 2015 with the goal of building a large and diverse resource for precision medicine research. Like the UK Biobank, All of Us combines a longitudinal cohort study with a biobank. Participants contribute surveys, physical measurements, electronic health record data, and biological samples, and many participants consent to long-term follow-up. The program places particular emphasis on recruiting populations that have historically been underrepresented in biomedical research. Biological samples are processed and stored through a national biobank managed by the Mayo Clinic. Although All of Us is not focused specifically on cancer, its scale and breadth of clinical and biological data make it a valuable resource for many types of cancer research.</p>
+<p>https://www.joinallofus.org/about https://www.joinallofus.org/faq https://pmc.ncbi.nlm.nih.gov/articles/PMC9436122/</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-10-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-1" role="tab" aria-controls="tabset-10-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-2" role="tab" aria-controls="tabset-10-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-3" role="tab" aria-controls="tabset-10-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-10-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-10-1-tab">
+<p>All of Us includes over 800,000 participants across the US. The program aims to include populations that are historically under-represented in medical research.</p>
+</div>
+<div id="tabset-10-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-2-tab">
+<p>All of Us includes the following data. While the survey responses are collected on all participants, the other types of data are collected only on a subset of participants:</p>
+<ul>
+<li>Demographics and lifestyle</li>
+<li>Survey/questionnaire data</li>
+<li>Physical measurements</li>
+<li>Biomarker data</li>
+<li>Genomic data</li>
+<li>Imaging data</li>
+<li>EHR data</li>
+<li>Unstructured clinical notes</li>
+<li>Wearable device data</li>
+<li>Cognitive assessment data</li>
+</ul>
+<p>https://support.researchallofus.org/hc/en-us/articles/4619151535508-Data-Types-and-Organization</p>
+</div>
+<div id="tabset-10-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-3-tab">
+<p>The All of Us dataset has three access tiers. The Public Tier includes deidentified and aggregated data. These data are available through the <a href="https://databrowser.researchallofus.org">data browser</a>. The Registered Tier includes individual-level data, including data from EHR, wearables, surveys, and physical measurements. The Controlled Tier includes genomic data, demographic fields in EHR that are suppressed in other tiers, and accurate dates of events that are shifted in other tiers.</p>
+<p>In order to access the Registered and Controlled tiers, your institution must have signed a Data Use and Registration Agreement with All of Us. You can check <a href="https://www.researchallofus.org/institutional-agreements/">here</a> whether your institution has an agreement in place for the tier that you would like to access, or submit a request if not. If your institution does have an agreement, then you will need to create an account and complete a training.</p>
+<p>https://www.researchallofus.org/data-tools/data-access/</p>
+</div>
+</div>
+</div>
+</section>
+<section id="summary-2" class="level3" data-number="5.2.9">
+<h3 data-number="5.2.9" class="anchored" data-anchor-id="summary-2"><span class="header-section-number">5.2.9</span> Summary</h3>
+<p>Provide summary of this section (may not need table because we just have the two cohort studies/biobanks and they are quite similar)!</p>
+</section>
+</div>
+<div id="tabset-20-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-20-5-tab">
+<p>Electronic health records (EHR) contain digital information generated through a patient’s interactions with the healthcare system over time, including demographics, diagnoses, medications, laboratory tests, clinical notes, images, and other clinical observations. Unlike registries and cohort studies, in which data are collected primarily for research purposes, EHR are primarily collected and stored to support clinical care, healthcare billing, and health system operations. Although research is not their primary purpose, they provide a very useful longitudinal real world data source for clinical researchers. However, these records may be incomplete, missing relevant variables, or recorded differently across health care systems and institutions. Instead of accessing EHR directly from healthcare systems, researchers typically access data through EHR platforms. These platforms aggregate EHR data from healthcare systems, standardize and harmonize the data, and create research databases. Part of this process involves mapping original data into common data models, which provide a standardized way to represent diagnoses, medications, laboratory results, healthcare encounters, and other clinical information. EHR platforms differ in their funding, major goals, cost to access, and data scope. EHR platforms are increasingly used for cancer research because they can capture detailed treatment histories, lab results, medications, and outcomes that may not be available in traditional cancer registries.</p>
+<section id="research-ehr-platforms" class="level3" data-number="5.2.10">
+<h3 data-number="5.2.10" class="anchored" data-anchor-id="research-ehr-platforms"><span class="header-section-number">5.2.10</span> Research EHR platforms</h3>
+<section id="pcornet" class="level4" data-number="5.2.10.1">
+<h4 data-number="5.2.10.1" class="anchored" data-anchor-id="pcornet"><span class="header-section-number">5.2.10.1</span> PCORnet</h4>
+<p>PCORnet is a health data resource funded by the Patient Centered Outcomes Research Institute (PCORI). PCORnet receives electronic health data from a large network of health systems and standardizes data under a shared data model. PCORnet includes data from more than 50 million patients from across the US. PCORnet provides both data resources and study support services for researchers. PCORnet will freely provide a consultation about using PCORnet for a study, a study feasibility review, and potentially a data network request, which involves determining what available data in PCORnet would relate to a proposed study and providing site-level aggregate data. If applicable, PCORnet can support data queries, although these will have associated costs. Unlike many centralized databases, PCORnet uses a distributed research network. Participating institutions retain control of their local patient data behind institutional firewalls. Researchers submit standardized queries across the network, and participating sites return approved results.</p>
+<p>https://pcornet.org/data/common-data-model/ https://pcornet.org/module-3-playbook/</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-11-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-1" role="tab" aria-controls="tabset-11-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-2" role="tab" aria-controls="tabset-11-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-3" role="tab" aria-controls="tabset-11-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-11-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-11-1-tab">
+<p>Data from PCORnet comes from electronic health records of more than 50 million patients in the healthcare system. These data primarily come from partnerships with PCORnet Clinical Research Networks (CRNs), which are groups of healthcare institutes across the US. A list of the CRNs and their associated healthcare institutions can be found <a href="https://pcornet.org/network/">here</a>.</p>
+</div>
+<div id="tabset-11-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-2-tab">
+<p>PCORnet includes EHR data, including:</p>
+<ul>
+<li>Demographics</li>
+<li>Healthcare encounters</li>
+<li>Diagnoses</li>
+<li>Procedures</li>
+<li>Medications</li>
+<li>Laboratory data</li>
+<li>Vital signs</li>
+<li>Immunizations</li>
+<li>Cause of death</li>
+</ul>
+<p>https://pcornet.org/wp-content/uploads/2025/05/PCORnet_Common_Data_Model_v70_2025_05_01.pdf</p>
+</div>
+<div id="tabset-11-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-3-tab">
+<p>PCORnet provides several free resources to streamline research before getting to paid data queries. First, you can do a consultation with the PCORnet <a href="https://pcornet.org/front-door/">Front Door</a> to access PCORnet. Next, you can request a study feasibility review, to understand what PCORnet data are available for a project and to develop a budget for a project using PCORnet data. After this, you can submit a data network request, in which you will work with PCORnet partners to determine where relevant data exist across the PCORnet network, and to provide high-level data trends for study planning. Finally, if you end up using PCORnet data in your study, you will work with PCORnet CRNs, which will require funding. More information about these resources can be found <a href="https://pcornet.org/module-3-playbook/">here</a>.</p>
+<p>https://pcornet.org/module-3-playbook/</p>
+</div>
+</div>
+</div>
+</section>
+<section id="enact" class="level4" data-number="5.2.10.2">
+<h4 data-number="5.2.10.2" class="anchored" data-anchor-id="enact"><span class="header-section-number">5.2.10.2</span> ENACT</h4>
+<p>ENACT is an EHR platform that facilitates research with EHR for researchers at participating Clinical and Translational Science Award (CTSA) institutions. A list of participating institutions can be found <a href="https://enact-network.org/site-access-contacts/">here</a>. ENACT includes over 150 million patient records, including records from 90% of the CTSA consortium. ENACT is primarily intended for cohort discovery and study feasibility assessment. Researchers can estimate how many patients meeting specific eligibility criteria exist across participating institutions before launching a clinical study.</p>
+<p>https://enact-network.org/about/faqs/ https://enact-network.org</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-12-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-1" role="tab" aria-controls="tabset-12-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-2" role="tab" aria-controls="tabset-12-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-3" role="tab" aria-controls="tabset-12-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-12-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-12-1-tab">
+<p>ENACT includes over 150 million patient records, including records from 90% of the CTSA consortium. A list of participating institutions can be found <a href="https://enact-network.org/site-access-contacts/">here</a>.</p>
+</div>
+<div id="tabset-12-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-2-tab">
+<p>ENACT data includes the following:</p>
+<ul>
+<li>Demographics</li>
+<li>Healthcare encounters</li>
+<li>Diagnoses</li>
+<li>Procedures</li>
+<li>Medications</li>
+<li>Laboratory data</li>
+</ul>
+<p>https://enact-network.org/media/rb3fsitp/act_ontology_data_dictionary.pdf</p>
+</div>
+<div id="tabset-12-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-3-tab">
+<p>To request access to ENACT, you must be a member of a participating CTSA institution. If you are, you can reach out to the contact at your local institution, which you can find <a href="https://enact-network.org/site-access-contacts/">here</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="epic-cosmos" class="level4" data-number="5.2.10.3">
+<h4 data-number="5.2.10.3" class="anchored" data-anchor-id="epic-cosmos"><span class="header-section-number">5.2.10.3</span> Epic Cosmos</h4>
+<p>Epic Cosmos is an EHR platform that includes data from health systems using Epic software, and is available to researchers affiliated with and approved by a Cosmos participating organization. A list of organizations can be found <a href="https://cosmos.epic.com/request-access/">here</a>. If you are not part of a participating organization, you can search for a collaborator at a participating organization or submit ideas for a study <a href="https://www.epicresearch.org">here</a>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-13-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-1" role="tab" aria-controls="tabset-13-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-2" role="tab" aria-controls="tabset-13-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-3" role="tab" aria-controls="tabset-13-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-13-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-13-1-tab">
+<p>Epic Cosmos includes EHR data from patients that are part of health systems that use Epic software. Epic reports that the demographic composition of Cosmos is similar to that of the U.S. population, although it only includes patients receiving care through participating Epic health systems (https://cosmos.epic.com/about/).</p>
+</div>
+<div id="tabset-13-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-2-tab">
+<p>Epic Cosmos includes the following data:</p>
+<ul>
+<li>Demographics</li>
+<li>Diagnoses</li>
+<li>Medications</li>
+<li>Vital signs</li>
+<li>Patient-generated health data</li>
+<li>Birth records</li>
+<li>Social determinants of health</li>
+</ul>
+<p>https://cosmos.epic.com/about/</p>
+</div>
+<div id="tabset-13-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-3-tab">
+<p>If you are affiliated with a Cosmos participating organization, you can request access <a href="https://cosmos.epic.com/request-access/">here</a>. You will need to submit a form with your contact information and a description of your inquiry.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="commercial-ehr-platforms" class="level3" data-number="5.2.11">
+<h3 data-number="5.2.11" class="anchored" data-anchor-id="commercial-ehr-platforms"><span class="header-section-number">5.2.11</span> Commercial EHR platforms</h3>
+<section id="trinetx" class="level4" data-number="5.2.11.1">
+<h4 data-number="5.2.11.1" class="anchored" data-anchor-id="trinetx"><span class="header-section-number">5.2.11.1</span> TriNetX</h4>
+<p>TriNetX is a commercial EHR platform that provides data for pharma companies, healthcare providers, and academic researchers. It connects researchers to harmonized patient data from participating healthcare organizations that have mapped their data to a common data model. TriNetX sources data directly from healthcare organizations, from more than 14,000 clinical sites. TriNetX is a federated EHR network, which means that patient data is queried within healthcare systems and answers are returned without the patient-level data leaving the healthcare system. A major use of TriNetX is to assess the feasibility of proposed clinical studies.</p>
+<p>https://trinetx.com/data/ https://trinetx.com/solutions/trinetx-live/</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-14-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-1" role="tab" aria-controls="tabset-14-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-2" role="tab" aria-controls="tabset-14-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-3" role="tab" aria-controls="tabset-14-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-14-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-14-1-tab">
+<p>TriNetX includes records from more than 65 million patients, across 20 countries. These data come from a network of healthcare organizations across the world.</p>
+<p>https://trinetx.com/data/</p>
+</div>
+<div id="tabset-14-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-2-tab">
+<p>TriNetX data includes the following:</p>
+<ul>
+<li>Demographics</li>
+<li>Diagnoses</li>
+<li>Procedures</li>
+<li>Medications</li>
+<li>Laboratory data</li>
+<li>Vital signs</li>
+<li>Outcomes</li>
+</ul>
+</div>
+<div id="tabset-14-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-3-tab">
+<p>Data can be accessed by contacting TriNetX <a href="https://trinetx.com/solutions/datasets/#contact">here</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="truveta" class="level4" data-number="5.2.11.2">
+<h4 data-number="5.2.11.2" class="anchored" data-anchor-id="truveta"><span class="header-section-number">5.2.11.2</span> Truveta</h4>
+<p>Truveta is another commercial EHR platform, with more than 130 million patient records. The data are standardized across healthcare systems and mapped to a common data model. Truveta was created by and is governed by a collective of US health systems, including the systems listed <a href="https://www.truveta.com/members/">here</a>. Data are delivered daily from these health systems to the EHR platform.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-15-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-1" role="tab" aria-controls="tabset-15-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-15-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-2" role="tab" aria-controls="tabset-15-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-15-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-3" role="tab" aria-controls="tabset-15-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-15-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-15-1-tab">
+<p>Truveta includes records from more than 130 million patients, which are sourced from more than 900 hospitals and 20,000 clinics. Some affiliated health systems are listed <a href="https://www.truveta.com/members/">here</a>.</p>
+<p>https://www.truveta.com/data/</p>
+</div>
+<div id="tabset-15-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-15-2-tab">
+<p>Truveta data includes the following:</p>
+<ul>
+<li>Demographics</li>
+<li>Diagnoses</li>
+<li>Procedures</li>
+<li>Medications</li>
+<li>Laboratory data</li>
+<li>Immunizations</li>
+<li>Clinical notes</li>
+<li>Imaging data</li>
+</ul>
+<p>https://www.truveta.com/data/</p>
+</div>
+<div id="tabset-15-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-15-3-tab">
+<p>Data can be accessed by contacting Truveta <a href="https://www.truveta.com/contact-us/">here</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="summary-3" class="level3" data-number="5.2.12">
+<h3 data-number="5.2.12" class="anchored" data-anchor-id="summary-3"><span class="header-section-number">5.2.12</span> Summary</h3>
+<p>Provide summary table comparing these resources!</p>
+</section>
+</div>
+<div id="tabset-20-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-20-6-tab">
+<p>A major limitation of most registries and EHR platforms is a lack of detailed tumor molecular data. Clinico-genomic data platforms link clinical data with tumor sequencing data. Both clinical data and sequencing data are collected as part of the healthcare process. By linking clinical information with sequencing results, these resources allow researchers to study how genomic alterations relate to treatment response and clinical outcomes across cancer types.</p>
+<p>https://pmc.ncbi.nlm.nih.gov/articles/PMC11869879/</p>
+<section id="public-platforms" class="level3" data-number="5.2.13">
+<h3 data-number="5.2.13" class="anchored" data-anchor-id="public-platforms"><span class="header-section-number">5.2.13</span> Public platforms</h3>
+<section id="project-genie" class="level4" data-number="5.2.13.1">
+<h4 data-number="5.2.13.1" class="anchored" data-anchor-id="project-genie"><span class="header-section-number">5.2.13.1</span> Project GENIE</h4>
+<p>Project GENIE is a publicly accessible cancer-focused clinico-genomic data resource that combines genomic sequencing data and clinical outcomes, funded by the American Association for Cancer Research (AACR). A major goal of Project GENIE is to collect a large repository of sequencing and clinical cancer data for precision oncology research. Precision medicine customizes a patient’s treatment based on their individual genomic, behavioral, and environmental characteristics, and requires a large amount of data. Project GENIE includes clinical and cancer genome sequencing data from most cancer patients treated at twenty international cancer centers. Through partnerships with <a href="https://sagebionetworks.org">Sage Bionetworks</a> and <a href="https://www.cbioportal.org">cBioPortal</a>, the project aggregates and harmonizes the data and provides it freely for research purposes. Project GENIE also has a research collaboration with the Biopharma Collaborative (BPC), a coalition of ten biopharmaceutical companies, in order to gather additional clinical data to the existing Project GENIE data.</p>
+<p>https://www.aacr.org/professionals/research/aacr-project-genie/ https://www.aacr.org/professionals/research/aacr-project-genie/bpc/</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-16-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-1" role="tab" aria-controls="tabset-16-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-2" role="tab" aria-controls="tabset-16-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-3" role="tab" aria-controls="tabset-16-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-16-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-16-1-tab">
+<p>The data in Project GENIE are collected from cancer patients from twenty international cancer centers. A list of participating centers can be found <a href="https://www.aacr.org/professionals/research/aacr-project-genie/aacr-project-genie-participation/">here</a>.</p>
+</div>
+<div id="tabset-16-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-16-2-tab">
+<p>Project GENIE includes the following data:</p>
+<ul>
+<li>Demographics</li>
+<li>Cancer characteristics (stage, histology, etc.)</li>
+<li>Treatment</li>
+<li>Genomic data</li>
+<li>Outcomes</li>
+</ul>
+<p>https://www.aacr.org/professionals/research/aacr-project-genie/aacr-project-genie-data-model/ https://www.aacr.org/wp-content/uploads/2026/02/19.0_public_data_guide.pdf</p>
+</div>
+<div id="tabset-16-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-16-3-tab">
+<p>There are multiple ways to access the Project GENIE data. Users can either access the data directly through <a href="https://genie.cbioportal.org">cBioPortal</a>, or download the data from <a href="https://www.synapse.org/Synapse:syn7222066/wiki/405659">Synapse</a>.</p>
+<p>cBioPortal is a platform for basic analysis and visualization of cancer genomic data. It provides access to many publicly available cancer datasets (a list of available datasets can be found <a href="https://www.cbioportal.org/datasets">here</a>). To access Project GENIE data on cBioPortal, you must make a free account and then request access <a href="http://www.cbioportal.org/genie">here</a>.</p>
+<p>Synapse is a platform for data sharing. To access Project GENIE data with Synapse, follow these <a href="https://genie.synapse.org/Access">steps</a>. This involves creating a Synapse account, agreeing to terms of use, submitting a request for access for each desired dataset, and downloading the data using R, Python, or a command line client.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="msk-chord" class="level4" data-number="5.2.13.2">
+<h4 data-number="5.2.13.2" class="anchored" data-anchor-id="msk-chord"><span class="header-section-number">5.2.13.2</span> MSK-CHORD</h4>
+<p>Memorial Sloan Kettering Cancer Center (MSK) curated the MSK-CHORD dataset, which combines deidentified longitudinal clinical data with genomic data from genomic profiling tests of tumors. This dataset includes cases of many common and rare cancer types from over 24,000 patients. The dataset includes natural language processing annotations of unstructured data, along with structured clinical data and genomic data. MSK-CHORD is available through cBioPortal.</p>
+<p>https://www.mskcc.org/research-advantage/support/digital-health-projects/msk-chord-clinico-genomic-data-msk-cancer https://www.nature.com/articles/s41586-024-08167-5</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-17-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-1" role="tab" aria-controls="tabset-17-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-17-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-2" role="tab" aria-controls="tabset-17-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-17-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-3" role="tab" aria-controls="tabset-17-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-17-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-17-1-tab">
+<p>MSK-CHORD includes data from patients who received the MSK-IMPACT tumor-sequencing test at MSK.</p>
+<p>https://www.mskcc.org/msk-impact</p>
+</div>
+<div id="tabset-17-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-17-2-tab">
+<p>MSK-CHORD includes the following data. Some of the clinical annotations are derived from natural language processing.</p>
+<ul>
+<li>Demographics</li>
+<li>Cancer characteristics</li>
+<li>Treatment</li>
+<li>Genomic data</li>
+</ul>
+<p>https://www.cbioportal.org/study/summary?id=msk_chord_2024</p>
+</div>
+<div id="tabset-17-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-17-3-tab">
+<p>MSK-CHORD data can be accessed through <a href="https://www.cbioportal.org/study/summary?id=msk_chord_2024">cBioPortal</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="commercial-platforms" class="level3" data-number="5.2.14">
+<h3 data-number="5.2.14" class="anchored" data-anchor-id="commercial-platforms"><span class="header-section-number">5.2.14</span> Commercial platforms</h3>
+<section id="flatiron" class="level4" data-number="5.2.14.1">
+<h4 data-number="5.2.14.1" class="anchored" data-anchor-id="flatiron"><span class="header-section-number">5.2.14.1</span> Flatiron</h4>
+<p>Flatiron health is a commercial platform that contains oncology data, as well as additional resources. Flatiron includes more than five million patient records, which are linked with imaging, genomic, pathology, and claims data. Flatiron health has partnered with <a href="https://www.foundationmedicine.com">Foundation Medicine</a> (FMI), a precision medicine company, to create their Clinico-Genomic Database (CGDB), which combines patient-level clinical data with genomic data from genomic profiling tests.</p>
+<p>https://flatiron.com/real-world-evidence/solutions-for-clinical-development-teams https://jamanetwork.com/journals/jama/fullarticle/2730114</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-18-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-1" role="tab" aria-controls="tabset-18-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-18-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-2" role="tab" aria-controls="tabset-18-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-18-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-3" role="tab" aria-controls="tabset-18-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-18-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-18-1-tab">
+<p>Flatiron collects oncology EHR data from patients receiving care at more than 220 cancer practices. Approximately 70% of patients come from community cancer centers and 30% of patients come from academic medical centers. The CGDB includes over 110,000 patients.</p>
+<p>https://flatiron.com/database-characterization</p>
+</div>
+<div id="tabset-18-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-18-2-tab">
+<p>Flatiron data include the following:</p>
+<ul>
+<li>Demographics</li>
+<li>Cancer characteristics</li>
+<li>Treatment</li>
+<li>Clinical notes and unstructured data (processed with natural language processing, machine learning, and large language models)</li>
+</ul>
+<p>The CGDB additionally links these records to genomic profiling data.</p>
+<p>https://flatiron.com/database-characterization https://resources.flatiron.com/clinico-genomic-data-is-a-game-changer-for-precision-oncology/</p>
+</div>
+<div id="tabset-18-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-18-3-tab">
+<p>Flatiron data can be accessed by contacting them <a href="https://flatiron.com/contact">here</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="tempus" class="level4" data-number="5.2.14.2">
+<h4 data-number="5.2.14.2" class="anchored" data-anchor-id="tempus"><span class="header-section-number">5.2.14.2</span> Tempus</h4>
+<p>Tempus is a healthcare technology company that maintains a large clinico-genomic database and provides genomic sequencing services. Tempus collects EHR data from healthcare systems, normalizes and harmonizes the data, links it with molecular genomic data, and uses AI agents and human experts to process unstructured clinical data.</p>
+<p>https://www.tempus.com/research/ https://www.tempus.com/tech-blog/The-Tempus-data-pipeline-architecting-the-future-of-precision-medicine/#overview</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-19-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-19-1" role="tab" aria-controls="tabset-19-1" aria-selected="true" href="">Who is included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-19-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-19-2" role="tab" aria-controls="tabset-19-2" aria-selected="false" href="">What data are included?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-19-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-19-3" role="tab" aria-controls="tabset-19-3" aria-selected="false" href="">How to access?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-19-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-19-1-tab">
+<p>The Tempus database includes deidentified patient records from healthcare systems.</p>
+<p>https://www.tempus.com/publications/comparison-of-demographics-and-clinical-characteristics-using-real-world-data-from-tempus-multimodal-database-and-seer-cancer-registry-across-17-solid-cancer-cohorts/</p>
+</div>
+<div id="tabset-19-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-19-2-tab">
+<p>Tempus includes the following data:</p>
+<ul>
+<li>Clinical data</li>
+<li>Clinical notes (unstructured)</li>
+<li>Genomic and molecular data
+<ul>
+<li>DNA sequencing</li>
+<li>RNA sequencing</li>
+</ul></li>
+<li>Imaging data</li>
+<li>Claims data</li>
+<li>Outcomes</li>
+</ul>
+<p>https://www.tempus.com/solutions/real-world-data/</p>
+</div>
+<div id="tabset-19-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-19-3-tab">
+<p>Tempus data are available to participating institutions. Tempus can be contacted <a href="https://www.tempus.com/solutions/tempus-plus/#contact">here</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="summary-4" class="level3" data-number="5.2.15">
+<h3 data-number="5.2.15" class="anchored" data-anchor-id="summary-4"><span class="header-section-number">5.2.15</span> Summary</h3>
+<p>Provide summary table comparing these resources</p>
+</section>
+</div>
+<div id="tabset-20-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-20-7-tab">
+<p>Provide overall summary of different data sources!</p>
+<p>Note that more data resources can be found in this <a href="https://jhudatascience.org/ITN_computing_resources/dataResourceTable.html">table</a>.</p>
+
+
+</div>
+</div>
+</div>
+</section>
+</section>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./01c-how_to_collect_data.html" class="pagination-link" aria-label="Clinical Study Design and Considerations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Clinical Study Design and Considerations</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./02-data_uses.html" class="pagination-link" aria-label="Clinical Data Uses">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Clinical Data Uses</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>This book was built with <a href="https://quarto.org/" style="color: #0000FF;">Quarto</a> using <a href="https://github.com/fhdsl/OTTR_Quarto" style="color: #0000FF;">OTTR</a>.</p>
+</div>   
+    <div class="nav-footer-center">
+<p>All illustrations <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0000FF;">CC-BY. </a> <br> All other materials <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0000FF;"> CC-BY </a> unless noted otherwise.</p>
+<div class="toc-actions"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/01d-how_to_acquire_data.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Clinical Study Design and Considerations – Clinical Data Management for Cancer Informatics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./01d-how_to_acquire_data.html" rel="next">
+<link href="./01b-specific_data_types.html" rel="prev">
+<link href="./assets/ITN_favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e2438b6c5eff994fcebf09a84868fa80.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="assets/style_ITN.css">
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Clinical Study Design and Considerations</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>In this chapter, we describe a variety of clinical study designs (distinguishing between a clinical trial and an observational study, and several common types of observational studies) and discuss several considerations for collecting data and conducting studies. We provide an in-depth description of case report forms and discuss possible types of bias in clinical studies.</p>
+<p>Throughout this chapter, we will use the word <strong>outcome</strong> to refer to the health-related effect that we would like to study, often the occurrence of a disease or condition. We use the term <strong>exposure</strong> to refer to a factor that may influence the outcome and that differs across groups being compared. An exposure may be a treatment, behavior, environmental factor, genetic characteristic, or demographic attribute. We use the term <strong>intervention</strong> to refer to an exposure that is deliberately assigned by researchers within a clinical trial. The goal of many clinical studies is to understand the relationship between an exposure or intervention and an outcome.</p>
+<section id="learning-objectives" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">4.1</span> Learning Objectives</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3f6d7b45ddf_0_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Learning Objectives: 1. Understand the major differences between clinical trials and observational studies, 2. List different types of observational studies and benefits and drawbacks of each design, 3. Describe best practices for designing case report forms, 4. Recognize potential biases in clinical data and how to combat biases through study design"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="types-of-clinical-studies" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="types-of-clinical-studies"><span class="header-section-number">4.2</span> Types of Clinical Studies</h2>
+<p>Clinical studies are major scientific initiatives in which researchers and clinicians collect data about groups of patients, typically organized around a specific treatment, exposure, or health outcome. The ability to analyze and interpret this data enables researchers to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.</p>
+<section id="clinical-trials" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="clinical-trials"><span class="header-section-number">4.2.1</span> Clinical Trials</h3>
+<p>Clinical trials are tightly regulated studies, controlling patient recruitment and monitoring the administration and impact of treatments or interventions <span class="citation" data-cites="What_are_clinical_trials_2023">(<a href="#ref-What_are_clinical_trials_2023" role="doc-biblioref"><span>“What Are Clinical Trials and Studies?”</span> 2023</a>)</span>.</p>
+<div class="dictionary">
+<p>The NIH’s definition of a clinical trial is “a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of those interventions on health-related biomedical or behavioral outcomes” <span class="citation" data-cites="CTDefinition">(<a href="#ref-CTDefinition" role="doc-biblioref"><span>“NIH’s Definition of a Clinical Trial,”</span> n.d.</a>)</span>.</p>
+</div>
+<p>In this definition, “prospectively assigned” refers to a “pre-defined process (e.g.&nbsp;randomization) specified in an approved protocol that stipulates the assignment of research subjects” in a clinical trial <span class="citation" data-cites="NIHClinicalTrialsProspectively">(<a href="#ref-NIHClinicalTrialsProspectively" role="doc-biblioref"><span>“NIH Clinical Trials,”</span> n.d.</a>)</span>.</p>
+<p>Key components of this definition that are necessary for a study to be classified as a clinical trial are:</p>
+<ul>
+<li>Human participants</li>
+<li>The prospective assignment of participants to an intervention</li>
+<li>The goal of evaluating the effects of the intervention</li>
+<li>A health-related biomedical or behavioral outcome</li>
+</ul>
+<p>The goals of clinical trials include:</p>
+<ul>
+<li>Assessing the safety and efficacy of new treatments or interventions</li>
+<li>Comparing new treatments or interventions to existing treatment options</li>
+<li>Determining the optimal dosage and administration of treatments or interventions</li>
+<li>Identifying potential side effects or adverse events</li>
+</ul>
+<p>Some of these objectives are evaluated through early phase trials, which often have a single-arm design and focus primarily on safety, tolerability, and preliminary evidence of effectiveness. These are typically followed by randomized controlled trials (RCTs), in which participants are randomized to either the treatment arm or a comparator arm, and the effectiveness of the new treatment is evaluated.</p>
+<p>Randomized clinical trials are often considered the gold standard for evaluating new clinical treatments or interventions because well-designed randomized trials can support causal conclusions about the effects of interventions on health outcomes. Like other types of scientific experiments, clinical trials are designed to test hypotheses about how changes in one variable, such as a treatment, affect another variable, such as a health outcome. Random assignment helps reduce the influence of confounding factors, making it easier to attribute observed differences in outcomes to the intervention being studied.</p>
+<p>Clinical trials can face ethical and feasibility challenges. A trial would not be ethical if an intervention exposed participants to unnecessary risks (for example, giving patients a high dose of a new drug before knowing if there are side effects) or if a trial withheld access to a treatment that is already known to be beneficial <span class="citation" data-cites="belmont1979">(<a href="#ref-belmont1979" role="doc-biblioref"><span>“The Belmont Report: Ethical Principles and Guidelines for the Protection of Human Subjects of Research”</span> 1979</a>)</span> <span class="citation" data-cites="alexander2022equipoise">(<a href="#ref-alexander2022equipoise" role="doc-biblioref">Alexander 2022</a>)</span>. It is not feasible to design a randomized study for a factor that can’t be manipulated with an intervention or treatment, such as genetic factors, sex at birth, or environmental and occupational exposures that occur naturally. In some cases, a trial might be ethical and feasible but too expensive to conduct. In these situations, an observational study may be conducted instead of a trial <span class="citation" data-cites="thiese2014observational">(<a href="#ref-thiese2014observational" role="doc-biblioref">Thiese 2014</a>)</span>.</p>
+</section>
+<section id="observational-studies" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="observational-studies"><span class="header-section-number">4.2.2</span> Observational Studies</h3>
+<p>In observational studies, participants are monitored and exposures and outcomes are measured, but there is no intervention or assignment of treatments <span class="citation" data-cites="kim2023overview">(<a href="#ref-kim2023overview" role="doc-biblioref">Kim 2023</a>)</span>. Observational studies are conducted in many situations, such as when a clinical trial is unethical or infeasible, when gathering preliminary evidence before conducting a clinical trial, or when studying the effect of an intervention or treatment in real world practice. There are several major observational study designs, each of which has strengths and drawbacks.</p>
+<section id="cross-sectional-study" class="level4" data-number="4.2.2.1">
+<h4 data-number="4.2.2.1" class="anchored" data-anchor-id="cross-sectional-study"><span class="header-section-number">4.2.2.1</span> Cross-sectional Study</h4>
+<p>In a cross-sectional study, data are collected at a specific point in time. Cross-sectional studies are often used to ask questions about the prevalence of an exposure or an outcome (typically a disease or condition) in a population at a specific time point <span class="citation" data-cites="mann2003observational">(<a href="#ref-mann2003observational" role="doc-biblioref">Mann 2003</a>)</span>. A cross-sectional study is conducted by measuring every individual in a population or a representative sample from a population. This design is primarily used to estimate the prevalence of an exposure or outcome in a population at a specific time. Because data are collected once and multiple exposures and outcomes can be measured simultaneously, this is a relatively inexpensive type of study, although costs rise as the population and sample size get larger <span class="citation" data-cites="lash2021modern">(<a href="#ref-lash2021modern" role="doc-biblioref">Lash et al. 2021</a>)</span>.</p>
+</section>
+<section id="cohort-study" class="level4" data-number="4.2.2.2">
+<h4 data-number="4.2.2.2" class="anchored" data-anchor-id="cohort-study"><span class="header-section-number">4.2.2.2</span> Cohort Study</h4>
+<p>A cohort study tracks a group of study participants across a time period and monitors which participants develop a specific outcome <span class="citation" data-cites="mann2003observational">(<a href="#ref-mann2003observational" role="doc-biblioref">Mann 2003</a>)</span>. Typically the cohort is identified and then followed over time to measure the outcome of interest, although in other cases the cohort is identified after the outcome has occurred and historical data are used to measure past exposures. Some studies include a single cohort, with one or multiple exposures measured at the beginning of the study. In other studies there are two (or more) cohorts, defined by exposure status. Cohort studies are often used to estimate the incidence of an outcome (the number of new cases in a population over a specific time period) and the association between exposure and outcome(s). An advantage of cohort studies is that they can be used to study multiple outcomes at once. When an outcome is rare a cohort study can be inefficient, because it will take a very large cohort to identify a large enough set of cases of that outcome to have adequate power. Additionally, cohort studies can be quite expensive when they follow a large number of participants over a long time period <span class="citation" data-cites="lash2021modern">(<a href="#ref-lash2021modern" role="doc-biblioref">Lash et al. 2021</a>)</span>.</p>
+</section>
+<section id="case-control-study" class="level4" data-number="4.2.2.3">
+<h4 data-number="4.2.2.3" class="anchored" data-anchor-id="case-control-study"><span class="header-section-number">4.2.2.3</span> Case-control Study</h4>
+<p>In case-control studies, a group of individuals who have a certain disease or condition are identified as cases, and are compared to a control group of individuals without the disease or condition <span class="citation" data-cites="mann2003observational">(<a href="#ref-mann2003observational" role="doc-biblioref">Mann 2003</a>)</span>. Case-control studies are typically retrospective, i.e.&nbsp;cases and controls are identified after the outcome has occurred or not, and their past exposure is retrospectively measured. Case-control studies are often more efficient and cost-effective when compared to cohort studies, because the number of cases can be pre-specified. This is particularly important for studies of rare diseases. Additionally, a single outcome can be studied in a case-control study (to define the cases and controls) but multiple exposures can be measured and studied. A case-control study can be conceptualized as a sample from a cohort study, in which we take all of the cases from a specific cohort but only a sample of controls <span class="citation" data-cites="lash2021modern">(<a href="#ref-lash2021modern" role="doc-biblioref">Lash et al. 2021</a>)</span>. Often, controls are selected to have similar distributions of potentially confounding characteristics, such as age and sex, as the cases. This selection process is referred to as matching.</p>
+</section>
+<section id="prospective-or-retrospective" class="level4" data-number="4.2.2.4">
+<h4 data-number="4.2.2.4" class="anchored" data-anchor-id="prospective-or-retrospective"><span class="header-section-number">4.2.2.4</span> Prospective or Retrospective?</h4>
+<p><strong>Prospective</strong> and <strong>retrospective</strong> are terms that are frequently used to describe observational studies. However, these terms are not always used consistently, and different researchers may use them to mean different things. In some contexts, prospective means that participants are enrolled before the outcome has occurred, while retrospective means that participants are enrolled after the outcome has occurred. In other contexts, prospective means that exposures are measured before outcomes occur, whereas retrospective means that data about past exposures are collected after outcomes have already been observed. Finally, some researchers use these terms to distinguish between studies that collect new data for a specific research purpose (prospective) and studies that analyze pre-existing data such as electronic health records or data from previous clinical studies (retrospective) <span class="citation" data-cites="lash2021modern">(<a href="#ref-lash2021modern" role="doc-biblioref">Lash et al. 2021</a>)</span>. Data that were collected originally for the purpose of another research study or for clinical documentation or administration but are then used for new research are more commonly referred to as <strong>secondary data</strong>.</p>
+<div class="warning">
+<p>Because the terms <strong>prospective</strong> and <strong>retrospective</strong> are used with multiple different meanings, readers should be careful to understand how these terms are being used in a particular context rather than assuming a single consistent definition.</p>
+</div>
+</section>
+</section>
+<section id="meta-analysis" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="meta-analysis"><span class="header-section-number">4.2.3</span> Meta-analysis</h3>
+<p>A meta-analysis is a type of study that synthesizes results from multiple studies investigating a common or related research question. By pooling information across studies, researchers can increase statistical power through larger sample sizes, leverage existing data, generate consensus results from a set of studies, and identify gaps or inconsistencies in existing research. However, the validity and interpretation of meta-analysis results depend heavily on the quality of the studies being pooled, as well as methodological decisions, including which studies are included and how information is combined <span class="citation" data-cites="schmid2020handbook">(<a href="#ref-schmid2020handbook" role="doc-biblioref">Schmid, Stijnen, and White 2020</a>)</span>.</p>
+<p>Conducting a meta-analysis starts with defining the topic and scope, and formulating testable research questions. A set of inclusion and exclusion criteria is established to determine which studies are eligible for review. These criteria often address characteristics such as the participant population, interventions or exposures, outcomes, and study designs. Differences across studies in these factors should be carefully evaluated, as heterogeneity can impact the interpretation and generalizability of results. To increase transparency and reduce the risk of bias in the review process, meta-analyses can be prospectively registered in study registries <span class="citation" data-cites="pieper2022prospectively">(<a href="#ref-pieper2022prospectively" role="doc-biblioref">Pieper and Rombey 2022</a>)</span>. This helps promote adherence to a pre-specified protocol and can also facilitate collaboration among groups working on similar studies.</p>
+<p>A major component of a meta-analysis is a systematic literature review to identify relevant studies that meet the inclusion criteria. Once a set of studies is determined, statistical analyses are performed either to summarize aggregated outcomes and results across studies. Meta-analyses benefit from sensitivity analyses, which evaluate how robust results are to alternative analytical choices or the inclusion or exclusion of specific studies.</p>
+<p>A mega-analysis, often referred to as an individual participant or patient data meta-analysis, takes a similar approach to a traditional meta-analysis but pools participant-level data from multiple comparable studies instead of combining reported study-level results. This approach requires access to the raw data from the included studies, which may limit the number of constituent studies, and often involves additional effort to harmonize variables and data across studies. However, it allows researchers to analyze all data consistently while providing flexibility in the specific questions asked and the statistical methods used to answer them <span class="citation" data-cites="eisenhauer2021meta">(<a href="#ref-eisenhauer2021meta" role="doc-biblioref">Eisenhauer 2021</a>)</span>.</p>
+</section>
+</section>
+<section id="considerations-for-designing-studies" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="considerations-for-designing-studies"><span class="header-section-number">4.3</span> Considerations for Designing Studies</h2>
+<p>There are several factors to consider when designing studies. In this section, we will focus on designing case report forms and on identifying and reducing sources of bias in clinical studies.</p>
+<section id="case-report-forms-crfs" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="case-report-forms-crfs"><span class="header-section-number">4.3.1</span> Case Report Forms (CRFs)</h3>
+<p>In clinical research, case report forms (CRFs) are essential tools for collecting standardized data from study participants or about patients. Note that case report forms are any paper or electronic form that will be filled in at the participant level by participants or clinical team members. By that definition, even a consent form is a case report form! And each clinical study may utilize multiple CRFs (e.g., one for consent, another for medical history, another for reporting any adverse effects). CRFs are useful for several tasks already discussed within this chapter – specifically, documenting adverse events or outcomes or recording demographics and medical history for identifying cohorts. CRFs are also useful for topics this chapter will discuss in later sections (e.g., Retrospective analyses).</p>
+<p>Designing CRFs that are sensitive to the different needs of researchers requires careful consideration. Questions within CRFs should be formulated to gather comprehensive and accurate clinical data. CRFs are often filled out by clinical staff using information from EHR data. In rarer cases, CRFs may be patient/participant-facing. Special care should be taken with these CRFs to ensure that participants feel safe, respected, and comfortable. This section explores the types of questions that can be asked using CRFs with a focus on <strong>accessibility, sensitivity, specificity, and comfort for people.</strong></p>
+<div class="notice">
+<p>While within a study CRFs help to ensure standardization in data collection, there may be a lack of standardization when comparing data between studies if each study did not use the same CRFs or comparable/subsets of questions within forms. This section will provide guidelines for types of questions that may be found within CRFs and writing these questions. Your specific study needs may also require different or additional types of questions – the guidelines within this section are not exhaustive nor all-encompassing of what may be encountered within the field. Researchers may also benefit from established standards for CRF development, such as the Clinical Data Acquisition Standards Harmonization (CDASH), which provides a consistent way to collect data with CRFs across studies <a href="https://www.cdisc.org/standards/foundational/cdash"><span class="citation" data-cites="cdash"><span>“CDASH”</span> (<span>n.d.</span>)</span></a>.</p>
+</div>
+<p>Different categories of questions that may be included within case report forms include:</p>
+<ol type="1">
+<li>Demographic and Socioeconomic Questions</li>
+<li>Health and Medical History Questions</li>
+<li>Experience and Quality of Life Questions</li>
+<li>Sexual and Reproductive Health Questions</li>
+<li>Treatment Preferences and Decision-Making Questions</li>
+<li>Accessibility and Accommodation Needs Questions</li>
+<li>Cultural Sensitivity and Identity Questions</li>
+<li>Comfort, Trust, and Privacy Questions</li>
+</ol>
+<details>
+<summary>
+Click here for additional considerations for patient/participant facing CRFs.
+</summary>
+<div class="warning">
+<p>Although the following recommendations may help your research team write more respectful and responsive CRFs, it is essential to always have an Internal Review Board (IRB) or other institutional ethics review committee perform an ethical review or your final forms for appropriateness and ethical consideration.</p>
+</div>
+<ol type="1">
+<li><strong>Demographic and Socioeconomic Questions</strong></li>
+</ol>
+<p>Capturing demographic and socioeconomic data is fundamental in clinical research to understand the background of study participants. However, these questions must be asked in a manner that respects privacy, avoids assumptions, and helps identify people with different life experiences. It’s also good practice for patient/participant facing CRFs to respect privacy and include options allowing the participants to leave the question unanswered, respond with “prefer not to answer”, or fill in their own answer.</p>
+<ul>
+<li><strong>Sex and Gender</strong>: When asking about gender and sex include an option of “prefer to self-describe” to capture more information.</li>
+<li><strong>Ethnicity and Race</strong>: Ethnicity and race questions should be specific and use respectful language. Allowing participants to self-identify rather than select from a predefined list can help capture more specific information.</li>
+<li><strong>Socioeconomic Status</strong>: Questions about employment, income, or education should be framed to capture social determinants of health without making participants feel judged. For example, asking, “What is your current employment status?” with choices that include full-time, part-time, unemployed, student, and unable to work can help gather relevant data without stigma.</li>
+</ul>
+<p>It is essential to use neutral, non-judgmental language and to explain why these questions are being asked, ensuring participants understand the relevance of their responses.</p>
+<ol start="2" type="1">
+<li><strong>Health and Medical History Questions</strong></li>
+</ol>
+<p>Health and medical history questions provide critical information about baseline conditions and potential risk factors of participants. These questions should be framed clearly and respectfully to avoid any discomfort.</p>
+<ul>
+<li><strong>Medical Conditions and History</strong>: Questions about past and present health conditions should use clear, accessible language. For example, “Have you ever been diagnosed with any of the following conditions? (Please check all that apply)” followed by a comprehensive list containing all necessary options.</li>
+<li><strong>Medication Use</strong>: Questions about current and past medications should include over-the-counter and alternative therapies, and space should be provided for free-text responses to capture additional details.</li>
+<li><strong>Disability and Functional Status</strong>: For many populations, it is important to use person-first language, such as “Do you have any physical, sensory, or cognitive impairments that you would like us to be aware of?” and provide space for participants to describe their specific needs. However, different populations have different preferences. The “Disability Language Style Guide” from the National Center on Disability and Journalism provides some basic guidelines, thorough discussion, and community specific advice on this topic <span class="citation" data-cites="ncdj_style_guide">(<a href="#ref-ncdj_style_guide" role="doc-biblioref"><span>“Disability Language Style Guide”</span> 2021</a>)</span>.</li>
+</ul>
+<p>Avoiding medical jargon and providing definitions or examples can help ensure that participants understand the questions, and confidentiality should be emphasized to encourage honest responses.</p>
+<ol start="3" type="1">
+<li><strong>Experience and Quality of Life Questions</strong></li>
+</ol>
+<p>Understanding how health conditions and treatments affect participants’ daily lives and well-being is essential, particularly for those who may experience unique challenges.</p>
+<ul>
+<li><strong>Daily Living and Social Functioning</strong>: Questions like “How often do your health conditions affect your ability to perform daily tasks (e.g., cooking, cleaning, working)?” can help assess the impact on daily life, with options ranging from “never” to “always.”</li>
+<li><strong>Emotional and Psychological Well-Being</strong>: Including questions such as “In the past week, how often have you felt anxious or depressed?” using a scale from “not at all” to “very often” can provide insights into mental health needs.</li>
+<li><strong>Support Systems and Social Networks</strong>: Asking about social support (e.g., “Do you have someone you can rely on for emotional support?”) can help identify participants’ needs for social and emotional resources.</li>
+</ul>
+<p>Using sensitive language and providing mental health support resources where needed is crucial when discussing emotional well-being to avoid triggering emotional distress.</p>
+<ol start="4" type="1">
+<li><strong>Sexual and Reproductive Health Questions</strong></li>
+</ol>
+<p>Questions about sexual and reproductive health must be asked with sensitivity, as they can be deeply personal, particularly for groups who may face stigma.</p>
+<ul>
+<li><strong>Reproductive Health</strong>: Questions about menstrual health, contraception, or pregnancy should be framed neutrally. For example, “Are you currently using any form of contraception? If yes, please specify.”</li>
+<li><strong>Sexual Activity and History</strong>: Questions should be direct but framed sensitively, such as “Are there any sexual health concerns you would like to discuss? Your answers will help us understand how to better support your care needs.”</li>
+</ul>
+<p>These questions should always be optional, with confidentiality emphasized to encourage honest, comfortable participation.</p>
+<ol start="5" type="1">
+<li><strong>Treatment Preferences and Decision-Making Questions</strong></li>
+</ol>
+<p>Understanding participants’ preferences for treatment and decision-making is vital for providing patient-centered care, especially for certain groups of people.</p>
+<ul>
+<li><strong>Decision-Making Preferences</strong>: Questions like “How involved would you like to be in decisions about your healthcare?” offer a range of choices from “I prefer to make decisions myself” to “I prefer my healthcare provider to make decisions,” allowing participants to express their autonomy.</li>
+<li><strong>Cultural and Religious Considerations</strong>: Asking, “Are there any cultural, religious, or personal beliefs that we should consider when discussing treatment options with you?” ensures that care is respectful and culturally appropriate.</li>
+<li><strong>Treatment Burden</strong>: Questions such as “What level of inconvenience or side effects would be acceptable to you when considering a treatment?” help to gauge participants’ preferences and comfort levels.</li>
+</ul>
+<p>These questions should be framed to respect participants’ autonomy and encourage honest responses without fear of judgment.</p>
+<ol start="6" type="1">
+<li><strong>Accessibility and Accommodation Needs Questions</strong></li>
+</ol>
+<p>To ensure that all participants can fully engage with the study, it is essential to ask about accessibility and accommodation needs.</p>
+<ul>
+<li><strong>Language and Communication Needs</strong>: “What is your preferred language for communication? Do you need an interpreter or translated materials?” These questions help ensure that participants can understand the materials. This requires the researcher to make translated materials available, which will require additional time and effort, including validation that the materials are appropriately translated to allow for collection of comparable data. PROMIS is a great resource for this (https://www.promishealth.org/promis-translations/).</li>
+<li><strong>Physical Accessibility</strong>: Asking, “Do you require any specific accommodations to participate in this study (e.g., wheelchair access, hearing aids, visual aids)?” ensures physical accessibility.</li>
+<li><strong>Format Preferences</strong>: “Would you prefer to complete this form online, on paper, or verbally with assistance?” helps accommodate different needs and preferences. Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs where possible.</li>
+</ul>
+<p>Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs.</p>
+<ol start="7" type="1">
+<li><strong>Cultural Sensitivity and Identity Questions</strong></li>
+</ol>
+<p>CRFs should respect different cultural backgrounds, values, and identities without perpetuating assumptions.</p>
+<ul>
+<li><strong>Cultural Identity and Practices</strong>: An open-ended question such as “Are there any cultural practices or beliefs that are important for us to be aware of in your care?” allows participants to share relevant information.</li>
+<li><strong>Dietary Restrictions and Preferences</strong>: Asking, “Do you have any dietary restrictions or preferences that are culturally or religiously motivated?” ensures that these are respected.</li>
+<li><strong>Community and Belonging</strong>: “Is there anything about your community or background that you would like us to know to provide better care?” encourages participants to share relevant aspects of their identity.</li>
+</ul>
+<p>These questions should be open-ended, allowing participants to skip questions they find irrelevant or uncomfortable.</p>
+<ol start="8" type="1">
+<li><strong>Ensuring Comfort, Trust, and Privacy Questions</strong></li>
+</ol>
+<p>Fostering a sense of safety and trust is especially important for individuals who may have experienced discrimination in healthcare settings.</p>
+<ul>
+<li><strong>Comfort and Confidentiality</strong>: Asking, “Do you feel comfortable with the way your information is being collected and stored? Are there any specific concerns you would like to address?” helps build trust.</li>
+<li><strong>Feedback and Preferences</strong>: “Is there anything about this form or the study process that you find confusing, uncomfortable, or concerning?” invites participants to share their feedback.</li>
+<li><strong>Consent and Voluntary Participation</strong>: Questions like, “Would you like to be contacted about the results of this study or for future research opportunities? Participation is entirely voluntary.” reinforce autonomy and respect.</li>
+</ul>
+<p>Reminding participants of the confidentiality and voluntary nature of their involvement can help foster a trusting environment.</p>
+<div class="warning">
+<p>The guidelines above sometimes suggest use of open-ended questions where participants would provide free-text responses rather than selecting pre-defined categories. This will require researchers to process those free-text responses and may decrease the overall standardization.</p>
+</div>
+<p>Designing specific and sensitive CRFs for clinical studies requires a thoughtful approach that captures the different backgrounds of all participants. By using accessible language, offering multiple options, respecting autonomy, and providing a safe space for participants to express themselves, researchers can gather meaningful and accurate data while ensuring participants feel valued and respected. These considerations are vital to fostering clinical research that captures enough information about a wide variety of individuals. Case report forms (CRFs) are often tailored to specific studies and may vary widely in structure and content, lacking standardization across different projects. Despite this, certain themes are commonly expected in CRFs, including sections on participant demographics, medical history, treatment outcomes, patient’s feelings about side effects, and adverse events, ensuring essential data collection across a variety of study designs. By thoughtfully addressing both unique study requirements and universally relevant data points, researchers can optimize CRFs for consistency across clinical studies.</p>
+</details>
+</section>
+<section id="potential-data-distortions-in-clinical-studies" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="potential-data-distortions-in-clinical-studies"><span class="header-section-number">4.3.2</span> Potential Data Distortions in Clinical Studies</h3>
+<p>Researchers need to consider how data representativeness and other data distortions may affect their study and results in all stages of clinical study development, especially when designing the study.</p>
+<p>Overall, cancer research has historically relied on data from high resource academic medical centers, which are often located in cities and disproportionately provide care to patients with certain demographics such as those that have higher incomes, and those who live in urban areas. As a result, medical knowledge produced from these data tend to be more generalizable to other patients of similar demographics and the knowledge is not necessarily generalizable to other different populations.</p>
+<p>Such challenges include:</p>
+<ul>
+<li><em>Information representativeness distortion</em> occurs when certain groups are less present in the clinical data (particularly EHR data) because they have little or no contact with the healthcare system.</li>
+<li><em>Information presence distortion</em>, on the other hand, occurs when certain groups may be represented in clinical data, but have less comprehensive healthcare data due to issues such as lack of a primary care provider, lack of access to specialty care, and lack of access to digital resources (e.g., patient portals, home sensors, telehealth) that can be used to provide healthcare data.</li>
+<li><em>Treatment distortions</em> happen when certain groups receive more access to more advanced treatments, which is often determined by social drivers such as insurance, distance, and health literacy.</li>
+<li><em>Algorithm distortion</em> further amplifies these previous challenges by leveraging distorted clinical data to make predictions about diagnosis, treatment, and prognosis that may only work optimally for some populations but may be used by clinicians to make healthcare decisions for broader populations.</li>
+</ul>
+<p>Recent advances in sophisticated and costly technology such as genetic testing, artificial intelligence, and digital health are more available in high resource healthcare systems further compounding these challenges. Therefore, cancer researchers increasingly need to use intentional methods to prevent, identify, and correct for such challenges with clinical data. For example, the National Institutes of Health Pragmatic Trials Collaboratory has made several recommendations <span class="citation" data-cites="BoydCCT2023 BoydJAMIA2023">(<a href="#ref-BoydCCT2023" role="doc-biblioref">Andrew D. Boyd et al. 2023a</a>; <a href="#ref-BoydJAMIA2023" role="doc-biblioref">Andrew D. Boyd et al. 2023b</a>)</span>:</p>
+<ul>
+<li>Include data from low resource healthcare settings such as community health centers that provide care for patients who tend to have lower incomes and or live in inner city or rural areas.</li>
+<li>Engage with communities during study design and study conduct to ensure proper data collection, analysis, and representation.</li>
+<li>Use data collection methods for self-reported data that rely on more accessible technology such as text messaging, using accessible and culturally adapted communication.</li>
+<li>Include subgroup analysis by different demographic groups.</li>
+</ul>
+</section>
+</section>
+<section id="summary" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.4</span> Summary</h2>
+<p>A substantial proportion of clinical data is generated through clinical studies, making careful study design essential for producing reliable and meaningful evidence. Clinical studies can be broadly classified as either clinical trials or observational studies. In clinical trials, researchers prospectively assign participants to interventions and evaluate their effects on outcomes of interest. In observational studies, researchers examine associations between naturally occurring exposures and outcomes. Common observational study designs include cross-sectional, cohort, and case-control studies. Researchers may also conduct meta-analyses to synthesize findings across multiple studies. Beyond selecting an appropriate study design, researchers must consider several factors that influence data quality, including the development of standardized and comprehensive case report forms and the mitigation of common sources of data distortion that can compromise the validity and generalizability of study results.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-alexander2022equipoise" class="csl-entry" role="listitem">
+Alexander, John H. 2022. <span>“Equipoise in Clinical Trials: Enough Uncertainty in Whose Opinion?”</span> <em>Circulation</em> 145 (13): 943–45.
+</div>
+<div id="ref-BoydCCT2023" class="csl-entry" role="listitem">
+Boyd, Andrew D., Rosa Gonzalez-Guarda, Katharine Lawrence, Crystal L. Patil, Miriam O. Ezenwa, Emily C. O’Brien, Hyung Paek, et al. 2023a. <span>“Equity and Bias in Electronic Health Records Data.”</span> <em>Contemporary Clinical Trials</em> 130 (July): 107238. <a href="https://doi.org/10.1016/j.cct.2023.107238">https://doi.org/10.1016/j.cct.2023.107238</a>.
+</div>
+<div id="ref-BoydJAMIA2023" class="csl-entry" role="listitem">
+Boyd, Andrew D, Rosa Gonzalez-Guarda, Katharine Lawrence, Crystal L Patil, Miriam O Ezenwa, Emily C O’Brien, Hyung Paek, et al. 2023b. <span>“Potential Bias and Lack of Generalizability in Electronic Health Record Data: Reflections on Health Equity from the National Institutes of Health Pragmatic Trials Collaboratory.”</span> <em>Journal of the American Medical Informatics Association</em> 30 (9): 1561–66. <a href="https://doi.org/10.1093/jamia/ocad115">https://doi.org/10.1093/jamia/ocad115</a>.
+</div>
+<div id="ref-cdash" class="csl-entry" role="listitem">
+<span>“CDASH.”</span> n.d. <span>Clinical Data Interchange Standards Consortium</span>. Accessed August 27, 2026. <a href="https://www.cdisc.org/standards/foundational/cdash">https://www.cdisc.org/standards/foundational/cdash</a>.
+</div>
+<div id="ref-ncdj_style_guide" class="csl-entry" role="listitem">
+<span>“Disability Language Style Guide.”</span> 2021. <em>National Center on Disability and Journalism</em>. <a href="https://ncdj.org/style-guide/">https://ncdj.org/style-guide/</a>.
+</div>
+<div id="ref-eisenhauer2021meta" class="csl-entry" role="listitem">
+Eisenhauer, Joseph G. 2021. <span>“Meta-Analysis and Mega-Analysis: A Simple Introduction.”</span> <em>Teaching Statistics</em> 43 (1): 21–27.
+</div>
+<div id="ref-kim2023overview" class="csl-entry" role="listitem">
+Kim, Seonwoo. 2023. <span>“Overview of Clinical Study Designs.”</span> <em>Clinical and Experimental Emergency Medicine</em> 11 (1): 33.
+</div>
+<div id="ref-lash2021modern" class="csl-entry" role="listitem">
+Lash, Timothy L., Tyler J. VanderWeele, Sebastien Haneuse, and Kenneth J. Rothman. 2021. <em>Modern Epidemiology</em>. 4th ed. Philadelphia, PA: Wolters Kluwer.
+</div>
+<div id="ref-mann2003observational" class="csl-entry" role="listitem">
+Mann, CJ. 2003. <span>“Observational Research Methods. Research Design II: Cohort, Cross Sectional, and Case-Control Studies.”</span> <em>Emergency Medicine Journal</em> 20 (1): 54–60.
+</div>
+<div id="ref-NIHClinicalTrialsProspectively" class="csl-entry" role="listitem">
+<span>“NIH Clinical Trials.”</span> n.d. <em>Division of Research at Brown University</em>. <a href="https://division-research.brown.edu/research-cycle/proposal/agency-specific/nih/clinical-trials">https://division-research.brown.edu/research-cycle/proposal/agency-specific/nih/clinical-trials</a>.
+</div>
+<div id="ref-CTDefinition" class="csl-entry" role="listitem">
+<span>“NIH’s Definition of a Clinical Trial.”</span> n.d. <a href="https://grants.nih.gov/policy-and-compliance/policy-topics/clinical-trials/definition">https://grants.nih.gov/policy-and-compliance/policy-topics/clinical-trials/definition</a>.
+</div>
+<div id="ref-pieper2022prospectively" class="csl-entry" role="listitem">
+Pieper, Dawid, and Tanja Rombey. 2022. <span>“Where to Prospectively Register a Systematic Review.”</span> <em>Systematic Reviews</em> 11 (1): 8.
+</div>
+<div id="ref-schmid2020handbook" class="csl-entry" role="listitem">
+Schmid, Christopher H, Theo Stijnen, and Ian White. 2020. <em>Handbook of Meta-Analysis</em>. CRC Press.
+</div>
+<div id="ref-belmont1979" class="csl-entry" role="listitem">
+<span>“The Belmont Report: Ethical Principles and Guidelines for the Protection of Human Subjects of Research.”</span> 1979. National Commission for the Protection of Human Subjects of Biomedical; Behavioral Research. <a href="https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html">https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html</a>.
+</div>
+<div id="ref-thiese2014observational" class="csl-entry" role="listitem">
+Thiese, Matthew S. 2014. <span>“Observational and Interventional Study Design Types; an Overview.”</span> <em>Biochemia Medica</em> 24 (2): 199–210.
+</div>
+<div id="ref-What_are_clinical_trials_2023" class="csl-entry" role="listitem">
+<span>“What Are Clinical Trials and Studies?”</span> 2023. <em>National Institute on Aging</em>. <a href="https://www.nia.nih.gov/health/clinical-trials-and-studies/what-are-clinical-trials-and-studies">https://www.nia.nih.gov/health/clinical-trials-and-studies/what-are-clinical-trials-and-studies</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./01b-specific_data_types.html" class="pagination-link" aria-label="Specific Clinical Data Types">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Specific Clinical Data Types</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./01d-how_to_acquire_data.html" class="pagination-link" aria-label="How to Acquire Clinical Data">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">How to Acquire Clinical Data</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>This book was built with <a href="https://quarto.org/" style="color: #0000FF;">Quarto</a> using <a href="https://github.com/fhdsl/OTTR_Quarto" style="color: #0000FF;">OTTR</a>.</p>
+</div>   
+    <div class="nav-footer-center">
+<p>All illustrations <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0000FF;">CC-BY. </a> <br> All other materials <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0000FF;"> CC-BY </a> unless noted otherwise.</p>
+<div class="toc-actions"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/01c-how_to_collect_data.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
