@@ -15,8 +15,6 @@ Clinical data is health-related information collected from patients throughout t
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g3385bea4ad0_0_30" )
 ```
 
-
-
 ## Clinical data is unique
 
 Clinical data refers to information __collected from patients__ during healthcare delivery, clinical trials, and medical research. Clinical data comes from a wide variety of sources and as such, requires careful consideration when designing, collecting, and analyzing this data. Unlike domains such as Finance or other areas in the sciences which predominantly use structured data with predictable and consistent formats, clinical data is often heterogeneous, integrating many forms of both structured and unstructured data: quantitative measurements, categorical data, genotyping, images, subjective narratives from patient notes, and objective observations or conclusions. The unstructured nature of free text from notes reflecting subjective patient experiences or qualitative insights from healthcare professionals especially adds a further layer of complexity. Furthermore, the contrast between patient and doctor notes reflects the dual perspectives of symptoms and formal diagnoses. In essence, clinical data's unique blend of structured and unstructured components, along with its multidisciplinary nature, necessitates specialized methodologies for comprehensive analysis and interpretation in the realm of healthcare. Further, because clinical data contains sensitive, personal information about patients, there are additional security and ethics concerns in the handling and management of clinical data.
@@ -68,6 +66,8 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0Ge
 ```
 
 
-When used in EHR research, both structured data and clinical notes are generally de-identified to protect patient privacy. Patient ID numbers might be replaced with new identifiers, with linkages maintained by institutional “honest brokers” [@Dhir2008] charged with providing clinical data for research purposes. In some cases, dates may be changed as well. Clinical notes are generally “de-identified” through specialized software designed to remove names, dates, locations, and other sensitive details. Researchers working with institutions to access clinical data should be sure to understand local data de-identification practices.
+When used in EHR research, both structured data and clinical notes are generally de-identified to protect patient privacy. Patient ID numbers might be replaced with new identifiers, with linkages maintained by institutional "honest brokers" [@Dhir2008] charged with providing clinical data for research purposes. In some cases, dates may be changed as well. Clinical notes are generally “de-identified” through specialized software designed to remove names, dates, locations, and other sensitive details. Researchers working with institutions to access clinical data should be sure to understand local data de-identification practices.
 
 ## Summary
+
+Clinical data are data collected from patients during healthcare delivery, clinical trials, and other medical research. Clinical data are unique because they are heterogeneous, with many different sources and structures. Clinical data include patient demographics, medical records, images, clinician notes, case report forms, and many other types of data. These data can generally be split into two categories: structured data, which are stored in tabular form, and unstructured data, which are typically stored in text files and do not have a specific format. 
