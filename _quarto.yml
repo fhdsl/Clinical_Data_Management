@@ -12,7 +12,7 @@ book:
   repo-url: https://hutchdatascience.org/Clinical_Data_Management/
   repo-actions: [edit]
   issue-url: https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform
-  google-analytics: "G-XXXXXXXXXX"
+  google-analytics: "G-931MJ5476Z"
 
   chapters:
     - index.qmd
