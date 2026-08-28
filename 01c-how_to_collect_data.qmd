@@ -192,7 +192,7 @@ Designing specific and sensitive CRFs for clinical studies requires a thoughtful
 
 </details>
 
-### Potential Biases in Clinical Studies
+### Potential Data Distortions in Clinical Studies
 
 Researchers need to consider how data representativeness and other data distortions may affect their study and results in all stages of clinical study development, especially when designing the study. 
 
