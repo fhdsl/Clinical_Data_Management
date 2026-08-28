@@ -29,7 +29,7 @@ Methods for finding patterns when combining different kinds of data together, as
 
 ## Omic Data
 
-Omic data such as genetic or protein information about patients can also be combined with clinical data to enhance research. Examples include polygeneic risk scores using single nucleotide polymorphisms https://pmc.ncbi.nlm.nih.gov/articles/PMC4157459/, methylation risk scores using DNA methylation data, transcriptomic data (or data about the expression of RNAs),  and more recently evaluation of microbiome data and proteomic data https://pmc.ncbi.nlm.nih.gov/articles/PMC11682975/ . 
+Omic data such as genetic or protein information about patients can also be combined with clinical data to enhance research. Examples include polygenic risk scores using single nucleotide polymorphisms https://pmc.ncbi.nlm.nih.gov/articles/PMC4157459/, methylation risk scores using DNA methylation data, transcriptomic data (or data about the expression of RNAs),  and more recently evaluation of microbiome data and proteomic data https://pmc.ncbi.nlm.nih.gov/articles/PMC11682975/ . 
 
 ## Physiological Data
 
