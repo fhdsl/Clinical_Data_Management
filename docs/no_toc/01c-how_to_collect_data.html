@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; How to Collect Clinical Data – Clinical Data Management for Cancer Informatics</title>
+<title>4&nbsp; Clinical Study Design and Considerations – Clinical Data Management for Cancer Informatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,7 +118,7 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">How to Collect Clinical Data</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Clinical Study Design and Considerations</span></h1>
 </div>
 
 
@@ -135,29 +135,119 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
 </header>
 
 
+<p>In this chapter, we describe a variety of clinical study designs (distinguishing between a clinical trial and an observational study, and several common types of observational studies) and discuss several considerations for collecting data and conducting studies. We provide an in-depth description of case report forms and discuss possible types of bias in clinical studies.</p>
+<p>Throughout this chapter, we will use the word <strong>outcome</strong> to refer to the health-related effect that we would like to study, often the occurrence of a disease or condition. We use the term <strong>exposure</strong> to refer to a factor that may influence the outcome and that differs across groups being compared. An exposure may be a treatment, behavior, environmental factor, genetic characteristic, or demographic attribute. We use the term <strong>intervention</strong> to refer to an exposure that is deliberately assigned by researchers within a clinical trial. The goal of many clinical studies is to understand the relationship between an exposure or intervention and an outcome.</p>
 <section id="learning-objectives" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">4.1</span> Learning Objectives</h2>
-</section>
-<section id="case-report-forms-crfs" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="case-report-forms-crfs"><span class="header-section-number">4.2</span> Case Report Forms (CRFs)</h2>
-<p>In clinical research, case report forms (CRFs) are essential tools for collecting standardized data from study participants. Note that case report forms are any paper or form that will be filled in at the case or participant level. By that definition, even a consent form is a case report form! And each clinical study may utilize multiple CRFs (e.g., one for consent, another for medical history, another for reporting any adverse effects). CRFs are useful for several tasks already discussed within this chapter – specifically, tracking adverse events or outcomes (like those discussed in the Risk Prediction section) or tracking demographics and medical history for identifying cohorts (as discussed in the Cohort Identification section). CRFs are also useful for topics this chapter will discuss in later sections (e.g., Retrospective analyses).</p>
-<p>Designing CRFs that are accessible and sensitive to the different needs of participants requires careful consideration. Questions within CRFs should be formulated to gather comprehensive and accurate clinical data while ensuring participants feel safe, respected, and comfortable. This section explores the types of questions that can be asked using CRFs with a focus on <strong>accessibility, sensitivity, specificity, and comfort for people</strong></p>
-<div class="notice">
-<p>While within a study, CRFs help to ensure standardization in data collection, there may be a lack of standardization when comparing data between studies if each study did not use the same CRFs or comparable/subsets of questions within forms. This section will provide guidelines for types of questions that may be found within CRFs and writing these questions; however, there aren’t necessarily templates that have been used widely within the field. Further, your specific study needs may also require different or additional types of questions – the guidelines within this section are not exhaustive/all-encompassing of what may be encountered within the field.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3f6d7b45ddf_0_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Learning Objectives: 1. Understand the major differences between clinical trials and observational studies, 2. List different types of observational studies and benefits and drawbacks of each design, 3. Describe best practices for designing case report forms, 4. Recognize potential biases in clinical data and how to combat biases through study design"></p>
+</figure>
 </div>
-<p>Here, we explore the different categories of questions that may be included within case report forms:</p>
+</div>
+</div>
+</section>
+<section id="types-of-clinical-studies" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="types-of-clinical-studies"><span class="header-section-number">4.2</span> Types of Clinical Studies</h2>
+<p>Clinical studies are major scientific initiatives in which researchers and clinicians collect data about groups of patients, typically organized around a specific treatment, exposure, or health outcome. The ability to analyze and interpret this data enables researchers to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.</p>
+<section id="clinical-trials" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="clinical-trials"><span class="header-section-number">4.2.1</span> Clinical Trials</h3>
+<p>Clinical trials are tightly regulated studies, controlling patient recruitment and monitoring the administration and impact of treatments or interventions <span class="citation" data-cites="What_are_clinical_trials_2023">(<a href="#ref-What_are_clinical_trials_2023" role="doc-biblioref"><span>“What Are Clinical Trials and Studies?”</span> 2023</a>)</span>.</p>
+<div class="dictionary">
+<p>The NIH’s definition of a clinical trial is “a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of those interventions on health-related biomedical or behavioral outcomes” <span class="citation" data-cites="CTDefinition">(<a href="#ref-CTDefinition" role="doc-biblioref"><span>“NIH’s Definition of a Clinical Trial,”</span> n.d.</a>)</span>.</p>
+</div>
+<p>In this definition, “prospectively assigned” refers to a “pre-defined process (e.g.&nbsp;randomization) specified in an approved protocol that stipulates the assignment of research subjects” in a clinical trial <span class="citation" data-cites="NIHClinicalTrialsProspectively">(<a href="#ref-NIHClinicalTrialsProspectively" role="doc-biblioref"><span>“NIH Clinical Trials,”</span> n.d.</a>)</span>.</p>
+<p>Key components of this definition that are necessary for a study to be classified as a clinical trial are:</p>
+<ul>
+<li>Human participants</li>
+<li>The prospective assignment of participants to an intervention</li>
+<li>The goal of evaluating the effects of the intervention</li>
+<li>A health-related biomedical or behavioral outcome</li>
+</ul>
+<p>The goals of clinical trials include:</p>
+<ul>
+<li>Assessing the safety and efficacy of new treatments or interventions</li>
+<li>Comparing new treatments or interventions to existing treatment options</li>
+<li>Determining the optimal dosage and administration of treatments or interventions</li>
+<li>Identifying potential side effects or adverse events</li>
+</ul>
+<p>Some of these objectives are evaluated through early phase trials, which often have a single-arm design and focus primarily on safety, tolerability, and preliminary evidence of effectiveness. These are typically followed by randomized controlled trials (RCTs), in which participants are randomized to either the treatment arm or a comparator arm, and the effectiveness of the new treatment is evaluated.</p>
+<p>Randomized clinical trials are often considered the gold standard for evaluating new clinical treatments or interventions because well-designed randomized trials can support causal conclusions about the effects of interventions on health outcomes. Like other types of scientific experiments, clinical trials are designed to test hypotheses about how changes in one variable, such as a treatment, affect another variable, such as a health outcome. Random assignment helps reduce the influence of confounding factors, making it easier to attribute observed differences in outcomes to the intervention being studied.</p>
+<p>Clinical trials can face ethical and feasibility challenges. A trial would not be ethical if an intervention exposed participants to unnecessary risks (for example, giving patients a high dose of a new drug before knowing if there are side effects) or if a trial withheld access to a treatment that is already known to be beneficial <span class="citation" data-cites="belmont1979">(<a href="#ref-belmont1979" role="doc-biblioref"><span>“The Belmont Report: Ethical Principles and Guidelines for the Protection of Human Subjects of Research”</span> 1979</a>)</span> <span class="citation" data-cites="alexander2022equipoise">(<a href="#ref-alexander2022equipoise" role="doc-biblioref">Alexander 2022</a>)</span>. It is not feasible to design a randomized study for a factor that can’t be manipulated with an intervention or treatment, such as genetic factors, sex at birth, or environmental and occupational exposures that occur naturally. In some cases, a trial might be ethical and feasible but too expensive to conduct. In these situations, an observational study may be conducted instead of a trial <span class="citation" data-cites="thiese2014observational">(<a href="#ref-thiese2014observational" role="doc-biblioref">Thiese 2014</a>)</span>.</p>
+</section>
+<section id="observational-studies" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="observational-studies"><span class="header-section-number">4.2.2</span> Observational Studies</h3>
+<p>In observational studies, participants are monitored and exposures and outcomes are measured, but there is no intervention or assignment of treatments <span class="citation" data-cites="kim2023overview">(<a href="#ref-kim2023overview" role="doc-biblioref">Kim 2023</a>)</span>. Observational studies are conducted in many situations, such as when a clinical trial is unethical or infeasible, when gathering preliminary evidence before conducting a clinical trial, or when studying the effect of an intervention or treatment in real world practice. There are several major observational study designs, each of which has strengths and drawbacks.</p>
+<section id="cross-sectional-study" class="level4" data-number="4.2.2.1">
+<h4 data-number="4.2.2.1" class="anchored" data-anchor-id="cross-sectional-study"><span class="header-section-number">4.2.2.1</span> Cross-sectional Study</h4>
+<p>In a cross-sectional study, data are collected at a specific point in time. Cross-sectional studies are often used to ask questions about the prevalence of an exposure or an outcome (typically a disease or condition) in a population at a specific time point <span class="citation" data-cites="mann2003observational">(<a href="#ref-mann2003observational" role="doc-biblioref">Mann 2003</a>)</span>. A cross-sectional study is conducted by measuring every individual in a population or a representative sample from a population. This design is primarily used to estimate the prevalence of an exposure or outcome in a population at a specific time. Because data are collected once and multiple exposures and outcomes can be measured simultaneously, this is a relatively inexpensive type of study, although costs rise as the population and sample size get larger <span class="citation" data-cites="lash2021modern">(<a href="#ref-lash2021modern" role="doc-biblioref">Lash et al. 2021</a>)</span>.</p>
+</section>
+<section id="cohort-study" class="level4" data-number="4.2.2.2">
+<h4 data-number="4.2.2.2" class="anchored" data-anchor-id="cohort-study"><span class="header-section-number">4.2.2.2</span> Cohort Study</h4>
+<p>A cohort study tracks a group of study participants across a time period and monitors which participants develop a specific outcome <span class="citation" data-cites="mann2003observational">(<a href="#ref-mann2003observational" role="doc-biblioref">Mann 2003</a>)</span>. Typically the cohort is identified and then followed over time to measure the outcome of interest, although in other cases the cohort is identified after the outcome has occurred and historical data are used to measure past exposures. Some studies include a single cohort, with one or multiple exposures measured at the beginning of the study. In other studies there are two (or more) cohorts, defined by exposure status. Cohort studies are often used to estimate the incidence of an outcome (the number of new cases in a population over a specific time period) and the association between exposure and outcome(s). An advantage of cohort studies is that they can be used to study multiple outcomes at once. When an outcome is rare a cohort study can be inefficient, because it will take a very large cohort to identify a large enough set of cases of that outcome to have adequate power. Additionally, cohort studies can be quite expensive when they follow a large number of participants over a long time period <span class="citation" data-cites="lash2021modern">(<a href="#ref-lash2021modern" role="doc-biblioref">Lash et al. 2021</a>)</span>.</p>
+</section>
+<section id="case-control-study" class="level4" data-number="4.2.2.3">
+<h4 data-number="4.2.2.3" class="anchored" data-anchor-id="case-control-study"><span class="header-section-number">4.2.2.3</span> Case-control Study</h4>
+<p>In case-control studies, a group of individuals who have a certain disease or condition are identified as cases, and are compared to a control group of individuals without the disease or condition <span class="citation" data-cites="mann2003observational">(<a href="#ref-mann2003observational" role="doc-biblioref">Mann 2003</a>)</span>. Case-control studies are typically retrospective, i.e.&nbsp;cases and controls are identified after the outcome has occurred or not, and their past exposure is retrospectively measured. Case-control studies are often more efficient and cost-effective when compared to cohort studies, because the number of cases can be pre-specified. This is particularly important for studies of rare diseases. Additionally, a single outcome can be studied in a case-control study (to define the cases and controls) but multiple exposures can be measured and studied. A case-control study can be conceptualized as a sample from a cohort study, in which we take all of the cases from a specific cohort but only a sample of controls <span class="citation" data-cites="lash2021modern">(<a href="#ref-lash2021modern" role="doc-biblioref">Lash et al. 2021</a>)</span>. Often, controls are selected to have similar distributions of potentially confounding characteristics, such as age and sex, as the cases. This selection process is referred to as matching.</p>
+</section>
+<section id="prospective-or-retrospective" class="level4" data-number="4.2.2.4">
+<h4 data-number="4.2.2.4" class="anchored" data-anchor-id="prospective-or-retrospective"><span class="header-section-number">4.2.2.4</span> Prospective or Retrospective?</h4>
+<p><strong>Prospective</strong> and <strong>retrospective</strong> are terms that are frequently used to describe observational studies. However, these terms are not always used consistently, and different researchers may use them to mean different things. In some contexts, prospective means that participants are enrolled before the outcome has occurred, while retrospective means that participants are enrolled after the outcome has occurred. In other contexts, prospective means that exposures are measured before outcomes occur, whereas retrospective means that data about past exposures are collected after outcomes have already been observed. Finally, some researchers use these terms to distinguish between studies that collect new data for a specific research purpose (prospective) and studies that analyze pre-existing data such as electronic health records or data from previous clinical studies (retrospective) <span class="citation" data-cites="lash2021modern">(<a href="#ref-lash2021modern" role="doc-biblioref">Lash et al. 2021</a>)</span>. Data that were collected originally for the purpose of another research study or for clinical documentation or administration but are then used for new research are more commonly referred to as <strong>secondary data</strong>.</p>
+<div class="warning">
+<p>Because the terms <strong>prospective</strong> and <strong>retrospective</strong> are used with multiple different meanings, readers should be careful to understand how these terms are being used in a particular context rather than assuming a single consistent definition.</p>
+</div>
+</section>
+</section>
+<section id="meta-analysis" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="meta-analysis"><span class="header-section-number">4.2.3</span> Meta-analysis</h3>
+<p>A meta-analysis is a type of study that synthesizes results from multiple studies investigating a common or related research question. By pooling information across studies, researchers can increase statistical power through larger sample sizes, leverage existing data, generate consensus results from a set of studies, and identify gaps or inconsistencies in existing research. However, the validity and interpretation of meta-analysis results depend heavily on the quality of the studies being pooled, as well as methodological decisions, including which studies are included and how information is combined <span class="citation" data-cites="schmid2020handbook">(<a href="#ref-schmid2020handbook" role="doc-biblioref">Schmid, Stijnen, and White 2020</a>)</span>.</p>
+<p>Conducting a meta-analysis starts with defining the topic and scope, and formulating testable research questions. A set of inclusion and exclusion criteria is established to determine which studies are eligible for review. These criteria often address characteristics such as the participant population, interventions or exposures, outcomes, and study designs. Differences across studies in these factors should be carefully evaluated, as heterogeneity can impact the interpretation and generalizability of results. To increase transparency and reduce the risk of bias in the review process, meta-analyses can be prospectively registered in study registries <span class="citation" data-cites="pieper2022prospectively">(<a href="#ref-pieper2022prospectively" role="doc-biblioref">Pieper and Rombey 2022</a>)</span>. This helps promote adherence to a pre-specified protocol and can also facilitate collaboration among groups working on similar studies.</p>
+<p>A major component of a meta-analysis is a systematic literature review to identify relevant studies that meet the inclusion criteria. Once a set of studies is determined, statistical analyses are performed either to summarize aggregated outcomes and results across studies. Meta-analyses benefit from sensitivity analyses, which evaluate how robust results are to alternative analytical choices or the inclusion or exclusion of specific studies.</p>
+<p>A mega-analysis, often referred to as an individual participant or patient data meta-analysis, takes a similar approach to a traditional meta-analysis but pools participant-level data from multiple comparable studies instead of combining reported study-level results. This approach requires access to the raw data from the included studies, which may limit the number of constituent studies, and often involves additional effort to harmonize variables and data across studies. However, it allows researchers to analyze all data consistently while providing flexibility in the specific questions asked and the statistical methods used to answer them <span class="citation" data-cites="eisenhauer2021meta">(<a href="#ref-eisenhauer2021meta" role="doc-biblioref">Eisenhauer 2021</a>)</span>.</p>
+</section>
+</section>
+<section id="considerations-for-designing-studies" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="considerations-for-designing-studies"><span class="header-section-number">4.3</span> Considerations for Designing Studies</h2>
+<p>There are several factors to consider when designing studies. In this section, we will focus on designing case report forms and on identifying and reducing sources of bias in clinical studies.</p>
+<section id="case-report-forms-crfs" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="case-report-forms-crfs"><span class="header-section-number">4.3.1</span> Case Report Forms (CRFs)</h3>
+<p>In clinical research, case report forms (CRFs) are essential tools for collecting standardized data from study participants or about patients. Note that case report forms are any paper or electronic form that will be filled in at the participant level by participants or clinical team members. By that definition, even a consent form is a case report form! And each clinical study may utilize multiple CRFs (e.g., one for consent, another for medical history, another for reporting any adverse effects). CRFs are useful for several tasks already discussed within this chapter – specifically, documenting adverse events or outcomes or recording demographics and medical history for identifying cohorts. CRFs are also useful for topics this chapter will discuss in later sections (e.g., Retrospective analyses).</p>
+<p>Designing CRFs that are sensitive to the different needs of researchers requires careful consideration. Questions within CRFs should be formulated to gather comprehensive and accurate clinical data. CRFs are often filled out by clinical staff using information from EHR data. In rarer cases, CRFs may be patient/participant-facing. Special care should be taken with these CRFs to ensure that participants feel safe, respected, and comfortable. This section explores the types of questions that can be asked using CRFs with a focus on <strong>accessibility, sensitivity, specificity, and comfort for people.</strong></p>
+<div class="notice">
+<p>While within a study CRFs help to ensure standardization in data collection, there may be a lack of standardization when comparing data between studies if each study did not use the same CRFs or comparable/subsets of questions within forms. This section will provide guidelines for types of questions that may be found within CRFs and writing these questions. Your specific study needs may also require different or additional types of questions – the guidelines within this section are not exhaustive nor all-encompassing of what may be encountered within the field. Researchers may also benefit from established standards for CRF development, such as the Clinical Data Acquisition Standards Harmonization (CDASH), which provides a consistent way to collect data with CRFs across studies <a href="https://www.cdisc.org/standards/foundational/cdash"><span class="citation" data-cites="cdash"><span>“CDASH”</span> (<span>n.d.</span>)</span></a>.</p>
+</div>
+<p>Different categories of questions that may be included within case report forms include:</p>
+<ol type="1">
+<li>Demographic and Socioeconomic Questions</li>
+<li>Health and Medical History Questions</li>
+<li>Experience and Quality of Life Questions</li>
+<li>Sexual and Reproductive Health Questions</li>
+<li>Treatment Preferences and Decision-Making Questions</li>
+<li>Accessibility and Accommodation Needs Questions</li>
+<li>Cultural Sensitivity and Identity Questions</li>
+<li>Comfort, Trust, and Privacy Questions</li>
+</ol>
+<details>
+<summary>
+Click here for additional considerations for patient/participant facing CRFs.
+</summary>
+<div class="warning">
+<p>Although the following recommendations may help your research team write more respectful and responsive CRFs, it is essential to always have an Internal Review Board (IRB) or other institutional ethics review committee perform an ethical review or your final forms for appropriateness and ethical consideration.</p>
+</div>
 <ol type="1">
 <li><strong>Demographic and Socioeconomic Questions</strong></li>
 </ol>
-<p>Capturing demographic and socioeconomic data is fundamental in clinical research to understand the background of study participants. However, these questions must be asked in a manner that respects privacy, avoids assumptions, and helps identify people with different life experiences. It’s also good practice in order to respect privacy to include an option allowing the participants to leave the question unanswered or respond with “prefer not to answer”.</p>
+<p>Capturing demographic and socioeconomic data is fundamental in clinical research to understand the background of study participants. However, these questions must be asked in a manner that respects privacy, avoids assumptions, and helps identify people with different life experiences. It’s also good practice for patient/participant facing CRFs to respect privacy and include options allowing the participants to leave the question unanswered, respond with “prefer not to answer”, or fill in their own answer.</p>
 <ul>
 <li><strong>Sex and Gender</strong>: When asking about gender and sex include an option of “prefer to self-describe” to capture more information.</li>
-<li><strong>Ethnicity and Race</strong>: Ethnicity and race questions should be specific and use respectful language, allowing participants to self-identify rather than selecting from a predefined list.</li>
+<li><strong>Ethnicity and Race</strong>: Ethnicity and race questions should be specific and use respectful language. Allowing participants to self-identify rather than select from a predefined list can help capture more specific information.</li>
 <li><strong>Socioeconomic Status</strong>: Questions about employment, income, or education should be framed to capture social determinants of health without making participants feel judged. For example, asking, “What is your current employment status?” with choices that include full-time, part-time, unemployed, student, and unable to work can help gather relevant data without stigma.</li>
 </ul>
 <p>It is essential to use neutral, non-judgmental language and to explain why these questions are being asked, ensuring participants understand the relevance of their responses.</p>
 <ol start="2" type="1">
-<li><strong>Health and Medial History Questions</strong></li>
+<li><strong>Health and Medical History Questions</strong></li>
 </ol>
 <p>Health and medical history questions provide critical information about baseline conditions and potential risk factors of participants. These questions should be framed clearly and respectfully to avoid any discomfort.</p>
 <ul>
@@ -169,7 +259,7 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
 <ol start="3" type="1">
 <li><strong>Experience and Quality of Life Questions</strong></li>
 </ol>
-<p>Understanding how health conditions and treatments affect participants’ daily lives and well-being is essential, particularly for those from communities who experience health disparities and may also experience unique challenges.</p>
+<p>Understanding how health conditions and treatments affect participants’ daily lives and well-being is essential, particularly for those who may experience unique challenges.</p>
 <ul>
 <li><strong>Daily Living and Social Functioning</strong>: Questions like “How often do your health conditions affect your ability to perform daily tasks (e.g., cooking, cleaning, working)?” can help assess the impact on daily life, with options ranging from “never” to “always.”</li>
 <li><strong>Emotional and Psychological Well-Being</strong>: Including questions such as “In the past week, how often have you felt anxious or depressed?” using a scale from “not at all” to “very often” can provide insights into mental health needs.</li>
@@ -181,7 +271,6 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
 </ol>
 <p>Questions about sexual and reproductive health must be asked with sensitivity, as they can be deeply personal, particularly for groups who may face stigma.</p>
 <ul>
-<li><strong>Sexual Orientation and Gender Identity (SOGI)</strong>: Instead of just predefined categories, open-ended questions like “How would you describe your sexual orientation?” and “What is your gender identity?” allow participants to self-identify. Offering the option to skip these questions respects participants’ privacy. Options can be provided with a space or text box for the person to fill in their own descriptor, but having the categorical data will allow for easier analysis for those that select one rather than every response being from variable open text responses.</li>
 <li><strong>Reproductive Health</strong>: Questions about menstrual health, contraception, or pregnancy should be framed neutrally. For example, “Are you currently using any form of contraception? If yes, please specify.”</li>
 <li><strong>Sexual Activity and History</strong>: Questions should be direct but framed sensitively, such as “Are there any sexual health concerns you would like to discuss? Your answers will help us understand how to better support your care needs.”</li>
 </ul>
@@ -201,15 +290,15 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
 </ol>
 <p>To ensure that all participants can fully engage with the study, it is essential to ask about accessibility and accommodation needs.</p>
 <ul>
-<li><strong>Language and Communication Needs</strong>: “What is your preferred language for communication? Do you need an interpreter or translated materials?” These questions help ensure that participants can understand the materials.</li>
+<li><strong>Language and Communication Needs</strong>: “What is your preferred language for communication? Do you need an interpreter or translated materials?” These questions help ensure that participants can understand the materials. This requires the researcher to make translated materials available, which will require additional time and effort, including validation that the materials are appropriately translated to allow for collection of comparable data. PROMIS is a great resource for this (https://www.promishealth.org/promis-translations/).</li>
 <li><strong>Physical Accessibility</strong>: Asking, “Do you require any specific accommodations to participate in this study (e.g., wheelchair access, hearing aids, visual aids)?” ensures physical accessibility.</li>
-<li><strong>Format Preferences</strong>: “Would you prefer to complete this form online, on paper, or verbally with assistance?” helps accommodate different needs and preferences. Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs.</li>
+<li><strong>Format Preferences</strong>: “Would you prefer to complete this form online, on paper, or verbally with assistance?” helps accommodate different needs and preferences. Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs where possible.</li>
 </ul>
 <p>Providing multiple options and allowing participants to request changes at any time is crucial to accommodate evolving needs.</p>
 <ol start="7" type="1">
 <li><strong>Cultural Sensitivity and Identity Questions</strong></li>
 </ol>
-<p>CRFs should respect different cultural backgrounds, values, and identities without perpetuating biases or assumptions.</p>
+<p>CRFs should respect different cultural backgrounds, values, and identities without perpetuating assumptions.</p>
 <ul>
 <li><strong>Cultural Identity and Practices</strong>: An open-ended question such as “Are there any cultural practices or beliefs that are important for us to be aware of in your care?” allows participants to share relevant information.</li>
 <li><strong>Dietary Restrictions and Preferences</strong>: Asking, “Do you have any dietary restrictions or preferences that are culturally or religiously motivated?” ensures that these are respected.</li>
@@ -229,82 +318,79 @@ gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
 <div class="warning">
 <p>The guidelines above sometimes suggest use of open-ended questions where participants would provide free-text responses rather than selecting pre-defined categories. This will require researchers to process those free-text responses and may decrease the overall standardization.</p>
 </div>
-<p>Designing specific and sensitive CRFs for clinical studies requires a thoughtful approach that respects the different backgrounds, privacy, and comfort of all participants, especially those from communities that experience health disparities. By using accessible language, offering multiple options, respecting autonomy, and providing a safe space for participants to express themselves, researchers can gather meaningful and accurate data while ensuring participants feel valued and respected. These considerations are vital to fostering clinical research that captures enough information about a wide variety of individuals. Case report forms (CRFs) are often tailored to specific studies and may vary widely in structure and content, lacking standardization across different projects. Despite this, certain themes are commonly expected in CRFs, including sections on participant demographics, medical history, treatment outcomes, and adverse events, ensuring essential data collection across a variety of study designs. By thoughtfully addressing both unique study requirements and universally relevant data points, researchers can optimize CRFs for consistency across clinical studies.</p>
+<p>Designing specific and sensitive CRFs for clinical studies requires a thoughtful approach that captures the different backgrounds of all participants. By using accessible language, offering multiple options, respecting autonomy, and providing a safe space for participants to express themselves, researchers can gather meaningful and accurate data while ensuring participants feel valued and respected. These considerations are vital to fostering clinical research that captures enough information about a wide variety of individuals. Case report forms (CRFs) are often tailored to specific studies and may vary widely in structure and content, lacking standardization across different projects. Despite this, certain themes are commonly expected in CRFs, including sections on participant demographics, medical history, treatment outcomes, patient’s feelings about side effects, and adverse events, ensuring essential data collection across a variety of study designs. By thoughtfully addressing both unique study requirements and universally relevant data points, researchers can optimize CRFs for consistency across clinical studies.</p>
+</details>
 </section>
-<section id="clinical-studies-and-trials" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="clinical-studies-and-trials"><span class="header-section-number">4.3</span> Clinical Studies and Trials</h2>
-<p>Clinical data generated from clinical trials and observational studies form the backbone of evidence-based medicine. The ability to analyze and interpret this data enables researchers and clinicians to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.</p>
-<section id="clinical-trials" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="clinical-trials"><span class="header-section-number">4.3.1</span> Clinical Trials</h3>
-<p>Clinical trials are tightly regulated studies, controlling patient recruitment and monitoring administration and impact of treatments or interventions <span class="citation" data-cites="What_are_clinical_trials_2023">(<a href="#ref-What_are_clinical_trials_2023" role="doc-biblioref"><span>“What Are Clinical Trials and Studies?”</span> 2023</a>)</span>. The goals of clinical trials include assessing the safety and efficacy of new treatments or interventions, comparing different/existing treatment options, determining the optimal dosage and administration of interventions, and identifying potential side effects or adverse events.</p>
-<div class="definition">
-<p>The NIH’s definition of a clinical trial is “a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of those interventions on health-related biomedical or behavioral outcomes.”</p>
-</div>
-<p>The NIH provides 4 questions and additional clarifications to consider when identifying if a study is a clinical trial or just a clinical study <span class="citation" data-cites="CTDefinition">(<a href="#ref-CTDefinition" role="doc-biblioref"><span>“NIH’s Definition of a Clinical Trial,”</span> n.d.</a>)</span>.</p>
-<div class="definition">
-<p><strong>Prospectively assigned</strong>: Refers to a pre-defined process (e.g., randomization) specified in an approved protocol that stipulates the assignment of research subjects (individually or in clusters) to one or more arms (e.g., intervention, placebo, or other control) of a clinical trial <span class="citation" data-cites="NIHClinicalTrialsProspectively">(<a href="#ref-NIHClinicalTrialsProspectively" role="doc-biblioref"><span>“NIH Clinical Trials,”</span> n.d.</a>)</span>.</p>
-</div>
-</section>
-<section id="observational-studies" class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="observational-studies"><span class="header-section-number">4.3.2</span> Observational Studies</h3>
-<p>In observational studies, patients are monitored and outcomes are measured, but there is no intervention or assignment ((Overview of clinical study designs)[https://pmc.ncbi.nlm.nih.gov/articles/PMC11009715/]).</p>
-<section id="case-control-studies" class="level4" data-number="4.3.2.1">
-<h4 data-number="4.3.2.1" class="anchored" data-anchor-id="case-control-studies"><span class="header-section-number">4.3.2.1</span> Case-control Studies</h4>
-<p>In case-control studies, a group of individuals who have a certain disease or condition are identified as cases, and are compared to a group of individuals without the disease or condition (these are the controls). Group level summaries of outcomes, such as medical events or other biological measurements, are compared between the case and control groups. In case-control studies, there is a risk of bias, in which the group of cases and group of controls are systematically different, beyond the disease or condition that is being studied. Therefore, it is important to match the groups in terms of individual characteristics as much as possible.</p>
-</section>
-<section id="cohort-studies" class="level4" data-number="4.3.2.2">
-<h4 data-number="4.3.2.2" class="anchored" data-anchor-id="cohort-studies"><span class="header-section-number">4.3.2.2</span> Cohort Studies</h4>
-<p>Cohort studies follow study participants over time. Participants are recruited into the cohort if they share a specific characteristic that is being studied. They are then followed over time, and monitored to see which participants develop a specific outcome. Cohort studies can be prospective (the cohort is identified and then monitored), or retrospective (the cohort is identified about a time period has passed and past data is obtained).</p>
-</section>
-<section id="cross-sectional-studies" class="level4" data-number="4.3.2.3">
-<h4 data-number="4.3.2.3" class="anchored" data-anchor-id="cross-sectional-studies"><span class="header-section-number">4.3.2.3</span> Cross-sectional Studies</h4>
-<p>In a cross-sectional study, data is collected at a specific point in time. Cross-sectional studies are often used to ask questions about the prevalence of an exposure or an outcome (typically a disease or condition) in a population at a specific time point.</p>
-</section>
-</section>
-</section>
-<section id="retrospective-analyses" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="retrospective-analyses"><span class="header-section-number">4.4</span> Retrospective Analyses</h2>
-<p>Does this belong in collecting data or acquiring data?</p>
-<p>Retrospective analysis involves the examination of pre-existing clinical data to answer specific research questions, explore hypotheses, and identify patterns or trends. This method leverages historical data collected from medical records, administrative databases, registries, electronic health records (EHRs), or other sources of clinical information.</p>
-</section>
-<section id="research-design-considerations" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="research-design-considerations"><span class="header-section-number">4.5</span> Research Design Considerations</h2>
-<p>Researchers need to intentionally use methods earlier in the research process than data analysis to manage data biases associated with clinical data, especially EHR.</p>
-<p>One of the most important challenges in using EHR data in cancer research is that, as in many other fields, healthcare data are plagued with several types of biases that result from disparities in the delivery of healthcare. Overall, cancer research has historically relied on data from high resource academic medical centers, which disproportionately provide care to patients who are White, have high socioeconomic status, and live in urban areas. As a result, medical knowledge produced from these data have disproportionately benefited those patients. Different sources of bias are prevalent in EHR data. For example,</p>
+<section id="potential-data-distortions-in-clinical-studies" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="potential-data-distortions-in-clinical-studies"><span class="header-section-number">4.3.2</span> Potential Data Distortions in Clinical Studies</h3>
+<p>Researchers need to consider how data representativeness and other data distortions may affect their study and results in all stages of clinical study development, especially when designing the study.</p>
+<p>Overall, cancer research has historically relied on data from high resource academic medical centers, which are often located in cities and disproportionately provide care to patients with certain demographics such as those that have higher incomes, and those who live in urban areas. As a result, medical knowledge produced from these data tend to be more generalizable to other patients of similar demographics and the knowledge is not necessarily generalizable to other different populations.</p>
+<p>Such challenges include:</p>
 <ul>
-<li><em>Information representativeness bias</em> occurs when certain groups are disproportionately less present in the EHR because they have no contact with the healthcare system.</li>
-<li><em>Information presence bias</em>, on the other hand, occurs when certain groups may be represented in the EHR, but have disproportionately less comprehensive healthcare data due to issues such as overall lower access to and use of healthcare service, lack of a primary care provider, lack of access to specialty care, and lack of access to digital resources (e.g., patient portals, home sensors, telehealth) that can be used to provide healthcare data.</li>
-<li><em>Treatment biases</em> happen when certain groups receive disproportionate access to more advanced treatments, which is often determined by social drivers such as insurance, distance, health literacy, and socioeconomic status.</li>
-<li><em>Algorithm bias</em> further amplifies these previous sources of bias by leveraging biased EHR data to make predictions about diagnosis, treatment and prognosis that are used by clinicians to make potentially biased healthcare decisions, which are then documented in the EHR.</li>
+<li><em>Information representativeness distortion</em> occurs when certain groups are less present in the clinical data (particularly EHR data) because they have little or no contact with the healthcare system.</li>
+<li><em>Information presence distortion</em>, on the other hand, occurs when certain groups may be represented in clinical data, but have less comprehensive healthcare data due to issues such as lack of a primary care provider, lack of access to specialty care, and lack of access to digital resources (e.g., patient portals, home sensors, telehealth) that can be used to provide healthcare data.</li>
+<li><em>Treatment distortions</em> happen when certain groups receive more access to more advanced treatments, which is often determined by social drivers such as insurance, distance, and health literacy.</li>
+<li><em>Algorithm distortion</em> further amplifies these previous challenges by leveraging distorted clinical data to make predictions about diagnosis, treatment, and prognosis that may only work optimally for some populations but may be used by clinicians to make healthcare decisions for broader populations.</li>
 </ul>
-<p>Recent advances in sophisticated and costly technology such as genetic testing, artificial intelligence, and digital health, which are disproportionately available in high resource healthcare systems further compound the problem. Therefore, cancer researchers increasingly need to use intentional methods to prevent, identify, and correct for biases in EHR data. For example, the National Institutes of Health Pragmatic Trials Collaboratory has made several recommendations to address EHR data biases in research <span class="citation" data-cites="BoydCCT2023 BoydJAMIA2023">(<a href="#ref-BoydCCT2023" role="doc-biblioref">Andrew D. Boyd et al. 2023a</a>; <a href="#ref-BoydJAMIA2023" role="doc-biblioref">Andrew D. Boyd et al. 2023b</a>)</span>:</p>
+<p>Recent advances in sophisticated and costly technology such as genetic testing, artificial intelligence, and digital health are more available in high resource healthcare systems further compounding these challenges. Therefore, cancer researchers increasingly need to use intentional methods to prevent, identify, and correct for such challenges with clinical data. For example, the National Institutes of Health Pragmatic Trials Collaboratory has made several recommendations <span class="citation" data-cites="BoydCCT2023 BoydJAMIA2023">(<a href="#ref-BoydCCT2023" role="doc-biblioref">Andrew D. Boyd et al. 2023a</a>; <a href="#ref-BoydJAMIA2023" role="doc-biblioref">Andrew D. Boyd et al. 2023b</a>)</span>:</p>
 <ul>
-<li>Include data from low resource healthcare settings such as community health centers that provide care for patients who have low socioeconomic status and live in rural areas.</li>
+<li>Include data from low resource healthcare settings such as community health centers that provide care for patients who tend to have lower incomes and or live in inner city or rural areas.</li>
 <li>Engage with communities during study design and study conduct to ensure proper data collection, analysis, and representation.</li>
 <li>Use data collection methods for self-reported data that rely on more accessible technology such as text messaging, using accessible and culturally adapted communication.</li>
-<li>Include subgroup analysis by different demographic groups according to variables such as socioeconomic status, race, ethnicity, sex, geographical location, and social determinants of health.</li>
+<li>Include subgroup analysis by different demographic groups.</li>
 </ul>
-<p>With such approaches, cancer researchers while aiming to avoid exacerbating health disparities, in addition help to reduce disparities.</p>
 </section>
-<section id="summary" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.6</span> Summary</h2>
+</section>
+<section id="summary" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.4</span> Summary</h2>
+<p>A substantial proportion of clinical data is generated through clinical studies, making careful study design essential for producing reliable and meaningful evidence. Clinical studies can be broadly classified as either clinical trials or observational studies. In clinical trials, researchers prospectively assign participants to interventions and evaluate their effects on outcomes of interest. In observational studies, researchers examine associations between naturally occurring exposures and outcomes. Common observational study designs include cross-sectional, cohort, and case-control studies. Researchers may also conduct meta-analyses to synthesize findings across multiple studies. Beyond selecting an appropriate study design, researchers must consider several factors that influence data quality, including the development of standardized and comprehensive case report forms and the mitigation of common sources of data distortion that can compromise the validity and generalizability of study results.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-alexander2022equipoise" class="csl-entry" role="listitem">
+Alexander, John H. 2022. <span>“Equipoise in Clinical Trials: Enough Uncertainty in Whose Opinion?”</span> <em>Circulation</em> 145 (13): 943–45.
+</div>
 <div id="ref-BoydCCT2023" class="csl-entry" role="listitem">
 Boyd, Andrew D., Rosa Gonzalez-Guarda, Katharine Lawrence, Crystal L. Patil, Miriam O. Ezenwa, Emily C. O’Brien, Hyung Paek, et al. 2023a. <span>“Equity and Bias in Electronic Health Records Data.”</span> <em>Contemporary Clinical Trials</em> 130 (July): 107238. <a href="https://doi.org/10.1016/j.cct.2023.107238">https://doi.org/10.1016/j.cct.2023.107238</a>.
 </div>
 <div id="ref-BoydJAMIA2023" class="csl-entry" role="listitem">
 Boyd, Andrew D, Rosa Gonzalez-Guarda, Katharine Lawrence, Crystal L Patil, Miriam O Ezenwa, Emily C O’Brien, Hyung Paek, et al. 2023b. <span>“Potential Bias and Lack of Generalizability in Electronic Health Record Data: Reflections on Health Equity from the National Institutes of Health Pragmatic Trials Collaboratory.”</span> <em>Journal of the American Medical Informatics Association</em> 30 (9): 1561–66. <a href="https://doi.org/10.1093/jamia/ocad115">https://doi.org/10.1093/jamia/ocad115</a>.
 </div>
+<div id="ref-cdash" class="csl-entry" role="listitem">
+<span>“CDASH.”</span> n.d. <span>Clinical Data Interchange Standards Consortium</span>. Accessed August 27, 2026. <a href="https://www.cdisc.org/standards/foundational/cdash">https://www.cdisc.org/standards/foundational/cdash</a>.
+</div>
 <div id="ref-ncdj_style_guide" class="csl-entry" role="listitem">
 <span>“Disability Language Style Guide.”</span> 2021. <em>National Center on Disability and Journalism</em>. <a href="https://ncdj.org/style-guide/">https://ncdj.org/style-guide/</a>.
+</div>
+<div id="ref-eisenhauer2021meta" class="csl-entry" role="listitem">
+Eisenhauer, Joseph G. 2021. <span>“Meta-Analysis and Mega-Analysis: A Simple Introduction.”</span> <em>Teaching Statistics</em> 43 (1): 21–27.
+</div>
+<div id="ref-kim2023overview" class="csl-entry" role="listitem">
+Kim, Seonwoo. 2023. <span>“Overview of Clinical Study Designs.”</span> <em>Clinical and Experimental Emergency Medicine</em> 11 (1): 33.
+</div>
+<div id="ref-lash2021modern" class="csl-entry" role="listitem">
+Lash, Timothy L., Tyler J. VanderWeele, Sebastien Haneuse, and Kenneth J. Rothman. 2021. <em>Modern Epidemiology</em>. 4th ed. Philadelphia, PA: Wolters Kluwer.
+</div>
+<div id="ref-mann2003observational" class="csl-entry" role="listitem">
+Mann, CJ. 2003. <span>“Observational Research Methods. Research Design II: Cohort, Cross Sectional, and Case-Control Studies.”</span> <em>Emergency Medicine Journal</em> 20 (1): 54–60.
 </div>
 <div id="ref-NIHClinicalTrialsProspectively" class="csl-entry" role="listitem">
 <span>“NIH Clinical Trials.”</span> n.d. <em>Division of Research at Brown University</em>. <a href="https://division-research.brown.edu/research-cycle/proposal/agency-specific/nih/clinical-trials">https://division-research.brown.edu/research-cycle/proposal/agency-specific/nih/clinical-trials</a>.
 </div>
 <div id="ref-CTDefinition" class="csl-entry" role="listitem">
 <span>“NIH’s Definition of a Clinical Trial.”</span> n.d. <a href="https://grants.nih.gov/policy-and-compliance/policy-topics/clinical-trials/definition">https://grants.nih.gov/policy-and-compliance/policy-topics/clinical-trials/definition</a>.
+</div>
+<div id="ref-pieper2022prospectively" class="csl-entry" role="listitem">
+Pieper, Dawid, and Tanja Rombey. 2022. <span>“Where to Prospectively Register a Systematic Review.”</span> <em>Systematic Reviews</em> 11 (1): 8.
+</div>
+<div id="ref-schmid2020handbook" class="csl-entry" role="listitem">
+Schmid, Christopher H, Theo Stijnen, and Ian White. 2020. <em>Handbook of Meta-Analysis</em>. CRC Press.
+</div>
+<div id="ref-belmont1979" class="csl-entry" role="listitem">
+<span>“The Belmont Report: Ethical Principles and Guidelines for the Protection of Human Subjects of Research.”</span> 1979. National Commission for the Protection of Human Subjects of Biomedical; Behavioral Research. <a href="https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html">https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html</a>.
+</div>
+<div id="ref-thiese2014observational" class="csl-entry" role="listitem">
+Thiese, Matthew S. 2014. <span>“Observational and Interventional Study Design Types; an Overview.”</span> <em>Biochemia Medica</em> 24 (2): 199–210.
 </div>
 <div id="ref-What_are_clinical_trials_2023" class="csl-entry" role="listitem">
 <span>“What Are Clinical Trials and Studies?”</span> 2023. <em>National Institute on Aging</em>. <a href="https://www.nia.nih.gov/health/clinical-trials-and-studies/what-are-clinical-trials-and-studies">https://www.nia.nih.gov/health/clinical-trials-and-studies/what-are-clinical-trials-and-studies</a>.
