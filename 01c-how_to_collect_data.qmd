@@ -60,7 +60,9 @@ In case-control studies, a group of individuals who have a certain disease or co
 
 **Prospective** and **retrospective** are terms that are frequently used to describe observational studies. However, these terms are not always used consistently, and different researchers may use them to mean different things. In some contexts, prospective means that participants are enrolled before the outcome has occurred, while retrospective means that participants are enrolled after the outcome has occurred. In other contexts, prospective means that exposures are measured before outcomes occur, whereas retrospective means that data about past exposures are collected after outcomes have already been observed. Finally, some researchers use these terms to distinguish between studies that collect new data for a specific research purpose (prospective) and studies that analyze pre-existing data such as electronic health records or data from previous clinical studies (retrospective) [@lash2021modern]. Data that were collected originally for the purpose of another research study or for clinical documentation or administration but are then used for new research are more commonly referred to as **secondary data**. 
 
+::: {.warning}
 Because the terms **prospective** and **retrospective** are used with multiple different meanings, readers should be careful to understand how these terms are being used in a particular context rather than assuming a single consistent definition.
+:::
 
 ### Meta-analysis
 
