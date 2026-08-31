@@ -8,6 +8,10 @@ These credits are based on our [course contributors table guidelines](https://gi
 
 &nbsp;
 &nbsp;
+***In [memory](https://galaxyproject.org/jxtx/) of [James Taylor](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02016-0), who was instrumental in initiating this project.***
+
+&nbsp;
+&nbsp;
 
 |Credits|Names|
 |-------|-----|
@@ -58,8 +62,5 @@ devtools::session_info()
 [Katherine Cox]: https://katherinecox.github.io/
 [Adam Coffman]:https://www.linkedin.com/in/adamcoffman
 
-For JHU courses, You will need to add Ira as a credit:
 
-|Content Publisher|[Ira Gooding](https://publichealth.jhu.edu/faculty/4130/ira-gooding)|
 
--->
