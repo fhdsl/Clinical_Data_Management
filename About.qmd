@@ -13,7 +13,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |-------|-----|
 |**Pedagogy**||
 |Lead Content Instructor(s)|[Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/)|
-|Content Author (Clinical Data Types)| [Kate Isaac](https://kweav.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/) |
+|Content Author (Clinical Data Types)| [Harry Hochheiser](https://www.phdl.pitt.edu/people/harry-hochheiser-phd), [Kate Isaac](https://kweav.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/) |
 |Content Author (Multimodal data| [Carrie Wright](https://carriewright11.github.io/) |
 |Content Author (Clinical Study Design and Considerations)| [Sarah Teichman](https://svteichman.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/) |
 |Content Author (Clinical Data Acquisition)| [Sarah Teichman](https://svteichman.github.io/) |
