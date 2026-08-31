@@ -4,7 +4,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Clinical Data Management
+# Clinical Data Handling, Privacy, and Sharing
 
 ## Learning Objectives
 
