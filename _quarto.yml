@@ -23,6 +23,7 @@ book:
     - 01d-how_to_acquire_data.qmd
     - 02-data_uses.qmd
     - 03-data_management.qmd
+    - About.qmd
     - 04-appendixI.qmd
 
   sidebar:

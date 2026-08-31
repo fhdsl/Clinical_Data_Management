@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Specific Clinical Data Types – Clinical Data Management for Cancer Informatics</title>
+<title>3&nbsp; Multimodal Data – Clinical Data Management for Cancer Informatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -115,7 +115,7 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Specific Clinical Data Types</span></h1>
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Multimodal Data</span></h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -167,7 +167,7 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01b-specific_data_types.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Specific Clinical Data Types</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Multimodal Data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -191,13 +191,19 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-data_management.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Clinical Data Management</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Clinical Data Handling, Privacy, and Sharing</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./About.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">About the Authors</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-appendixI.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Appendix I: Terminologies and Data Standards</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Appendix I: Terminologies and Data Standards</span></span></a>
   </div>
 </li>
     </ul>
@@ -211,22 +217,23 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><span class="header-section-number">3.1</span> Learning Objectives</a></li>
-  <li><a href="#physiological" id="toc-physiological" class="nav-link" data-scroll-target="#physiological"><span class="header-section-number">3.2</span> Physiological</a></li>
-  <li><a href="#monitoring-data" id="toc-monitoring-data" class="nav-link" data-scroll-target="#monitoring-data"><span class="header-section-number">3.3</span> Monitoring data</a>
+  <li><a href="#omic-data" id="toc-omic-data" class="nav-link" data-scroll-target="#omic-data"><span class="header-section-number">3.2</span> Omic Data</a></li>
+  <li><a href="#physiological-data" id="toc-physiological-data" class="nav-link" data-scroll-target="#physiological-data"><span class="header-section-number">3.3</span> Physiological Data</a></li>
+  <li><a href="#imaging-data" id="toc-imaging-data" class="nav-link" data-scroll-target="#imaging-data"><span class="header-section-number">3.4</span> Imaging Data</a></li>
+  <li><a href="#monitoring-data" id="toc-monitoring-data" class="nav-link" data-scroll-target="#monitoring-data"><span class="header-section-number">3.5</span> Monitoring data</a>
   <ul class="collapse">
-  <li><a href="#benefits-of-monitoring-data" id="toc-benefits-of-monitoring-data" class="nav-link" data-scroll-target="#benefits-of-monitoring-data"><span class="header-section-number">3.3.1</span> Benefits of Monitoring Data</a></li>
-  <li><a href="#considerations" id="toc-considerations" class="nav-link" data-scroll-target="#considerations"><span class="header-section-number">3.3.2</span> Considerations</a></li>
+  <li><a href="#benefits-of-monitoring-data" id="toc-benefits-of-monitoring-data" class="nav-link" data-scroll-target="#benefits-of-monitoring-data"><span class="header-section-number">3.5.1</span> Benefits of Monitoring Data</a></li>
+  <li><a href="#considerations" id="toc-considerations" class="nav-link" data-scroll-target="#considerations"><span class="header-section-number">3.5.2</span> Considerations</a></li>
   </ul></li>
-  <li><a href="#radiology" id="toc-radiology" class="nav-link" data-scroll-target="#radiology"><span class="header-section-number">3.4</span> Radiology</a></li>
-  <li><a href="#pathology" id="toc-pathology" class="nav-link" data-scroll-target="#pathology"><span class="header-section-number">3.5</span> Pathology</a></li>
-  <li><a href="#sec-synthetic-data" id="toc-sec-synthetic-data" class="nav-link" data-scroll-target="#sec-synthetic-data"><span class="header-section-number">3.6</span> Synthetic Data</a>
+  <li><a href="#geographic-environmental-and-social-determinants-of-health-data" id="toc-geographic-environmental-and-social-determinants-of-health-data" class="nav-link" data-scroll-target="#geographic-environmental-and-social-determinants-of-health-data"><span class="header-section-number">3.6</span> Geographic, environmental, and social determinants of health Data</a></li>
+  <li><a href="#sec-synthetic-data" id="toc-sec-synthetic-data" class="nav-link" data-scroll-target="#sec-synthetic-data"><span class="header-section-number">3.7</span> Synthetic Data</a>
   <ul class="collapse">
-  <li><a href="#uses-of-synthetic-data" id="toc-uses-of-synthetic-data" class="nav-link" data-scroll-target="#uses-of-synthetic-data"><span class="header-section-number">3.6.1</span> Uses of synthetic data</a></li>
-  <li><a href="#resources-for-generating-synthetic-data" id="toc-resources-for-generating-synthetic-data" class="nav-link" data-scroll-target="#resources-for-generating-synthetic-data"><span class="header-section-number">3.6.2</span> Resources for generating synthetic data</a></li>
-  <li><a href="#benefits-of-synthetic-data" id="toc-benefits-of-synthetic-data" class="nav-link" data-scroll-target="#benefits-of-synthetic-data"><span class="header-section-number">3.6.3</span> Benefits of synthetic data</a></li>
-  <li><a href="#concerns-about-synthetic-data" id="toc-concerns-about-synthetic-data" class="nav-link" data-scroll-target="#concerns-about-synthetic-data"><span class="header-section-number">3.6.4</span> Concerns about synthetic data</a></li>
+  <li><a href="#uses-of-synthetic-data" id="toc-uses-of-synthetic-data" class="nav-link" data-scroll-target="#uses-of-synthetic-data"><span class="header-section-number">3.7.1</span> Uses of synthetic data</a></li>
+  <li><a href="#resources-for-generating-synthetic-data" id="toc-resources-for-generating-synthetic-data" class="nav-link" data-scroll-target="#resources-for-generating-synthetic-data"><span class="header-section-number">3.7.2</span> Resources for generating synthetic data</a></li>
+  <li><a href="#benefits-of-synthetic-data" id="toc-benefits-of-synthetic-data" class="nav-link" data-scroll-target="#benefits-of-synthetic-data"><span class="header-section-number">3.7.3</span> Benefits of synthetic data</a></li>
+  <li><a href="#sec-synthetic-concerns" id="toc-sec-synthetic-concerns" class="nav-link" data-scroll-target="#sec-synthetic-concerns"><span class="header-section-number">3.7.4</span> Concerns about synthetic data</a></li>
   </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.7</span> Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.8</span> Summary</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/01b-specific_data_types.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -235,7 +242,7 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Specific Clinical Data Types</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Multimodal Data</span></h1>
 </div>
 
 
@@ -258,17 +265,53 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3f5a232af6c_0_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Learning Objectives: 1. Physiological (to-do), 2. Monitoring data (to-do), 3. Radiology, 4. Pathology, 5. Understand the potential uses for and risks of synthetic data"></p>
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3f5a232af6c_0_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Learning Objectives: 1.  Explain what multimodal research is 2. List additional types of data used in clinical research 2. Understand the potential uses for and risks of synthetic data"></p>
 </figure>
 </div>
 </div>
 </div>
+<p>Clinical research is becoming increasingly multimodal, meaning that it combines multiple forms of data together. This often includes data types beyond the more classical clinical data like EHR. The use of different kinds of data together can be very valuable for understanding the underlying biology leading to different forms of cancer, evaluating new potential treatments for cancer, and understanding rates of cancer across various populations, including what exposures may influence those rates.</p>
+<p>These data can include:</p>
+<ul>
+<li>Omic data</li>
+<li>Physiological data</li>
+<li>Imaging data</li>
+<li>Monitoring data</li>
+<li>Geographic data</li>
+<li>Environmental data</li>
+<li>Social determinants of health data</li>
+<li>Synthetic data (in some cases)</li>
+</ul>
+<p>Methods for finding patterns when combining different kinds of data together, as well as how to harmonize and store data together are still in development. Machine Learning and AI show particular promise for finding patterns across vast amounts of data <span class="citation" data-cites="amar2025 walonoski2022">(<a href="#ref-amar2025" role="doc-biblioref">Amar et al. 2025</a>; <a href="#ref-walonoski2022" role="doc-biblioref">Walonoski et al. 2022</a>)</span> and indicate that prediction performance across many different biomedical studies are improved when multiple data types are combined <span class="citation" data-cites="kline_multimodal_2022">(<a href="#ref-kline_multimodal_2022" role="doc-biblioref">Kline et al. 2022</a>)</span>, however challenges related to feasibility remain.</p>
+<ul>
+<li>See this <a href="https://www.mdpi.com/2079-9292/11/8/1199">example integrating imaging data</a><br>
+</li>
+<li>See this <a href="https://arxiv.org/abs/2510.23639">example about integrating omics data</a></li>
+<li>See this paper for <a href="https://www.nature.com/articles/s41746-022-00712-8">examples of data multimodal methods</a> for precision medicine</li>
+</ul>
 </section>
-<section id="physiological" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="physiological"><span class="header-section-number">3.2</span> Physiological</h2>
+<section id="omic-data" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="omic-data"><span class="header-section-number">3.2</span> Omic Data</h2>
+<p>Omic data such as genetic or protein information about patients can also be combined with clinical data to enhance research. Examples include polygenic risk scores using single nucleotide polymorphisms <span class="citation" data-cites="kannry_2013">(<a href="#ref-kannry_2013" role="doc-biblioref">Kannry and Williams 2013</a>)</span>, methylation risk scores using DNA methylation data, transcriptomic data (or data about the expression of RNAs), and more recently evaluation of microbiome data and proteomic data <span class="citation" data-cites="kidenya_unlocking_2024">(<a href="#ref-kidenya_unlocking_2024" role="doc-biblioref">Kidenya and Mboowa 2024</a>)</span>.</p>
 </section>
-<section id="monitoring-data" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="monitoring-data"><span class="header-section-number">3.3</span> Monitoring data</h2>
+<section id="physiological-data" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="physiological-data"><span class="header-section-number">3.3</span> Physiological Data</h2>
+<p>This data includes any type of test measurement that may be performed to evaluate bodily form and function including but not limited to:</p>
+<ul>
+<li>Urine and blood test measurements (such as levels of vitamins, minerals, hormones, antibodies, as well as cell compositions and characteristics, presence and type of bacteria or viruses and more)</li>
+<li>Vital measurements (blood pressure, pulse rate, oxygen level, body temperature), and more.</li>
+<li>Electrode based measurements to assess organ function (such as electrocardiogram measurements of heart rhythm, and electroencephalogram of brain activity)</li>
+</ul>
+</section>
+<section id="imaging-data" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="imaging-data"><span class="header-section-number">3.4</span> Imaging Data</h2>
+<p>There are several types of clinical imaging data. This includes pathology, radiology, and molecular based imaging among others <span class="citation" data-cites="Kasban2015ACS">(<a href="#ref-Kasban2015ACS" role="doc-biblioref">Kasban, El-Bendary, and Salama 2015</a>)</span>. All of these produce a file or multiple files of imaging data that can be paired with demographics of individuals or other clinical data to perform research.</p>
+<p>Pathology imaging involves examination of tissue, fluid, and other bodily samples like free cells. These samples are taken from patients in the form of tissue biopsies, body fluid collections, or other sampling methods. Historically this was done on slides with various forms of staining to help clinicians and researchers examine cell populations and cellular and extracellular structures. More modern techniques are allowing for faster preparations that don’t require slides and offer greater capacity for <span class="citation" data-cites="abraham_current_2024">(<a href="#ref-abraham_current_2024" role="doc-biblioref">Abraham and Levenson 2024</a>)</span>.</p>
+<p>Radiology imaging involves using radiation or magnets and sound waves to evaluate structures in living patients. This includes radiation-based methods such as X-ray and Computed Tomography (CT), as well as magnet based methods like Magnetic Resonance Imaging (MRI), and sound wave-based methods called ultrasound which are often used to detect tumors <span class="citation" data-cites="Kasban2015ACS">(<a href="#ref-Kasban2015ACS" role="doc-biblioref">Kasban, El-Bendary, and Salama 2015</a>)</span>.</p>
+<p>Molecular imaging involves evaluation of molecular function within living patients. This can include radiological techniques such as Positron Emission Tomography (PET) and Single Photon Emission Computed Tomography (SPECT) imaging. PET uses radiotracers to monitor physiological aspects such as metabolism of cancer tumors or bone mineralization in bone cancer. SPECT is used to monitor apoptosis and lymph node mapping <span class="citation" data-cites="keidar_spectct_2003 israel_two_2019">(<a href="#ref-keidar_spectct_2003" role="doc-biblioref">Keidar, Israel, and Krausz 2003</a>; <a href="#ref-israel_two_2019" role="doc-biblioref">Israel et al. 2019</a>)</span>. In addition, MRI with contrast agents has helped investigators and clinicians examine biomarkers less invasively in human samples. Computed Tomography (CT) combined with contrast agents can also help evaluation of tissue composition and microstructure. Newer forms of molecular imaging include Magnetic Particle Imaging (MPI), which uses the magnetic properties of injected tracers to create 3D images of vasculature, and Optical Coherent Tomography (OCT), which has proven to be a great method for shallow noninvasive in situ biopsies (meaning biopsies that don’t require physically taking a sample from a patient). Hybrid imaging, which combines multiple forms of molecular imaging such as PET and CT, continues to be developed and offers advantages over use of a single method <span class="citation" data-cites="molecular_img_2023 israel_two_2019">(<a href="#ref-molecular_img_2023" role="doc-biblioref">Department of Biomedical Engineering, University of Texas Southwestern Medical Center, USA et al. 2023</a>; <a href="#ref-israel_two_2019" role="doc-biblioref">Israel et al. 2019</a>)</span>.</p>
+</section>
+<section id="monitoring-data" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="monitoring-data"><span class="header-section-number">3.5</span> Monitoring data</h2>
 <div class="bluebox">
 <p>This section was written by: Jennifer Kelleher, Ph.D.<sup>1</sup>; Abigail S. Robbertz, Ph.D.<sup>1</sup>; and Meghan E. McGrady, Ph.D.<sup>1,2</sup></p>
 <p><strong>NOTE:</strong> Jennifer Kelleher, Ph.D.<sup>1</sup> and Abigail S. Robbertz, Ph.D.<sup>1</sup> contributed equally.</p>
@@ -283,23 +326,29 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 <li>Medication adherence</li>
 <li>Calorie intake</li>
 </ul>
-<p>Electronic monitoring devices can also be used to assess physical health indicators including: * Blood glucose levels * Blood pressure * Heart rate and heart rate variability * Oxygen saturation</p>
+<p>Electronic monitoring devices can also be used to assess physical health indicators including:</p>
+<ul>
+<li>Blood glucose levels</li>
+<li>Blood pressure</li>
+<li>Heart rate and heart rate variability</li>
+<li>Oxygen saturation</li>
+</ul>
 <p>Electronic monitoring devices enable researchers to track day-to-day health behaviors in the patient’s <strong>“real-world” setting</strong>. This allows researchers to explore patterns or changes in a patient’s health behavior and provides a richer understanding of <strong>daily behavior over time</strong>.</p>
-<section id="benefits-of-monitoring-data" class="level3" data-number="3.3.1">
-<h3 data-number="3.3.1" class="anchored" data-anchor-id="benefits-of-monitoring-data"><span class="header-section-number">3.3.1</span> Benefits of Monitoring Data</h3>
+<section id="benefits-of-monitoring-data" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="benefits-of-monitoring-data"><span class="header-section-number">3.5.1</span> Benefits of Monitoring Data</h3>
 <ol type="1">
 <li><p>Electronic monitoring devices often include data transmission abilities that enable healthcare providers or researchers to access these data in near <strong>real-time</strong> potentially informing intervention and/or medical decision-making.</p></li>
 <li><p>Electronic monitoring devices also have the potential to produce <strong>more accurate</strong> estimates of health behaviors than alternative strategies (e.g., self-report) as they are not subject to recall bias and can detect efforts to inflate adherence due to social desirability.</p></li>
 </ol>
 </section>
-<section id="considerations" class="level3" data-number="3.3.2">
-<h3 data-number="3.3.2" class="anchored" data-anchor-id="considerations"><span class="header-section-number">3.3.2</span> Considerations</h3>
+<section id="considerations" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="considerations"><span class="header-section-number">3.5.2</span> Considerations</h3>
 <div class="warning">
 <p>This section is not exhaustive. Research teams are strongly encouraged to consult with experts with experience and training in collecting and analyzing data from specific devices.</p>
-<p>To ensure the outcome variables are aligned with the research question of interest and <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10798216/">ethical and age/developmental considerations</a> (<span class="citation" data-cites="psihogios_ethical_2024">Psihogios et al. (<a href="#ref-psihogios_ethical_2024" role="doc-biblioref">2024</a>)</span>; <span class="citation" data-cites="modi_pediatric_2012">Modi et al. (<a href="#ref-modi_pediatric_2012" role="doc-biblioref">2012</a>)</span>) have been appropriately accounted for, readers are encouraged to consult with researchers in their field who have integrated these measurement strategies into their work.</p>
+<p>To ensure the outcome variables are aligned with the research question of interest and ethical and age/developmental considerations <span class="citation" data-cites="psihogios_ethical_2024 modi_pediatric_2012">(<a href="#ref-psihogios_ethical_2024" role="doc-biblioref">Psihogios et al. 2024</a>; <a href="#ref-modi_pediatric_2012" role="doc-biblioref">Modi et al. 2012</a>)</span> have been appropriately accounted for, readers are encouraged to consult with researchers in their field who have integrated these measurement strategies into their work.</p>
 </div>
-<section id="medication-adherence" class="level4" data-number="3.3.2.1">
-<h4 data-number="3.3.2.1" class="anchored" data-anchor-id="medication-adherence"><span class="header-section-number">3.3.2.1</span> Medication Adherence</h4>
+<section id="medication-adherence" class="level4" data-number="3.5.2.1">
+<h4 data-number="3.5.2.1" class="anchored" data-anchor-id="medication-adherence"><span class="header-section-number">3.5.2.1</span> Medication Adherence</h4>
 <p>There are three major components of medical adherence (the tracking of taking medication):</p>
 <ul>
 <li>Initiation: Starting a prescribed regimen</li>
@@ -308,26 +357,25 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 </ul>
 <p>For more information see:</p>
 <ul>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3403197/">A new taxonomy for describing and defining adherence to medications (Vrijens et al., 2012)</a></li>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9923567/">Pediatric self-management: A framework for research, practice, and policy. (Modi et al., 2012)</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3403197/">A new taxonomy for describing and defining adherence to medications (Vrijens et al., 2012)</a> <span class="citation" data-cites="vrijens_new_2012">(<a href="#ref-vrijens_new_2012" role="doc-biblioref">Vrijens et al. 2012</a>)</span></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9923567/">Pediatric self-management: A framework for research, practice, and policy. (Modi et al., 2012)</a> <span class="citation" data-cites="modi_pediatric_2012">(<a href="#ref-modi_pediatric_2012" role="doc-biblioref">Modi et al. 2012</a>)</span></li>
 </ul>
 </section>
 </section>
 </section>
-<section id="radiology" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="radiology"><span class="header-section-number">3.4</span> Radiology</h2>
+<section id="geographic-environmental-and-social-determinants-of-health-data" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="geographic-environmental-and-social-determinants-of-health-data"><span class="header-section-number">3.6</span> Geographic, environmental, and social determinants of health Data</h2>
+<p>To better understand if specific populations have higher rates of cancer due to environmental exposures, geographic and environmental data can be very useful. Data include measurements of air pollution, amounts of chemical exposures from food contamination, quantities and proximity to green space, amounts of nearby traffic, proximity to manufacturing, or agricultural industry, and even weather and temperature patterns which can cause events like wild fires and all have been shown to influence cancer risk <span class="citation" data-cites="iwasaki_exposure_2023 abravan_environmental_2026 hiatt_climate_2026">(<a href="#ref-iwasaki_exposure_2023" role="doc-biblioref">Iwasaki et al. 2023</a>; <a href="#ref-abravan_environmental_2026" role="doc-biblioref">Abravan et al. 2026</a>; <a href="#ref-hiatt_climate_2026" role="doc-biblioref">Hiatt et al. 2026</a>)</span>.</p>
+<p>Social determinants of health data includes aspects about an individual’s lifestyle including their job, access to health care, housing and neighborhood, economic stability, and education. Studies indicate that incorporation of these aspects into clinical research can help uncover social aspects that may inhibit or enhance cancer detection or treatment in different populations <span class="citation" data-cites="chen_social_2020">(<a href="#ref-chen_social_2020" role="doc-biblioref">Chen, Tan, and Padman 2020</a>)</span>.</p>
 </section>
-<section id="pathology" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="pathology"><span class="header-section-number">3.5</span> Pathology</h2>
-</section>
-<section id="sec-synthetic-data" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="sec-synthetic-data"><span class="header-section-number">3.6</span> Synthetic Data</h2>
-<p>Synthetic data are artificially generated datasets designed to reflect the structure and patterns of real-world populations, without containing information about actual patients <span class="citation" data-cites="susser2024synthetic">(<a href="#ref-susser2024synthetic" role="doc-biblioref">Susser et al. 2024</a>)</span>. There are many ways to generate synthetic data. Some approaches are simple, like creating partially synthetic data by replacing potentially identifying pieces of information with synthetic values. Others are more complex, like using AI systems to fully generate synthetic patient notes. The goal of synthetic data is to mimic the characteristics and patterns in real patient data, while avoiding privacy concerns, cost, or biases of using real datasets.</p>
-<section id="uses-of-synthetic-data" class="level3" data-number="3.6.1">
-<h3 data-number="3.6.1" class="anchored" data-anchor-id="uses-of-synthetic-data"><span class="header-section-number">3.6.1</span> Uses of synthetic data</h3>
+<section id="sec-synthetic-data" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="sec-synthetic-data"><span class="header-section-number">3.7</span> Synthetic Data</h2>
+<p>Synthetic data are artificially generated datasets designed to reflect the structure and patterns of real-world populations, without containing information about actual patients <span class="citation" data-cites="susser2024synthetic">(<a href="#ref-susser2024synthetic" role="doc-biblioref">Susser et al. 2024</a>)</span>. There are many ways to generate synthetic data. Some approaches are simple, like creating partially synthetic data by replacing potentially identifying pieces of information with synthetic values. Others are more complex, such as using AI models to fully generate synthetic patient notes. The goal of synthetic data is to mimic the characteristics and patterns in real patient data, while avoiding privacy concerns, cost, or biases of using real datasets. A related concept is simulated data. While simulated data are also artificial datasets, they are typically generated directly from mathematical or probabilistic models. In contrast, synthetic data are typically generated using methods that are informed by real-world data.</p>
+<section id="uses-of-synthetic-data" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="uses-of-synthetic-data"><span class="header-section-number">3.7.1</span> Uses of synthetic data</h3>
 <p>There are several possible uses for synthetic data:</p>
 <ul>
-<li>Testing or validation: synthetic data may be easier to create or access than real clinical data, while being similar enough to test or validate new tools, methods, or data handling pipelines. It can also be shared between institutions, and used to compare the performance of competing tools. However please see the consideration section about some limitations of this approach.</li>
+<li>Testing or validation: synthetic data may be easier to create or access than real clinical data, while being similar enough to test or validate new tools, methods, or data handling pipelines. It can also be shared between institutions, and used to compare the performance of competing tools. However, please see the Section <a href="#sec-synthetic-concerns" class="quarto-xref"><span>Section 3.7.4</span></a> for some limitations of this approach.</li>
 <li>Augmenting or balancing datasets: real patient data can have subgroups with low representation, which can lead to algorithmic bias in some applications. Synthetic data can be used to balance data so that there are more observations that represent these groups.</li>
 <li>Supplementing controls groups in clinical trials: Conducting clinical trials requires a lot of time and money. Using synthetic data has been suggested to supplement control arms in clinical trials, in order to reduce costs or realign funds to add more patients to the experimental arm <span class="citation" data-cites="elvatun2025synthetic">(<a href="#ref-elvatun2025synthetic" role="doc-biblioref">Elvatun et al. 2025</a>)</span>.</li>
 <li>Augmenting data for rare disease areas: Rare disease research often suffers from small sample sizes of patient data and can be especially susceptible to privacy concerns, which can lead to underpowered studies. Synthetic data have the potential to be used for detection and development of treatment for rare diseases <span class="citation" data-cites="mendes2025synthetic">(<a href="#ref-mendes2025synthetic" role="doc-biblioref">Mendes, Barbar, and Refaie 2025</a>)</span>.</li>
@@ -342,18 +390,21 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 </div>
 </div>
 </section>
-<section id="resources-for-generating-synthetic-data" class="level3" data-number="3.6.2">
-<h3 data-number="3.6.2" class="anchored" data-anchor-id="resources-for-generating-synthetic-data"><span class="header-section-number">3.6.2</span> Resources for generating synthetic data</h3>
+<section id="resources-for-generating-synthetic-data" class="level3" data-number="3.7.2">
+<h3 data-number="3.7.2" class="anchored" data-anchor-id="resources-for-generating-synthetic-data"><span class="header-section-number">3.7.2</span> Resources for generating synthetic data</h3>
 <p>There are a wide range of ways to generate synthetic data for different uses. Some tools to access or generate synthetic clinical data include:</p>
 <ul>
 <li><a href="https://github.com/synthetichealth/synthea">Synthea</a>: a synthetic patient population simulator, that generates synthetic medical histories. This tool can be used without restriction for research, industry, or government <span class="citation" data-cites="walonoski2018synthea">(<a href="#ref-walonoski2018synthea" role="doc-biblioref">Walonoski et al. 2018</a>)</span>.</li>
 <li><a href="https://synthea.mitre.org">SyntheticMass</a>: a synthetic dataset of residents of Massachusetts (generated using Synthea), which statistically mirrors the real population in terms of demographics, disease burden, and healthcare interaction. This data is free of PII and PHI <span class="citation" data-cites="walonoski2018synthea">(<a href="#ref-walonoski2018synthea" role="doc-biblioref">Walonoski et al. 2018</a>)</span>.</li>
-<li><a href="https://cran.r-project.org/package=simstudy">simstudy</a>: an R package used to simulate datasets. The user specifies a set of relationships between covariates and type of study, and the tool generates synthetic data <span class="citation" data-cites="simstudy">(<a href="#ref-simstudy" role="doc-biblioref">Goldfeld and Wujciak-Jens 2020</a>)</span>.</li>
 <li><a href="https://cran.r-project.org/web/packages/synthpop/index.html">synthpop</a>: an R package that takes patient data with sensitive values, and replaces those values with synthetic values, while minimally distorting the statistical summaries of the dataset <span class="citation" data-cites="nowok2016synthpop">(<a href="#ref-nowok2016synthpop" role="doc-biblioref">Nowok, Raab, and Dibben 2016</a>)</span>.</li>
 </ul>
+<p>There are also tools that generate simulated data (using probabilistic models). One such tool is the following:</p>
+<ul>
+<li><a href="https://cran.r-project.org/package=simstudy">simstudy</a>: an R package used to simulate datasets. The user specifies a set of relationships between covariates, type of study, and probability distribution to use, and the tool generates synthetic data <span class="citation" data-cites="simstudy">(<a href="#ref-simstudy" role="doc-biblioref">Goldfeld and Wujciak-Jens 2020</a>)</span>.</li>
+</ul>
 </section>
-<section id="benefits-of-synthetic-data" class="level3" data-number="3.6.3">
-<h3 data-number="3.6.3" class="anchored" data-anchor-id="benefits-of-synthetic-data"><span class="header-section-number">3.6.3</span> Benefits of synthetic data</h3>
+<section id="benefits-of-synthetic-data" class="level3" data-number="3.7.3">
+<h3 data-number="3.7.3" class="anchored" data-anchor-id="benefits-of-synthetic-data"><span class="header-section-number">3.7.3</span> Benefits of synthetic data</h3>
 <p>Using synthetic data has a variety of potential benefits.</p>
 <ul>
 <li>Reducing privacy risks: synthetic data are intended to have little or no information about individuals, and therefore reduce privacy risks associated with using clinical data. This also means they can more easily be shared across institutions and without needing to be granted access.<br>
@@ -361,8 +412,8 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 <li>Lower cost to generate: synthetic data typically cost less to generate than the cost to collect real patient data, and once an AI system has been trained to generate synthetic data then it can keep producing more. This is particularly useful for training AI systems, which need large sample sizes.</li>
 </ul>
 </section>
-<section id="concerns-about-synthetic-data" class="level3" data-number="3.6.4">
-<h3 data-number="3.6.4" class="anchored" data-anchor-id="concerns-about-synthetic-data"><span class="header-section-number">3.6.4</span> Concerns about synthetic data</h3>
+<section id="sec-synthetic-concerns" class="level3" data-number="3.7.4">
+<h3 data-number="3.7.4" class="anchored" data-anchor-id="sec-synthetic-concerns"><span class="header-section-number">3.7.4</span> Concerns about synthetic data</h3>
 <p>Although there is a lot of potential for synthetic data to revolutionize fields that use clinical data, there are also quite a few practical and ethical concerns.</p>
 <ul>
 <li>Accuracy and reliability: it is challenging to assess how well synthetic data actually mimic real data. Therefore, it is often unknown exactly how reliable statistical tests are based on synthetic data, as opposed to real patient data.</li>
@@ -374,16 +425,56 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 <p>While synthetic data have promise for several areas of clinical research, any synthetic data use needs to be carefully considered and validated.</p>
 </section>
 </section>
-<section id="summary" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.7</span> Summary</h2>
+<section id="summary" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.8</span> Summary</h2>
+<p>Cancer research is becoming increasingly more multimodal, meaning that researchers are combining different kinds of data together beyond EHR and other more traditional clinical data types as discussed in the previous chapter. Other data such as imaging, physiological, omic, monitoring, geographic, environmental, social determinants of health data, and synthetic data can contribute to clinical research. Synthetic data can be especially useful for reducing privacy risks for testing tools or methods and training AI models. They can also help balance sample groups, and augment data for rare diseases or rare sample groups. However, they have reliability concerns and other risks.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-abraham_current_2024" class="csl-entry" role="listitem">
+Abraham, Tanishq Mathew, and Richard Levenson. 2024. <span>“Current <span>Landscape</span> of <span>Advanced</span> <span>Imaging</span> <span>Tools</span> for <span>Pathology</span> <span>Diagnostics</span>.”</span> <em>Modern Pathology</em> 37 (4): 100443. <a href="https://doi.org/10.1016/j.modpat.2024.100443">https://doi.org/10.1016/j.modpat.2024.100443</a>.
+</div>
+<div id="ref-abravan_environmental_2026" class="csl-entry" role="listitem">
+Abravan, Azadeh, Isabella Fornacon-Wood, Richard Kingston, David Topping, and Gareth Price. 2026. <span>“Environmental Determinants of Cancer Outcomes: A Scoping Review.”</span> <em>Radiotherapy and Oncology</em> 217 (April): 111408. <a href="https://doi.org/10.1016/j.radonc.2026.111408">https://doi.org/10.1016/j.radonc.2026.111408</a>.
+</div>
+<div id="ref-amar2025" class="csl-entry" role="listitem">
+Amar, Jonathan, Edward Liu, Alessandra Breschi, Liangliang Zhang, Pouya Kheradpour, Sylvia Li, Lisa Soleymani Lehmann, et al. 2025. <span>“Integrating Genomics into Multimodal EHR Foundation Models.”</span> <a href="https://arxiv.org/abs/2510.23639">https://arxiv.org/abs/2510.23639</a>.
+</div>
+<div id="ref-chen_social_2020" class="csl-entry" role="listitem">
+Chen, Min, Xuan Tan, and Rema Padman. 2020. <span>“Social Determinants of Health in Electronic Health Records and Their Impact on Analysis and Risk Prediction: <span>A</span> Systematic Review.”</span> <em>Journal of the American Medical Informatics Association</em> 27 (11): 1764–73. <a href="https://doi.org/10.1093/jamia/ocaa143">https://doi.org/10.1093/jamia/ocaa143</a>.
+</div>
+<div id="ref-molecular_img_2023" class="csl-entry" role="listitem">
+Department of Biomedical Engineering, University of Texas Southwestern Medical Center, USA, Shu Kang, Ian R. Zurutuza, Department of Biomedical Engineering, University of Texas Southwestern Medical Center, USA, Raiyan T. Zaman, and Department of Biomedical Engineering, University of Texas Southwestern Medical Center, USA. 2023. <span>“Molecular <span>Imaging</span> in <span>Medicine</span>: <span>Past</span>, <span>Present</span>, and <span>Future</span>.”</span> <em>JSM Cardiothoracic Surgery</em> 5 (1): 1–8. <a href="https://doi.org/10.47739/2573-1297.cardiothoracicsurgery.1019">https://doi.org/10.47739/2573-1297.cardiothoracicsurgery.1019</a>.
+</div>
 <div id="ref-elvatun2025synthetic" class="csl-entry" role="listitem">
 Elvatun, Severin, Daan Knoors, Simon Brant, Christian Jonasson, and Jan F Nygård. 2025. <span>“Synthetic Data as External Control Arms in Scarce Single-Arm Clinical Trials.”</span> <em>PLOS Digital Health</em> 4 (1): e0000581.
 </div>
 <div id="ref-simstudy" class="csl-entry" role="listitem">
 Goldfeld, Keith, and Jacob Wujciak-Jens. 2020. <span>“Simstudy: Illuminating Research Methods Through Data Generation.”</span> <em>Journal of Open Source Software</em> 5 (54): 2763. <a href="https://doi.org/10.21105/joss.02763">https://doi.org/10.21105/joss.02763</a>.
+</div>
+<div id="ref-hiatt_climate_2026" class="csl-entry" role="listitem">
+Hiatt, Robert A., Jefferey L. Burgess, Prashant Mathur, and Leticia M. Nogueira. 2026. <span>“Climate <span>Change</span> and <span>Environmental</span> <span>Exposures</span> <span>Across</span> the <span>Cancer</span> <span>Continuum</span>: <span>Implications</span> for <span>Oncology</span>.”</span> <em>American Society of Clinical Oncology Educational Book</em> 46 (3): e521654. <a href="https://doi.org/10.1200/EDBK-26-521654">https://doi.org/10.1200/EDBK-26-521654</a>.
+</div>
+<div id="ref-israel_two_2019" class="csl-entry" role="listitem">
+Israel, Ora, O. Pellet, L. Biassoni, D. De Palma, E. Estrada-Lobato, G. Gnanasegaran, T. Kuwert, et al. 2019. <span>“Two Decades of <span>SPECT</span>/<span>CT</span> – the Coming of Age of a Technology: <span>An</span> Updated Review of Literature Evidence.”</span> <em>European Journal of Nuclear Medicine and Molecular Imaging</em> 46 (10): 1990–2012. <a href="https://doi.org/10.1007/s00259-019-04404-6">https://doi.org/10.1007/s00259-019-04404-6</a>.
+</div>
+<div id="ref-iwasaki_exposure_2023" class="csl-entry" role="listitem">
+Iwasaki, Motoki, Hiroaki Itoh, Norie Sawada, and Shoichiro Tsugane. 2023. <span>“Exposure to Environmental Chemicals and Cancer Risk: Epidemiological Evidence from <span>Japanese</span> Studies.”</span> <em>Genes and Environment</em> 45 (1): 10. <a href="https://doi.org/10.1186/s41021-023-00268-3">https://doi.org/10.1186/s41021-023-00268-3</a>.
+</div>
+<div id="ref-kannry_2013" class="csl-entry" role="listitem">
+Kannry, Joseph L., and Marc S. Williams. 2013. <span>“Integration of Genomics into the Electronic Health Record: Mapping Terra Incognita.”</span> <em>Genetics in Medicine</em> 15 (10): 757–60. <a href="https://doi.org/10.1038/gim.2013.102">https://doi.org/10.1038/gim.2013.102</a>.
+</div>
+<div id="ref-Kasban2015ACS" class="csl-entry" role="listitem">
+Kasban, H., Mohsen A. M. El-Bendary, and Dina Husseiny Salama. 2015. <span>“A Comparative Study of Medical Imaging Techniques.”</span> In. <a href="https://api.semanticscholar.org/CorpusID:78471834">https://api.semanticscholar.org/CorpusID:78471834</a>.
+</div>
+<div id="ref-keidar_spectct_2003" class="csl-entry" role="listitem">
+Keidar, Zohar, Ora Israel, and Yodphat Krausz. 2003. <span>“<span>SPECT</span>/<span>CT</span> in Tumor Imaging: <span>Technical</span> Aspects and Clinical Applications.”</span> <em>Seminars in Nuclear Medicine</em> 33 (3): 205–18. <a href="https://doi.org/10.1053/snuc.2003.127310">https://doi.org/10.1053/snuc.2003.127310</a>.
+</div>
+<div id="ref-kidenya_unlocking_2024" class="csl-entry" role="listitem">
+Kidenya, Benson R., and Gerald Mboowa. 2024. <span>“Unlocking the Future of Complex Human Diseases Prediction: Multi-Omics Risk Score Breakthrough.”</span> <em>Frontiers in Bioinformatics</em> 4 (December): 1510352. <a href="https://doi.org/10.3389/fbinf.2024.1510352">https://doi.org/10.3389/fbinf.2024.1510352</a>.
+</div>
+<div id="ref-kline_multimodal_2022" class="csl-entry" role="listitem">
+Kline, Adrienne, Hanyin Wang, Yikuan Li, Saya Dennis, Meghan Hutch, Zhenxing Xu, Fei Wang, Feixiong Cheng, and Yuan Luo. 2022. <span>“Multimodal Machine Learning in Precision Health: <span>A</span> Scoping Review.”</span> <em>Npj Digital Medicine</em> 5 (1): 171. <a href="https://doi.org/10.1038/s41746-022-00712-8">https://doi.org/10.1038/s41746-022-00712-8</a>.
 </div>
 <div id="ref-mendes2025synthetic" class="csl-entry" role="listitem">
 Mendes, Jorge M, Aziz Barbar, and Marwa Refaie. 2025. <span>“Synthetic Data Generation: A Privacy-Preserving Approach to Accelerate Rare Disease Research.”</span> <em>Frontiers in Digital Health</em> 7: 1563991.
@@ -402,6 +493,12 @@ Psihogios, Alexandra M., Sara King-Dowling, Jonathan A. Mitchell, Meghan E. McGr
 </div>
 <div id="ref-susser2024synthetic" class="csl-entry" role="listitem">
 Susser, Daniel, Daniel S Schiff, Sara Gerke, Laura Y Cabrera, I Glenn Cohen, Megan Doerr, Jordan Harrod, et al. 2024. <span>“Synthetic Health Data: Real Ethical Promise and Peril.”</span> <em>Hastings Center Report</em> 54 (5): 8–13.
+</div>
+<div id="ref-vrijens_new_2012" class="csl-entry" role="listitem">
+Vrijens, Bernard, Sabina De Geest, Dyfrig A. Hughes, Kardas Przemyslaw, Jenny Demonceau, Todd Ruppar, Fabienne Dobbels, et al. 2012. <span>“A New Taxonomy for Describing and Defining Adherence to Medications.”</span> <em>British Journal of Clinical Pharmacology</em> 73 (5): 691–705. <a href="https://doi.org/10.1111/j.1365-2125.2012.04167.x">https://doi.org/10.1111/j.1365-2125.2012.04167.x</a>.
+</div>
+<div id="ref-walonoski2022" class="csl-entry" role="listitem">
+Walonoski, Jason, Dylan Hall, Karen M. Bates, M. Heath Farris, Joseph Dagher, Matthew E. Downs, Ryan T. Sivek, et al. 2022. <span>“The <span>‘Coherent Data Set’</span>: Combining Patient Data and Imaging in a Comprehensive, Synthetic Health Record.”</span> <em>Electronics</em> 11 (8). <a href="https://doi.org/10.3390/electronics11081199">https://doi.org/10.3390/electronics11081199</a>.
 </div>
 <div id="ref-walonoski2018synthea" class="csl-entry" role="listitem">
 Walonoski, Jason, Mark Kramer, Joseph Nichols, Andre Quina, Chris Moesel, Dylan Hall, Carlton Duffett, Kudakwashe Dube, Thomas Gallagher, and Scott McLachlan. 2018. <span>“Synthea: An Approach, Method, and Software Mechanism for Generating Synthetic Patients and the Synthetic Electronic Health Care Record.”</span> <em>Journal of the American Medical Informatics Association</em> 25 (3): 230–38.

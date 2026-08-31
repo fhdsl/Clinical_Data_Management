@@ -1,0 +1,66 @@
+# About the Authors 
+
+These credits are based on our [course contributors table guidelines](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-give-credits).
+
+&nbsp;
+&nbsp;
+***In [memory](https://galaxyproject.org/jxtx/) of [James Taylor](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02016-0), who was instrumental in initiating this project.***
+
+&nbsp;
+&nbsp;
+
+|Credits|Names|
+|-------|-----|
+|**Pedagogy**||
+|Lead Content Instructor(s)|[Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/)|
+|Content Author (Clinical Data Types)| [Harry Hochheiser](https://www.phdl.pitt.edu/people/harry-hochheiser-phd), [Kate Isaac](https://kweav.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/) |
+|Content Author (Multimodal data)| [Carrie Wright](https://carriewright11.github.io/) |
+|Content Author (Clinical Study Design and Considerations)| [Sarah Teichman](https://svteichman.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/)|
+|Content Author (Clinical Data Acquisition)| [Sarah Teichman](https://svteichman.github.io/) |
+|Content Author (Clinical Data Use)| [Sarah Teichman](https://svteichman.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/) |
+|Content Author (Appendix)| [Sarah Teichman](https://svteichman.github.io/), [Michael Watkins](https://www.linkedin.com/in/michael-watkins-5ab0a4b0/) |
+|Content Contributor ([Potential data distortions in clinical studies](ps://hutchdatascience.org/Clinical_Data_Management/01c-how_to_collect_data.html#potential-data-distortions-in-clinical-studies))|[Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol)|
+|Content Contributor ([Applications for clinical data](https://hutchdatascience.org/Clinical_Data_Management/02-data_uses.html#applications-of-clinical-data))|[Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol)|
+|Content Contributor (Case Report Forms)|[Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/), [Kate Isaac](https://kweav.github.io/)|
+|Content Contributor (Monitoring data)| [Jennifer Kelleher, Abigail S. Robbertz](https://www.cincinnatichildrens.org/education/clinical/fellowship/treatment-adherence-fellowship/team)|
+|Content Contributor (Synthetic Data) |[Sarah Teichman](https://svteichman.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/)|
+|Content Contributor (Appendix - Digital Phenotype) |[Harry Hochheiser](https://www.phdl.pitt.edu/people/harry-hochheiser-phd)|
+|Content Editor/Reviewer (Monitoring data)| [Julia K. Herriott](https://www.linkedin.com/in/julia-herriott-720941246/), [Meghan E. McGrady](https://www.cincinnatichildrens.org/bio/m/meghan-mcgrady)|
+|Content Editor/Reviewer (Clinical Study Design and Considerations, Clinical Data Acquisition)| [Megan Othus](https://www.fredhutch.org/en/people/o/megan-othus.html)|
+|Content Editors/Reviewers|[Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/) |
+|Content Consultants (General) | [Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol),[Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/),[Harry Hochheiser](https://www.phdl.pitt.edu/people/harry-hochheiser-phd), [David Hanauer](https://medschool.umich.edu/profile/4685/david-hanauer)|
+|Content Consultants (Synthetic Data) | [David Hanauer](https://medschool.umich.edu/profile/4685/david-hanauer)|
+|**Production**||
+|Content Publisher(s)| [Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/)|
+|**Technical**||
+|Template Publishing Engineers|[Candace Savonen](https://www.cansavvy.com/), [Carrie Wright](https://carriewright11.github.io/), [Kate Isaac](https://kweav.github.io/)|
+|Publishing Maintenance Engineer|[Candace Savonen](https://www.cansavvy.com/)|
+|Technical Publishing Stylists|[Carrie Wright](https://carriewright11.github.io/), [Candace Savonen](https://www.cansavvy.com/)|
+|Package Developers ([ottrpal])| [Candace Savonen], [John Muschelli], [Carrie Wright], [Ava Hoffman], [Kate Isaac], [Adam Coffman]|
+|**Art and Design**||
+|Illustrator(s)| [Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/)|
+|**Funding**||
+|Funder|[National Cancer Institute (NCI)](https://www.cancer.gov/) UE5 CA254170|
+|Funding Staff| [Allison Peters](https://www.linkedin.com/in/allisonrpeters/), [Maleah O'Connor](https://www.linkedin.com/in/maleah-o-connor/)|
+
+&nbsp;
+
+```{r, echo = FALSE}
+devtools::session_info()
+```
+
+<!-- Fill out this table using these instructions: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-give-credits
+
+<!-- Author information -->
+[FirstName LastName]: link to personal website
+[John Muschelli]: https://johnmuschelli.com/
+[Candace Savonen]: https://www.cansavvy.com/
+[Carrie Wright]: https://carriewright11.github.io/
+[Ava Hoffman]: https://www.avahoffman.com/
+[Howard Baek]: https://www.linkedin.com/in/howard-baik/
+[Kate Isaac]: https://kweav.github.io/
+[Katherine Cox]: https://katherinecox.github.io/
+[Adam Coffman]:https://www.linkedin.com/in/adamcoffman
+
+
+
