@@ -301,7 +301,7 @@ The ICGC includes open access release data, which can be freely downloaded using
 The ICGC also includes controlled release data. Access to this data requires an [application](https://docs.icgc-argo.org/docs/data-access/daco/applying) [@icgc-access]. 
 :::
 
-#### Pediatric Cancer Data Commons (PCDC)
+#### Pediatric Cancer Data Commons (PCDC) {#sec-pcdc}
 
 The PCDC is a data commons run by the Data for the Common Good institution at the University of Chicago. The data commons includes pediatric, young adult, and adult cancer data, as well as an analysis platform with tools to explore available data and assess study feasibility. The data come from more than 40 countries and encompass most types of pediatric cancer. The PCDC standardizes and harmonizes the data, which supports defining cohorts based on diseases and demographics across studies [@pcdc].
 
@@ -397,7 +397,7 @@ The UK Biobank includes the following data [@uk-biobank-data]:
 Access to the data from the UK Biobank requires researchers to fill out an application and pay an access fee. Eligible researchers must have a track record of health-related research and be affiliated with a recognized research organization. The application requires a summary of the intended research, and the process is outlined [here](https://community.ukbiobank.ac.uk/hc/en-gb/categories/14494598931229-Get-started-with-UK-Biobank) [@uk-biobank-access]. The fee structure for accessing this data is provided [here](https://www.ukbiobank.ac.uk/use-our-data/fees/). 
 :::
 
-### All of Us
+### All of Us {#sec-all-of-us}
 
 All of Us is a nationwide research program launched by the NIH in 2015 with the goal of building a large and diverse resource for precision medicine research. Like the UK Biobank, All of Us combines a longitudinal cohort study with a biobank. Participants contribute surveys, physical measurements, electronic health record data, and biological samples, and many participants consent to long-term follow-up. The program places particular emphasis on recruiting populations that have historically been underrepresented in biomedical research [@aschebrook2022overview] [@all-of-us]. Biological samples are processed and stored through a national biobank managed by the Mayo Clinic. Although All of Us is not focused specifically on cancer, its scale and breadth of clinical and biological data make it a valuable resource for many types of cancer research.
 
@@ -440,7 +440,7 @@ Electronic health records (EHR) contain digital information generated through a 
 
 ### Research EHR platforms
 
-#### PCORnet
+#### PCORnet {#sec-pcornet}
 
 PCORnet is a health data resource funded by the Patient Centered Outcomes Research Institute (PCORI). PCORnet receives electronic health data from a large network of health systems and standardizes data under a shared data model. PCORnet includes data from more than 50 million patients from across the US. PCORnet provides both data resources and study support services for researchers. PCORnet will freely provide a consultation about using PCORnet for a study, a study feasibility review, and potentially a data network request, which involves determining what available data in PCORnet would relate to a proposed study and providing site-level aggregate data. If applicable, PCORnet can support data queries, although these will have associated costs. Unlike many centralized databases, PCORnet uses a distributed research network. Participating institutions retain control of their local patient data behind institutional firewalls. Researchers submit standardized queries across the network, and participating sites return approved results [@pcornet].
 
