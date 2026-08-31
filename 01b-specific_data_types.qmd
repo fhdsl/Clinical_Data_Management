@@ -31,6 +31,7 @@ Electronic monitoring devices are digital tools that can be used to track health
 * Calorie intake
 
 Electronic monitoring devices can also be used to assess physical health indicators including:
+
 * Blood glucose levels
 * Blood pressure 
 * Heart rate and heart rate variability
