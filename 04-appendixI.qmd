@@ -3,30 +3,97 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Appendix I: Terminologies and Data Standards
+# Appendix I: Clinical Data Standards
 
-In this appendix, we describe several standards that have been developed to support consistent representation, exchange, and analysis of clinical data. We include several terminologies (SNOMED CT, ICD-10-CM, RxNorm, and LOINC), a clinical data exchange standard (FHIR), and a common data model (OMOP CDM). Terminologies provide standardized ways to identify clinical concepts, data exchange standards define how information can be represented and exchanged between systems, and data models define how data can be organized for analysis.
+In this appendix, we describe several data standards that have been developed to support consistent representation, exchange, and analysis of clinical data. These standards can be filtered into two main categories: syntactic and semantic. In literature, syntax refers to the structure of a sentence and the constraints placed upon it by rules of grammar, while semantics refers to the meaning of the words themselves that are used within the sentence. In data modeling, syntactic standards refer to how concepts are organized, while semantic standards define the concepts themselves. Syntactic standards are sometimes referred to as schemas, data models, common data models, and specifications. Semantic standards are typically called terminologies, ontologies, vocabularies, and knowledgebases. While there can certainly be exceptions to this generalization, the distinction of a “standard” as syntactic or semantic can be an important first step for prospective implementers.
 
-## SNOMED CT
+## Syntactic Clinical Data Standards
+
+Data modeling can be undertaken for a variety of purposes, one of the most common is to ensure interoperability between data obtained from different sources. For example, developers of a new clinical trial who want to ensure that data collected across sites can be collated properly create a case report form to "standardize" the various elements collected during the enrollment and treatment of a patient. This case report form can be thought of as a syntactic standard for all participants of the clinical trial. A more familiar example to many is the effort being undertaken by the biomedical informatics community at large to "standardize" the data collected in electronic health records (EHRs) in thousands of hospitals across the world. Facilitated by Health Level Seven (HL7), a professional standards organization, working groups have formed to crowd-source the creation of a syntactic standard known as HL7 FHIR. This standard puts forth a consensus view of what members of the community see as essential elements for various aspects of the clinical domain (e.g., which data fields are necessary to accurately represent a laboratory test, a diagnosis, a specimen, a clinical encounter, etc.). In each of these cases, individuals with subject matter expertise have come together to define which data elements are essential to the use case, and have formalized certain rules about those data elements. Some of the common features of a syntactic data model are shown in Table 1.
+
+| Feature | Description | Example | 
+|---------|-------------|-------------|
+|Field Name |The name of the component data element.|test_method| 
+|Data Type| The form that the data should take when reported by the implementer.|Code (from a curated list of values)| 
+|Cardinality |An indication of whether the value is required for the field, and if so, how many instances.|0...1 (can be left blank, or have one value)|  
+|Terminology Bindings|A reference to a semantic standard of some kind that defines the meaning of the field|[LOINC Code 58410-2](https://loinc.org/58410-2)|  
+
+: **Table 1**: Common features of syntactic standards 
+
+One of the most pervasive issues with any standard, both syntactic and semantic, is ongoing maintenance. Many syntactic standards are fit-for-purpose and represent the consensus of a specific group, at a specific time, who had a specific use case. This issue is mitigated somewhat by professional standards organizations who provide long-term maintenance of the models/schemas/specifications. It is important for implementers to investigate the source of any syntactic standard being considered and to try to understand what pipeline may exist for requesting help or modifications. A few syntactic standards have been so well-maintained, and have therefore been used in so many different initiatives, that they have been designated as "Common Data Models". Below is a brief description of some leading common data models.
+
+### HL7 FHIR
+
+Fast Healthcare Interoperability Resources (FHIR) is a standard for the exchange of health data. It is described as "Designed to enable the exchange of healthcare-related information. This includes clinical data as well as healthcare-related administrative, public health and research data. It covers both human and veterinary medicine and is intended to be usable world-wide in a wide variety of contexts, including in-patient, ambulatory care, acute care, long-term care, community care, allied health, etc." [@fhir]. FHIR represents data fields in the context of "resources", which are discrete building blocks that can be composed to accurately represent clinical scenarios. Each resource represents a particular type of healthcare information, such as a patient, encounter, condition, observation, or medication request. FHIR defines the structure in which healthcare information is represented and exchanged, while semantic terminology systems provide standardized codes that can be used within those resources to identify clinical concepts, diagnoses, medications, and observations. FHIR defines both the structure of these resources and application programming interfaces (APIs) for exchanging them [@fhir].
+
+In its second decade of development, FHIR has been implemented in EHRs worldwide. As stated previously, it is primarily developed by working groups that consist of a variety of stakeholders (clinicians, data scientists, statisticians, regulatory experts, etc.). Due to the rigorous balloting process developed by HL7, implementers are protected against compatibility issues and backward compatibility by clear and careful bureaucratic procedures.
+
+### OHDSI OMOP
+
+The Observational Health Data Sciences and Informatics (OHDSI) specification for the Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) is described as "an open community data standard, designed to standardize the structure and content of observational data and to enable efficient analyses that can produce reliable evidence" [@ohdsi-omop]. OMOP organizes data fields into tables which can be instantiated in a relational database or other tabular format (such as spreadsheets). Data from source systems can be mapped from their native formats and source codes into the standardized structure and vocabularies of the OMOP CDM [@omop-cdm]. OMOP's standardized vocabularies incorporate concepts from many semantic terminology and classification systems, more information about these vocabularies can be found [here](https://github.com/OHDSI/Vocabulary-v5.0/wiki/Standardized-Vocabularies) [@omop-vocab].
+
+Officially released in 2009, OMOP has been a mainstay for academic medical centers internationally. Many institutional data warehouses have used OMOP modeling to harmonize their content and enable interoperation with other data sources. It has also been used for other prominent biomedical initiatives such as the All of Us Research Program in the United States (see more information about All of Us in @sec-all-of-us). By organizing data from diverse sources into a common structure, OMOP enables researchers to analyze data consistently across institutions and health systems.
+
+### CDISC SDTM
+
+The Clinical Data Interchange Standards Consortium (CDISC) specification for the Study Data Tabulation Model (SDTM) is described as "a standard for organizing and formatting data to streamline processes in collection, management, analysis and reporting. Implementing SDTM supports data aggregation and warehousing; fosters mining and reuse; facilitates sharing; helps perform due diligence and other important data review activities; and improves the regulatory review and approval process" [@sdtm]. Actively developed since 2013, SDTM is one of the required standards for clinical trial data submissions to the U.S. Food and Drug Administration (FDA) and is widely implemented by pharmaceutical companies and other clinical research organizations. SDTM organizes concepts (each with a trademark uppercase name that is concatenated and condensed) into domains and subsequent classes. Users rely on a detailed PDF [implementation guide](https://www.cdisc.org/standards/foundational/sdtmig) that is published on the CDISC website [@sdtmig]. Though specific to clinical trials, it can be a useful syntactic standard for other clinical data harmonization needs as well.
+
+### FDA Sentinel
+
+The FDA Sentinel model is described as "a long-term effort to improve the FDA's ability to identify and assess medical product safety issues. The Sentinel System is an active surveillance system that uses routine querying tools and pre-existing electronic healthcare data from multiple sources to monitor the safety of regulated medical products" [@sentinel]. First released in 2010, it also has deep ties to the FDA and has been implemented by other federal agencies, such as the National Institutes of Health (NIH) Collaboratory Distributed Research Network (DRN). It is available in a publicly accessible markdown format that contains the constraints, cardinality, data types, and other features that are common in a syntactic standard.
+
+### PCORnet
+
+Adapted from the FDA Sentinel model, the National Patient-Centered Clinical Research Network (PCORnet) data model is a shared schema that allows data collected at each participating site to interoperate. Developed to represent both observational as well as trials-based research data, it is organized into tables that contain many similar features as the other models described here [@pcornet-cdm]. See more information about PCORnet in @sec-pcornet.
+
+### i2b2
+
+The i2B2 model is among the oldest clinical common data models still in use, having been initially developed in 2004. They describe their approach as "a ‘star schema’. Instead of separate tables for diagnoses, medications, and other data types, all patient observations are stored in a single ‘fact’ table" [@i2b2]. With concepts organized into tables and fields, it follows the convention that is adhered to by most clinical data modeling efforts. It has been used by an international network of collaborators and has been adapted into several subsequent initiatives, such as the Accrual to Clinical Trials (ACT) project. Interestingly, the documentation for the i2B2 model creates a clear distinction between the syntactic standards set forth and the semantic standards that are bound to (required) for its fields. It says, "A separate ontology describes the different codes that are placed in this fact table. As a result, institutions can use their own local codes, without having to map to common code sets." The importance of this distinction will be described below in the section on Semantic Clinical Data Standards.
+
+### Oncology-Specific Syntactic Standards
+
+In addition to "common" data models, there are a handful of oncology-specific syntactic standards that are worth including in this overview.
+
+#### HL7 FHIR mCODE
+
+The Minimum Common Oncology Data Elements (mCODE) specification is an implementation guide that describes a collection of FHIR profiles [@fhir]. The "base" FHIR standard was always intended to be constrained by profiles to specific use cases. These profiles include increased stringency for cardinality and even some "extensions" or additional fields. The mCODE profiles are intended to be used to represent the main components of clinical oncology and guide the future of EHR oncology modules.
+
+#### OMOP Oncology Extensions
+
+The OMOP model is currently being expanded in response to its ever-present variety of use cases. The Oncology Extensions were undertaken to better accommodate the complex concepts typical to oncology (e.g., cancer staging, tumor classification, chemotherapy regimens, radiation therapy cycles, response assessment, etc.) [@ohdsi-omop].
+
+#### D4CG PCDC
+
+The Pediatric Cancer Data Commons (PCDC), housed at the University of Chicago, is the world’s largest set of harmonized pediatric cancer data. More information about the PCDC can be found in @sec-pcdc. The underlying data model represents consensus from a wide variety of clinical stakeholders (pediatric oncologists, radiologists, surgeons, genetic counselors, statisticians, etc.) from institutions spread over 40 countries and currently spanning 16 different cancers [@pcdc].
+
+## Semantic Clinical Data Standards
+
+Unlike syntactic data standards, which focus on the organization of clinical data concepts, semantic data standards focus on the meaning of clinical data concepts. The goal of semantic interoperability is for meanings of terms and codes to be consistent and sharable across healthcare systems. Terminologies and vocabularies define terms for a specific domain (in this case, clinical care), creating a common language to work with [@de2022semantic]. Ontologies are classifications that formally define relationships between concepts [@callahan2023ontologizing].
+
+Concepts in data standards can be pre-coordinated or post-coordinated. A pre-coordinated concept is defined before use, such as "severe knee pain". A post-coordinated concept uses a primary concept to represent the clinical observation, but can be combined with other codes for additional information, such as combining a "knee pain" concept with the modifier "severe". 
+
+### Terminologies
+
+#### SNOMED CT
 
 Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT) is a clinical terminology that provides consistent representation of **clinical concepts**. The clinical concepts include clinical findings (such as signs and symptoms), procedures, body structures, and other concepts. SNOMED CT provides a standardized way to represent data captured by clinicians [@snomed]. SNOMED promotes consistency in the representation of clinical data across clinicians and institutions and organizes concepts hierarchically.
 
-## ICD-10-CM
+#### ICD-10-CM
 
 The International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) is a terminology for coding **diseases and medical conditions** used in the United States. It is built on the ICD-10, the International Classification of Diseases maintained by the World Health Organization [@icd10cm]. ICD-10-CM codes are often required for diagnosis coding in healthcare billing, and also useful for clinical research. 
 
-## RxNorm
+#### RxNorm
 
 RxNorm provides a terminology for **clinical drugs**, and links these names to other drug terminologies and pharmacy systems [@rxnorm]. Healthcare facilities use different sets of drug names when recording drug information, which causes problems when combining data from multiple facilities. RxNorm translates these different naming systems into a standardized set of drug names, while also representing medication ingredients, strength, and dosage form. 
 
-## LOINC
+#### LOINC
 
 Logical Observation Identifiers Names and Codes (LOINC) is the international terminology for **laboratory tests, measurements, and clinical observations** [@loinc]. Different healthcare systems have different ways of identifying tests and observations. LOINC provides standardized identifiers for laboratory tests, measurements, and other clinical observations, while the associated result records the value obtained.
 
-## FHIR
+#### CPT
 
-Fast Healthcare Interoperability Resources (FHIR) is a standard for the exchange of health data. It represents healthcare information using standardized structures called **resources**, where each resource represents a particular type of healthcare information, such as a patient, encounter, condition, observation, or medication request. FHIR defines the structure in which healthcare information is represented and exchanged, while terminology systems such as SNOMED CT, ICD-10-CM, RxNorm, and LOINC provide standardized codes that can be used within those resources to identify clinical concepts, diagnoses, medications, and observations. FHIR defines both the structure of these resources and application programming interfaces (APIs) for exchanging them [@fhir]. If multiple healthcare systems implement FHIR interfaces, they use a common standard for representing clinical data, simplifying data sharing across their systems.
+The Current Procedural Terminology (CPT) is a terminology for **medical services and procedures** maintained by the American Medical Association. This terminology provide standardized identifiers to be used by physicians and other health care providers [@cpt].
 
-## OMOP CDM
+#### NClt
 
-The Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) defines a common relational structure for organizing clinical data. The OMOP CDM is made up of linked tables that organize clinical data. Data from source systems can be mapped from their native formats and source codes into the standardized structure and vocabularies of the OMOP CDM. OMOP's standardized vocabularies incorporate concepts from terminology and classification systems such as SNOMED CT, ICD-10, RxNorm, and LOINC [@omop-cdm]. By organizing data from diverse sources into a common structure, OMOP enables researchers to analyze data consistently across institutions and health systems.
+The NCI Thesaurus (NCIt) is a **cancer-focused terminology** for NCI and other systems, including terms for clinical care, research, and administration. It contains codes for biomedical concepts and cross-links between concepts [@NCIt]. 
