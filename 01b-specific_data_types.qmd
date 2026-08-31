@@ -93,7 +93,7 @@ Electronic monitoring devices enable researchers to track day-to-day health beha
 :::warning
 This section is not exhaustive. Research teams are strongly encouraged to consult with experts with experience and training in collecting and analyzing data from specific devices.
 
-To ensure the outcome variables are aligned with the research question of interest and [ethical and age/developmental considerations](https://pmc.ncbi.nlm.nih.gov/articles/PMC10798216/) [@psihogios_ethical_2024; @modi_pediatric_2012] have been appropriately accounted for, readers are encouraged to consult with researchers in their field who have integrated these measurement strategies into their work. 
+To ensure the outcome variables are aligned with the research question of interest and ethical and age/developmental considerations [@psihogios_ethical_2024; @modi_pediatric_2012] have been appropriately accounted for, readers are encouraged to consult with researchers in their field who have integrated these measurement strategies into their work. 
 :::
 
 #### Medication Adherence
@@ -106,8 +106,8 @@ There are three major components of medical adherence (the tracking of taking me
 
 For more information see:
 
-- [A new taxonomy for describing and defining adherence to medications (Vrijens et al., 2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3403197/)
-- [Pediatric self-management: A framework for research, practice, and policy. (Modi et al., 2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9923567/)
+- [A new taxonomy for describing and defining adherence to medications (Vrijens et al., 2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3403197/) [@vrijens_new_2012]
+- [Pediatric self-management: A framework for research, practice, and policy. (Modi et al., 2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9923567/)[@modi_pediatric_2012]
 
 
 
@@ -115,7 +115,7 @@ For more information see:
 
 To better understand if specific populations have higher rates of cancer due to environmental exposures, geographic and environmental data can be very useful. Data include measurements of air pollution, amounts of chemical exposures from food contamination, quantities and proximity to green space, amounts of nearby traffic, proximity to manufacturing, or agricultural industry, and even weather and temperature patterns which can cause events like wild fires and all have been shown to influence cancer risk [@iwasaki_exposure_2023; @abravan_environmental_2026; @hiatt_climate_2026]. 
 
-Social determinants of health data includes aspects about an individual's lifestyle including their job, access to health care, housing and neighborhood, economic stability, and education. Studies indicate that incorporation of these aspects into clinical research can help uncover social aspects that may inhibit or enhance cancer detection or treatment in different populations.  https://pmc.ncbi.nlm.nih.gov/articles/PMC7671639/.
+Social determinants of health data includes aspects about an individual's lifestyle including their job, access to health care, housing and neighborhood, economic stability, and education. Studies indicate that incorporation of these aspects into clinical research can help uncover social aspects that may inhibit or enhance cancer detection or treatment in different populations [@chen_social_2020].
 
 
 ## Synthetic Data {#sec-synthetic-data}
