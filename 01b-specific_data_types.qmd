@@ -29,7 +29,7 @@ Methods for finding patterns when combining different kinds of data together, as
 
 ## Omic Data
 
-Omic data such as genetic or protein information about patients can also be combined with clinical data to enhance research. Examples include polygenic risk scores using single nucleotide polymorphisms https://pmc.ncbi.nlm.nih.gov/articles/PMC4157459/, methylation risk scores using DNA methylation data, transcriptomic data (or data about the expression of RNAs),  and more recently evaluation of microbiome data and proteomic data https://pmc.ncbi.nlm.nih.gov/articles/PMC11682975/ . 
+Omic data such as genetic or protein information about patients can also be combined with clinical data to enhance research. Examples include polygenic risk scores using single nucleotide polymorphisms [@kannry_2013], methylation risk scores using DNA methylation data, transcriptomic data (or data about the expression of RNAs),  and more recently evaluation of microbiome data and proteomic data [@kidenya_unlocking_2024]. 
 
 ## Physiological Data
 
@@ -41,9 +41,9 @@ This data includes any type of test measurement that may be performed to evaluat
 
 ## Imaging Data
 
-There are several types of clinical imaging data. This includes pathology, radiology, and molecular based imaging among others (https://ilearn.th-deg.de/pluginfile.php/480243/mod_book/chapter/8248/updated_JXIJSIS2015.pdf ). All of these produce a file or multiple files of imaging data that can be paired with demographics of individuals or other clinical data to perform research.
+There are several types of clinical imaging data. This includes pathology, radiology, and molecular based imaging among others [@Kasban2015ACS]. All of these produce a file or multiple files of imaging data that can be paired with demographics of individuals or other clinical data to perform research.
 
-Pathology imaging involves examination of tissue, fluid, and other bodily samples like free cells. These samples are taken from patients in the form of tissue biopsies, body fluid collections, or other sampling methods.  Historically this was done on slides with various forms of staining to help clinicians and researchers examine cell populations and cellular and extracellular structures. More modern techniques are allowing for faster preparations that don’t require slides and offer greater capacity for visualization https://pmc.ncbi.nlm.nih.gov/articles/PMC12054849/. 
+Pathology imaging involves examination of tissue, fluid, and other bodily samples like free cells. These samples are taken from patients in the form of tissue biopsies, body fluid collections, or other sampling methods.  Historically this was done on slides with various forms of staining to help clinicians and researchers examine cell populations and cellular and extracellular structures. More modern techniques are allowing for faster preparations that don’t require slides and offer greater capacity for [@abraham_current_2024]. 
 
 Radiology imaging involves using radiation or magnets and sound waves to evaluate structures in living patients. This includes radiation-based methods such as X-ray and Computed Tomography (CT), as well as magnet based methods like Magnetic Resonance Imaging (MRI), and sound wave-based methods called ultrasound which are often used to detect tumors [@Kasban2015ACS].
 
