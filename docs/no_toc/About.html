@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>9&nbsp; Appendix I: Terminologies and Data Standards – Clinical Data Management for Cancer Informatics</title>
+<title>8&nbsp; About the Authors – Clinical Data Management for Cancer Informatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./About.html" rel="prev">
+<link href="./04-appendixI.html" rel="next">
+<link href="./03-data_management.html" rel="prev">
 <link href="./assets/ITN_favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -117,7 +98,7 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Appendix I: Terminologies and Data Standards</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">About the Authors</span></h1>
 </div>
 
 
@@ -134,53 +115,212 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 </header>
 
 
-<p>In this appendix, we describe several standards that have been developed to support consistent representation, exchange, and analysis of clinical data. We include several terminologies (SNOMED CT, ICD-10-CM, RxNorm, and LOINC), a clinical data exchange standard (FHIR), and a common data model (OMOP CDM). Terminologies provide standardized ways to identify clinical concepts, data exchange standards define how information can be represented and exchanged between systems, and data models define how data can be organized for analysis.</p>
-<section id="snomed-ct" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="snomed-ct"><span class="header-section-number">9.1</span> SNOMED CT</h2>
-<p>Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT) is a clinical terminology that provides consistent representation of <strong>clinical concepts</strong>. The clinical concepts include clinical findings (such as signs and symptoms), procedures, body structures, and other concepts. SNOMED CT provides a standardized way to represent data captured by clinicians <span class="citation" data-cites="snomed">(<a href="#ref-snomed" role="doc-biblioref"><span>“What Is SNOMED CT?”</span> n.d.</a>)</span>. SNOMED promotes consistency in the representation of clinical data across clinicians and institutions and organizes concepts hierarchically.</p>
-</section>
-<section id="icd-10-cm" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="icd-10-cm"><span class="header-section-number">9.2</span> ICD-10-CM</h2>
-<p>The International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) is a terminology for coding <strong>diseases and medical conditions</strong> used in the United States. It is built on the ICD-10, the International Classification of Diseases maintained by the World Health Organization <span class="citation" data-cites="icd10cm">(<a href="#ref-icd10cm" role="doc-biblioref"><span>“ICD-10-CM”</span> n.d.</a>)</span>. ICD-10-CM codes are often required for diagnosis coding in healthcare billing, and also useful for clinical research.</p>
-</section>
-<section id="rxnorm" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="rxnorm"><span class="header-section-number">9.3</span> RxNorm</h2>
-<p>RxNorm provides a terminology for <strong>clinical drugs</strong>, and links these names to other drug terminologies and pharmacy systems <span class="citation" data-cites="rxnorm">(<a href="#ref-rxnorm" role="doc-biblioref"><span>“RxNorm Overview”</span> n.d.</a>)</span>. Healthcare facilities use different sets of drug names when recording drug information, which causes problems when combining data from multiple facilities. RxNorm translates these different naming systems into a standardized set of drug names, while also representing medication ingredients, strength, and dosage form.</p>
-</section>
-<section id="loinc" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="loinc"><span class="header-section-number">9.4</span> LOINC</h2>
-<p>Logical Observation Identifiers Names and Codes (LOINC) is the international terminology for <strong>laboratory tests, measurements, and clinical observations</strong> <span class="citation" data-cites="loinc">(<a href="#ref-loinc" role="doc-biblioref"><span>“Get Started with LOINC”</span> n.d.</a>)</span>. Different healthcare systems have different ways of identifying tests and observations. LOINC provides standardized identifiers for laboratory tests, measurements, and other clinical observations, while the associated result records the value obtained.</p>
-</section>
-<section id="fhir" class="level2" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="fhir"><span class="header-section-number">9.5</span> FHIR</h2>
-<p>Fast Healthcare Interoperability Resources (FHIR) is a standard for the exchange of health data. It represents healthcare information using standardized structures called <strong>resources</strong>, where each resource represents a particular type of healthcare information, such as a patient, encounter, condition, observation, or medication request. FHIR defines the structure in which healthcare information is represented and exchanged, while terminology systems such as SNOMED CT, ICD-10-CM, RxNorm, and LOINC provide standardized codes that can be used within those resources to identify clinical concepts, diagnoses, medications, and observations. FHIR defines both the structure of these resources and application programming interfaces (APIs) for exchanging them <span class="citation" data-cites="fhir">(<a href="#ref-fhir" role="doc-biblioref"><span>“FHIR Overview”</span> n.d.</a>)</span>. If multiple healthcare systems implement FHIR interfaces, they use a common standard for representing clinical data, simplifying data sharing across their systems.</p>
-</section>
-<section id="omop-cdm" class="level2" data-number="9.6">
-<h2 data-number="9.6" class="anchored" data-anchor-id="omop-cdm"><span class="header-section-number">9.6</span> OMOP CDM</h2>
-<p>The Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) defines a common relational structure for organizing clinical data. The OMOP CDM is made up of linked tables that organize clinical data. Data from source systems can be mapped from their native formats and source codes into the standardized structure and vocabularies of the OMOP CDM. OMOP’s standardized vocabularies incorporate concepts from terminology and classification systems such as SNOMED CT, ICD-10, RxNorm, and LOINC <span class="citation" data-cites="omop-cdm">(<a href="#ref-omop-cdm" role="doc-biblioref"><span>“OMOP Common Data Model”</span> n.d.</a>)</span>. By organizing data from diverse sources into a common structure, OMOP enables researchers to analyze data consistently across institutions and health systems.</p>
+<p>These credits are based on our <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-give-credits">course contributors table guidelines</a>.</p>
+<p>&nbsp; &nbsp; <strong><em>In <a href="https://galaxyproject.org/jxtx/">memory</a> of <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02016-0">James Taylor</a>, who was instrumental in initiating this project.</em></strong></p>
+<p>&nbsp; &nbsp;</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Credits</th>
+<th>Names</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Pedagogy</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Lead Content Instructor(s)</td>
+<td><a href="https://svteichman.github.io/">Sarah Teichman</a>, <a href="https://kweav.github.io/">Kate Isaac</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a></td>
+</tr>
+<tr class="odd">
+<td>Content Author (Clinical Data Types)</td>
+<td><a href="https://www.phdl.pitt.edu/people/harry-hochheiser-phd">Harry Hochheiser</a>, <a href="https://kweav.github.io/">Kate Isaac</a>, <a href="https://www.womenscollegehospital.ca/meet-chris-battiston/">Chris Battiston</a></td>
+</tr>
+<tr class="even">
+<td>Content Author (Multimodal data)</td>
+<td><a href="https://carriewright11.github.io/">Carrie Wright</a></td>
+</tr>
+<tr class="odd">
+<td>Content Author (Clinical Study Design and Considerations)</td>
+<td><a href="https://svteichman.github.io/">Sarah Teichman</a>, <a href="https://www.womenscollegehospital.ca/meet-chris-battiston/">Chris Battiston</a></td>
+</tr>
+<tr class="even">
+<td>Content Author (Clinical Data Acquisition)</td>
+<td><a href="https://svteichman.github.io/">Sarah Teichman</a></td>
+</tr>
+<tr class="odd">
+<td>Content Author (Clinical Data Use)</td>
+<td><a href="https://svteichman.github.io/">Sarah Teichman</a>, <a href="https://www.womenscollegehospital.ca/meet-chris-battiston/">Chris Battiston</a></td>
+</tr>
+<tr class="even">
+<td>Content Author (Appendix)</td>
+<td><a href="https://svteichman.github.io/">Sarah Teichman</a>, <a href="https://www.linkedin.com/in/michael-watkins-5ab0a4b0/">Michael Watkins</a></td>
+</tr>
+<tr class="odd">
+<td>Content Contributor (<a href="ps://hutchdatascience.org/Clinical_Data_Management/01c-how_to_collect_data.html#potential-data-distortions-in-clinical-studies">Potential data distortions in clinical studies</a>)</td>
+<td><a href="https://medicine.utah.edu/faculty/guilherme-del-fiol">Guilherme Del Fiol</a></td>
+</tr>
+<tr class="even">
+<td>Content Contributor (<a href="https://hutchdatascience.org/Clinical_Data_Management/02-data_uses.html#applications-of-clinical-data">Applications for clinical data</a>)</td>
+<td><a href="https://medicine.utah.edu/faculty/guilherme-del-fiol">Guilherme Del Fiol</a></td>
+</tr>
+<tr class="odd">
+<td>Content Contributor (Case Report Forms)</td>
+<td><a href="https://www.womenscollegehospital.ca/meet-chris-battiston/">Chris Battiston</a>, <a href="https://kweav.github.io/">Kate Isaac</a></td>
+</tr>
+<tr class="even">
+<td>Content Contributor (Monitoring data)</td>
+<td><a href="https://www.cincinnatichildrens.org/education/clinical/fellowship/treatment-adherence-fellowship/team">Jennifer Kelleher, Abigail S. Robbertz</a></td>
+</tr>
+<tr class="odd">
+<td>Content Contributor (Synthetic Data)</td>
+<td><a href="https://svteichman.github.io/">Sarah Teichman</a>, <a href="https://www.womenscollegehospital.ca/meet-chris-battiston/">Chris Battiston</a></td>
+</tr>
+<tr class="even">
+<td>Content Contributor (Appendix - Digital Phenotype)</td>
+<td><a href="https://www.phdl.pitt.edu/people/harry-hochheiser-phd">Harry Hochheiser</a></td>
+</tr>
+<tr class="odd">
+<td>Content Editor/Reviewer (Monitoring data)</td>
+<td><a href="https://www.linkedin.com/in/julia-herriott-720941246/">Julia K. Herriott</a>, <a href="https://www.cincinnatichildrens.org/bio/m/meghan-mcgrady">Meghan E. McGrady</a></td>
+</tr>
+<tr class="even">
+<td>Content Editor/Reviewer (Clinical Study Design and Considerations, Clinical Data Acquisition)</td>
+<td><a href="https://www.fredhutch.org/en/people/o/megan-othus.html">Megan Othus</a></td>
+</tr>
+<tr class="odd">
+<td>Content Editors/Reviewers</td>
+<td><a href="https://svteichman.github.io/">Sarah Teichman</a>, <a href="https://kweav.github.io/">Kate Isaac</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a></td>
+</tr>
+<tr class="even">
+<td>Content Consultants (General)</td>
+<td><a href="https://medicine.utah.edu/faculty/guilherme-del-fiol">Guilherme Del Fiol</a>,<a href="https://www.womenscollegehospital.ca/meet-chris-battiston/">Chris Battiston</a>,<a href="https://www.phdl.pitt.edu/people/harry-hochheiser-phd">Harry Hochheiser</a>, <a href="https://medschool.umich.edu/profile/4685/david-hanauer">David Hanauer</a></td>
+</tr>
+<tr class="odd">
+<td>Content Consultants (Synthetic Data)</td>
+<td><a href="https://medschool.umich.edu/profile/4685/david-hanauer">David Hanauer</a></td>
+</tr>
+<tr class="even">
+<td><strong>Production</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Content Publisher(s)</td>
+<td><a href="https://svteichman.github.io/">Sarah Teichman</a>, <a href="https://kweav.github.io/">Kate Isaac</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a></td>
+</tr>
+<tr class="even">
+<td><strong>Technical</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Template Publishing Engineers</td>
+<td><a href="https://www.cansavvy.com/">Candace Savonen</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a>, <a href="https://kweav.github.io/">Kate Isaac</a></td>
+</tr>
+<tr class="even">
+<td>Publishing Maintenance Engineer</td>
+<td><a href="https://www.cansavvy.com/">Candace Savonen</a></td>
+</tr>
+<tr class="odd">
+<td>Technical Publishing Stylists</td>
+<td><a href="https://carriewright11.github.io/">Carrie Wright</a>, <a href="https://www.cansavvy.com/">Candace Savonen</a></td>
+</tr>
+<tr class="even">
+<td>Package Developers ([ottrpal])</td>
+<td><a href="https://www.cansavvy.com/">Candace Savonen</a>, <a href="https://johnmuschelli.com/">John Muschelli</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a>, <a href="https://www.avahoffman.com/">Ava Hoffman</a>, <a href="https://kweav.github.io/">Kate Isaac</a>, <a href="https://www.linkedin.com/in/adamcoffman">Adam Coffman</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Art and Design</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Illustrator(s)</td>
+<td><a href="https://svteichman.github.io/">Sarah Teichman</a>, <a href="https://kweav.github.io/">Kate Isaac</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Funding</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Funder</td>
+<td><a href="https://www.cancer.gov/">National Cancer Institute (NCI)</a> UE5 CA254170</td>
+</tr>
+<tr class="odd">
+<td>Funding Staff</td>
+<td><a href="https://www.linkedin.com/in/allisonrpeters/">Allison Peters</a>, <a href="https://www.linkedin.com/in/maleah-o-connor/">Maleah O’Connor</a></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.3.2 (2023-10-31)
+ os       Ubuntu 22.04.4 LTS
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       Etc/UTC
+ date     2026-08-31
+ pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package     * version date (UTC) lib source
+ cachem        1.0.8   2023-05-01 [1] RSPM (R 4.3.0)
+ cli           3.6.5   2025-04-23 [1] CRAN (R 4.3.2)
+ devtools      2.4.5   2022-10-11 [1] RSPM (R 4.3.0)
+ digest        0.6.34  2024-01-11 [1] RSPM (R 4.3.0)
+ ellipsis      0.3.2   2021-04-29 [1] RSPM (R 4.3.0)
+ evaluate      1.0.5   2025-08-27 [1] CRAN (R 4.3.2)
+ fastmap       1.1.1   2023-02-24 [1] RSPM (R 4.3.0)
+ fs            1.6.3   2023-07-20 [1] RSPM (R 4.3.0)
+ glue          1.7.0   2024-01-09 [1] RSPM (R 4.3.0)
+ htmltools     0.5.7   2023-11-03 [1] RSPM (R 4.3.0)
+ htmlwidgets   1.6.4   2023-12-06 [1] RSPM (R 4.3.0)
+ httpuv        1.6.14  2024-01-26 [1] RSPM (R 4.3.0)
+ jsonlite      2.0.0   2025-03-27 [1] CRAN (R 4.3.2)
+ knitr         1.50    2025-03-16 [1] CRAN (R 4.3.2)
+ later         1.3.2   2023-12-06 [1] RSPM (R 4.3.0)
+ lifecycle     1.0.4   2023-11-07 [1] RSPM (R 4.3.0)
+ magrittr      2.0.3   2022-03-30 [1] RSPM (R 4.3.0)
+ memoise       2.0.1   2021-11-26 [1] RSPM (R 4.3.0)
+ mime          0.12    2021-09-28 [1] RSPM (R 4.3.0)
+ miniUI        0.1.1.1 2018-05-18 [1] RSPM (R 4.3.0)
+ pkgbuild      1.4.3   2023-12-10 [1] RSPM (R 4.3.0)
+ pkgload       1.4.1   2025-09-23 [1] CRAN (R 4.3.2)
+ profvis       0.3.8   2023-05-02 [1] RSPM (R 4.3.0)
+ promises      1.2.1   2023-08-10 [1] RSPM (R 4.3.0)
+ purrr         1.0.2   2023-08-10 [1] RSPM (R 4.3.0)
+ R6            2.6.1   2025-02-15 [1] CRAN (R 4.3.2)
+ Rcpp          1.0.12  2024-01-09 [1] RSPM (R 4.3.0)
+ remotes       2.4.2.1 2023-07-18 [1] RSPM (R 4.3.0)
+ rlang         1.1.6   2025-04-11 [1] CRAN (R 4.3.2)
+ rmarkdown     2.25    2023-09-18 [1] RSPM (R 4.3.0)
+ sessioninfo   1.2.2   2021-12-06 [1] RSPM (R 4.3.0)
+ shiny         1.8.0   2023-11-17 [1] RSPM (R 4.3.0)
+ stringi       1.8.3   2023-12-11 [1] RSPM (R 4.3.0)
+ stringr       1.5.1   2023-11-14 [1] RSPM (R 4.3.0)
+ urlchecker    1.0.1   2021-11-30 [1] RSPM (R 4.3.0)
+ usethis       2.2.3   2024-02-19 [1] RSPM (R 4.3.0)
+ vctrs         0.6.5   2023-12-01 [1] RSPM (R 4.3.0)
+ xfun          0.55    2025-12-16 [1] CRAN (R 4.3.2)
+ xtable        1.8-4   2019-04-21 [1] RSPM (R 4.3.0)
+
+ [1] /usr/local/lib/R/site-library
+ [2] /usr/local/lib/R/library
+
+──────────────────────────────────────────────────────────────────────────────</code></pre>
+</div>
+</div>
+<!-- Fill out this table using these instructions: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-give-credits
+
+<!-- Author information -->
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-fhir" class="csl-entry" role="listitem">
-<span>“FHIR Overview.”</span> n.d. <span>Health Level Seven</span>. Accessed August 27, 2026. <a href="https://hl7.org/fhir/overview.html">https://hl7.org/fhir/overview.html</a>.
-</div>
-<div id="ref-loinc" class="csl-entry" role="listitem">
-<span>“Get Started with LOINC.”</span> n.d. <span>Regenstrief Institute</span>. Accessed August 27, 2026. <a href="https://loinc.org/start">https://loinc.org/start</a>.
-</div>
-<div id="ref-icd10cm" class="csl-entry" role="listitem">
-<span>“ICD-10-CM.”</span> n.d. <span>U.S. Centers fo Disease Control and Prevention</span>. Accessed August 27, 2026. <a href="https://www.cdc.gov/nchs/icd/icd-10-cm/index.html">https://www.cdc.gov/nchs/icd/icd-10-cm/index.html</a>.
-</div>
-<div id="ref-omop-cdm" class="csl-entry" role="listitem">
-<span>“OMOP Common Data Model.”</span> n.d. <span>Observational Health Data Sciences and Informatics</span>. Accessed August 27, 2026. <a href="https://ohdsi.github.io/CommonDataModel/">https://ohdsi.github.io/CommonDataModel/</a>.
-</div>
-<div id="ref-rxnorm" class="csl-entry" role="listitem">
-<span>“RxNorm Overview.”</span> n.d. <span>National Institutes of Health</span>. Accessed August 27, 2026. <a href="https://www.nlm.nih.gov/research/umls/rxnorm/overview.html">https://www.nlm.nih.gov/research/umls/rxnorm/overview.html</a>.
-</div>
-<div id="ref-snomed" class="csl-entry" role="listitem">
-<span>“What Is SNOMED CT?”</span> n.d. <span>SNOMED International</span>. Accessed August 27, 2026. <a href="https://www.snomed.org/what-is-snomed-ct">https://www.snomed.org/what-is-snomed-ct</a>.
-</div>
-</div>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -590,11 +730,14 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./About.html" class="pagination-link" aria-label="About the Authors">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">About the Authors</span></span>
+      <a href="./03-data_management.html" class="pagination-link" aria-label="Clinical Data Management">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Clinical Data Management</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./04-appendixI.html" class="pagination-link" aria-label="Appendix I: Terminologies and Data Standards">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Appendix I: Terminologies and Data Standards</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -605,7 +748,7 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 </div>   
     <div class="nav-footer-center">
 <p>All illustrations <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0000FF;">CC-BY. </a> <br> All other materials <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0000FF;"> CC-BY </a> unless noted otherwise.</p>
-<div class="toc-actions"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/04-appendixI.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/About.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
