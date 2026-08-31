@@ -24,7 +24,7 @@ Methods for finding patterns when combining different kinds of data together, as
 
 - See this [example integrating imaging data](https://www.mdpi.com/2079-9292/11/8/1199)  
 - See this [example about integrating omics data](https://arxiv.org/abs/2510.23639)
-- See this paper for [examples of data multimodal methods](https://www.nature.com/articles/s41746-022-00712-8) for precision medicine: 
+- See this paper for [examples of data multimodal methods](https://www.nature.com/articles/s41746-022-00712-8) for precision medicine
 
 
 ## Omic Data
