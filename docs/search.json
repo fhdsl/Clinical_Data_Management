@@ -380,63 +380,73 @@
     ]
   },
   {
+    "objectID": "About.html",
+    "href": "About.html",
+    "title": "8  About the Authors",
+    "section": "",
+    "text": "These credits are based on our course contributors table guidelines.\n    In memory of James Taylor, who was instrumental in initiating this project.\n   \n\n\n\nCredits\nNames\n\n\n\n\nPedagogy\n\n\n\nLead Content Instructor(s)\nSarah Teichman, Kate Isaac, Carrie Wright\n\n\nContent Author (Clinical Data Types)\nHarry Hochheiser, Kate Isaac, Chris Battiston\n\n\nContent Author (Multimodal data)\nCarrie Wright\n\n\nContent Author (Clinical Study Design and Considerations)\nSarah Teichman, Chris Battiston\n\n\nContent Author (Clinical Data Acquisition)\nSarah Teichman\n\n\nContent Author (Clinical Data Use)\nSarah Teichman, Chris Battiston\n\n\nContent Author (Appendix)\nSarah Teichman, Michael Watkins\n\n\nContent Contributor (Potential data distortions in clinical studies)\nGuilherme Del Fiol\n\n\nContent Contributor (Applications for clinical data)\nGuilherme Del Fiol\n\n\nContent Contributor (Case Report Forms)\nChris Battiston, Kate Isaac\n\n\nContent Contributor (Monitoring data)\nJennifer Kelleher, Abigail S. Robbertz\n\n\nContent Contributor (Synthetic Data)\nSarah Teichman, Chris Battiston\n\n\nContent Contributor (Appendix - Digital Phenotype)\nHarry Hochheiser\n\n\nContent Editor/Reviewer (Monitoring data)\nJulia K. Herriott, Meghan E. McGrady\n\n\nContent Editor/Reviewer (Clinical Study Design and Considerations, Clinical Data Acquisition)\nMegan Othus\n\n\nContent Editors/Reviewers\nSarah Teichman, Kate Isaac, Carrie Wright\n\n\nContent Consultants (General)\nGuilherme Del Fiol,Chris Battiston,Harry Hochheiser, David Hanauer\n\n\nContent Consultants (Synthetic Data)\nDavid Hanauer\n\n\nProduction\n\n\n\nContent Publisher(s)\nSarah Teichman, Kate Isaac, Carrie Wright\n\n\nTechnical\n\n\n\nTemplate Publishing Engineers\nCandace Savonen, Carrie Wright, Kate Isaac\n\n\nPublishing Maintenance Engineer\nCandace Savonen\n\n\nTechnical Publishing Stylists\nCarrie Wright, Candace Savonen\n\n\nPackage Developers ([ottrpal])\nCandace Savonen, John Muschelli, Carrie Wright, Ava Hoffman, Kate Isaac, Adam Coffman\n\n\nArt and Design\n\n\n\nIllustrator(s)\nSarah Teichman, Kate Isaac, Carrie Wright\n\n\nFunding\n\n\n\nFunder\nNational Cancer Institute (NCI) UE5 CA254170\n\n\nFunding Staff\nAllison Peters, Maleah O’Connor\n\n\n\n \n\n\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.3.2 (2023-10-31)\n os       Ubuntu 22.04.4 LTS\n system   x86_64, linux-gnu\n ui       X11\n language (EN)\n collate  en_US.UTF-8\n ctype    en_US.UTF-8\n tz       Etc/UTC\n date     2026-08-31\n pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version date (UTC) lib source\n cachem        1.0.8   2023-05-01 [1] RSPM (R 4.3.0)\n cli           3.6.5   2025-04-23 [1] CRAN (R 4.3.2)\n devtools      2.4.5   2022-10-11 [1] RSPM (R 4.3.0)\n digest        0.6.34  2024-01-11 [1] RSPM (R 4.3.0)\n ellipsis      0.3.2   2021-04-29 [1] RSPM (R 4.3.0)\n evaluate      1.0.5   2025-08-27 [1] CRAN (R 4.3.2)\n fastmap       1.1.1   2023-02-24 [1] RSPM (R 4.3.0)\n fs            1.6.3   2023-07-20 [1] RSPM (R 4.3.0)\n glue          1.7.0   2024-01-09 [1] RSPM (R 4.3.0)\n htmltools     0.5.7   2023-11-03 [1] RSPM (R 4.3.0)\n htmlwidgets   1.6.4   2023-12-06 [1] RSPM (R 4.3.0)\n httpuv        1.6.14  2024-01-26 [1] RSPM (R 4.3.0)\n jsonlite      2.0.0   2025-03-27 [1] CRAN (R 4.3.2)\n knitr         1.50    2025-03-16 [1] CRAN (R 4.3.2)\n later         1.3.2   2023-12-06 [1] RSPM (R 4.3.0)\n lifecycle     1.0.4   2023-11-07 [1] RSPM (R 4.3.0)\n magrittr      2.0.3   2022-03-30 [1] RSPM (R 4.3.0)\n memoise       2.0.1   2021-11-26 [1] RSPM (R 4.3.0)\n mime          0.12    2021-09-28 [1] RSPM (R 4.3.0)\n miniUI        0.1.1.1 2018-05-18 [1] RSPM (R 4.3.0)\n pkgbuild      1.4.3   2023-12-10 [1] RSPM (R 4.3.0)\n pkgload       1.4.1   2025-09-23 [1] CRAN (R 4.3.2)\n profvis       0.3.8   2023-05-02 [1] RSPM (R 4.3.0)\n promises      1.2.1   2023-08-10 [1] RSPM (R 4.3.0)\n purrr         1.0.2   2023-08-10 [1] RSPM (R 4.3.0)\n R6            2.6.1   2025-02-15 [1] CRAN (R 4.3.2)\n Rcpp          1.0.12  2024-01-09 [1] RSPM (R 4.3.0)\n remotes       2.4.2.1 2023-07-18 [1] RSPM (R 4.3.0)\n rlang         1.1.6   2025-04-11 [1] CRAN (R 4.3.2)\n rmarkdown     2.25    2023-09-18 [1] RSPM (R 4.3.0)\n sessioninfo   1.2.2   2021-12-06 [1] RSPM (R 4.3.0)\n shiny         1.8.0   2023-11-17 [1] RSPM (R 4.3.0)\n stringi       1.8.3   2023-12-11 [1] RSPM (R 4.3.0)\n stringr       1.5.1   2023-11-14 [1] RSPM (R 4.3.0)\n urlchecker    1.0.1   2021-11-30 [1] RSPM (R 4.3.0)\n usethis       2.2.3   2024-02-19 [1] RSPM (R 4.3.0)\n vctrs         0.6.5   2023-12-01 [1] RSPM (R 4.3.0)\n xfun          0.55    2025-12-16 [1] CRAN (R 4.3.2)\n xtable        1.8-4   2019-04-21 [1] RSPM (R 4.3.0)\n\n [1] /usr/local/lib/R/site-library\n [2] /usr/local/lib/R/library\n\n──────────────────────────────────────────────────────────────────────────────",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>About the Authors</span>"
+    ]
+  },
+  {
     "objectID": "04-appendixI.html",
     "href": "04-appendixI.html",
-    "title": "8  Appendix I: Terminologies and Data Standards",
+    "title": "9  Appendix I: Terminologies and Data Standards",
     "section": "",
-    "text": "8.1 SNOMED CT\nIn this appendix, we describe several standards that have been developed to support consistent representation, exchange, and analysis of clinical data. We include several terminologies (SNOMED CT, ICD-10-CM, RxNorm, and LOINC), a clinical data exchange standard (FHIR), and a common data model (OMOP CDM). Terminologies provide standardized ways to identify clinical concepts, data exchange standards define how information can be represented and exchanged between systems, and data models define how data can be organized for analysis.\nSystematized Nomenclature of Medicine Clinical Terms (SNOMED CT) is a clinical terminology that provides consistent representation of clinical concepts. The clinical concepts include clinical findings (such as signs and symptoms), procedures, body structures, and other concepts. SNOMED CT provides a standardized way to represent data captured by clinicians (“What Is SNOMED CT?” n.d.). SNOMED promotes consistency in the representation of clinical data across clinicians and institutions and organizes concepts hierarchically.",
+    "text": "9.1 SNOMED CT\nIn this appendix, we describe several standards that have been developed to support consistent representation, exchange, and analysis of clinical data. We include several terminologies (SNOMED CT, ICD-10-CM, RxNorm, and LOINC), a clinical data exchange standard (FHIR), and a common data model (OMOP CDM). Terminologies provide standardized ways to identify clinical concepts, data exchange standards define how information can be represented and exchanged between systems, and data models define how data can be organized for analysis.\nSystematized Nomenclature of Medicine Clinical Terms (SNOMED CT) is a clinical terminology that provides consistent representation of clinical concepts. The clinical concepts include clinical findings (such as signs and symptoms), procedures, body structures, and other concepts. SNOMED CT provides a standardized way to represent data captured by clinicians (“What Is SNOMED CT?” n.d.). SNOMED promotes consistency in the representation of clinical data across clinicians and institutions and organizes concepts hierarchically.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
     ]
   },
   {
     "objectID": "04-appendixI.html#icd-10-cm",
     "href": "04-appendixI.html#icd-10-cm",
-    "title": "8  Appendix I: Terminologies and Data Standards",
-    "section": "8.2 ICD-10-CM",
-    "text": "8.2 ICD-10-CM\nThe International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) is a terminology for coding diseases and medical conditions used in the United States. It is built on the ICD-10, the International Classification of Diseases maintained by the World Health Organization (“ICD-10-CM” n.d.). ICD-10-CM codes are often required for diagnosis coding in healthcare billing, and also useful for clinical research.",
+    "title": "9  Appendix I: Terminologies and Data Standards",
+    "section": "9.2 ICD-10-CM",
+    "text": "9.2 ICD-10-CM\nThe International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) is a terminology for coding diseases and medical conditions used in the United States. It is built on the ICD-10, the International Classification of Diseases maintained by the World Health Organization (“ICD-10-CM” n.d.). ICD-10-CM codes are often required for diagnosis coding in healthcare billing, and also useful for clinical research.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
     ]
   },
   {
     "objectID": "04-appendixI.html#rxnorm",
     "href": "04-appendixI.html#rxnorm",
-    "title": "8  Appendix I: Terminologies and Data Standards",
-    "section": "8.3 RxNorm",
-    "text": "8.3 RxNorm\nRxNorm provides a terminology for clinical drugs, and links these names to other drug terminologies and pharmacy systems (“RxNorm Overview” n.d.). Healthcare facilities use different sets of drug names when recording drug information, which causes problems when combining data from multiple facilities. RxNorm translates these different naming systems into a standardized set of drug names, while also representing medication ingredients, strength, and dosage form.",
+    "title": "9  Appendix I: Terminologies and Data Standards",
+    "section": "9.3 RxNorm",
+    "text": "9.3 RxNorm\nRxNorm provides a terminology for clinical drugs, and links these names to other drug terminologies and pharmacy systems (“RxNorm Overview” n.d.). Healthcare facilities use different sets of drug names when recording drug information, which causes problems when combining data from multiple facilities. RxNorm translates these different naming systems into a standardized set of drug names, while also representing medication ingredients, strength, and dosage form.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
     ]
   },
   {
     "objectID": "04-appendixI.html#loinc",
     "href": "04-appendixI.html#loinc",
-    "title": "8  Appendix I: Terminologies and Data Standards",
-    "section": "8.4 LOINC",
-    "text": "8.4 LOINC\nLogical Observation Identifiers Names and Codes (LOINC) is the international terminology for laboratory tests, measurements, and clinical observations (“Get Started with LOINC” n.d.). Different healthcare systems have different ways of identifying tests and observations. LOINC provides standardized identifiers for laboratory tests, measurements, and other clinical observations, while the associated result records the value obtained.",
+    "title": "9  Appendix I: Terminologies and Data Standards",
+    "section": "9.4 LOINC",
+    "text": "9.4 LOINC\nLogical Observation Identifiers Names and Codes (LOINC) is the international terminology for laboratory tests, measurements, and clinical observations (“Get Started with LOINC” n.d.). Different healthcare systems have different ways of identifying tests and observations. LOINC provides standardized identifiers for laboratory tests, measurements, and other clinical observations, while the associated result records the value obtained.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
     ]
   },
   {
     "objectID": "04-appendixI.html#fhir",
     "href": "04-appendixI.html#fhir",
-    "title": "8  Appendix I: Terminologies and Data Standards",
-    "section": "8.5 FHIR",
-    "text": "8.5 FHIR\nFast Healthcare Interoperability Resources (FHIR) is a standard for the exchange of health data. It represents healthcare information using standardized structures called resources, where each resource represents a particular type of healthcare information, such as a patient, encounter, condition, observation, or medication request. FHIR defines the structure in which healthcare information is represented and exchanged, while terminology systems such as SNOMED CT, ICD-10-CM, RxNorm, and LOINC provide standardized codes that can be used within those resources to identify clinical concepts, diagnoses, medications, and observations. FHIR defines both the structure of these resources and application programming interfaces (APIs) for exchanging them (“FHIR Overview” n.d.). If multiple healthcare systems implement FHIR interfaces, they use a common standard for representing clinical data, simplifying data sharing across their systems.",
+    "title": "9  Appendix I: Terminologies and Data Standards",
+    "section": "9.5 FHIR",
+    "text": "9.5 FHIR\nFast Healthcare Interoperability Resources (FHIR) is a standard for the exchange of health data. It represents healthcare information using standardized structures called resources, where each resource represents a particular type of healthcare information, such as a patient, encounter, condition, observation, or medication request. FHIR defines the structure in which healthcare information is represented and exchanged, while terminology systems such as SNOMED CT, ICD-10-CM, RxNorm, and LOINC provide standardized codes that can be used within those resources to identify clinical concepts, diagnoses, medications, and observations. FHIR defines both the structure of these resources and application programming interfaces (APIs) for exchanging them (“FHIR Overview” n.d.). If multiple healthcare systems implement FHIR interfaces, they use a common standard for representing clinical data, simplifying data sharing across their systems.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
     ]
   },
   {
     "objectID": "04-appendixI.html#omop-cdm",
     "href": "04-appendixI.html#omop-cdm",
-    "title": "8  Appendix I: Terminologies and Data Standards",
-    "section": "8.6 OMOP CDM",
-    "text": "8.6 OMOP CDM\nThe Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) defines a common relational structure for organizing clinical data. The OMOP CDM is made up of linked tables that organize clinical data. Data from source systems can be mapped from their native formats and source codes into the standardized structure and vocabularies of the OMOP CDM. OMOP’s standardized vocabularies incorporate concepts from terminology and classification systems such as SNOMED CT, ICD-10, RxNorm, and LOINC (“OMOP Common Data Model” n.d.). By organizing data from diverse sources into a common structure, OMOP enables researchers to analyze data consistently across institutions and health systems.\n\n\n\n\n“FHIR Overview.” n.d. Health Level Seven. Accessed August 27, 2026. https://hl7.org/fhir/overview.html.\n\n\n“Get Started with LOINC.” n.d. Regenstrief Institute. Accessed August 27, 2026. https://loinc.org/start.\n\n\n“ICD-10-CM.” n.d. U.S. Centers fo Disease Control and Prevention. Accessed August 27, 2026. https://www.cdc.gov/nchs/icd/icd-10-cm/index.html.\n\n\n“OMOP Common Data Model.” n.d. Observational Health Data Sciences and Informatics. Accessed August 27, 2026. https://ohdsi.github.io/CommonDataModel/.\n\n\n“RxNorm Overview.” n.d. National Institutes of Health. Accessed August 27, 2026. https://www.nlm.nih.gov/research/umls/rxnorm/overview.html.\n\n\n“What Is SNOMED CT?” n.d. SNOMED International. Accessed August 27, 2026. https://www.snomed.org/what-is-snomed-ct.",
+    "title": "9  Appendix I: Terminologies and Data Standards",
+    "section": "9.6 OMOP CDM",
+    "text": "9.6 OMOP CDM\nThe Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) defines a common relational structure for organizing clinical data. The OMOP CDM is made up of linked tables that organize clinical data. Data from source systems can be mapped from their native formats and source codes into the standardized structure and vocabularies of the OMOP CDM. OMOP’s standardized vocabularies incorporate concepts from terminology and classification systems such as SNOMED CT, ICD-10, RxNorm, and LOINC (“OMOP Common Data Model” n.d.). By organizing data from diverse sources into a common structure, OMOP enables researchers to analyze data consistently across institutions and health systems.\n\n\n\n\n“FHIR Overview.” n.d. Health Level Seven. Accessed August 27, 2026. https://hl7.org/fhir/overview.html.\n\n\n“Get Started with LOINC.” n.d. Regenstrief Institute. Accessed August 27, 2026. https://loinc.org/start.\n\n\n“ICD-10-CM.” n.d. U.S. Centers fo Disease Control and Prevention. Accessed August 27, 2026. https://www.cdc.gov/nchs/icd/icd-10-cm/index.html.\n\n\n“OMOP Common Data Model.” n.d. Observational Health Data Sciences and Informatics. Accessed August 27, 2026. https://ohdsi.github.io/CommonDataModel/.\n\n\n“RxNorm Overview.” n.d. National Institutes of Health. Accessed August 27, 2026. https://www.nlm.nih.gov/research/umls/rxnorm/overview.html.\n\n\n“What Is SNOMED CT?” n.d. SNOMED International. Accessed August 27, 2026. https://www.snomed.org/what-is-snomed-ct.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Appendix I: Terminologies and Data Standards</span>"
     ]
   }
 ]
