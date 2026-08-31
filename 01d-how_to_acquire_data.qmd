@@ -121,7 +121,7 @@ While many countries have cancer registries, only one in three countries worldwi
 
 ### Summary
 
-Provide summary table to compare these resources! (maybe just the US resources because these are the ones with detail)
+Registries collect data about patients with shared conditions. Population-based registries are useful to understand the incidence of conditions (such as cancer) within populations across time and geographic regions, and hospital-based registries are useful to study patient care in specific healthcare systems. SEER and NPCR are two population-based registry programs that together cover nearly the entire U.S. population. Their combined data is available to researchers as the U.S. Cancer Statistics databases. The NCDB is a large U.S. hospital-based cancer registry. 
 
 ## Data commons
 
@@ -357,7 +357,7 @@ The data can be explored with this [web portal](https://clinicalcommons.ccdi.can
 
 ### Summary
 
-Provide summary table to compare these resources!
+Data commons are cloud-based platforms that store data, computing tools, and computational resources. They are used to assist research communities in collaborating and reusing and harmonizing data across studies. The CRDC is a large data commons run by the NCI, made up of seven specialized data commons. This includes the GDC (containing data from large projects including TCGA and TARGET) for genomic data and the IDC for imaging data. Other data commons include the PCDC and C3DC, which focus on pediatric cancers. 
 
 ## Cohorts and Biobanks
 
@@ -405,7 +405,7 @@ All of Us is a nationwide research program launched by the NIH in 2015 with the 
 
 ## Who is included? 
 
-All of Us includes over 800,000 participants across the US. The program aims to include populations that are historically under-represented in medical research [@all-of-us].
+All of Us includes over 800,000 participants across the U.S. The program aims to include populations that are historically under-represented in medical research [@all-of-us].
 
 ## What data are included?
 
@@ -432,7 +432,7 @@ In order to access the Registered and Controlled tiers, your institution must ha
 
 ### Summary
 
-Provide summary of this section (may not need table because we just have the two cohort studies/biobanks and they are quite similar)!
+Cohort studies and their associated biobanks track groups of participants over time, and collect biological samples associated with these participants. Major cohort studies include the UK Biobank in the UK and All of Us in the U.S.  These studies combine demographic and lifestyle data, physical measurements, biomarkers, genomic data, imagining data, and EHR across large cohorts, making them useful resources for cancer research as well as other types of clinical research. 
 
 ## EHR platforms
 
@@ -452,7 +452,7 @@ Data from PCORnet comes from electronic health records of more than 50 million p
 
 ## What data are included?
 
-PCORnet includes EHR data, including [@pcornet-model]: 
+PCORnet includes EHR data, including [@pcornet-data]: 
 
 * Demographics
 * Healthcare encounters
@@ -577,12 +577,12 @@ Truveta data includes the following [@truveta]:
 
 ## How to access?
 
-Data can be accessed by contacting Truveta [here](https://www.truveta.com/contact-us/) [@truveta]. 
+Data can be accessed by contacting Truveta [here](https://www.truveta.com/contact-us/). 
 :::
 
 ### Summary 
 
-Provide summary table comparing these resources! 
+EHR contain information about patients' interactions with the healthcare system over time, creating a vast resource of clinical data. EHR are not originally created for research purposes, and records can be incomplete and follow different formats in different healthcare systems. EHR platforms aggregate EHR data from healthcare systems, standardize and harmonize the data, and make it available in databases for researchers for analysis or cohort building. Research-focused EHR platforms include PCORnet, ENACT, and Epic Cosmos, and commercial EHR platforms include TriNetX and Truveta. These platforms differ in their EHR sources and available data, funding models, and data availability. 
 
 ## Linked Clinical and Genomic Data Resources
 
@@ -701,10 +701,16 @@ Tempus data are available to participating institutions. Tempus can be contacted
 
 ### Summary 
 
-Provide summary table comparing these resources
+Linked clinical and genomic databases allow researchers to study relationships between genomic characteristics of cancer and clinical outcomes. Public platforms with linked clinical and genomic databases include Project GENIE and MSK-CHORD. Commercial platforms with large clinico-genomic databases include Flatiron and Tempus. 
 
 ## Summary
 
-Provide overall summary of different data sources!
+This chapter covers many different sources of clinical data: cancer registries, data commons, cohorts and biobanks, EHR platforms, and linked clinical and genomic data resources. 
 
-Note that more data resources can be found in this [table](https://jhudatascience.org/ITN_computing_resources/dataResourceTable.html).
+* Registries: Collect data about patients with a shared condition, typically organized around a geographic region or healthcare system. Useful for understanding trends across time and geographic region or hospital.
+* Data commons: Store and standardize different types of clinical data on cloud-based platforms along with analysis tools. Useful for accessing a specific type of data, often aggregated and standardized across multiple studies, and performing preliminary analysis.
+* Cohorts and biobanks: Collect data and physical samples from a large set of participants over time. Useful for connecting multiple datatypes and studying changes over time. 
+* EHR platforms: Aggregate and standardize EHR from healthcare systems, in a format that can be more easily analyzed by researchers. Useful for gathering a large quantity of data about patients in the healthcare system over time. 
+* Linked clinical and genomic data resources: Databases that link genomic data from tumors with clinical data from patients. Useful for combining in-depth genomic data about specific cancer types with demographics and outcomes from clinical data. 
+
+This chapter only provides information about some clinical data sources, many others exist and may be useful for different types of projects. Additional data resources can be found in this [table](https://jhudatascience.org/ITN_computing_resources/dataResourceTable.html).
