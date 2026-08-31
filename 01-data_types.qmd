@@ -1,6 +1,4 @@
----
-title: Clinical Data Types
----
+
 
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
@@ -16,8 +14,6 @@ Clinical data is health-related information collected from patients throughout t
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: 1. Explain why clinical data is unique compared to other types of biomedical research data, 2. Describe the difference between Structured and Unstructured data, 3. List major sources and types of clinical data", out.width="100%"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit#slide=id.g3385bea4ad0_0_30" )
 ```
-
-
 
 ## Clinical data is unique
 
@@ -70,13 +66,8 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0Ge
 ```
 
 
-When used in EHR research, both structured data and clinical notes are generally de-identified to protect patient privacy. Patient ID numbers might be replaced with new identifiers, with linkages maintained by institutional “honest brokers” [@Dhir2008] charged with providing clinical data for research purposes. In some cases, dates may be changed as well. Clinical notes are generally “de-identified” through specialized software designed to remove names, dates, locations, and other sensitive details. Researchers working with institutions to access clinical data should be sure to understand local data de-identification practices.
-
-## Description of data
-
-### File types
-
-### Metadata
-
+When used in EHR research, both structured data and clinical notes are generally de-identified to protect patient privacy. Patient ID numbers might be replaced with new identifiers, with linkages maintained by institutional "honest brokers" [@Dhir2008] charged with providing clinical data for research purposes. In some cases, dates may be changed as well. Clinical notes are generally “de-identified” through specialized software designed to remove names, dates, locations, and other sensitive details. Researchers working with institutions to access clinical data should be sure to understand local data de-identification practices.
 
 ## Summary
+
+Clinical data are data collected from patients during healthcare delivery, clinical trials, and other medical research. Clinical data are unique because they are heterogeneous, with many different sources and structures. Clinical data include patient demographics, medical records, images, clinician notes, case report forms, and many other types of data. These data can generally be split into two categories: structured data, which are stored in tabular form, and unstructured data, which are typically stored in text files and do not have a specific format. 

@@ -24,6 +24,7 @@ Bookdown
 BPC
 cBioPortal
 CDASH
+CDM
 CDS
 centric
 CFR
@@ -141,6 +142,7 @@ NPCR
 omic
 Omic
 OMOP
+OMOP's
 OpenClinica
 ontologies
 Osteosarcoma

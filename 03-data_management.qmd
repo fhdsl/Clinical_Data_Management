@@ -1,6 +1,4 @@
----
-title: Clinical Data Handling, Privacy, and Sharing
----
+
 
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
