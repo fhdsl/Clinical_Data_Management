@@ -1,7 +1,7 @@
 chapt_title	data_level	url	img_path
 Introduction	1	https://hutchdatascience.org/Clinical_Data_Management/01-intro.html	./resources/chapt_screen_images/01-intro.png
 Clinical Data Types	2	https://hutchdatascience.org/Clinical_Data_Management/01-data_types.html	./resources/chapt_screen_images/01-data_types.png
-Specific Clinical Data Types	3	https://hutchdatascience.org/Clinical_Data_Management/01b-specific_data_types.html	./resources/chapt_screen_images/01b-specific_data_types.png
+Multimodal Data	3	https://hutchdatascience.org/Clinical_Data_Management/01b-specific_data_types.html	./resources/chapt_screen_images/01b-specific_data_types.png
 Clinical Study Design and Considerations	4	https://hutchdatascience.org/Clinical_Data_Management/01c-how_to_collect_data.html	./resources/chapt_screen_images/01c-how_to_collect_data.png
 Clinical Data Acquisition	5	https://hutchdatascience.org/Clinical_Data_Management/01d-how_to_acquire_data.html	./resources/chapt_screen_images/01d-how_to_acquire_data.png
 Clinical Data Uses	6	https://hutchdatascience.org/Clinical_Data_Management/02-data_uses.html	./resources/chapt_screen_images/02-data_uses.png
