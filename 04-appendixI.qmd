@@ -13,10 +13,10 @@ Data modeling can be undertaken for a variety of purposes, one of the most commo
 
 | Feature | Description | Example | 
 |---------|-------------|-------------|
-|Field Name |The name of the component data element.|test_method| 
-|Data Type| The form that the data should take when reported by the implementer.|Code (from a curated list of values)| 
-|Cardinality |An indication of whether the value is required for the field, and if so, how many instances.|0...1 (can be left blank, or have one value)|  
-|Terminology Bindings|A reference to a semantic standard of some kind that defines the meaning of the field|[LOINC Code 58410-2](https://loinc.org/58410-2)|  
+|Field Name |The name of the component data element.|medication_name| 
+|Data Type| The form that the data should take when reported by the user.|Code (from a predefined list of values)| 
+|Cardinality |An indication of whether the value is required for the field, and if so, how many instances.|0..* (can be left blank, or have one or more values)|  
+|Terminology Bindings|A reference to a semantic standard of some kind that defines the meaning of the field|[RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/index.html)|  
 
 : **Table 1**: Common features of syntactic standards 
 
@@ -78,7 +78,7 @@ Concepts in data standards can be pre-coordinated or post-coordinated. A pre-coo
 
 Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT) is a clinical terminology that provides consistent representation of **clinical concepts**. The clinical concepts include clinical findings (such as signs and symptoms), procedures, body structures, and other concepts. SNOMED CT provides a standardized way to represent data captured by clinicians [@snomed]. SNOMED promotes consistency in the representation of clinical data across clinicians and institutions and organizes concepts hierarchically.
 
-#### ICD-10-CM
+#### ICD-10-CM {#sec-icd}
 
 The International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) is a terminology for coding **diseases and medical conditions** used in the United States. It is built on the ICD-10, the International Classification of Diseases maintained by the World Health Organization [@icd10cm]. ICD-10-CM codes are often required for diagnosis coding in healthcare billing, and also useful for clinical research. 
 
@@ -97,3 +97,30 @@ The Current Procedural Terminology (CPT) is a terminology for **medical services
 #### NClt
 
 The NCI Thesaurus (NCIt) is a **cancer-focused terminology** for NCI and other systems, including terms for clinical care, research, and administration. It contains codes for biomedical concepts and cross-links between concepts [@NCIt]. 
+
+## Applying Data Standards: Computational Phenotypes
+
+Research on secondary clinical data requires identifying patients with the appropriate characteristics. A study of relationships between genetic tests and prescribed medications for women with breast cancer will require precise definitions of the types of cancer diagnoses, medication, and genetic tests of interest. Computational phenotypes (also referred to as computable phenotypes and phenotype algorithms) are structured selection criteria, used to describe phenotypes used in research [@mo2015desiderata]. These phenotypes must be carefully and rigorously constructed to support reproducible research.
+
+Development of a computational phenotype often starts with a relatively unstructured and informal description, such as the breast cancer example given above. Each of the components of the original description can then be refined into a more precise definition based on the representations of those concepts in the source data set. For example, the search for "women with breast cancer" might start with an examination of how gender is represented in the source data and the determination of values acceptable for the current study. For example, some systems might use "F" or 
+"M" for female or male, while others might use "Female" and "Male". The appropriate value(s) would be part of the clinical phenotype, along with any rules describing when patients with another value for gender should (or should not) be included.  
+
+A similar definition will be needed for breast cancer. In many EHR datasets, diagnoses are recorded in ICD codes (described above in @sec-icd). Since the mid-2010s, these will likely have been ICD10 codes; earlier data will likely be ICD9. Other datasets may have ICD-O (ICD oncology) codes. Many studies will specify a range of codes in one or more of these schemes. For example, breast cancer might be defined as 174.* in ICD9, C50.* in ICD10, or ICD-O codes C500-C509. ICD9 or 10 codes are likely to be found in EHR notes; ICD-O codes are more likely to be found in cancer registry data. Patients with any of these codes might be potentially considered to be breast-cancer patients.
+
+| Specific Code for Breast Cancer | ICD system | Examples| 
+|---------|-------------|-------------|
+|174.* |ICD9|174.6: Malignant neoplasm of axillary tail region of female breast| 
+|C50.*| ICD10|C50.4: Upper-outer quadrant | 
+|C500-C509 |AICD-O|C506 Axillary tail of breast|  
+
+: **Table 2**: Several Possible Definitions for Breast Cancer [@seer-breast-cancer]
+
+Similar decisions can be made for other facets of the research question at hand. Comorbidities, medications,  patient ages, and other demographic features are all likely represented as structured data and can be either mapped to standard vocabularies (ICD codes for comorbidities; RxNorm codes for medications, etc.) or directly extracted.   Projects including details extracted from notes via natural language processing will also need to define the variables extracted and how they are represented. For example, genetic testing details extracted from notes might be mapped to a standardized list of genes. 
+
+Additional details available in the text and structured data might be used to determine how patients are selected or analyzed. Diagnoses, medications, and procedures in structured data are often associated with dates or full timestamps. These data can be used to further refine computational phenotypes to include temporal relationships: for example, restricting potential side effects such as nausea to incidents occurring after (as opposed to before) the administration of chemotherapy. 
+
+Accurate computational phenotyping may also require consideration of the dynamics of clinical care.  In one project involving computational phenotyping with breast cancer, consultations with collaborating oncologists led to the insight that a single ICD code for breast cancer might be associated with an order for a diagnostic test, which might or might not indicate a positive diagnosis.  The project team decided to adopt multiple ICD codes for each included patient as a more reliable assurance of a positive diagnosis. Similar issues might arise for medications such as dexamethasone that might be used for cancer treatment in some, but not all, circumstances. 
+ 
+Precise definitions of all of the necessary criteria can be converted into database queries or functional code capable of extracting relevant patients and attributes from EHR platforms or other data stores.
+Given the challenges associated with creating computational phenotypes, reuse of prior work is preferred whenever possible.  Potential starting points for reuse include descriptions in prior work and entries in repositories such as the [Phenotype Knowledge Base](https://phekb.org), which contains complete definitions for previously used phenotype algorithms (such as [this example](https://phekb.org/phenotype/breast-cancer) for breast cancer), or or the National Library of Medicine’s [Value Set Authority Center](https://vsac.nlm.nih.gov), which contains lists of codes associated with diagnoses of interest (such as [this example](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1116.184/expansion/Latest) for breast cancer) [@phekb] [@vsac]. 
+
