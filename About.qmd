@@ -20,9 +20,12 @@ These credits are based on our [course contributors table guidelines](https://gi
 |Content Author (Clinical Study Design and Considerations)| [Sarah Teichman](https://svteichman.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/) |
 |Content Author (Clinical Data Acquisition)| [Sarah Teichman](https://svteichman.github.io/) |
 |Content Author (Clinical Data Use)| [Sarah Teichman](https://svteichman.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/) |
+|Content Author (Appendix)| [Sarah Teichman](https://svteichman.github.io/) |
 |Content Contributor ([Potential data distortions in clinical studies](ps://hutchdatascience.org/Clinical_Data_Management/01c-how_to_collect_data.html#potential-data-distortions-in-clinical-studies))|[Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol)|
 |Content Contributor ([Applications for clinical data](https://hutchdatascience.org/Clinical_Data_Management/02-data_uses.html#applications-of-clinical-data)|[Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol))|
 |Content Contributor (Monitoring data)| [Jennifer Kelleher, Abigail S. Robbertz](https://www.cincinnatichildrens.org/education/clinical/fellowship/treatment-adherence-fellowship/team)|
+|Content Contributor (Synthetic Data) |[Sarah Teichman](https://svteichman.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/)|
+|Content Contributor (Appendix - Digital Phenotype) |[Harry Hochheiser](https://www.phdl.pitt.edu/people/harry-hochheiser-phd)|
 |Content Editor/Reviewer (Monitoring data)| [Julia K. Herriott](https://www.linkedin.com/in/julia-herriott-720941246/), [Meghan E. McGrady](https://www.cincinnatichildrens.org/bio/m/meghan-mcgrady)|
 |Content Editor/Reviewer (Clinical Study Design and Considerations, Clinical Data Acquisition)| [Megan Othus](https://www.fredhutch.org/en/people/o/megan-othus.html)|
 |Content Editor(s)/Reviewer(s)|[Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/) |
