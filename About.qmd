@@ -14,18 +14,18 @@ These credits are based on our [course contributors table guidelines](https://gi
 |**Pedagogy**||
 |Lead Content Instructor(s)|[Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/)|
 |Content Author (Clinical Data Types)| [Harry Hochheiser](https://www.phdl.pitt.edu/people/harry-hochheiser-phd), [Kate Isaac](https://kweav.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/) |
-|Content Author (Multimodal data| [Carrie Wright](https://carriewright11.github.io/) |
+|Content Author (Multimodal data)| [Carrie Wright](https://carriewright11.github.io/) |
 |Content Author (Clinical Study Design and Considerations)| [Sarah Teichman](https://svteichman.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/) |
 |Content Author (Clinical Data Acquisition)| [Sarah Teichman](https://svteichman.github.io/) |
 |Content Author (Clinical Data Use)| [Sarah Teichman](https://svteichman.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/) |
-|Content Contributor ([Potential data distortions in clinical studies](ps://hutchdatascience.org/Clinical_Data_Management/01c-how_to_collect_data.html#potential-data-distortions-in-clinical-studies)|[Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol)|
-|Content Contributor ([Applications for clinical data](https://hutchdatascience.org/Clinical_Data_Management/02-data_uses.html#applications-of-clinical-data)|[Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol)|
+|Content Contributor ([Potential data distortions in clinical studies](ps://hutchdatascience.org/Clinical_Data_Management/01c-how_to_collect_data.html#potential-data-distortions-in-clinical-studies))|[Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol)|
+|Content Contributor ([Applications for clinical data](https://hutchdatascience.org/Clinical_Data_Management/02-data_uses.html#applications-of-clinical-data)|[Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol))|
 |Content Contributor (Monitoring data)| Jennifer Kelleher, Ph.D.1; Abigail S. Robbertz, Ph.D.|
 |Content Editor/Reviewer (Monitoring data)| Julia K. Herriott, B.S., [Meghan E. McGrady](https://www.cincinnatichildrens.org/bio/m/meghan-mcgrady)|
+|Content Editor/Reviewer (Clinical Study Design and Considerations, Clinical Data Acquisition)| [Megan Othus](https://www.fredhutch.org/en/people/o/megan-othus.html)|
 |Content Editor(s)/Reviewer(s)|[Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/) |
 |Content Consultants (General) | [Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol),[Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/),[Harry Hochheiser](https://www.phdl.pitt.edu/people/harry-hochheiser-phd), [David Hanauer](https://medschool.umich.edu/profile/4685/david-hanauer)|
 |Content Consultants (Synthetic Data) | [David Hanauer](https://medschool.umich.edu/profile/4685/david-hanauer)|
-|Acknowledgments| Gave small assistance to content but not to the level of consulting |
 |**Production**||
 |Content Publisher(s)| [Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/)|
 |**Technical**||
