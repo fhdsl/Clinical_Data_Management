@@ -5,7 +5,7 @@ ottrpal::set_knitr_image_path()
 
 # Introduction
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Clinical Data Management, Written and assembled by: Kate Isaac & Carrie Wright, Contributors: Christopher  Battiston, David Hanauer, Guilherme Del Fiol, Harry Hochheiser, Jennifer Kelleher, Abby Robbertz, & Meghan McGrady", out.width= "100%"}
+```{r, fig.align='center', echo = FALSE, fig.alt= "Clinical Data Management, Written and assembled by: Written and assembled by: Sarah Teichman, Kate Isaac, & Carrie Wright, Contributors/Reviewers: Christopher Battiston, David Hanauer, Guilherme Del Fiol, Harry Hochheiser, Jennifer Kelleher, Abby Robbertz,  Meghan McGrady, Megan Othus, and Michael Watkins", out.width= "100%"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g34e03a999ff_0_165#slide=id.g34e03a999ff_0_165")
 ```
 
