@@ -1,12 +1,12 @@
 # Clinical Study Design and Considerations
 
-In this chapter, we describe a variety of clinical study designs (distinguishing between a clinical trial and an observational study, and several common types of observational studies) and discuss several considerations for collecting data and conducting studies. We provide an in-depth description of case report forms and discuss possible types of bias in clinical studies. 
+In this chapter, we describe a variety of clinical study designs (distinguishing between a clinical trial and an observational study, and several common types of observational studies) and discuss several considerations for collecting data and conducting studies. We provide an in-depth description of case report forms and discuss possible types of data distortion in clinical studies. 
 
 Throughout this chapter, we will use the word **outcome** to refer to the health-related effect that we would like to study, often the occurrence of a disease or condition. We use the term **exposure** to refer to a factor that may influence the outcome and that differs across groups being compared. An exposure may be a treatment, behavior, environmental factor, genetic characteristic, or demographic attribute. We use the term **intervention** to refer to an exposure that is deliberately assigned by researchers within a clinical trial. The goal of many clinical studies is to understand the relationship between an exposure or intervention and an outcome.
 
 ## Learning Objectives
 
-```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: 1. Understand the major differences between clinical trials and observational studies, 2. List different types of observational studies and benefits and drawbacks of each design, 3. Describe best practices for designing case report forms, 4. Recognize potential biases in clinical data and how to combat biases through study design", out.width="100%"}
+```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: 1. Understand the major differences between clinical trials and observational studies, 2. List different types of observational studies and benefits and drawbacks of each design, 3. Describe best practices for designing case report forms, 4. Recognize potential distortions in clinical data and how to combat distortions through study design", out.width="100%"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.g3f6d7b45ddf_0_0#slide=id.g3f6d7b45ddf_0_0" )
 ```
 
@@ -83,7 +83,7 @@ A mega-analysis, often referred to as an individual participant or patient data 
 
 ## Considerations for Designing Studies 
 
-There are several factors to consider when designing studies. In this section, we will focus on designing case report forms and on identifying and reducing sources of bias in clinical studies. 
+There are several factors to consider when designing studies. In this section, we will focus on designing case report forms and on identifying and reducing sources of data distortion in clinical studies. 
 
 ### Case Report Forms (CRFs)
 
