@@ -34,9 +34,10 @@ Omic data such as genetic or protein information about patients can also be comb
 ## Physiological Data
 
 This data includes any type of test measurement that may be performed to evaluate bodily form and function including but not limited to:
-Urine and blood test measurements (such as levels of vitamins, minerals, hormones, antibodies, as well as cell compositions and characteristics, presence and type of bacteria or viruses and more)
-Vital measurements (blood pressure, pulse rate, oxygen level, body temperature), and more. 
-Electrode based measurements to assess organ function (such as electrocardiogram measurements of heart rhythm, and electroencephalogram of brain activity)
+
+* Urine and blood test measurements (such as levels of vitamins, minerals, hormones, antibodies, as well as cell compositions and characteristics, presence and type of bacteria or viruses and more)
+* Vital measurements (blood pressure, pulse rate, oxygen level, body temperature), and more. 
+* Electrode based measurements to assess organ function (such as electrocardiogram measurements of heart rhythm, and electroencephalogram of brain activity)
 
 ## Imaging Data
 
