@@ -709,7 +709,7 @@ This chapter covers many different sources of clinical data: cancer registries, 
 
 * Registries: Collect data about patients with a shared condition, typically organized around a geographic region or healthcare system. Useful for understanding trends across time and geographic region or hospital.
 * Data commons: Store and standardize different types of clinical data on cloud-based platforms along with analysis tools. Useful for accessing a specific type of data, often aggregated and standardized across multiple studies, and performing preliminary analysis.
-* Cohorts and biobanks: Collect data and physical samples from a large set of participants over time. Useful for connecting multiple datatypes and studying changes over time. 
+* Cohorts and biobanks: Collect data and physical samples from a large set of participants over time. Useful for connecting multiple data types and studying changes over time. 
 * EHR platforms: Aggregate and standardize EHR from healthcare systems, in a format that can be more easily analyzed by researchers. Useful for gathering a large quantity of data about patients in the healthcare system over time. 
 * Linked clinical and genomic data resources: Databases that link genomic data from tumors with clinical data from patients. Useful for combining in-depth genomic data about specific cancer types with demographics and outcomes from clinical data. 
 
