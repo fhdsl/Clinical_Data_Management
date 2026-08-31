@@ -12,11 +12,11 @@ book:
   repo-url: https://hutchdatascience.org/Clinical_Data_Management/
   repo-actions: [edit]
   issue-url: https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform
-  google-analytics: "G-XXXXXXXXXX"
+  google-analytics: "G-931MJ5476Z"
 
   chapters:
     - index.qmd
-    - 00-intro.qmd
+    - 01-intro.qmd
     - 01-data_types.qmd
     - 01b-specific_data_types.qmd
     - 01c-how_to_collect_data.qmd
