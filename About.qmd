@@ -1,6 +1,4 @@
----
-title: "Clinical Data Management for Cancer Informatics"
----
+
 
 # About the Authors {-}
 
