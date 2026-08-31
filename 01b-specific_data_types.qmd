@@ -22,9 +22,9 @@ These data can include:
 
 Methods for finding patterns when combining different kinds of data together, as well as how to harmonize and store data together are still in development. Machine Learning and AI show particular promise for finding patterns across vast amounts of data [@amar2025; @walonoski2022] and indicate that prediction performance across many different biomedical studies are improved when multiple data types are combined [@kline_multimodal_2022], however challenges related to feasibility remain. 
 
-- See this example integrating imaging data: https://www.mdpi.com/2079-9292/11/8/1199
-- See this example about integrating omics data: https://arxiv.org/abs/2510.23639
-- See this paper for examples of data multimodal methods for precision medicine: https://www.nature.com/articles/s41746-022-00712-8
+- See this [example integrating imaging data](https://www.mdpi.com/2079-9292/11/8/1199)  
+- See this [example about integrating omics data](https://arxiv.org/abs/2510.23639)
+- See this paper for [examples of data multimodal methods](https://www.nature.com/articles/s41746-022-00712-8) for precision medicine: 
 
 
 ## Omic Data
@@ -107,7 +107,7 @@ There are three major components of medical adherence (the tracking of taking me
 For more information see:
 
 - [A new taxonomy for describing and defining adherence to medications (Vrijens et al., 2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3403197/) [@vrijens_new_2012]
-- [Pediatric self-management: A framework for research, practice, and policy. (Modi et al., 2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9923567/)[@modi_pediatric_2012]
+- [Pediatric self-management: A framework for research, practice, and policy. (Modi et al., 2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9923567/) [@modi_pediatric_2012]
 
 
 
