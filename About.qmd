@@ -18,6 +18,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |Content Author (Clinical Study Design and Considerations)| [Sarah Teichman](https://svteichman.github.io/), [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/)|
 |Content Author (Clinical Data Acquisition)| [Sarah Teichman](https://svteichman.github.io/) |
 |Content Author (Clinical Data Use)| [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/), [Sarah Teichman](https://svteichman.github.io/)|
+|Content Author (Clinical Data Handling)| [Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/), [Sarah Teichman](https://svteichman.github.io/)|
 |Content Author (Appendix)|  [Michael Watkins](https://www.linkedin.com/in/michael-watkins-5ab0a4b0/), [Sarah Teichman](https://svteichman.github.io/)|
 |Content Contributor ([Potential data distortions in clinical studies](ps://hutchdatascience.org/Clinical_Data_Management/01c-how_to_collect_data.html#potential-data-distortions-in-clinical-studies))|[Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol)|
 |Content Contributor ([Applications for clinical data](https://hutchdatascience.org/Clinical_Data_Management/02-data_uses.html#applications-of-clinical-data))|[Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol)|
