@@ -1,5 +1,7 @@
 # Clinical Data Management for Cancer Informatics
 
+[![Render Bookdown, Leanpub, and Coursera](https://github.com/fhdsl/Clinical_Data_Management/actions/workflows/render-all.yml/badge.svg)](https://github.com/fhdsl/Clinical_Data_Management/actions/workflows/render-all.yml)
+
 This course was created from [this GitHub template](https://github.com/ottrproject/OTTR_Quarto).
 
 You can see the rendered course material here: https://hutchdatascience.org/Clinical_Data_Management/
