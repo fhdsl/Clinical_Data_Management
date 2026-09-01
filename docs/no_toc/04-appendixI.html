@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>9&nbsp; Appendix I: Terminologies and Data Standards – Clinical Data Management for Cancer Informatics</title>
+<title>9&nbsp; Appendix I: Clinical Data Standards – Clinical Data Management for Cancer Informatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -117,7 +117,7 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Appendix I: Terminologies and Data Standards</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Appendix I: Clinical Data Standards</span></h1>
 </div>
 
 
@@ -134,50 +134,227 @@ gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
 </header>
 
 
-<p>In this appendix, we describe several standards that have been developed to support consistent representation, exchange, and analysis of clinical data. We include several terminologies (SNOMED CT, ICD-10-CM, RxNorm, and LOINC), a clinical data exchange standard (FHIR), and a common data model (OMOP CDM). Terminologies provide standardized ways to identify clinical concepts, data exchange standards define how information can be represented and exchanged between systems, and data models define how data can be organized for analysis.</p>
-<section id="snomed-ct" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="snomed-ct"><span class="header-section-number">9.1</span> SNOMED CT</h2>
-<p>Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT) is a clinical terminology that provides consistent representation of <strong>clinical concepts</strong>. The clinical concepts include clinical findings (such as signs and symptoms), procedures, body structures, and other concepts. SNOMED CT provides a standardized way to represent data captured by clinicians <span class="citation" data-cites="snomed">(<a href="#ref-snomed" role="doc-biblioref"><span>“What Is SNOMED CT?”</span> n.d.</a>)</span>. SNOMED promotes consistency in the representation of clinical data across clinicians and institutions and organizes concepts hierarchically.</p>
+<p>In this appendix, we describe several data standards that have been developed to support consistent representation, exchange, and analysis of clinical data. These standards can be filtered into two main categories: syntactic and semantic. In literature, syntax refers to the structure of a sentence and the constraints placed upon it by rules of grammar, while semantics refers to the meaning of the words themselves that are used within the sentence. In data modeling, syntactic standards refer to how concepts are organized, while semantic standards define the concepts themselves. Syntactic standards are sometimes referred to as schemas, data models, common data models, and specifications. Semantic standards are typically called terminologies, ontologies, vocabularies, and knowledgebases. While there can certainly be exceptions to this generalization, the distinction of a “standard” as syntactic or semantic can be an important first step for prospective users.</p>
+<section id="syntactic-clinical-data-standards" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="syntactic-clinical-data-standards"><span class="header-section-number">9.1</span> Syntactic Clinical Data Standards</h2>
+<p>Data modeling can be undertaken for a variety of purposes, one of the most common is to ensure interoperability between data obtained from different sources. For example, developers of a new clinical trial who want to ensure that data collected across sites can be collated properly create a case report form to “standardize” the various elements collected during the enrollment and treatment of a patient. This case report form can be thought of as a syntactic standard for all participants of the clinical trial. A more familiar example to many is the effort being undertaken by the biomedical informatics community at large to “standardize” the data collected in electronic health records (EHRs) in thousands of hospitals across the world. Facilitated by Health Level Seven (HL7), a professional standards organization, working groups have formed to crowd-source the creation of a syntactic standard known as HL7 FHIR. This standard puts forth a consensus view of what members of the community see as essential elements for various aspects of the clinical domain (e.g., which data fields are necessary to accurately represent a laboratory test, a diagnosis, a specimen, a clinical encounter, etc.). In each of these cases, individuals with subject matter expertise have come together to define which data elements are essential to the use case, and have formalized certain rules about those data elements. Some of the common features of a syntactic data model are shown in Table 1.</p>
+<table class="caption-top table">
+<caption><strong>Table 1</strong>: Common features of syntactic standards</caption>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Field Name</td>
+<td>The name of the component data element.</td>
+<td>medication_name</td>
+</tr>
+<tr class="even">
+<td>Data Type</td>
+<td>The form that the data should take when reported by the user.</td>
+<td>Code (from a predefined list of values)</td>
+</tr>
+<tr class="odd">
+<td>Cardinality</td>
+<td>An indication of whether the value is required for the field, and if so, how many instances.</td>
+<td>0..* (can be left blank, or have one or more values)</td>
+</tr>
+<tr class="even">
+<td>Terminology Bindings</td>
+<td>A reference to a semantic standard of some kind that defines the meaning of the field</td>
+<td><a href="https://www.nlm.nih.gov/research/umls/rxnorm/index.html">RxNorm</a></td>
+</tr>
+</tbody>
+</table>
+<p>One of the most pervasive issues with any standard, both syntactic and semantic, is ongoing maintenance. Many syntactic standards are fit-for-purpose and represent the consensus of a specific group, at a specific time, who had a specific use case. This issue is mitigated somewhat by professional standards organizations who provide long-term maintenance of the models/schemas/specifications. It is important for users to investigate the source of any syntactic standard being considered and to try to understand what pipeline may exist for requesting help or modifications. A few syntactic standards have been so well-maintained, and have therefore been used in so many different initiatives, that they have been designated as “Common Data Models”. Below is a brief description of some leading common data models.</p>
+<section id="hl7-fhir" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="hl7-fhir"><span class="header-section-number">9.1.1</span> HL7 FHIR</h3>
+<p>Fast Healthcare Interoperability Resources (FHIR) is a standard for the exchange of health data. It is described as “Designed to enable the exchange of healthcare-related information. This includes clinical data as well as healthcare-related administrative, public health and research data. It covers both human and veterinary medicine and is intended to be usable world-wide in a wide variety of contexts, including in-patient, ambulatory care, acute care, long-term care, community care, allied health, etc.” <span class="citation" data-cites="fhir">(<a href="#ref-fhir" role="doc-biblioref">Health Level Seven n.d.</a>)</span>. FHIR represents data fields in the context of “resources”, which are discrete building blocks that can be composed to accurately represent clinical scenarios. Each resource represents a particular type of healthcare information, such as a patient, encounter, condition, observation, or medication request. FHIR defines the structure in which healthcare information is represented and exchanged, while semantic terminology systems provide standardized codes that can be used within those resources to identify clinical concepts, diagnoses, medications, and observations. FHIR defines both the structure of these resources and application programming interfaces (APIs) for exchanging them <span class="citation" data-cites="fhir">(<a href="#ref-fhir" role="doc-biblioref">Health Level Seven n.d.</a>)</span>.</p>
+<p>In its second decade of development, FHIR has been implemented in EHRs worldwide. As stated previously, it is primarily developed by working groups that consist of a variety of stakeholders (clinicians, data scientists, statisticians, regulatory experts, etc.). Due to the rigorous balloting process developed by HL7, users are protected against compatibility issues and backward compatibility by clear and careful bureaucratic procedures.</p>
 </section>
-<section id="icd-10-cm" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="icd-10-cm"><span class="header-section-number">9.2</span> ICD-10-CM</h2>
-<p>The International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) is a terminology for coding <strong>diseases and medical conditions</strong> used in the United States. It is built on the ICD-10, the International Classification of Diseases maintained by the World Health Organization <span class="citation" data-cites="icd10cm">(<a href="#ref-icd10cm" role="doc-biblioref"><span>“ICD-10-CM”</span> n.d.</a>)</span>. ICD-10-CM codes are often required for diagnosis coding in healthcare billing, and also useful for clinical research.</p>
+<section id="ohdsi-omop" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="ohdsi-omop"><span class="header-section-number">9.1.2</span> OHDSI OMOP</h3>
+<p>The Observational Health Data Sciences and Informatics (OHDSI) specification for the Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) is described as “an open community data standard, designed to standardize the structure and content of observational data and to enable efficient analyses that can produce reliable evidence” <span class="citation" data-cites="ohdsi-omop">(<a href="#ref-ohdsi-omop" role="doc-biblioref">Observational Health Data Sciences and Informatics n.d.b</a>)</span>. OMOP organizes data fields into tables which can be instantiated in a relational database or other tabular format (such as spreadsheets). Data from source systems can be mapped from their native formats and source codes into the standardized structure and vocabularies of the OMOP CDM <span class="citation" data-cites="omop-cdm">(<a href="#ref-omop-cdm" role="doc-biblioref">Observational Health Data Sciences and Informatics n.d.a</a>)</span>. OMOP’s standardized vocabularies incorporate concepts from many semantic terminology and classification systems, more information about these vocabularies can be found <a href="https://github.com/OHDSI/Vocabulary-v5.0/wiki/Standardized-Vocabularies">here</a> <span class="citation" data-cites="omop-vocab">(<a href="#ref-omop-vocab" role="doc-biblioref">Observational Health Data Sciences and Informatics n.d.c</a>)</span>.</p>
+<p>Officially released in 2009, OMOP has been a mainstay for academic medical centers internationally. Many institutional data warehouses have used OMOP modeling to harmonize their content and enable interoperation with other data sources. It has also been used for other prominent biomedical initiatives such as the All of Us Research Program in the United States (see more information about All of Us in <a href="01d-how_to_acquire_data.html#sec-all-of-us" class="quarto-xref"><span>Section 5.4.2</span></a>). By organizing data from diverse sources into a common structure, OMOP enables researchers to analyze data consistently across institutions and health systems.</p>
 </section>
-<section id="rxnorm" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="rxnorm"><span class="header-section-number">9.3</span> RxNorm</h2>
-<p>RxNorm provides a terminology for <strong>clinical drugs</strong>, and links these names to other drug terminologies and pharmacy systems <span class="citation" data-cites="rxnorm">(<a href="#ref-rxnorm" role="doc-biblioref"><span>“RxNorm Overview”</span> n.d.</a>)</span>. Healthcare facilities use different sets of drug names when recording drug information, which causes problems when combining data from multiple facilities. RxNorm translates these different naming systems into a standardized set of drug names, while also representing medication ingredients, strength, and dosage form.</p>
+<section id="cdisc-sdtm" class="level3" data-number="9.1.3">
+<h3 data-number="9.1.3" class="anchored" data-anchor-id="cdisc-sdtm"><span class="header-section-number">9.1.3</span> CDISC SDTM</h3>
+<p>The Clinical Data Interchange Standards Consortium (CDISC) specification for the Study Data Tabulation Model (SDTM) is described as “a standard for organizing and formatting data to streamline processes in collection, management, analysis and reporting. Implementing SDTM supports data aggregation and warehousing; fosters mining and reuse; facilitates sharing; helps perform due diligence and other important data review activities; and improves the regulatory review and approval process” <span class="citation" data-cites="sdtm">(<a href="#ref-sdtm" role="doc-biblioref">Clinical Data Interchange Standards Consortium n.d.a</a>)</span>. Actively developed since 2013, SDTM is one of the required standards for clinical trial data submissions to the U.S. Food and Drug Administration (FDA) and is widely implemented by pharmaceutical companies and other clinical research organizations. SDTM organizes concepts (each with a trademark uppercase name that is concatenated and condensed) into domains and subsequent classes. Users rely on a detailed PDF <a href="https://www.cdisc.org/standards/foundational/sdtmig">implementation guide</a> that is published on the CDISC website <span class="citation" data-cites="sdtmig">(<a href="#ref-sdtmig" role="doc-biblioref">Clinical Data Interchange Standards Consortium n.d.b</a>)</span>. Though specific to clinical trials, it can be a useful syntactic standard for other clinical data harmonization needs as well.</p>
 </section>
-<section id="loinc" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="loinc"><span class="header-section-number">9.4</span> LOINC</h2>
-<p>Logical Observation Identifiers Names and Codes (LOINC) is the international terminology for <strong>laboratory tests, measurements, and clinical observations</strong> <span class="citation" data-cites="loinc">(<a href="#ref-loinc" role="doc-biblioref"><span>“Get Started with LOINC”</span> n.d.</a>)</span>. Different healthcare systems have different ways of identifying tests and observations. LOINC provides standardized identifiers for laboratory tests, measurements, and other clinical observations, while the associated result records the value obtained.</p>
+<section id="fda-sentinel" class="level3" data-number="9.1.4">
+<h3 data-number="9.1.4" class="anchored" data-anchor-id="fda-sentinel"><span class="header-section-number">9.1.4</span> FDA Sentinel</h3>
+<p>The FDA Sentinel model is described as “a long-term effort to improve the FDA’s ability to identify and assess medical product safety issues. The Sentinel System is an active surveillance system that uses routine querying tools and pre-existing electronic healthcare data from multiple sources to monitor the safety of regulated medical products” <span class="citation" data-cites="sentinel">(<a href="#ref-sentinel" role="doc-biblioref">U.S. Food and Drug Administration n.d.</a>)</span>. First released in 2010, it also has deep ties to the FDA and has been implemented by other federal agencies, such as the National Institutes of Health (NIH) Collaboratory Distributed Research Network (DRN). It is available in a publicly accessible markdown format that contains the constraints, cardinality, data types, and other features that are common in a syntactic standard.</p>
 </section>
-<section id="fhir" class="level2" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="fhir"><span class="header-section-number">9.5</span> FHIR</h2>
-<p>Fast Healthcare Interoperability Resources (FHIR) is a standard for the exchange of health data. It represents healthcare information using standardized structures called <strong>resources</strong>, where each resource represents a particular type of healthcare information, such as a patient, encounter, condition, observation, or medication request. FHIR defines the structure in which healthcare information is represented and exchanged, while terminology systems such as SNOMED CT, ICD-10-CM, RxNorm, and LOINC provide standardized codes that can be used within those resources to identify clinical concepts, diagnoses, medications, and observations. FHIR defines both the structure of these resources and application programming interfaces (APIs) for exchanging them <span class="citation" data-cites="fhir">(<a href="#ref-fhir" role="doc-biblioref"><span>“FHIR Overview”</span> n.d.</a>)</span>. If multiple healthcare systems implement FHIR interfaces, they use a common standard for representing clinical data, simplifying data sharing across their systems.</p>
+<section id="pcornet" class="level3" data-number="9.1.5">
+<h3 data-number="9.1.5" class="anchored" data-anchor-id="pcornet"><span class="header-section-number">9.1.5</span> PCORnet</h3>
+<p>Adapted from the FDA Sentinel model, the National Patient-Centered Clinical Research Network (PCORnet) data model is a shared schema that allows data collected at each participating site to interoperate. Developed to represent both observational as well as trials-based research data, it is organized into tables that contain many similar features as the other models described here <span class="citation" data-cites="pcornet-cdm">(<a href="#ref-pcornet-cdm" role="doc-biblioref">The National Patient-Centered Clinical Research Network n.d.</a>)</span>. See more information about PCORnet in <a href="01d-how_to_acquire_data.html#sec-pcornet" class="quarto-xref"><span>Section 5.5.1.1</span></a>.</p>
 </section>
-<section id="omop-cdm" class="level2" data-number="9.6">
-<h2 data-number="9.6" class="anchored" data-anchor-id="omop-cdm"><span class="header-section-number">9.6</span> OMOP CDM</h2>
-<p>The Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) defines a common relational structure for organizing clinical data. The OMOP CDM is made up of linked tables that organize clinical data. Data from source systems can be mapped from their native formats and source codes into the standardized structure and vocabularies of the OMOP CDM. OMOP’s standardized vocabularies incorporate concepts from terminology and classification systems such as SNOMED CT, ICD-10, RxNorm, and LOINC <span class="citation" data-cites="omop-cdm">(<a href="#ref-omop-cdm" role="doc-biblioref"><span>“OMOP Common Data Model”</span> n.d.</a>)</span>. By organizing data from diverse sources into a common structure, OMOP enables researchers to analyze data consistently across institutions and health systems.</p>
+<section id="i2b2" class="level3" data-number="9.1.6">
+<h3 data-number="9.1.6" class="anchored" data-anchor-id="i2b2"><span class="header-section-number">9.1.6</span> i2b2</h3>
+<p>The i2B2 model is among the oldest clinical common data models still in use, having been initially developed in 2004. They describe their approach as “a ‘star schema’. Instead of separate tables for diagnoses, medications, and other data types, all patient observations are stored in a single ‘fact’ table” <span class="citation" data-cites="i2b2">(<a href="#ref-i2b2" role="doc-biblioref">Klann n.d.</a>)</span>. With concepts organized into tables and fields, it follows the convention that is adhered to by most clinical data modeling efforts. It has been used by an international network of collaborators and has been adapted into several subsequent initiatives, such as the Accrual to Clinical Trials (ACT) project. Interestingly, the documentation for the i2B2 model creates a clear distinction between the syntactic standards set forth and the semantic standards that are bound to (required) for its fields. It says, “A separate ontology describes the different codes that are placed in this fact table. As a result, institutions can use their own local codes, without having to map to common code sets.” The importance of this distinction will be described below in the section on Semantic Clinical Data Standards.</p>
+</section>
+<section id="oncology-specific-syntactic-standards" class="level3" data-number="9.1.7">
+<h3 data-number="9.1.7" class="anchored" data-anchor-id="oncology-specific-syntactic-standards"><span class="header-section-number">9.1.7</span> Oncology-Specific Syntactic Standards</h3>
+<p>In addition to “common” data models, there are a handful of oncology-specific syntactic standards that are worth including in this overview.</p>
+<section id="hl7-fhir-mcode" class="level4" data-number="9.1.7.1">
+<h4 data-number="9.1.7.1" class="anchored" data-anchor-id="hl7-fhir-mcode"><span class="header-section-number">9.1.7.1</span> HL7 FHIR mCODE</h4>
+<p>The Minimum Common Oncology Data Elements (mCODE) specification is an implementation guide that describes a collection of FHIR profiles <span class="citation" data-cites="fhir">(<a href="#ref-fhir" role="doc-biblioref">Health Level Seven n.d.</a>)</span>. The “base” FHIR standard was always intended to be constrained by profiles to specific use cases. These profiles include increased stringency for cardinality and even some “extensions” or additional fields. The mCODE profiles are intended to be used to represent the main components of clinical oncology and guide the future of EHR oncology modules.</p>
+</section>
+<section id="omop-oncology-extensions" class="level4" data-number="9.1.7.2">
+<h4 data-number="9.1.7.2" class="anchored" data-anchor-id="omop-oncology-extensions"><span class="header-section-number">9.1.7.2</span> OMOP Oncology Extensions</h4>
+<p>The OMOP model is currently being expanded in response to its ever-present variety of use cases. The Oncology Extensions were undertaken to better accommodate the complex concepts typical to oncology (e.g., cancer staging, tumor classification, chemotherapy regimens, radiation therapy cycles, response assessment, etc.) <span class="citation" data-cites="ohdsi-omop">(<a href="#ref-ohdsi-omop" role="doc-biblioref">Observational Health Data Sciences and Informatics n.d.b</a>)</span>.</p>
+</section>
+<section id="d4cg-pcdc" class="level4" data-number="9.1.7.3">
+<h4 data-number="9.1.7.3" class="anchored" data-anchor-id="d4cg-pcdc"><span class="header-section-number">9.1.7.3</span> D4CG PCDC</h4>
+<p>The Pediatric Cancer Data Commons (PCDC), housed at the University of Chicago, is the world’s largest set of harmonized pediatric cancer data. More information about the PCDC can be found in <a href="01d-how_to_acquire_data.html#sec-pcdc" class="quarto-xref"><span>Section 5.3.2.2</span></a>. The underlying data model represents consensus from a wide variety of clinical stakeholders (pediatric oncologists, radiologists, surgeons, genetic counselors, statisticians, etc.) from institutions spread over 40 countries and currently spanning 16 different cancers <span class="citation" data-cites="pcdc">(<a href="#ref-pcdc" role="doc-biblioref">Data for the Common Good n.d.</a>)</span>.</p>
+</section>
+</section>
+</section>
+<section id="semantic-clinical-data-standards" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="semantic-clinical-data-standards"><span class="header-section-number">9.2</span> Semantic Clinical Data Standards</h2>
+<p>Unlike syntactic data standards, which focus on the organization of clinical data concepts, semantic data standards focus on the meaning of clinical data concepts. The goal of semantic interoperability is for meanings of terms and codes to be consistent and sharable across healthcare systems. Terminologies and vocabularies define terms for a specific domain (in this case, clinical care), creating a common language to work with <span class="citation" data-cites="de2022semantic">(<a href="#ref-de2022semantic" role="doc-biblioref">De Mello et al. 2022</a>)</span>. Ontologies are classifications that formally define relationships between concepts <span class="citation" data-cites="callahan2023ontologizing">(<a href="#ref-callahan2023ontologizing" role="doc-biblioref">Callahan et al. 2023</a>)</span>.</p>
+<p>Concepts in data standards can be pre-coordinated or post-coordinated. A pre-coordinated concept is defined before use, such as “severe knee pain”. A post-coordinated concept uses a primary concept to represent the clinical observation, but can be combined with other codes for additional information, such as combining a “knee pain” concept with the modifier “severe”.</p>
+<section id="terminologies" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="terminologies"><span class="header-section-number">9.2.1</span> Terminologies</h3>
+<section id="snomed-ct" class="level4" data-number="9.2.1.1">
+<h4 data-number="9.2.1.1" class="anchored" data-anchor-id="snomed-ct"><span class="header-section-number">9.2.1.1</span> SNOMED CT</h4>
+<p>Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT) is a clinical terminology that provides consistent representation of <strong>clinical concepts</strong>. The clinical concepts include clinical findings (such as signs and symptoms), procedures, body structures, and other concepts. SNOMED CT provides a standardized way to represent data captured by clinicians <span class="citation" data-cites="snomed">(<a href="#ref-snomed" role="doc-biblioref">SNOMED International n.d.</a>)</span>. SNOMED promotes consistency in the representation of clinical data across clinicians and institutions and organizes concepts hierarchically.</p>
+</section>
+<section id="sec-icd" class="level4" data-number="9.2.1.2">
+<h4 data-number="9.2.1.2" class="anchored" data-anchor-id="sec-icd"><span class="header-section-number">9.2.1.2</span> ICD-10-CM</h4>
+<p>The International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) is a terminology for coding <strong>diseases and medical conditions</strong> used in the United States. It is built on the ICD-10, the International Classification of Diseases maintained by the World Health Organization <span class="citation" data-cites="icd10cm">(<a href="#ref-icd10cm" role="doc-biblioref">U.S. Centers fo Disease Control and Prevention n.d.</a>)</span>. ICD-10-CM codes are often required for diagnosis coding in healthcare billing, and also useful for clinical research.</p>
+</section>
+<section id="rxnorm" class="level4" data-number="9.2.1.3">
+<h4 data-number="9.2.1.3" class="anchored" data-anchor-id="rxnorm"><span class="header-section-number">9.2.1.3</span> RxNorm</h4>
+<p>RxNorm provides a terminology for <strong>clinical drugs</strong>, and links these names to other drug terminologies and pharmacy systems <span class="citation" data-cites="rxnorm">(<a href="#ref-rxnorm" role="doc-biblioref">National Institutes of Health n.d.</a>)</span>. Healthcare facilities use different sets of drug names when recording drug information, which causes problems when combining data from multiple facilities. RxNorm translates these different naming systems into a standardized set of drug names, while also representing medication ingredients, strength, and dosage form.</p>
+</section>
+<section id="loinc" class="level4" data-number="9.2.1.4">
+<h4 data-number="9.2.1.4" class="anchored" data-anchor-id="loinc"><span class="header-section-number">9.2.1.4</span> LOINC</h4>
+<p>Logical Observation Identifiers Names and Codes (LOINC) is the international terminology for <strong>laboratory tests, measurements, and clinical observations</strong> <span class="citation" data-cites="loinc">(<a href="#ref-loinc" role="doc-biblioref">Regenstrief Institute n.d.</a>)</span>. Different healthcare systems have different ways of identifying tests and observations. LOINC provides standardized identifiers for laboratory tests, measurements, and other clinical observations, while the associated result records the value obtained.</p>
+</section>
+<section id="cpt" class="level4" data-number="9.2.1.5">
+<h4 data-number="9.2.1.5" class="anchored" data-anchor-id="cpt"><span class="header-section-number">9.2.1.5</span> CPT</h4>
+<p>The Current Procedural Terminology (CPT) is a terminology for <strong>medical services and procedures</strong> maintained by the American Medical Association. This terminology provide standardized identifiers to be used by physicians and other health care providers <span class="citation" data-cites="cpt">(<a href="#ref-cpt" role="doc-biblioref">American Medical Association n.d.</a>)</span>.</p>
+</section>
+<section id="ncit" class="level4" data-number="9.2.1.6">
+<h4 data-number="9.2.1.6" class="anchored" data-anchor-id="ncit"><span class="header-section-number">9.2.1.6</span> NCIt</h4>
+<p>The NCI Thesaurus (NCIt) is a <strong>cancer-focused terminology</strong> for NCI and other systems, including terms for clinical care, research, and administration. It contains codes for biomedical concepts and cross-links between concepts <span class="citation" data-cites="NCIt">(<a href="#ref-NCIt" role="doc-biblioref">National Cancer Institute n.d.</a>)</span>.</p>
+</section>
+</section>
+</section>
+<section id="applying-data-standards-computational-phenotypes" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="applying-data-standards-computational-phenotypes"><span class="header-section-number">9.3</span> Applying Data Standards: Computational Phenotypes</h2>
+<p>Research on secondary clinical data requires identifying patients with the appropriate characteristics. A study of relationships between genetic tests and prescribed medications for women with breast cancer will require precise definitions of the types of cancer diagnoses, medication, and genetic tests of interest. Computational phenotypes (also referred to as computable phenotypes and phenotype algorithms) are structured selection criteria, used to describe phenotypes used in research <span class="citation" data-cites="mo2015desiderata">(<a href="#ref-mo2015desiderata" role="doc-biblioref">Mo et al. 2015</a>)</span>. These phenotypes must be carefully and rigorously constructed to support reproducible research.</p>
+<p>Development of a computational phenotype often starts with a relatively unstructured and informal description, such as the breast cancer example given above. Each of the components of the original description can then be refined into a more precise definition based on the representations of those concepts in the source data set. For example, the search for “women with breast cancer” might start with an examination of how gender is represented in the source data and the determination of values acceptable for the current study. For example, some systems might use “F” or “M” for female or male, while others might use “Female” and “Male”. The appropriate value(s) would be part of the clinical phenotype, along with any rules describing when patients with another value for gender should (or should not) be included.</p>
+<p>A similar definition would be needed for breast cancer. In many EHR datasets, diagnoses are recorded in ICD codes (described above in <a href="#sec-icd" class="quarto-xref"><span>Section 9.2.1.2</span></a>). Since the mid-2010s, these will likely be ICD10 codes; earlier data will likely be ICD9. Other datasets may have ICD-O (ICD oncology) codes. Many studies will specify a range of codes in one or more of these schemes. For example, breast cancer might be defined as 174.* in ICD9, C50.* in ICD10, or ICD-O codes C500-C509. ICD9 or 10 codes are likely to be found in EHR notes; ICD-O codes are more likely to be found in cancer registry data. Patients with any of these codes might be potentially considered to be breast-cancer patients.</p>
+<table class="caption-top table">
+<caption><strong>Table 2</strong>: Several Possible Definitions for Breast Cancer <span class="citation" data-cites="seer-breast-cancer">(<a href="#ref-seer-breast-cancer" role="doc-biblioref">SEER Program n.d.</a>)</span></caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 37%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specific Code for Breast Cancer</th>
+<th>ICD system</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>174.*</td>
+<td>ICD9</td>
+<td>174.6: Malignant neoplasm of axillary tail region of female breast</td>
+</tr>
+<tr class="even">
+<td>C50.*</td>
+<td>ICD10</td>
+<td>C50.4: Upper-outer quadrant</td>
+</tr>
+<tr class="odd">
+<td>C500-C509</td>
+<td>AICD-O</td>
+<td>C506 Axillary tail of breast</td>
+</tr>
+</tbody>
+</table>
+<p>Similar decisions can be made for other facets of the research question at hand. Comorbidities, medications, patient ages, and other demographic features are all likely represented as structured data and can be either mapped to standard vocabularies (ICD codes for comorbidities; RxNorm codes for medications, etc.) or directly extracted. Projects including details extracted from notes via natural language processing will also need to define the variables extracted and how they are represented. For example, genetic testing details extracted from notes might be mapped to a standardized list of genes.</p>
+<p>Additional details available in the text and structured data might be used to determine how patients are selected or analyzed. Diagnoses, medications, and procedures in structured data are often associated with dates or full timestamps. These data can be used to further refine computational phenotypes to include temporal relationships: for example, restricting potential side effects such as nausea to incidents occurring after (as opposed to before) the administration of chemotherapy.</p>
+<p>Accurate computational phenotyping may also require consideration of the dynamics of clinical care. In one project involving computational phenotyping with breast cancer, consultations with collaborating oncologists led to the insight that a single ICD code for breast cancer might be associated with an order for a diagnostic test, which might or might not indicate a positive diagnosis. The project team decided to adopt multiple ICD codes for each included patient as a more reliable assurance of a positive diagnosis. Similar issues might arise for medications such as dexamethasone that might be used for cancer treatment in some, but not all, circumstances.</p>
+<p>Precise definitions of all of the necessary criteria can be converted into database queries or functional code capable of extracting relevant patients and attributes from EHR platforms or other data stores. Given the challenges associated with creating computational phenotypes, reuse of prior work is preferred whenever possible. Potential starting points for reuse include descriptions in prior work and entries in repositories such as the <a href="https://phekb.org">Phenotype Knowledge Base</a>, which contains complete definitions for previously used phenotype algorithms (such as <a href="https://phekb.org/phenotype/breast-cancer">this example</a> for breast cancer), or or the National Library of Medicine’s <a href="https://vsac.nlm.nih.gov">Value Set Authority Center</a>, which contains lists of codes associated with diagnoses of interest (such as <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1116.184/expansion/Latest">this example</a> for breast cancer) <span class="citation" data-cites="phekb">(<a href="#ref-phekb" role="doc-biblioref">PheKB n.d.</a>)</span> <span class="citation" data-cites="vsac">(<a href="#ref-vsac" role="doc-biblioref">National Library of Medicine n.d.</a>)</span>.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-cpt" class="csl-entry" role="listitem">
+American Medical Association. n.d. <span>“CPT.”</span> Accessed August 31, 2026. <a href="https://www.ama-assn.org/practice-management/cpt">https://www.ama-assn.org/practice-management/cpt</a>.
+</div>
+<div id="ref-callahan2023ontologizing" class="csl-entry" role="listitem">
+Callahan, Tiffany J, Adrianne L Stefanski, Jordan M Wyrwa, Chenjie Zeng, Anna Ostropolets, Juan M Banda, William A Baumgartner Jr, et al. 2023. <span>“Ontologizing Health Systems Data at Scale: Making Translational Discovery a Reality.”</span> <em>Npj Digital Medicine</em> 6 (1): 89.
+</div>
+<div id="ref-sdtm" class="csl-entry" role="listitem">
+Clinical Data Interchange Standards Consortium. n.d.a. <span>“SDTM.”</span> Accessed August 31, 2026. <a href="https://www.cdisc.org/standards/foundational/sdtm">https://www.cdisc.org/standards/foundational/sdtm</a>.
+</div>
+<div id="ref-sdtmig" class="csl-entry" role="listitem">
+———. n.d.b. <span>“SDTMIG.”</span> Accessed August 31, 2026. <a href="https://www.cdisc.org/standards/foundational/sdtmig">https://www.cdisc.org/standards/foundational/sdtmig</a>.
+</div>
+<div id="ref-pcdc" class="csl-entry" role="listitem">
+Data for the Common Good. n.d. <span>“Pediatric Cancer Data Commons.”</span> Accessed August 28, 2026. <a href="https://commons.cri.uchicago.edu/pcdc/">https://commons.cri.uchicago.edu/pcdc/</a>.
+</div>
+<div id="ref-de2022semantic" class="csl-entry" role="listitem">
+De Mello, Blanda Helena, Sandro José Rigo, Cristiano André Da Costa, Rodrigo da Rosa Righi, Bruna Donida, Marta Rosecler Bez, and Luana Carina Schunke. 2022. <span>“Semantic Interoperability in Health Records Standards: A Systematic Literature Review.”</span> <em>Health and Technology</em> 12 (2): 255–72.
+</div>
 <div id="ref-fhir" class="csl-entry" role="listitem">
-<span>“FHIR Overview.”</span> n.d. <span>Health Level Seven</span>. Accessed August 27, 2026. <a href="https://hl7.org/fhir/overview.html">https://hl7.org/fhir/overview.html</a>.
+Health Level Seven. n.d. <span>“FHIR Overview.”</span> Accessed August 27, 2026. <a href="https://hl7.org/fhir/overview-clinical.html">https://hl7.org/fhir/overview-clinical.html</a>.
 </div>
-<div id="ref-loinc" class="csl-entry" role="listitem">
-<span>“Get Started with LOINC.”</span> n.d. <span>Regenstrief Institute</span>. Accessed August 27, 2026. <a href="https://loinc.org/start">https://loinc.org/start</a>.
+<div id="ref-i2b2" class="csl-entry" role="listitem">
+Klann, Jeff. n.d. <span>“I2b2 Community Wiki: Introduction.”</span> Accessed August 31, 2026. <a href="https://i2b2.atlassian.net/wiki/spaces/BUN/pages/207290382/1.+Introduction">https://i2b2.atlassian.net/wiki/spaces/BUN/pages/207290382/1.+Introduction</a>.
 </div>
-<div id="ref-icd10cm" class="csl-entry" role="listitem">
-<span>“ICD-10-CM.”</span> n.d. <span>U.S. Centers fo Disease Control and Prevention</span>. Accessed August 27, 2026. <a href="https://www.cdc.gov/nchs/icd/icd-10-cm/index.html">https://www.cdc.gov/nchs/icd/icd-10-cm/index.html</a>.
+<div id="ref-mo2015desiderata" class="csl-entry" role="listitem">
+Mo, Huan, William K Thompson, Luke V Rasmussen, Jennifer A Pacheco, Guoqian Jiang, Richard Kiefer, Qian Zhu, et al. 2015. <span>“Desiderata for Computable Representations of Electronic Health Records-Driven Phenotype Algorithms.”</span> <em>Journal of the American Medical Informatics Association</em> 22 (6): 1220–30.
 </div>
-<div id="ref-omop-cdm" class="csl-entry" role="listitem">
-<span>“OMOP Common Data Model.”</span> n.d. <span>Observational Health Data Sciences and Informatics</span>. Accessed August 27, 2026. <a href="https://ohdsi.github.io/CommonDataModel/">https://ohdsi.github.io/CommonDataModel/</a>.
+<div id="ref-NCIt" class="csl-entry" role="listitem">
+National Cancer Institute. n.d. <span>“Welcome.”</span> Accessed August 31, 2026. <a href="https://evsexplore.semantics.cancer.gov/evsexplore/welcome">https://evsexplore.semantics.cancer.gov/evsexplore/welcome</a>.
 </div>
 <div id="ref-rxnorm" class="csl-entry" role="listitem">
-<span>“RxNorm Overview.”</span> n.d. <span>National Institutes of Health</span>. Accessed August 27, 2026. <a href="https://www.nlm.nih.gov/research/umls/rxnorm/overview.html">https://www.nlm.nih.gov/research/umls/rxnorm/overview.html</a>.
+National Institutes of Health. n.d. <span>“RxNorm Overview.”</span> Accessed August 27, 2026. <a href="https://www.nlm.nih.gov/research/umls/rxnorm/overview.html">https://www.nlm.nih.gov/research/umls/rxnorm/overview.html</a>.
+</div>
+<div id="ref-vsac" class="csl-entry" role="listitem">
+National Library of Medicine. n.d. <span>“Value Set Authority Center.”</span> Accessed August 31, 2026. <a href="https://vsac.nlm.nih.gov">https://vsac.nlm.nih.gov</a>.
+</div>
+<div id="ref-omop-cdm" class="csl-entry" role="listitem">
+Observational Health Data Sciences and Informatics. n.d.a. <span>“OMOP Common Data Model.”</span> Accessed August 27, 2026. <a href="https://ohdsi.github.io/CommonDataModel/">https://ohdsi.github.io/CommonDataModel/</a>.
+</div>
+<div id="ref-ohdsi-omop" class="csl-entry" role="listitem">
+———. n.d.b. <span>“Standardized Data: The OMOP Common Data Model.”</span> Accessed August 31, 2026. <a href="https://www.ohdsi.org/data-standardization/">https://www.ohdsi.org/data-standardization/</a>.
+</div>
+<div id="ref-omop-vocab" class="csl-entry" role="listitem">
+———. n.d.c. <span>“Standardized Vocabularies.”</span> Accessed August 31, 2026. <a href="https://github.com/OHDSI/Vocabulary-v5.0/wiki/Standardized-Vocabularies">https://github.com/OHDSI/Vocabulary-v5.0/wiki/Standardized-Vocabularies</a>.
+</div>
+<div id="ref-phekb" class="csl-entry" role="listitem">
+PheKB. n.d. <span>“What Is the Phenotype KowledgeBase?”</span> Accessed August 31, 2026. <a href="https://phekb.org">https://phekb.org</a>.
+</div>
+<div id="ref-loinc" class="csl-entry" role="listitem">
+Regenstrief Institute. n.d. <span>“Get Started with LOINC.”</span> Accessed August 27, 2026. <a href="https://loinc.org/start">https://loinc.org/start</a>.
+</div>
+<div id="ref-seer-breast-cancer" class="csl-entry" role="listitem">
+SEER Program. n.d. <span>“Coding Guidelines.”</span> Accessed August 31, 2026. <a href="https://seer.cancer.gov/archive/manuals/2024/AppendixC/Coding_Guidelines_Breast_2024.pdf">https://seer.cancer.gov/archive/manuals/2024/AppendixC/Coding_Guidelines_Breast_2024.pdf</a>.
 </div>
 <div id="ref-snomed" class="csl-entry" role="listitem">
-<span>“What Is SNOMED CT?”</span> n.d. <span>SNOMED International</span>. Accessed August 27, 2026. <a href="https://www.snomed.org/what-is-snomed-ct">https://www.snomed.org/what-is-snomed-ct</a>.
+SNOMED International. n.d. <span>“What Is SNOMED CT?”</span> Accessed August 27, 2026. <a href="https://www.snomed.org/what-is-snomed-ct">https://www.snomed.org/what-is-snomed-ct</a>.
+</div>
+<div id="ref-pcornet-cdm" class="csl-entry" role="listitem">
+The National Patient-Centered Clinical Research Network. n.d. <span>“PCORnet Common Data Model.”</span> Accessed August 31, 2026. <a href="https://pcornet.org/data/common-data-model/">https://pcornet.org/data/common-data-model/</a>.
+</div>
+<div id="ref-icd10cm" class="csl-entry" role="listitem">
+U.S. Centers fo Disease Control and Prevention. n.d. <span>“ICD-10-CM.”</span> Accessed August 27, 2026. <a href="https://www.cdc.gov/nchs/icd/icd-10-cm/index.html">https://www.cdc.gov/nchs/icd/icd-10-cm/index.html</a>.
+</div>
+<div id="ref-sentinel" class="csl-entry" role="listitem">
+U.S. Food and Drug Administration. n.d. <span>“The Sentinel Common Data Model 8.2.2.”</span> Accessed August 31, 2026. <a href="https://dev.sentinelsystem.org/projects/SCDM/repos/sentinel_common_data_model/browse">https://dev.sentinelsystem.org/projects/SCDM/repos/sentinel_common_data_model/browse</a>.
 </div>
 </div>
 </section>
