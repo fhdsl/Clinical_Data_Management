@@ -37,7 +37,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |Template Publishing Engineers|[Candace Savonen](https://www.cansavvy.com/), [Carrie Wright](https://carriewright11.github.io/), [Kate Isaac](https://kweav.github.io/)|
 |Publishing Maintenance Engineer|[Candace Savonen](https://www.cansavvy.com/)|
 |Technical Publishing Stylists|[Carrie Wright](https://carriewright11.github.io/), [Candace Savonen](https://www.cansavvy.com/)|
-|Package Developers ([ottrpal])| [Candace Savonen], [John Muschelli], [Carrie Wright], [Ava Hoffman], [Kate Isaac], [Adam Coffman]|
+|Package Developers ([ottrpal](https://www.ottrproject.org/ottrpal/))| [Candace Savonen], [John Muschelli], [Carrie Wright], [Ava Hoffman], [Kate Isaac], [Adam Coffman]|
 |**Art and Design**||
 |Illustrator(s)| [Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/)|
 |**Funding**||
