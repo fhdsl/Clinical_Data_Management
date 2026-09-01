@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Multimodal Data – Clinical Data Management for Cancer Informatics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./study_design.html" rel="next">
+<link href="./data_types.html" rel="prev">
+<link href="./assets/ITN_favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e2438b6c5eff994fcebf09a84868fa80.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-931MJ5476Z"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-931MJ5476Z', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="assets/style_ITN.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Multimodal Data</span></h1>
+        </a>     
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="https://www.itcrtraining.org/" class="sidebar-logo-link">
+      <img src="./assets/ITN_logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./assets/ITN_logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Clinical Data Management for Cancer Informatics</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://hutchdatascience.org/Clinical_Data_Management/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-git"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_types.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Clinical Data Types</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./multimodal.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Multimodal Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./study_design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Clinical Study Design and Considerations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_acquisition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Clinical Data Acquisition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_uses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Clinical Data Uses</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Clinical Data Handling, Privacy, and Sharing</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">About the Authors</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Appendix I: Clinical Data Standards</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><span class="header-section-number">3.1</span> Learning Objectives</a></li>
+  <li><a href="#omic-data" id="toc-omic-data" class="nav-link" data-scroll-target="#omic-data"><span class="header-section-number">3.2</span> Omic Data</a></li>
+  <li><a href="#physiological-data" id="toc-physiological-data" class="nav-link" data-scroll-target="#physiological-data"><span class="header-section-number">3.3</span> Physiological Data</a></li>
+  <li><a href="#imaging-data" id="toc-imaging-data" class="nav-link" data-scroll-target="#imaging-data"><span class="header-section-number">3.4</span> Imaging Data</a></li>
+  <li><a href="#monitoring-data" id="toc-monitoring-data" class="nav-link" data-scroll-target="#monitoring-data"><span class="header-section-number">3.5</span> Monitoring data</a>
+  <ul class="collapse">
+  <li><a href="#benefits-of-monitoring-data" id="toc-benefits-of-monitoring-data" class="nav-link" data-scroll-target="#benefits-of-monitoring-data"><span class="header-section-number">3.5.1</span> Benefits of Monitoring Data</a></li>
+  <li><a href="#considerations" id="toc-considerations" class="nav-link" data-scroll-target="#considerations"><span class="header-section-number">3.5.2</span> Considerations</a></li>
+  </ul></li>
+  <li><a href="#geographic-environmental-and-social-determinants-of-health-data" id="toc-geographic-environmental-and-social-determinants-of-health-data" class="nav-link" data-scroll-target="#geographic-environmental-and-social-determinants-of-health-data"><span class="header-section-number">3.6</span> Geographic, environmental, and social determinants of health Data</a></li>
+  <li><a href="#sec-synthetic-data" id="toc-sec-synthetic-data" class="nav-link" data-scroll-target="#sec-synthetic-data"><span class="header-section-number">3.7</span> Synthetic Data</a>
+  <ul class="collapse">
+  <li><a href="#uses-of-synthetic-data" id="toc-uses-of-synthetic-data" class="nav-link" data-scroll-target="#uses-of-synthetic-data"><span class="header-section-number">3.7.1</span> Uses of synthetic data</a></li>
+  <li><a href="#resources-for-generating-synthetic-data" id="toc-resources-for-generating-synthetic-data" class="nav-link" data-scroll-target="#resources-for-generating-synthetic-data"><span class="header-section-number">3.7.2</span> Resources for generating synthetic data</a></li>
+  <li><a href="#benefits-of-synthetic-data" id="toc-benefits-of-synthetic-data" class="nav-link" data-scroll-target="#benefits-of-synthetic-data"><span class="header-section-number">3.7.3</span> Benefits of synthetic data</a></li>
+  <li><a href="#sec-synthetic-concerns" id="toc-sec-synthetic-concerns" class="nav-link" data-scroll-target="#sec-synthetic-concerns"><span class="header-section-number">3.7.4</span> Concerns about synthetic data</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.8</span> Summary</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/multimodal.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Multimodal Data</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">3.1</span> Learning Objectives</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3f5a232af6c_0_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Learning Objectives: 1.  Explain what multimodal research is 2. List additional types of data used in clinical research 2. Understand the potential uses for and risks of synthetic data"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Clinical research is becoming increasingly multimodal, meaning that it combines multiple forms of data together. This often includes data types beyond the more classical clinical data like EHR. The use of different kinds of data together can be very valuable for understanding the underlying biology leading to different forms of cancer, evaluating new potential treatments for cancer, and understanding rates of cancer across various populations, including what exposures may influence those rates.</p>
+<p>These data can include:</p>
+<ul>
+<li>Omic data</li>
+<li>Physiological data</li>
+<li>Imaging data</li>
+<li>Monitoring data</li>
+<li>Geographic data</li>
+<li>Environmental data</li>
+<li>Social determinants of health data</li>
+<li>Synthetic data (in some cases)</li>
+</ul>
+<p>Methods for finding patterns when combining different kinds of data together, as well as how to harmonize and store data together are still in development. Machine Learning and AI show particular promise for finding patterns across vast amounts of data <span class="citation" data-cites="amar2025 walonoski2022">(<a href="#ref-amar2025" role="doc-biblioref">Amar et al. 2025</a>; <a href="#ref-walonoski2022" role="doc-biblioref">Walonoski et al. 2022</a>)</span> and indicate that prediction performance across many different biomedical studies are improved when multiple data types are combined <span class="citation" data-cites="kline_multimodal_2022">(<a href="#ref-kline_multimodal_2022" role="doc-biblioref">Kline et al. 2022</a>)</span>, however challenges related to feasibility remain.</p>
+<ul>
+<li>See this <a href="https://www.mdpi.com/2079-9292/11/8/1199">example integrating imaging data</a><br>
+</li>
+<li>See this <a href="https://arxiv.org/abs/2510.23639">example about integrating omics data</a></li>
+<li>See this paper for <a href="https://www.nature.com/articles/s41746-022-00712-8">examples of data multimodal methods</a> for precision medicine</li>
+</ul>
+</section>
+<section id="omic-data" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="omic-data"><span class="header-section-number">3.2</span> Omic Data</h2>
+<p>Omic data such as genetic or protein information about patients can also be combined with clinical data to enhance research. Examples include polygenic risk scores using single nucleotide polymorphisms <span class="citation" data-cites="kannry_2013">(<a href="#ref-kannry_2013" role="doc-biblioref">Kannry and Williams 2013</a>)</span>, methylation risk scores using DNA methylation data, transcriptomic data (or data about the expression of RNAs), and more recently evaluation of microbiome data and proteomic data <span class="citation" data-cites="kidenya_unlocking_2024">(<a href="#ref-kidenya_unlocking_2024" role="doc-biblioref">Kidenya and Mboowa 2024</a>)</span>.</p>
+</section>
+<section id="physiological-data" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="physiological-data"><span class="header-section-number">3.3</span> Physiological Data</h2>
+<p>This data includes any type of test measurement that may be performed to evaluate bodily form and function including but not limited to:</p>
+<ul>
+<li>Urine and blood test measurements (such as levels of vitamins, minerals, hormones, antibodies, as well as cell compositions and characteristics, presence and type of bacteria or viruses and more)</li>
+<li>Vital measurements (blood pressure, pulse rate, oxygen level, body temperature), and more.</li>
+<li>Electrode based measurements to assess organ function (such as electrocardiogram measurements of heart rhythm, and electroencephalogram of brain activity)</li>
+</ul>
+</section>
+<section id="imaging-data" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="imaging-data"><span class="header-section-number">3.4</span> Imaging Data</h2>
+<p>There are several types of clinical imaging data. This includes pathology, radiology, and molecular based imaging among others <span class="citation" data-cites="Kasban2015ACS">(<a href="#ref-Kasban2015ACS" role="doc-biblioref">Kasban, El-Bendary, and Salama 2015</a>)</span>. All of these produce a file or multiple files of imaging data that can be paired with demographics of individuals or other clinical data to perform research.</p>
+<p>Pathology imaging involves examination of tissue, fluid, and other bodily samples like free cells. These samples are taken from patients in the form of tissue biopsies, body fluid collections, or other sampling methods. Historically this was done on slides with various forms of staining to help clinicians and researchers examine cell populations and cellular and extracellular structures. More modern techniques are allowing for faster preparations that don’t require slides and offer greater capacity for <span class="citation" data-cites="abraham_current_2024">(<a href="#ref-abraham_current_2024" role="doc-biblioref">Abraham and Levenson 2024</a>)</span>.</p>
+<p>Radiology imaging involves using radiation or magnets and sound waves to evaluate structures in living patients. This includes radiation-based methods such as X-ray and Computed Tomography (CT), as well as magnet based methods like Magnetic Resonance Imaging (MRI), and sound wave-based methods called ultrasound which are often used to detect tumors <span class="citation" data-cites="Kasban2015ACS">(<a href="#ref-Kasban2015ACS" role="doc-biblioref">Kasban, El-Bendary, and Salama 2015</a>)</span>.</p>
+<p>Molecular imaging involves evaluation of molecular function within living patients. This can include radiological techniques such as Positron Emission Tomography (PET) and Single Photon Emission Computed Tomography (SPECT) imaging. PET uses radiotracers to monitor physiological aspects such as metabolism of cancer tumors or bone mineralization in bone cancer. SPECT is used to monitor apoptosis and lymph node mapping <span class="citation" data-cites="keidar_spectct_2003 israel_two_2019">(<a href="#ref-keidar_spectct_2003" role="doc-biblioref">Keidar, Israel, and Krausz 2003</a>; <a href="#ref-israel_two_2019" role="doc-biblioref">Israel et al. 2019</a>)</span>. In addition, MRI with contrast agents has helped investigators and clinicians examine biomarkers less invasively in human samples. Computed Tomography (CT) combined with contrast agents can also help evaluation of tissue composition and microstructure. Newer forms of molecular imaging include Magnetic Particle Imaging (MPI), which uses the magnetic properties of injected tracers to create 3D images of vasculature, and Optical Coherent Tomography (OCT), which has proven to be a great method for shallow noninvasive in situ biopsies (meaning biopsies that don’t require physically taking a sample from a patient). Hybrid imaging, which combines multiple forms of molecular imaging such as PET and CT, continues to be developed and offers advantages over use of a single method <span class="citation" data-cites="molecular_img_2023 israel_two_2019">(<a href="#ref-molecular_img_2023" role="doc-biblioref">Department of Biomedical Engineering, University of Texas Southwestern Medical Center, USA et al. 2023</a>; <a href="#ref-israel_two_2019" role="doc-biblioref">Israel et al. 2019</a>)</span>.</p>
+</section>
+<section id="monitoring-data" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="monitoring-data"><span class="header-section-number">3.5</span> Monitoring data</h2>
+<div class="bluebox">
+<p>This section was written by: Jennifer Kelleher, Ph.D.<sup>1</sup>; Abigail S. Robbertz, Ph.D.<sup>1</sup>; and Meghan E. McGrady, Ph.D.<sup>1,2</sup></p>
+<p><strong>NOTE:</strong> Jennifer Kelleher, Ph.D.<sup>1</sup> and Abigail S. Robbertz, Ph.D.<sup>1</sup> contributed equally.</p>
+<p><sup>1</sup> Center for Adherence and Self-Management, Division of Behavioral Medicine and Clinical Psychology, Cincinnati Children’s Hospital Medical Center, Cincinnati, OH, USA</p>
+<p><sup>2</sup> Department of Pediatrics, University of Cincinnati College of Medicine, Cincinnati, OH, USA</p>
+<p>The work discussed in this section was also supported by the National Cancer Institute at the National Institutes of Health (R21CA263704, K07CA200668) to MEM. JK and ASR are supported by the Eunice Kennedy Shriver National Institute of Child Health &amp; Human Development at the National Institutes of Health (T32HD068223). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</p>
+</div>
+<p>Electronic monitoring devices are digital tools that can be used to track health behaviors over time such as:</p>
+<ul>
+<li>Sleep</li>
+<li>Physical activity</li>
+<li>Medication adherence</li>
+<li>Calorie intake</li>
+</ul>
+<p>Electronic monitoring devices can also be used to assess physical health indicators including:</p>
+<ul>
+<li>Blood glucose levels</li>
+<li>Blood pressure</li>
+<li>Heart rate and heart rate variability</li>
+<li>Oxygen saturation</li>
+</ul>
+<p>Electronic monitoring devices enable researchers to track day-to-day health behaviors in the patient’s <strong>“real-world” setting</strong>. This allows researchers to explore patterns or changes in a patient’s health behavior and provides a richer understanding of <strong>daily behavior over time</strong>.</p>
+<section id="benefits-of-monitoring-data" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="benefits-of-monitoring-data"><span class="header-section-number">3.5.1</span> Benefits of Monitoring Data</h3>
+<ol type="1">
+<li><p>Electronic monitoring devices often include data transmission abilities that enable healthcare providers or researchers to access these data in near <strong>real-time</strong> potentially informing intervention and/or medical decision-making.</p></li>
+<li><p>Electronic monitoring devices also have the potential to produce <strong>more accurate</strong> estimates of health behaviors than alternative strategies (e.g., self-report) as they are not subject to recall bias and can detect efforts to inflate adherence due to social desirability.</p></li>
+</ol>
+</section>
+<section id="considerations" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="considerations"><span class="header-section-number">3.5.2</span> Considerations</h3>
+<div class="warning">
+<p>This section is not exhaustive. Research teams are strongly encouraged to consult with experts with experience and training in collecting and analyzing data from specific devices.</p>
+<p>To ensure the outcome variables are aligned with the research question of interest and ethical and age/developmental considerations <span class="citation" data-cites="psihogios_ethical_2024 modi_pediatric_2012">(<a href="#ref-psihogios_ethical_2024" role="doc-biblioref">Psihogios et al. 2024</a>; <a href="#ref-modi_pediatric_2012" role="doc-biblioref">Modi et al. 2012</a>)</span> have been appropriately accounted for, readers are encouraged to consult with researchers in their field who have integrated these measurement strategies into their work.</p>
+</div>
+<section id="medication-adherence" class="level4" data-number="3.5.2.1">
+<h4 data-number="3.5.2.1" class="anchored" data-anchor-id="medication-adherence"><span class="header-section-number">3.5.2.1</span> Medication Adherence</h4>
+<p>There are three major components of medical adherence (the tracking of taking medication):</p>
+<ul>
+<li>Initiation: Starting a prescribed regimen</li>
+<li>Implementation: The amount of which a patient’s medication-taking behavior corresponds with the treatment regimen or protocol</li>
+<li>Discontinuation: Stopping a perscribed regimen</li>
+</ul>
+<p>For more information see:</p>
+<ul>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3403197/">A new taxonomy for describing and defining adherence to medications (Vrijens et al., 2012)</a> <span class="citation" data-cites="vrijens_new_2012">(<a href="#ref-vrijens_new_2012" role="doc-biblioref">Vrijens et al. 2012</a>)</span></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9923567/">Pediatric self-management: A framework for research, practice, and policy. (Modi et al., 2012)</a> <span class="citation" data-cites="modi_pediatric_2012">(<a href="#ref-modi_pediatric_2012" role="doc-biblioref">Modi et al. 2012</a>)</span></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="geographic-environmental-and-social-determinants-of-health-data" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="geographic-environmental-and-social-determinants-of-health-data"><span class="header-section-number">3.6</span> Geographic, environmental, and social determinants of health Data</h2>
+<p>To better understand if specific populations have higher rates of cancer due to environmental exposures, geographic and environmental data can be very useful. Data include measurements of air pollution, amounts of chemical exposures from food contamination, quantities and proximity to green space, amounts of nearby traffic, proximity to manufacturing, or agricultural industry, and even weather and temperature patterns which can cause events like wild fires and all have been shown to influence cancer risk <span class="citation" data-cites="iwasaki_exposure_2023 abravan_environmental_2026 hiatt_climate_2026">(<a href="#ref-iwasaki_exposure_2023" role="doc-biblioref">Iwasaki et al. 2023</a>; <a href="#ref-abravan_environmental_2026" role="doc-biblioref">Abravan et al. 2026</a>; <a href="#ref-hiatt_climate_2026" role="doc-biblioref">Hiatt et al. 2026</a>)</span>.</p>
+<p>Social determinants of health data includes aspects about an individual’s lifestyle including their job, access to health care, housing and neighborhood, economic stability, and education. Studies indicate that incorporation of these aspects into clinical research can help uncover social aspects that may inhibit or enhance cancer detection or treatment in different populations <span class="citation" data-cites="chen_social_2020">(<a href="#ref-chen_social_2020" role="doc-biblioref">Chen, Tan, and Padman 2020</a>)</span>.</p>
+</section>
+<section id="sec-synthetic-data" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="sec-synthetic-data"><span class="header-section-number">3.7</span> Synthetic Data</h2>
+<p>Synthetic data are artificially generated datasets designed to reflect the structure and patterns of real-world populations, without containing information about actual patients <span class="citation" data-cites="susser2024synthetic">(<a href="#ref-susser2024synthetic" role="doc-biblioref">Susser et al. 2024</a>)</span>. There are many ways to generate synthetic data. Some approaches are simple, like creating partially synthetic data by replacing potentially identifying pieces of information with synthetic values. Others are more complex, such as using AI models to fully generate synthetic patient notes. The goal of synthetic data is to mimic the characteristics and patterns in real patient data, while avoiding privacy concerns, cost, or biases of using real datasets. A related concept is simulated data. While simulated data are also artificial datasets, they are typically generated directly from mathematical or probabilistic models. In contrast, synthetic data are typically generated using methods that are informed by real-world data.</p>
+<section id="uses-of-synthetic-data" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="uses-of-synthetic-data"><span class="header-section-number">3.7.1</span> Uses of synthetic data</h3>
+<p>There are several possible uses for synthetic data:</p>
+<ul>
+<li>Testing or validation: synthetic data may be easier to create or access than real clinical data, while being similar enough to test or validate new tools, methods, or data handling pipelines. It can also be shared between institutions, and used to compare the performance of competing tools. However, please see the Section <a href="#sec-synthetic-concerns" class="quarto-xref"><span>Section 3.7.4</span></a> for some limitations of this approach.</li>
+<li>Augmenting or balancing datasets: real patient data can have subgroups with low representation, which can lead to algorithmic bias in some applications. Synthetic data can be used to balance data so that there are more observations that represent these groups.</li>
+<li>Supplementing controls groups in clinical trials: Conducting clinical trials requires a lot of time and money. Using synthetic data has been suggested to supplement control arms in clinical trials, in order to reduce costs or realign funds to add more patients to the experimental arm <span class="citation" data-cites="elvatun2025synthetic">(<a href="#ref-elvatun2025synthetic" role="doc-biblioref">Elvatun et al. 2025</a>)</span>.</li>
+<li>Augmenting data for rare disease areas: Rare disease research often suffers from small sample sizes of patient data and can be especially susceptible to privacy concerns, which can lead to underpowered studies. Synthetic data have the potential to be used for detection and development of treatment for rare diseases <span class="citation" data-cites="mendes2025synthetic">(<a href="#ref-mendes2025synthetic" role="doc-biblioref">Mendes, Barbar, and Refaie 2025</a>)</span>.</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images//1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ_g3f5432c677a_0_248.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Synthetic data has several potential uses, including testing new methods, balancing datasets, supplementing control arms, and augmenting rare disease data."></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="resources-for-generating-synthetic-data" class="level3" data-number="3.7.2">
+<h3 data-number="3.7.2" class="anchored" data-anchor-id="resources-for-generating-synthetic-data"><span class="header-section-number">3.7.2</span> Resources for generating synthetic data</h3>
+<p>There are a wide range of ways to generate synthetic data for different uses. Some tools to access or generate synthetic clinical data include:</p>
+<ul>
+<li><a href="https://github.com/synthetichealth/synthea">Synthea</a>: a synthetic patient population simulator, that generates synthetic medical histories. This tool can be used without restriction for research, industry, or government <span class="citation" data-cites="walonoski2018synthea">(<a href="#ref-walonoski2018synthea" role="doc-biblioref">Walonoski et al. 2018</a>)</span>.</li>
+<li><a href="https://synthea.mitre.org">SyntheticMass</a>: a synthetic dataset of residents of Massachusetts (generated using Synthea), which statistically mirrors the real population in terms of demographics, disease burden, and healthcare interaction. This data is free of PII and PHI <span class="citation" data-cites="walonoski2018synthea">(<a href="#ref-walonoski2018synthea" role="doc-biblioref">Walonoski et al. 2018</a>)</span>.</li>
+<li><a href="https://cran.r-project.org/web/packages/synthpop/index.html">synthpop</a>: an R package that takes patient data with sensitive values, and replaces those values with synthetic values, while minimally distorting the statistical summaries of the dataset <span class="citation" data-cites="nowok2016synthpop">(<a href="#ref-nowok2016synthpop" role="doc-biblioref">Nowok, Raab, and Dibben 2016</a>)</span>.</li>
+</ul>
+<p>There are also tools that generate simulated data (using probabilistic models). One such tool is the following:</p>
+<ul>
+<li><a href="https://cran.r-project.org/package=simstudy">simstudy</a>: an R package used to simulate datasets. The user specifies a set of relationships between covariates, type of study, and probability distribution to use, and the tool generates synthetic data <span class="citation" data-cites="simstudy">(<a href="#ref-simstudy" role="doc-biblioref">Goldfeld and Wujciak-Jens 2020</a>)</span>.</li>
+</ul>
+</section>
+<section id="benefits-of-synthetic-data" class="level3" data-number="3.7.3">
+<h3 data-number="3.7.3" class="anchored" data-anchor-id="benefits-of-synthetic-data"><span class="header-section-number">3.7.3</span> Benefits of synthetic data</h3>
+<p>Using synthetic data has a variety of potential benefits.</p>
+<ul>
+<li>Reducing privacy risks: synthetic data are intended to have little or no information about individuals, and therefore reduce privacy risks associated with using clinical data. This also means they can more easily be shared across institutions and without needing to be granted access.<br>
+</li>
+<li>Lower cost to generate: synthetic data typically cost less to generate than the cost to collect real patient data, and once an AI system has been trained to generate synthetic data then it can keep producing more. This is particularly useful for training AI systems, which need large sample sizes.</li>
+</ul>
+</section>
+<section id="sec-synthetic-concerns" class="level3" data-number="3.7.4">
+<h3 data-number="3.7.4" class="anchored" data-anchor-id="sec-synthetic-concerns"><span class="header-section-number">3.7.4</span> Concerns about synthetic data</h3>
+<p>Although there is a lot of potential for synthetic data to revolutionize fields that use clinical data, there are also quite a few practical and ethical concerns.</p>
+<ul>
+<li>Accuracy and reliability: it is challenging to assess how well synthetic data actually mimic real data. Therefore, it is often unknown exactly how reliable statistical tests are based on synthetic data, as opposed to real patient data.</li>
+<li>Privacy risks: if synthetic data are built from real patient data, there are still threats of identifying patients in some cases, or small subgroups of patients in other cases.</li>
+<li>Bias: using AI systems in many applications has been shown to lead to algorithmic bias. It is possible for synthetic data to reinforce biases from original patient data or to create new biases.</li>
+<li>Regulations are still in development: because synthetic data are often not considered to be personally identifiable information (PII) or protected health information (PHI), they are not regulated by the same guidelines as other types of clinical data. Different types of synthetic data have different ethical and privacy risks, and regulations are still in development to govern the use and sharing of these data <span class="citation" data-cites="nisevic2025synthetic">(<a href="#ref-nisevic2025synthetic" role="doc-biblioref">Nisevic, Milojevic, and Spajic 2025</a>)</span>.</li>
+<li>Model collapse: when generative models are repeatedly trained on synthetic data rather than real data, the generated data may progressively diverge from true real-world patterns, reducing their utility.</li>
+</ul>
+<p>While synthetic data have promise for several areas of clinical research, any synthetic data use needs to be carefully considered and validated.</p>
+</section>
+</section>
+<section id="summary" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.8</span> Summary</h2>
+<p>Cancer research is becoming increasingly more multimodal, meaning that researchers are combining different kinds of data together beyond EHR and other more traditional clinical data types as discussed in the previous chapter. Other data such as imaging, physiological, omic, monitoring, geographic, environmental, social determinants of health data, and synthetic data can contribute to clinical research. Synthetic data can be especially useful for reducing privacy risks for testing tools or methods and training AI models. They can also help balance sample groups, and augment data for rare diseases or rare sample groups. However, they have reliability concerns and other risks.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-abraham_current_2024" class="csl-entry" role="listitem">
+Abraham, Tanishq Mathew, and Richard Levenson. 2024. <span>“Current <span>Landscape</span> of <span>Advanced</span> <span>Imaging</span> <span>Tools</span> for <span>Pathology</span> <span>Diagnostics</span>.”</span> <em>Modern Pathology</em> 37 (4): 100443. <a href="https://doi.org/10.1016/j.modpat.2024.100443">https://doi.org/10.1016/j.modpat.2024.100443</a>.
+</div>
+<div id="ref-abravan_environmental_2026" class="csl-entry" role="listitem">
+Abravan, Azadeh, Isabella Fornacon-Wood, Richard Kingston, David Topping, and Gareth Price. 2026. <span>“Environmental Determinants of Cancer Outcomes: A Scoping Review.”</span> <em>Radiotherapy and Oncology</em> 217 (April): 111408. <a href="https://doi.org/10.1016/j.radonc.2026.111408">https://doi.org/10.1016/j.radonc.2026.111408</a>.
+</div>
+<div id="ref-amar2025" class="csl-entry" role="listitem">
+Amar, Jonathan, Edward Liu, Alessandra Breschi, Liangliang Zhang, Pouya Kheradpour, Sylvia Li, Lisa Soleymani Lehmann, et al. 2025. <span>“Integrating Genomics into Multimodal EHR Foundation Models.”</span> <a href="https://arxiv.org/abs/2510.23639">https://arxiv.org/abs/2510.23639</a>.
+</div>
+<div id="ref-chen_social_2020" class="csl-entry" role="listitem">
+Chen, Min, Xuan Tan, and Rema Padman. 2020. <span>“Social Determinants of Health in Electronic Health Records and Their Impact on Analysis and Risk Prediction: <span>A</span> Systematic Review.”</span> <em>Journal of the American Medical Informatics Association</em> 27 (11): 1764–73. <a href="https://doi.org/10.1093/jamia/ocaa143">https://doi.org/10.1093/jamia/ocaa143</a>.
+</div>
+<div id="ref-molecular_img_2023" class="csl-entry" role="listitem">
+Department of Biomedical Engineering, University of Texas Southwestern Medical Center, USA, Shu Kang, Ian R. Zurutuza, Department of Biomedical Engineering, University of Texas Southwestern Medical Center, USA, Raiyan T. Zaman, and Department of Biomedical Engineering, University of Texas Southwestern Medical Center, USA. 2023. <span>“Molecular <span>Imaging</span> in <span>Medicine</span>: <span>Past</span>, <span>Present</span>, and <span>Future</span>.”</span> <em>JSM Cardiothoracic Surgery</em> 5 (1): 1–8. <a href="https://doi.org/10.47739/2573-1297.cardiothoracicsurgery.1019">https://doi.org/10.47739/2573-1297.cardiothoracicsurgery.1019</a>.
+</div>
+<div id="ref-elvatun2025synthetic" class="csl-entry" role="listitem">
+Elvatun, Severin, Daan Knoors, Simon Brant, Christian Jonasson, and Jan F Nygård. 2025. <span>“Synthetic Data as External Control Arms in Scarce Single-Arm Clinical Trials.”</span> <em>PLOS Digital Health</em> 4 (1): e0000581.
+</div>
+<div id="ref-simstudy" class="csl-entry" role="listitem">
+Goldfeld, Keith, and Jacob Wujciak-Jens. 2020. <span>“Simstudy: Illuminating Research Methods Through Data Generation.”</span> <em>Journal of Open Source Software</em> 5 (54): 2763. <a href="https://doi.org/10.21105/joss.02763">https://doi.org/10.21105/joss.02763</a>.
+</div>
+<div id="ref-hiatt_climate_2026" class="csl-entry" role="listitem">
+Hiatt, Robert A., Jefferey L. Burgess, Prashant Mathur, and Leticia M. Nogueira. 2026. <span>“Climate <span>Change</span> and <span>Environmental</span> <span>Exposures</span> <span>Across</span> the <span>Cancer</span> <span>Continuum</span>: <span>Implications</span> for <span>Oncology</span>.”</span> <em>American Society of Clinical Oncology Educational Book</em> 46 (3): e521654. <a href="https://doi.org/10.1200/EDBK-26-521654">https://doi.org/10.1200/EDBK-26-521654</a>.
+</div>
+<div id="ref-israel_two_2019" class="csl-entry" role="listitem">
+Israel, Ora, O. Pellet, L. Biassoni, D. De Palma, E. Estrada-Lobato, G. Gnanasegaran, T. Kuwert, et al. 2019. <span>“Two Decades of <span>SPECT</span>/<span>CT</span> – the Coming of Age of a Technology: <span>An</span> Updated Review of Literature Evidence.”</span> <em>European Journal of Nuclear Medicine and Molecular Imaging</em> 46 (10): 1990–2012. <a href="https://doi.org/10.1007/s00259-019-04404-6">https://doi.org/10.1007/s00259-019-04404-6</a>.
+</div>
+<div id="ref-iwasaki_exposure_2023" class="csl-entry" role="listitem">
+Iwasaki, Motoki, Hiroaki Itoh, Norie Sawada, and Shoichiro Tsugane. 2023. <span>“Exposure to Environmental Chemicals and Cancer Risk: Epidemiological Evidence from <span>Japanese</span> Studies.”</span> <em>Genes and Environment</em> 45 (1): 10. <a href="https://doi.org/10.1186/s41021-023-00268-3">https://doi.org/10.1186/s41021-023-00268-3</a>.
+</div>
+<div id="ref-kannry_2013" class="csl-entry" role="listitem">
+Kannry, Joseph L., and Marc S. Williams. 2013. <span>“Integration of Genomics into the Electronic Health Record: Mapping Terra Incognita.”</span> <em>Genetics in Medicine</em> 15 (10): 757–60. <a href="https://doi.org/10.1038/gim.2013.102">https://doi.org/10.1038/gim.2013.102</a>.
+</div>
+<div id="ref-Kasban2015ACS" class="csl-entry" role="listitem">
+Kasban, H., Mohsen A. M. El-Bendary, and Dina Husseiny Salama. 2015. <span>“A Comparative Study of Medical Imaging Techniques.”</span> In. <a href="https://api.semanticscholar.org/CorpusID:78471834">https://api.semanticscholar.org/CorpusID:78471834</a>.
+</div>
+<div id="ref-keidar_spectct_2003" class="csl-entry" role="listitem">
+Keidar, Zohar, Ora Israel, and Yodphat Krausz. 2003. <span>“<span>SPECT</span>/<span>CT</span> in Tumor Imaging: <span>Technical</span> Aspects and Clinical Applications.”</span> <em>Seminars in Nuclear Medicine</em> 33 (3): 205–18. <a href="https://doi.org/10.1053/snuc.2003.127310">https://doi.org/10.1053/snuc.2003.127310</a>.
+</div>
+<div id="ref-kidenya_unlocking_2024" class="csl-entry" role="listitem">
+Kidenya, Benson R., and Gerald Mboowa. 2024. <span>“Unlocking the Future of Complex Human Diseases Prediction: Multi-Omics Risk Score Breakthrough.”</span> <em>Frontiers in Bioinformatics</em> 4 (December): 1510352. <a href="https://doi.org/10.3389/fbinf.2024.1510352">https://doi.org/10.3389/fbinf.2024.1510352</a>.
+</div>
+<div id="ref-kline_multimodal_2022" class="csl-entry" role="listitem">
+Kline, Adrienne, Hanyin Wang, Yikuan Li, Saya Dennis, Meghan Hutch, Zhenxing Xu, Fei Wang, Feixiong Cheng, and Yuan Luo. 2022. <span>“Multimodal Machine Learning in Precision Health: <span>A</span> Scoping Review.”</span> <em>Npj Digital Medicine</em> 5 (1): 171. <a href="https://doi.org/10.1038/s41746-022-00712-8">https://doi.org/10.1038/s41746-022-00712-8</a>.
+</div>
+<div id="ref-mendes2025synthetic" class="csl-entry" role="listitem">
+Mendes, Jorge M, Aziz Barbar, and Marwa Refaie. 2025. <span>“Synthetic Data Generation: A Privacy-Preserving Approach to Accelerate Rare Disease Research.”</span> <em>Frontiers in Digital Health</em> 7: 1563991.
+</div>
+<div id="ref-modi_pediatric_2012" class="csl-entry" role="listitem">
+Modi, Avani C., Ahna L. Pai, Kevin A. Hommel, Korey K. Hood, Sandra Cortina, Marisa E. Hilliard, Shanna M. Guilfoyle, Wendy N. Gray, and Dennis Drotar. 2012. <span>“Pediatric <span>Self</span>-Management: <span>A</span> <span>Framework</span> for <span>Research</span>, <span>Practice</span>, and <span>Policy</span>.”</span> <em>Pediatrics</em> 129 (2): e473–85. <a href="https://doi.org/10.1542/peds.2011-1635">https://doi.org/10.1542/peds.2011-1635</a>.
+</div>
+<div id="ref-nisevic2025synthetic" class="csl-entry" role="listitem">
+Nisevic, Maja, Dusko Milojevic, and Daniela Spajic. 2025. <span>“Synthetic Data in Medicine: Legal and Ethical Considerations for Patient Profiling.”</span> <em>Computational and Structural Biotechnology Journal</em> 28: 190–98.
+</div>
+<div id="ref-nowok2016synthpop" class="csl-entry" role="listitem">
+Nowok, Beata, Gillian M Raab, and Chris Dibben. 2016. <span>“Synthpop: Bespoke Creation of Synthetic Data in r.”</span> <em>Journal of Statistical Software</em> 74: 1–26.
+</div>
+<div id="ref-psihogios_ethical_2024" class="csl-entry" role="listitem">
+Psihogios, Alexandra M., Sara King-Dowling, Jonathan A. Mitchell, Meghan E. McGrady, and Ariel A. Williamson. 2024. <span>“Ethical Considerations in Using Sensors to Remotely Assess Pediatric Health Behaviors.”</span> <em>American Psychologist</em> 79 (1): 39–51. <a href="https://doi.org/10.1037/amp0001196">https://doi.org/10.1037/amp0001196</a>.
+</div>
+<div id="ref-susser2024synthetic" class="csl-entry" role="listitem">
+Susser, Daniel, Daniel S Schiff, Sara Gerke, Laura Y Cabrera, I Glenn Cohen, Megan Doerr, Jordan Harrod, et al. 2024. <span>“Synthetic Health Data: Real Ethical Promise and Peril.”</span> <em>Hastings Center Report</em> 54 (5): 8–13.
+</div>
+<div id="ref-vrijens_new_2012" class="csl-entry" role="listitem">
+Vrijens, Bernard, Sabina De Geest, Dyfrig A. Hughes, Kardas Przemyslaw, Jenny Demonceau, Todd Ruppar, Fabienne Dobbels, et al. 2012. <span>“A New Taxonomy for Describing and Defining Adherence to Medications.”</span> <em>British Journal of Clinical Pharmacology</em> 73 (5): 691–705. <a href="https://doi.org/10.1111/j.1365-2125.2012.04167.x">https://doi.org/10.1111/j.1365-2125.2012.04167.x</a>.
+</div>
+<div id="ref-walonoski2022" class="csl-entry" role="listitem">
+Walonoski, Jason, Dylan Hall, Karen M. Bates, M. Heath Farris, Joseph Dagher, Matthew E. Downs, Ryan T. Sivek, et al. 2022. <span>“The <span>‘Coherent Data Set’</span>: Combining Patient Data and Imaging in a Comprehensive, Synthetic Health Record.”</span> <em>Electronics</em> 11 (8). <a href="https://doi.org/10.3390/electronics11081199">https://doi.org/10.3390/electronics11081199</a>.
+</div>
+<div id="ref-walonoski2018synthea" class="csl-entry" role="listitem">
+Walonoski, Jason, Mark Kramer, Joseph Nichols, Andre Quina, Chris Moesel, Dylan Hall, Carlton Duffett, Kudakwashe Dube, Thomas Gallagher, and Scott McLachlan. 2018. <span>“Synthea: An Approach, Method, and Software Mechanism for Generating Synthetic Patients and the Synthetic Electronic Health Care Record.”</span> <em>Journal of the American Medical Informatics Association</em> 25 (3): 230–38.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./data_types.html" class="pagination-link" aria-label="Clinical Data Types">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Clinical Data Types</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./study_design.html" class="pagination-link" aria-label="Clinical Study Design and Considerations">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Clinical Study Design and Considerations</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>This book was built with <a href="https://quarto.org/" style="color: #0000FF;">Quarto</a> using <a href="https://github.com/fhdsl/OTTR_Quarto" style="color: #0000FF;">OTTR</a>.</p>
+</div>   
+    <div class="nav-footer-center">
+<p>All illustrations <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0000FF;">CC-BY. </a> <br> All other materials <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #0000FF;"> CC-BY </a> unless noted otherwise.</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://hutchdatascience.org/Clinical_Data_Management/edit/main/multimodal.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYwgP9ZKGRCCkLV2vnMZy9ZLSqXZTUKTFKDVYEy95aXzw2Bg/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
