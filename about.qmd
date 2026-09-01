@@ -27,7 +27,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |Content Contributor ([Synthetic Data](#multimodal#synthetic-data)) |[Sarah Teichman](https://svteichman.github.io/)|
 |Content Contributor ([Appendix - Computational Phenotype](#appendix#applying-data-standards-computational-phenotypes)) |[Harry Hochheiser](https://www.phdl.pitt.edu/people/harry-hochheiser-phd)|
 |Content Editor/Reviewer ([Monitoring data](#multimodal#monitoring-data))| [Julia K. Herriott](https://www.linkedin.com/in/julia-herriott-720941246/), [Meghan E. McGrady](https://www.cincinnatichildrens.org/bio/m/meghan-mcgrady)|
-|Content Editor/Reviewer (Clinical Study Design and Considerations, Clinical Data Acquisition)| [Megan Othus](https://www.fredhutch.org/en/people/o/megan-othus.html)|
+|Content Editor/Reviewer ([Clinical Study Design and Considerations](#study-design), [Clinical Data Acquisition](#data-acquisition))| [Megan Othus](https://www.fredhutch.org/en/people/o/megan-othus.html)|
 |Content Editors/Reviewers|[Sarah Teichman](https://svteichman.github.io/), [Kate Isaac](https://kweav.github.io/), [Carrie Wright](https://carriewright11.github.io/) |
 |Content Consultants (General) | [Guilherme Del Fiol](https://medicine.utah.edu/faculty/guilherme-del-fiol),[Chris Battiston](https://www.womenscollegehospital.ca/meet-chris-battiston/),[Harry Hochheiser](https://www.phdl.pitt.edu/people/harry-hochheiser-phd), [David Hanauer](https://medschool.umich.edu/profile/4685/david-hanauer)|
 |Content Consultants ([Synthetic Data](#multimodal#synthetic-data)) | [David Hanauer](https://medschool.umich.edu/profile/4685/david-hanauer)|

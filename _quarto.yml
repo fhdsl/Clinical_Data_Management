@@ -16,15 +16,15 @@ book:
 
   chapters:
     - index.qmd
-    - 01-intro.qmd
-    - 01-data_types.qmd
-    - 01b-specific_data_types.qmd
-    - 01c-how_to_collect_data.qmd
-    - 01d-how_to_acquire_data.qmd
-    - 02-data_uses.qmd
-    - 03-data_management.qmd
-    - About.qmd
-    - 04-appendixI.qmd
+    - intro.qmd
+    - data_types.qmd
+    - multimodal.qmd
+    - study_design.qmd
+    - data_acquisition.qmd
+    - data_uses.qmd
+    - data_management.qmd
+    - about.qmd
+    - appendix.qmd
 
   sidebar:
     logo: "assets/ITN_logo.png"
