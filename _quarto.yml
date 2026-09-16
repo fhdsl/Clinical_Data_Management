@@ -16,7 +16,7 @@ book:
 
   chapters:
     - index.qmd
-    - intro.qmd
+    - 01-intro.qmd
     - data_types.qmd
     - multimodal.qmd
     - study_design.qmd
