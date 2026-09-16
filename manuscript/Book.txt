@@ -1,0 +1,9 @@
+Introduction.md
+Clinical-Data-Types.md
+Multimodal-Data.md
+Clinical-Study-Design-and-Considerations.md
+Clinical-Data-Acquisition.md
+Clinical-Data-Uses.md
+Clinical-Data-Handling,-Privacy,-and-Sharing.md
+About-the-Authors.md
+Appendix-I:-Clinical-Data-Standards.md
