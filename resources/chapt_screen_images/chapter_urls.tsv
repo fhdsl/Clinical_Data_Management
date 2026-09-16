@@ -1,5 +1,5 @@
 chapt_title	data_level	url	img_path
-Introduction	1	https://hutchdatascience.org/Clinical_Data_Management/intro.html	./resources/chapt_screen_images/intro.png
+Introduction	1	https://hutchdatascience.org/Clinical_Data_Management/01-intro.html	./resources/chapt_screen_images/01-intro.png
 Clinical Data Types	2	https://hutchdatascience.org/Clinical_Data_Management/data_types.html	./resources/chapt_screen_images/data_types.png
 Multimodal Data	3	https://hutchdatascience.org/Clinical_Data_Management/multimodal.html	./resources/chapt_screen_images/multimodal.png
 Clinical Study Design and Considerations	4	https://hutchdatascience.org/Clinical_Data_Management/study_design.html	./resources/chapt_screen_images/study_design.png
