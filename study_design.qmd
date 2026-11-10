@@ -4,6 +4,10 @@ In this chapter, we describe a variety of clinical study designs (distinguishing
 
 Throughout this chapter, we will use the word **outcome** to refer to the health-related effect that we would like to study, often the occurrence of a disease or condition. We use the term **exposure** to refer to a factor that may influence the outcome and that differs across groups being compared. An exposure may be a treatment, behavior, environmental factor, genetic characteristic, or demographic attribute. We use the term **intervention** to refer to an exposure that is deliberately assigned by researchers within a clinical trial. The goal of many clinical studies is to understand the relationship between an exposure or intervention and an outcome.
 
+```{r, fig.align='center', echo = FALSE, fig.alt= "In clinical studies, an exposure is a factor that may influence the outcome, an intervention is a specific type of exposure assigned within a clinical trial, and an outcome is the health-related effect to be studied.", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.h24e2c3a2acfe39ca_0_0#slide=id.h24e2c3a2acfe39ca_0_0" )
+```
+
 ## Learning Objectives
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Learning Objectives: 1. Understand the major differences between clinical trials and observational studies, 2. List different types of observational studies and benefits and drawbacks of each design, 3. Describe best practices for designing case report forms, 4. Recognize potential distortions in clinical data and how to combat distortions through study design", out.width="100%"}
@@ -14,6 +18,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0Ge
 
 Clinical studies are major scientific initiatives in which researchers and clinicians collect data about groups of patients, typically organized around a specific treatment, exposure, or health outcome.
 The ability to analyze and interpret this data enables researchers to answer a variety of important questions that directly impact patient care, treatment decisions, and healthcare policies.
+Two major types of clinical studies are clinical trials and observational trials. 
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "In a clinical trial, the intervention is deliberately assigned by the researcher. In an observational study, the exposure is measured but not manipulated by the researcher. ", out.width="100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ivDTcLjb2078O0GemkSeCgC1jmxk4fMsiFQaPaer9mQ/edit?slide=id.h24e2c3a2acfe39ca_0_30#slide=id.h24e2c3a2acfe39ca_0_30")
+```
 
 ### Clinical Trials
 
