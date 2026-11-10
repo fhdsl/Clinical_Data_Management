@@ -1,0 +1,32 @@
+{
+  "index.qmd": {
+    "index.html": "948152aa"
+  },
+  "01-intro.qmd": {
+    "01-intro.html": "29607d7f"
+  },
+  "data_types.qmd": {
+    "data_types.html": "37f567ed"
+  },
+  "multimodal.qmd": {
+    "multimodal.html": "5919c359"
+  },
+  "study_design.qmd": {
+    "study_design.html": "f3ebe8bf"
+  },
+  "data_acquisition.qmd": {
+    "data_acquisition.html": "b2b54824"
+  },
+  "data_uses.qmd": {
+    "data_uses.html": "c462ca05"
+  },
+  "data_management.qmd": {
+    "data_management.html": "0b0f04b5"
+  },
+  "about.qmd": {
+    "about.html": "10779ca3"
+  },
+  "appendix.qmd": {
+    "appendix.html": "65b27a2b"
+  }
+}
